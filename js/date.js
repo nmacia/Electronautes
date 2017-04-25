@@ -169,7 +169,7 @@ function getWeatherGraphicsParams( weatherCode ) {
         //Rain showers 10, 11,12, 40 color #3E6A74
         case '10': case '11': case '12': case '40': 
                 color = "#3E6A74";
-                img = "rain.png";
+                img = "Rain.png";
                 break;
         //Sunny 32, 34 #FDCF07
         case '32': case '34':
@@ -225,6 +225,11 @@ function getWeatherGraphicsParams( weatherCode ) {
         case '5': case '6': case '7': case '18':
                 color = "#859CA7";
                 img = "MixedRSS.png";
+                break;
+        //Windy 23, 24 #648b3a
+        case '5': case '6': case '7': case '18':
+                color = "#648b3a";
+                img = "windy.gif";
                 break;
         //No asociation 0, 2, 3200
         case '30' : 
