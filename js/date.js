@@ -2,7 +2,7 @@
  Project:       terMITes
  Authors:       Nuria Macia
                 Juanita Devis
- Version:       1.1
+ Version:       2.2
  Date:          March 2017
  Last modified: April 2017 
  */
@@ -162,11 +162,14 @@ function getWeatherGraphicsParams( weatherCode ) {
     // TODO: if previously computed weatherParams are cached, performance can be improved
     
     var weatherGraphics = { };
-    var color = "#38BFB3";
+    var color = "#ffffff";
     var img = ""; // what is the default image?
     
+    console.log("weatherCode: " + weatherCode);
     switch ( weatherCode ) {
-        //Rain showers 10, 11,12, 40 color #3E6A74
+
+            
+        //Rain showers 10, 11, 12, 40 color #3E6A74
         case '10': case '11': case '12': case '40': 
                 color = "#3E6A74";
                 img = "Rain.png";
@@ -179,14 +182,14 @@ function getWeatherGraphicsParams( weatherCode ) {
         //Snow 13, 14, 15, 16, 41,42, 43, 46 color #CCCEDA
         case '13': case '14': case '15': case '16': case '41': case '42': case '43': case '46':
                 color = "#CCCEDA";
-                img = "snow.png";
+                img = "Snow.png";
                 break;     
         //Thunderstorms 1, 3, 4,37, 38, 39, 45, 47 color #445197
         case '1': case '3': case '4': case '37': case '38': case '39': case '45': case '47':
                 color = "#445197";
                 img = "thunderstorms.png";
                 break; 
-        //Hail 17, 35, #517897 #6b6b6b
+        //Hail 17, 35, #6b6b6b
          case '17': case '35':
                 color = "#6b6b6b";
                 img = "hail.png";
@@ -231,10 +234,31 @@ function getWeatherGraphicsParams( weatherCode ) {
                 color = "#648b3a";
                 img = "windy.gif";
                 break;
-        //No asociation 0, 2, 3200
-        case '30' : 
+        //Mostly_cloudy_day 28 #C2B06B
+        case '28':
+                color = "#C2B06B";
+                img = "Mostly_cloudy_day.png";
+                break;
+        //Mostly_cloudy_night 27, 29 #4f80ba
+        case '27': case '29':
+                color = "#4f80ba";
+                img = "Mostly_cloudy_night.png";
+                break;
+        //Partly_cloudy_day 30 #DFBF39
+        case '30':
+                color = "#DFBF39";
+                img = "Partly_cloudy_day.png";
+                break;
+        //Clear_night 31, 33 #312991
+        case '31': case '33':
+                color = "#312991";
+                img = "Partly_cloudy_day.png";
+                break;
+            
+        //No asociation 0, 2, 3200, 19
+        case '3200': case '0': case '2': case '19':  
                 color = "#ffcc00";
-                img = ""; // what is the default img?
+                img = "ups.png";
                 break;
 
     }
@@ -291,7 +315,6 @@ $(document).ready(function() {
 
 });
 
-// TODO SVG hide show information of the sensors id="Sensors" object.style.display = none
 
 
 

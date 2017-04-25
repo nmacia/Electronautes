@@ -5,8 +5,12 @@
 	 height="100%" viewBox="114.135 867.139 768 589.807" enable-background="new 114.135 867.139 768 589.807"
 	 xml:space="preserve">
 <defs>
-	<script  xlink:href="date.js"  language="JavaScript">
-	</script>
+<!--
+     <script xlink:href="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" language="JavaScript" ></script>
+	<script  xlink:href="stylesvg.js"  language="JavaScript"></script>
+   
+-->
+	
 </defs>
 <g id="Livello_1">
 	<g id="Whitebackground">
