@@ -160,6 +160,7 @@ function writeUserData(mood, energy, temperature, noise, password) {
 // returns the graphical parameters (for now background color and image filename) of a given weather code
 function getWeatherGraphicsParams( weatherCode ) {  
     // TODO: if previously computed weatherParams are cached, performance can be improved
+    //Error: There was a problem retrieving the latest weather information. What could be a stile for this error?
     
     var weatherGraphics = { };
     var color = "#ffffff";
@@ -234,9 +235,9 @@ function getWeatherGraphicsParams( weatherCode ) {
                 color = "#648b3a";
                 img = "windy.gif";
                 break;
-        //Mostly_cloudy_day 28 #C2B06B
+        //Mostly_cloudy_day 28 #bcd1f0
         case '28':
-                color = "#C2B06B";
+                color = "#bcd1f0";
                 img = "Mostly_cloudy_day.png";
                 break;
         //Mostly_cloudy_night 27, 29 #4f80ba
@@ -252,11 +253,17 @@ function getWeatherGraphicsParams( weatherCode ) {
         //Clear_night 31, 33 #312991
         case '31': case '33':
                 color = "#312991";
-                img = "Partly_cloudy_day.png";
+                img = "Clear_night.png";
                 break;
+        //Dust 19  #d69a5b
+        case '19':
+                color = "#d69a5b";
+                img = "Dust.png";
+                break;
+       
             
-        //No asociation 0, 2, 3200, 19
-        case '3200': case '0': case '2': case '19':  
+        //No asociation 0, 2, 3200 candiate for ups color #b71111
+        case '3200': case '0': case '2': 
                 color = "#ffcc00";
                 img = "ups.png";
                 break;
