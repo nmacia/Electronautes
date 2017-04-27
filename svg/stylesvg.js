@@ -2,7 +2,7 @@
  Project:       terMITes
  Authors:       Nuria Macia
                 Juanita Devis
- Version:       1.1
+ Version:       2.2
  Date:          March 2017
  Last modified: April 2017 
  */
