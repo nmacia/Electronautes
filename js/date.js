@@ -173,7 +173,7 @@ function getWeatherGraphicsParams( weatherCode ) {
         //Rain showers 10, 11, 12, 40 color #3E6A74
         case '10': case '11': case '12': case '40': 
                 color = "#3E6A74";
-                img = "Rain.png";
+                img = "rain.png";
                 break;
         //Sunny 32, 34 #FDCF07
         case '32': case '34':
@@ -183,7 +183,7 @@ function getWeatherGraphicsParams( weatherCode ) {
         //Snow 13, 14, 15, 16, 41,42, 43, 46 color #CCCEDA
         case '13': case '14': case '15': case '16': case '41': case '42': case '43': case '46':
                 color = "#CCCEDA";
-                img = "Snow.png";
+                img = "snow.png";
                 break;     
         //Thunderstorms 1, 3, 4,37, 38, 39, 45, 47 color #445197
         case '1': case '3': case '4': case '37': case '38': case '39': case '45': case '47':
@@ -228,7 +228,7 @@ function getWeatherGraphicsParams( weatherCode ) {
         //Mixed Rain Snow Sleet 5, 6, 7, 18 #859CA7
         case '5': case '6': case '7': case '18':
                 color = "#859CA7";
-                img = "MixedRSS.png";
+                img = "mixed-rss.png";
                 break;
         //Windy 23, 24 #648b3a
         case '5': case '6': case '7': case '18':
@@ -238,29 +238,28 @@ function getWeatherGraphicsParams( weatherCode ) {
         //Mostly_cloudy_day 28 #bcd1f0
         case '28':
                 color = "#bcd1f0";
-                img = "Mostly_cloudy_day.png";
+                img = "mostly-cloudy-day.png";
                 break;
         //Mostly_cloudy_night 27, 29 #4f80ba
         case '27': case '29':
                 color = "#4f80ba";
-                img = "Mostly_cloudy_night.png";
+                img = "mostly-cloudy-night.png";
                 break;
         //Partly_cloudy_day 30 #DFBF39
         case '30':
                 color = "#DFBF39";
-                img = "Partly_cloudy_day.png";
+                img = "partly-cloudy-day.png";
                 break;
         //Clear_night 31, 33 #312991
         case '31': case '33':
                 color = "#312991";
-                img = "Clear_night.png";
+                img = "clear-night.png";
                 break;
         //Dust 19  #d69a5b
         case '19':
                 color = "#d69a5b";
-                img = "Dust.png";
-                break;
-       
+                img = "dust.png";
+                break;    
             
         //No asociation 0, 2, 3200 candiate for ups color #b71111
         case '3200': case '0': case '2': 
@@ -293,16 +292,18 @@ $(document).ready(function() {
         weatherCode = weather.code;
         var weatherGraphics = getWeatherGraphicsParams( weatherCode );
         
-        /*Asociate weatherGraphics to the courrent weather */
-      html = '<h2><img class="weather-icon" src="img/weather/'+weatherGraphics.img+'">'+weather.alt.temp+'&deg;C '+weather.currently+'</h2>';
-      html += '<div class="weather-region">'+weather.city+', '+weather.region+'</div>';
-      
-      changeBackground( weatherGraphics.color );
+        /* Associate weatherGraphics to the courrent weather. */
+        html = '<h2><img class="weather-icon" src="img/weather/'+weatherGraphics.img+'">'+weather.alt.temp+'&deg;C '+weather.currently+'</h2>';
+        html += '<div class="weather-region">'+weather.city+', '+weather.region+'</div>';
+        
+        changeBackground( weatherGraphics.color );
 
-      $("#weather").html(html);
+        $("#weather").html(html);
     },
     error: function(error) {
-      $("#weather").html('<p>'+error+'</p>');
+      //$("#weather").html('<p>'+error+'</p>'); // Error message from plugin.
+      $("#weather").html('<p>UPS!</p>');
+    
     }
   });
   

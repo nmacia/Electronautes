@@ -275,13 +275,13 @@ no-padding {
     margin-bottom: 0;
 }
 
-.buttonssurvey label {
+.buttonsurvey label {
     text-align: center;
 }
 
-.buttonssurvey-mood,
-.buttonssurvey-energy,
-.buttonssurvey-noise {
+.buttonsurvey-mood,
+.buttonsurvey-energy,
+.buttonsurvey-noise {
 	display: inline-block;
     height: 65px;
     margin-left: auto;
@@ -291,7 +291,7 @@ no-padding {
     width: 60px;
 }
 
-.buttonssurvey-temperature {
+.buttonsurvey-temperature {
 	display: inline-block;
     height: 65px;
     margin-left: auto;
@@ -301,7 +301,7 @@ no-padding {
     width: 70px;
 }
 
-.buttonssurvey-temperature img {
+.buttonsurvey-temperature img {
     height: 65px;
 }
 
@@ -402,6 +402,34 @@ input[type=password] {
     font-weight: 700;
     letter-spacing: 1px;
     padding: 0 3 0 3px;
+}
+
+/* GRID SENSORS */
+
+.row {
+	margin-bottom: 10px;
+	margin-top: 0;
+ 	position: relative;
+    width: 100%;
+}
+
+hr {
+	color: #000000 !important;
+	border: solid 1px !important;
+}
+
+.buttonsensor label {
+    text-align: center;
+}
+
+.buttonsensor {
+	display: inline-block;
+    height: 65px;
+    margin-left: auto;
+    margin-top: 15px;
+    position: relative;
+    width: 80px;
+    text-align: center;
 }
 
 /*
