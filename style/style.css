@@ -216,6 +216,7 @@ input[type=checkbox]:checked ~ #nav #menu {
 
 main .container {
     padding-bottom: 100px;
+    height: 100%;
 }
 
 no-padding {
@@ -268,6 +269,11 @@ no-padding {
     width: 100%;
 }
 
+.rowsurvey figure img {
+	height: 50px;
+}
+
+
 .emotion-title {
 	font-size: 18px;
     font-weight: 700;
@@ -301,7 +307,8 @@ no-padding {
     width: 70px;
 }
 
-.buttonsurvey-temperature img {
+/* This road needs a special height */
+.buttonsurvey-temperature figure img {
     height: 65px;
 }
 
@@ -338,10 +345,6 @@ label > input:checked + figure { /* (RADIO CHECKED) IMAGE STYLES */
 
 label > input:checked + figure > figcaption { /* (RADIO CHECKED) IMAGE STYLES */
 	opacity: 1;
-}
-
-figure img {
-	height: 50px;
 }
 
 figcaption {
@@ -406,17 +409,22 @@ input[type=password] {
 
 /* GRID SENSORS */
 
-.row {
-	margin-bottom: 10px;
+.row-sensor {
+	margin-bottom: 0px;
 	margin-top: 0;
  	position: relative;
     width: 100%;
+    border-bottom: .2em solid #262626;
 }
 
-hr {
-	color: #000000 !important;
-	border: solid 1px !important;
+.row-sensor figure img {
+	height: 60px;
 }
+
+.boxsensors {
+    margin-top: 60px;
+}
+
 
 .buttonsensor label {
     text-align: center;
@@ -424,12 +432,16 @@ hr {
 
 .buttonsensor {
 	display: inline-block;
-    height: 65px;
+    height: 75px;
     margin-left: auto;
     margin-top: 15px;
     position: relative;
-    width: 80px;
+    width: 90px;
     text-align: center;
+}
+
+.img-window-sensor {
+    max-width: 90px;
 }
 
 /*
@@ -542,3 +554,5 @@ and (max-device-width : 480px) {
 .copyright a:hover {
     color:#F6F6F6 ;
 }
+
+

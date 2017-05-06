@@ -91,10 +91,10 @@
                                 <div id="weather" class="weather"></div>
                             </div>
                         
-                            <div class="boxbuttonssurvey">
+                            <div class="boxbuttonssurvey  boxsensors">
                                    
                                 <!-- ROW 1 -->   
-                                <div class="row"> 
+                                <div class="row-sensor"> 
                                     <div class="buttonsensor">
                                         <label>
                                             <input type="radio" name="sensor" id="presence" value="presence" onclick="doFunction();" />
@@ -117,16 +117,15 @@
                                         <label>
                                             <input type="radio" name="sensor" id="window" value="window" onclick="doFunction();" />
                                             <figure>
-                                                <img src="./img/sensors/window.png" alt="Window" />
+                                                <img class='img-window-sensor' src="./img/sensors/window.png" alt="Window" />
                                                 <figcaption>Window</figcaption>
                                             </figure>
                                         </label>
                                     </div>
-                                    <hr />
                                 </div>
 
                                 <!-- ROW 2 -->   
-                               <div class="row">
+                               <div class="row-sensor">
                                     <div class="buttonsensor">
                                         <label>
                                             <input id="sensor" type="button" value="sensor" onclick="doFunction();" />
@@ -154,11 +153,10 @@
                                             </figure>
                                         </label>
                                     </div>
-                                    <hr />
                                 </div>
 
                                 <!-- ROW 3 -->                           
-                                <div class="row">
+                                <div class="row-sensor">
                                     <div class="buttonsensor">
                                         <label>
                                             <input id="sensor" type="button" value="sensor" onclick="doFunction();" />
