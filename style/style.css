@@ -472,6 +472,19 @@ footer {
   25 - RESPONSIVE
 ==================================================
 */
+@media (min-width: 991px)and (max-width:1199px) {
+        
+    .row-sensor figure img {
+	   height: 50px;
+    }
+    .img-window-sensor {
+    max-width: 80px;
+    }
+    .buttonsensor {
+    max-width: 80px;
+    }     
+        
+}
 
 /* Smartphones (portrait and landscape) */
 @media only screen 
