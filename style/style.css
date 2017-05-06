@@ -216,7 +216,7 @@ input[type=checkbox]:checked ~ #nav #menu {
 
 main .container {
     padding-bottom: 100px;
-    height: 100%;
+    height: inherit;
 }
 
 no-padding {
@@ -473,6 +473,22 @@ footer {
 ==================================================
 */
 @media (min-width: 991px)and (max-width:1199px) {
+    
+      .buttonsurvey-energy {
+    max-width: 45px;
+}
+    .buttonsurvey-energy figure img {
+    height: 45px;
+}
+    .buttonsurvey-noise {
+    max-width: 55px;
+    }
+    
+     .buttonsurvey-noise figure img {
+    height: 45px;
+}
+    
+    
         
     .row-sensor figure img {
 	   height: 50px;
