@@ -276,7 +276,10 @@ function getWeatherGraphicsParams( weatherCode ) {
 }
 
 function changeBackground ( color ) {
-    document.body.style.background = color;
+    // Change color background body.
+    $('body').css('background', color);
+    // Change color background menu for mobile.
+    $('#nav ul').css('background', color);
 }
 
 $(document).ready(function() {
