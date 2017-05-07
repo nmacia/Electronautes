@@ -4,7 +4,7 @@
                 Juanita Devis
  Version:       1.1
  Date:          March 2017
- Last modifies: April 2017
+ Last modified: May 2017
  */
 
 
@@ -18,9 +18,10 @@
 /*		02 - HEADER 										*/
 /*		03 - MAIN 	 										*/
 /*		04 - FOOTER											*/
-/*		05 - RESPONSIVE 									*/
+/*		05 - RESPONSIVENESS									*/
+/*		05.1 - DESKTOP										*/
+/*		05.2 - SMARTPHONES (Portrait and landscape)			*/
 /*----------------------------------------------------------*/
-  
   
 /*
 ==================================================
@@ -457,8 +458,8 @@ footer {
 
 .copyright {
 	bottom: 10px;
-	position: absolute;
 	margin-left: 50px;
+	position: absolute;
 }
 
 .copyright p {
@@ -467,47 +468,66 @@ footer {
     letter-spacing: 1px;
 }
 
+.copyright a:hover {
+    color: #F6F6F6 ;
+}
+
 /*
 ==================================================
-  25 - RESPONSIVE
+  05 - RESPONSIVENESS
 ==================================================
 */
-@media (min-width: 991px)and (max-width:1199px) {
+
+/*
+==================================================
+  05.1 - DESKTOP
+==================================================
+*/
+
+@media (min-width : 991px) 
+		and (max-width : 1199px) {
     
-      .buttonsurvey-energy {
-    max-width: 45px;
-}
+	.buttonsurvey-energy {
+    	max-width: 45px;
+	}
+    
     .buttonsurvey-energy figure img {
-    height: 45px;
-}
+    	height: 45px;
+	}
+    
     .buttonsurvey-noise {
-    max-width: 55px;
+    	max-width: 55px;
     }
     
-     .buttonsurvey-noise figure img {
-    height: 45px;
-}
-    
-    
-        
+    .buttonsurvey-noise figure img {
+    	height: 45px;
+	}
+     
     .row-sensor figure img {
-	   height: 50px;
+    	height: 50px;
     }
+    
     .img-window-sensor {
-    max-width: 80px;
+    	max-width: 80px;
     }
+    
     .buttonsensor {
-    max-width: 80px;
+    	max-width: 80px;
     }     
         
 }
 
-/* Smartphones (portrait and landscape) */
+/*
+==================================================
+  05.2 - SMARTPHONES (Portrait and landscape)
+==================================================
+*/
+
 @media only screen 
 and (min-device-width : 320px) 
 and (max-device-width : 480px) {
 
-	header{
+	header {
 		margin-top: 10px;
 	}
 
@@ -577,11 +597,6 @@ and (max-device-width : 480px) {
 		width: 100%;
 	}
 
-}
-
-
-.copyright a:hover {
-    color:#F6F6F6 ;
 }
 
 
