@@ -302,7 +302,7 @@ $(document).ready(function() {
     },
     error: function(error) {
       //$("#weather").html('<p>'+error+'</p>'); // Error message from plugin.
-      $("#weather").html('<p>UPS!</p>');
+      $("#weather").html('<p>OOPS!</p>');
     
     }
   });
