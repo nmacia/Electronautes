@@ -427,11 +427,11 @@ input[type=password] {
 }
 
 
-.buttonsensor label {
+.button-sensor label {
     text-align: center;
 }
 
-.buttonsensor {
+.button-sensor {
 	display: inline-block;
     height: 75px;
     margin-left: auto;
@@ -511,7 +511,7 @@ footer {
     	max-width: 80px;
     }
     
-    .buttonsensor {
+    .button-sensor {
     	max-width: 80px;
     }     
         
