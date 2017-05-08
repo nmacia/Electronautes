@@ -282,9 +282,9 @@ function changeBackground ( color ) {
 
 function showSensorValue ( typeOfSensor ) {
   
-  if ( typeOfSensor === "sensor-presence" ) {
+  if ( typeOfSensor === "sensor-temperature" ) {
     console.log(typeOfSensor);
-    var classroom = document.getElementById("santasvg");
+    var classroom = document.getElementById("santasensorssvg");
     
     // Get the inner DOM of svg file.
     var svgDoc = classroom.contentDocument;

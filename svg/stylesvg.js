@@ -15,7 +15,7 @@
 
 /* Tables */
 
-
+/*
   $(document).ready(function(){
             var a = document.getElementById("santasvg");
 
@@ -32,4 +32,4 @@
             },false);
         })
   
-  
+  */
