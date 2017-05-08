@@ -294,14 +294,11 @@ function showSensorValue ( typeOfSensor ) {
    
     if ( sensor ) {
       
-      var style = sensor.getAttribute("display");
+      var status = sensor.getAttribute("display");
       
-      if ( style === "none" ) {
-          
-          var temp3 = svgDoc.getElementById("temp3-value");
-          temp3.textContent = "12";
+      if ( status === "none" ) {
+          $(svgDoc.getElementById("temp3-value")).text("12");
           sensor.setAttribute("display","block");
-         
       }
       else {
            sensor.setAttribute("display","none");
