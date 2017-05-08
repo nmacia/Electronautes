@@ -166,10 +166,8 @@ function getWeatherGraphicsParams( weatherCode ) {
     var color = "#ffffff";
     var img = ""; // what is the default image?
     
-    console.log("weatherCode: " + weatherCode);
     switch ( weatherCode ) {
 
-            
         //Rain showers 10, 11, 12, 40 color #3E6A74
         case '10': case '11': case '12': case '40': 
                 color = "#3E6A74";
@@ -280,6 +278,29 @@ function changeBackground ( color ) {
     $('body').css('background', color);
     // Change color background menu for mobile.
     $('#nav ul').css('background', color);
+}
+
+function showSensorValue ( typeOfSensor ) {
+  
+  if ( typeOfSensor === "sensor-presence" ) {
+    console.log(typeOfSensor);
+    var classroom = document.getElementById("santasvg");
+    
+    // Get the inner DOM of svg file.
+    var svgDoc = classroom.contentDocument;
+    ;
+    // Get the inner element by id.
+    var sensor = svgDoc.getElementById( typeOfSensor );
+    
+    if ( sensor ) {
+      var style = sensor.style.display;
+      if (style === "none")
+          sensor.style.display = "block";
+      else
+          sensor.style.display = "none";
+    }
+  }
+
 }
 
 $(document).ready(function() {

@@ -2396,7 +2396,7 @@
 		</g>
 	</g>
 </g>
-<g id="Sensors" display="none">
+<g id="sensor-presence" style="display:none">
 	<g id="Co2" display="inline">
 		<path opacity="0.4" fill="#3E6A74" enable-background="new    " d="M665.233,515.768c25.731,0,46.597,20.858,46.597,46.598
 			c0,25.732-20.865,46.598-46.597,46.598c-25.732,0-46.598-20.865-46.598-46.598C618.636,536.626,639.501,515.768,665.233,515.768z"
