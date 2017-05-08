@@ -288,16 +288,24 @@ function showSensorValue ( typeOfSensor ) {
     
     // Get the inner DOM of svg file.
     var svgDoc = classroom.contentDocument;
-    ;
+    
     // Get the inner element by id.
     var sensor = svgDoc.getElementById( typeOfSensor );
-    
+   
     if ( sensor ) {
-      var style = sensor.style.display;
-      if (style === "none")
-          sensor.style.display = "block";
-      else
-          sensor.style.display = "none";
+      
+      var style = sensor.getAttribute("display");
+      
+      if ( style === "none" ) {
+          
+          var temp3 = svgDoc.getElementById("temp3-value");
+          temp3.textContent = "12";
+          sensor.setAttribute("display","block");
+         
+      }
+      else {
+           sensor.setAttribute("display","none");
+      }
     }
   }
 
