@@ -297,7 +297,7 @@ function showSensorValue ( typeOfSensor ) {
       var status = sensor.getAttribute("display");
       
       if ( status === "none" ) {
-          $(svgDoc.getElementById("temp3-value")).text("12");
+          $(svgDoc.getElementById("temp3-value_1_")).text("12");
           sensor.setAttribute("display","block");
       }
       else {
