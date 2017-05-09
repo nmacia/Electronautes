@@ -11,8 +11,6 @@
 var tday = ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
 var tmonth = ['January','February','March','April','May','June','July','August','September','October','November','December']; 
 
-
-
 // Retrieve date.
 window.onload = function getClock(){
   var today = new Date();
@@ -280,10 +278,14 @@ function changeBackground ( color ) {
     $('#nav ul').css('background', color);
 }
 
+// Catalog of sensors installed and their IDs in the SVG.
+var sensorCatalog = [
+    { name: "sensor-temperature", id: ["temp2-value_1_","temp3-value_1_","temp4-value_1_","temp4-value_1_","temp5-value_1_","temp6-value_1_"] },
+    { name: "sensor-humidity", id: ["hum2-value_1_1"] }
+];
+
 function showSensorValue ( typeOfSensor ) {
   
-  if ( typeOfSensor === "sensor-temperature" ) {
-    console.log(typeOfSensor);
     var classroom = document.getElementById("santasensorssvg");
     
     // Get the inner DOM of svg file.
@@ -291,20 +293,31 @@ function showSensorValue ( typeOfSensor ) {
     
     // Get the inner element by id.
     var sensor = svgDoc.getElementById( typeOfSensor );
-   
+    
     if ( sensor ) {
+      
+      // Search the sensor IDs for the SVG.
+      var sensorIDs = $.grep(sensorCatalog, function( element ){ 
+          return element.name === typeOfSensor; 
+        }
+      );
       
       var status = sensor.getAttribute("display");
       
-      if ( status === "none" ) {
-          $(svgDoc.getElementById("temp3-value_1_")).text("12°C");
+      if ( status === "none" ) {        
+          // Change value for each sensor.
+          var numberOfSensors = sensorIDs[0].id.length;
+          for (var i = 0; i < numberOfSensors; i++) {
+            $(svgDoc.getElementById(sensorIDs[0].id[i])).text("12°C");
+          }
+          // Display sensors on the SVG.
           sensor.setAttribute("display","block");
       }
       else {
-           sensor.setAttribute("display","none");
+          // Hides sensors on the SVG.
+          sensor.setAttribute("display","none");
       }
     }
-  }
 
 }
 
