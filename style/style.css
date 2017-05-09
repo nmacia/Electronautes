@@ -491,41 +491,7 @@ footer {
 
 @media (min-width : 991px) 
 		and (max-width : 1199px)
-        {
-    
-	.buttonsurvey-energy {
-    	max-width: 45px;
-	}
-    
-    .buttonsurvey-energy figure img {
-    	height: 45px;
-	}
-    
-    .buttonsurvey-noise {
-    	max-width: 55px;
-    }
-    
-    .buttonsurvey-noise figure img {
-    	height: 45px;
-	}
-     
-    .row-sensor figure img {
-    	height: 50px;
-    }
-    
-    .img-window-sensor {
-    	max-width: 80px;
-    }
-    
-    .button-sensor {
-    	max-width: 80px;
-        margin-bottom: 0px;
-    }     
-        
-}
-
-/* Mobile mini icons, it is not the best way*/ 
-@media (max-width : 350px) {
+    	{
     
 	.buttonsurvey-energy {
     	max-width: 45px;
@@ -565,8 +531,8 @@ footer {
 */
 
 @media only screen 
-and (min-device-width : 320px) 
-and (max-device-width : 480px) {
+and (min-width : 320px) 
+and (max-width : 480px) {
 
 	header {
 		margin-top: 10px;
@@ -632,6 +598,37 @@ and (max-device-width : 480px) {
 	#nav ul li {
 		width: 100%;
 	}
+
+.buttonsurvey-energy {
+    	max-width: 45px;
+	}
+    
+    .buttonsurvey-energy figure img {
+    	height: 45px;
+	}
+    
+    .buttonsurvey-noise {
+    	max-width: 55px;
+    }
+    
+    .buttonsurvey-noise figure img {
+    	height: 45px;
+	}
+     
+    .row-sensor figure img {
+    	height: 50px;
+    }
+    
+    .img-window-sensor {
+    	max-width: 80px;
+    }
+    
+    .button-sensor {
+    	max-width: 80px;
+        margin-bottom: 0px;
+    }     
+        
+
 
 	.copyright {
 		margin: auto;
