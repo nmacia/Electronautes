@@ -284,12 +284,19 @@ var sensorCatalog = [
     { name: "sensor-humidity", id: ["hum2-value_1_1"] }
 ];
 
+var previousQuery = "";
+
 function showSensorValue ( typeOfSensor ) {
-  
+
     var classroom = document.getElementById("santasensorssvg");
     
     // Get the inner DOM of svg file.
     var svgDoc = classroom.contentDocument;
+
+    // Hide sensor values queried before.
+    if ( previousQuery !== "" ) {
+      svgDoc.getElementById( previousQuery ).setAttribute("display","none");
+    }
     
     // Get the inner element by id.
     var sensor = svgDoc.getElementById( typeOfSensor );
@@ -312,11 +319,9 @@ function showSensorValue ( typeOfSensor ) {
           }
           // Display sensors on the SVG.
           sensor.setAttribute("display","block");
+          previousQuery = typeOfSensor;
       }
-      else {
-          // Hides sensors on the SVG.
-          sensor.setAttribute("display","none");
-      }
+    
     }
 
 }
