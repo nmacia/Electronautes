@@ -280,9 +280,15 @@ function changeBackground ( color ) {
 
 // Catalog of sensors installed and their IDs in the SVG.
 var sensorCatalog = [
+    //Presence values: 0 or 1  Sensors: AndorraPIR1
+    { name: "sensor-presence", id: ["pres1-value"] },
+    //Motion values: 0.00-0.05  Sensors: AndorraMotion1, AndorraMotion2
+    { name: "sensor-motion", id: ["mot1-value", "mot2-value"] },
+    //Window values: 0 or 1  Sensors form left to right: AndorraMITes-0769, AndorraMITes-1012,AndorraMITes-0109, AndorraMITes-1001, AndorraMITes-333
+    { name: "sensor-window", id: ["w0769-value", "w1012-value", "w0109-value", "w1001-value","w333-value" ] },
     { name: "sensor-temperature", id: ["temp2-value_1_","temp3-value_1_","temp4-value_1_","temp4-value_1_","temp5-value_1_","temp6-value_1_"] },
     { name: "sensor-humidity", id: ["hum2-value_1_1"] }
-];
+]; 
 
 var previousQuery = "";
 
