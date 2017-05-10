@@ -4,7 +4,7 @@
                 Juanita Devis
  Version:       2.2
  Date:          March 2017
- Last modified: April 2017 
+ Last modified: May 2017 
  */
 
 
@@ -158,7 +158,6 @@ function writeUserData(mood, energy, temperature, noise, password) {
 // returns the graphical parameters (for now background color and image filename) of a given weather code
 function getWeatherGraphicsParams( weatherCode ) {  
     // TODO: if previously computed weatherParams are cached, performance can be improved
-    //Error: There was a problem retrieving the latest weather information. What could be a stile for this error?
     
     var weatherGraphics = { };
     var color = "#ffffff";
@@ -278,16 +277,26 @@ function changeBackground ( color ) {
     $('#nav ul').css('background', color);
 }
 
-// Catalog of sensors installed and their IDs in the SVG.
+// Catalog of sensors installed and their IDs in the SVG. 
 var sensorCatalog = [
-    //Presence values: 0 or 1  Sensors: AndorraPIR1
+    /* Presence values: 0 or 1  Sensors: AndorraPIR1 */
     { name: "sensor-presence", id: ["pres1-value"] },
-    //Motion values: 0.00-0.05  Sensors: AndorraMotion1, AndorraMotion2
+    /* Motion values: 0.00-0.10 Do we need to scale them? Sensors: AndorraMotion1, AndorraMotion2 */
     { name: "sensor-motion", id: ["mot1-value", "mot2-value"] },
-    //Window values: 0 or 1  Sensors form left to right: AndorraMITes-0769, AndorraMITes-1012,AndorraMITes-0109, AndorraMITes-1001, AndorraMITes-333
+    /* Window values: 0 or 1  Sensors form left to right: AndorraMITes-0769, AndorraMITes-1012,AndorraMITes-0109, AndorraMITes-1001, AndorraMITes-333 */
     { name: "sensor-window", id: ["w0769-value", "w1012-value", "w0109-value", "w1001-value","w333-value" ] },
+    /* Door values: 0 or 1 close  Sensors: Reed2 */
+    { name: "sensor-door", id: ["door2-value"] },
+    /* Light values: 0-1250  Sensors: AndorraLight2, AndorraLight3, AndorraLight4,AndorraLight5, AndorraLight6 */
+    { name: "sensor-light", id: ["light2-value_1_","light3-value_1_","light4-value_1_","light4-value_1_","light5-value_1_","light6-value_1_"] },
+     /* Curtains values: 0 or 1 move  Sensors form left to right: AndorraMITes-0210, AndorraMITes-0995, AndorraMITes-0066,AndorraMITes-0325*/
+    { name: "sensor-curtains", id: ["cur0210-value","cur0995-value","cur0066-value","cur0325-value"] },
+    /* Temperature values: 0-30  Sensors: AndorraLight2, AndorraLight3, AndorraLight4,AndorraLight5, AndorraLight6 */
     { name: "sensor-temperature", id: ["temp2-value_1_","temp3-value_1_","temp4-value_1_","temp4-value_1_","temp5-value_1_","temp6-value_1_"] },
-    { name: "sensor-humidity", id: ["hum2-value_1_1"] }
+    /* CO2 values:  2.6-1 Inverted, volt sign Sensor: AndorraBob1 */
+    { name: "sensor-co2", id: ["co21-value"] },
+    /* Humidity values:  0-100%RH Sensor: AndorraHumidity1 */
+    { name: "sensor-humidity", id: ["hum1-value"] }
 ]; 
 
 var previousQuery = "";
