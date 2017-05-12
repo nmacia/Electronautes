@@ -288,7 +288,7 @@ var sensorCatalog = [
     /* Door values: 0 or 1 close  Sensors: Reed2 */
     { name: "sensor-door", id: ["door2-value"] },
     /* Light values: 0-1250  Sensors: AndorraLight2, AndorraLight3, AndorraLight4,AndorraLight5, AndorraLight6 */
-    { name: "sensor-light", id: ["light2-value_1_","light3-value_1_","light4-value_1_","light4-value_1_","light5-value_1_","light6-value_1_"] },
+    { name: "sensor-light", id: ["light2-value","light3-value","light4-value","light4-value","light5-value","light6-value"] },
      /* Curtains values: 0 or 1 move  Sensors form left to right: AndorraMITes-0210, AndorraMITes-0995, AndorraMITes-0066,AndorraMITes-0325*/
     { name: "sensor-curtains", id: ["cur0210-value","cur0995-value","cur0066-value","cur0325-value"] },
     /* Temperature values: 0-30  Sensors: AndorraLight2, AndorraLight3, AndorraLight4,AndorraLight5, AndorraLight6 */
