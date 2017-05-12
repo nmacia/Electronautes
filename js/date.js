@@ -100,61 +100,6 @@ function writeUserData(mood, energy, temperature, noise, password) {
   });
 }
 
-//function changeBackground ( weatherCode ) {
-//
-//  var color = "#38BFB3";
-//
-//  switch ( weatherCode ) {
-//    //Rain showers 10, 11,12, 40 color #3E6A74
-//    case '10': case '11': case '12': case '40': 
-//            color = "#3E6A74"
-//            break;
-//    //Sunny 32, 34 #FDCF07
-//    case '32': case '34':
-//            color = "#FDCF07"
-//            break;
-//    //Snow 13, 14, 15, 16, 41,42, 43, 46 color #CCCEDA
-//    case '13': case '14': case '15': case '16': case '41': case '42': case '43': case '46':
-//            color = "#CCCEDA"
-//            break;     
-//    //Tunderstorms 1, 3, 4,37, 38, 39, 45, 47 color #445197
-//    case '1': case '3': case '4': case '37': case '38': case '39': case '45': case '47':
-//            color = "#445197"
-//            break; 
-//    //Hail 17, 35, #517897 #6b6b6b
-//     case '17': case '35':
-//            color = "#6b6b6b"
-//            break;
-//    //Foggy 20 #7A7A70
-//      case '20':
-//            color = "#6b6b6b"
-//            break;
-//    //Haze 21 #F4AD2F
-//     case '21':
-//            color = "#F59117"
-//            break;
-//    //Cold  25 #8EB1C4
-//    case '25':
-//            color = "#8EB1C4"
-//            break;
-//    //Hot 36 #F56544
-//          case '36':
-//            color = "#F56544"
-//            break;
-//    //Cloudy 26, 27, 44 #A4A09D
-//          case '26': case '27': case '44':
-//            color = "#A4A09D"
-//            break;
-//    //No asociation 0, 2, 3200
-//    case '30' : color = "#ffcc00"
-//              break;
-//    
-//  }
-//
-//  document.body.style.background = color;
-// 
-// }
-
 // returns the graphical parameters (for now background color and image filename) of a given weather code
 function getWeatherGraphicsParams( weatherCode ) {  
     // TODO: if previously computed weatherParams are cached, performance can be improved
@@ -282,9 +227,9 @@ var sensorCatalog = [
     /* Presence values: 0 or 1  Sensors: AndorraPIR1 */
     { name: "sensor-presence", id: ["pres1-value"] },
     /* Motion values: 0.00-0.10 Do we need to scale them? Sensors: AndorraMotion1, AndorraMotion2 */
-    { name: "sensor-motion", id: ["mot1-value", "mot2-value"] },
+    { name: "sensor-motion", id: ["mot1-value","mot2-value"] },
     /* Window values: 0 or 1  Sensors form left to right: AndorraMITes-0769, AndorraMITes-1012,AndorraMITes-0109, AndorraMITes-1001, AndorraMITes-333 */
-    { name: "sensor-window", id: ["w0769-value", "w1012-value", "w0109-value", "w1001-value","w333-value" ] },
+    { name: "sensor-window", id: ["w0769-value", "w1012-value", "w0109-value", "w1001-value","w333-value"] },
     /* Door values: 0 or 1 close  Sensors: Reed2 */
     { name: "sensor-door", id: ["door2-value"] },
     /* Light values: 0-1250  Sensors: AndorraLight2, AndorraLight3, AndorraLight4,AndorraLight5, AndorraLight6 */
@@ -299,7 +244,14 @@ var sensorCatalog = [
     { name: "sensor-humidity", id: ["hum1-value"] }
 ]; 
 
+
+function showSensorValuePresence ( svgDoc, ) {
+
+}
+
+
 var previousQuery = "";
+var phantom = true;
 
 function showSensorValue ( typeOfSensor ) {
 
@@ -324,17 +276,58 @@ function showSensorValue ( typeOfSensor ) {
         }
       );
       
-      var status = sensor.getAttribute("display");
-      
-      if ( status === "none" ) {        
-          // Change value for each sensor.
-          var numberOfSensors = sensorIDs[0].id.length;
-          for (var i = 0; i < numberOfSensors; i++) {
-            $(svgDoc.getElementById(sensorIDs[0].id[i])).text("21°C");
-          }
-          // Display sensors on the SVG.
-          sensor.setAttribute("display","block");
-          previousQuery = typeOfSensor;
+      var status = sensor.getAttribute("display");    
+      if ( status === "none" ) {      
+
+        switch ( typeOfSensor ) {
+        
+          case 'sensor-presence':
+         
+                var numberOfSensors = sensorIDs[0].id.length;
+                for (var i = 0; i < numberOfSensors; i++) {
+                  if ( phantom ) {
+                    console.log(sensorIDs[0].id[i]+'-icon-0');
+                    svgDoc.getElementById(sensorIDs[0].id[i]+'-icon-0').setAttribute("display","none");
+                    svgDoc.getElementById(sensorIDs[0].id[i]+'-icon-1').setAttribute("display","block");
+                    phantom = false;
+                  }
+                  else {
+                    svgDoc.getElementById(sensorIDs[0].id[i]+'-icon-0').setAttribute("display","block");
+                    svgDoc.getElementById(sensorIDs[0].id[i]+'-icon-1').setAttribute("display","none");
+                    phantom = true;
+                  }
+                  $(svgDoc.getElementById(sensorIDs[0].id[i])).text("36");
+
+                }
+                break;
+          
+          case 'sensor-temperature':
+                // Change value for each sensor.
+                var numberOfSensors = sensorIDs[0].id.length;
+                for (var i = 0; i < numberOfSensors; i++) {
+                  $(svgDoc.getElementById(sensorIDs[0].id[i])).text("-12.4°C");
+                }
+                break;
+
+          case 'sensor-motion':
+                break;
+          case 'sensor-window':
+                break;
+          case 'sensor-door':
+                break;
+          case 'sensor-light':
+                break;
+          case 'sensor-curtains':
+                break;
+          case 'sensor-co2':
+                break;
+          case 'sensor-humidity':
+                break;       
+        }
+        
+        // Display sensors on the SVG.
+        sensor.setAttribute("display","block");
+        previousQuery = typeOfSensor;
       } 
     
     }
