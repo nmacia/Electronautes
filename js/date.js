@@ -292,7 +292,7 @@ var sensorCatalog = [
      /* Curtains values: 0 or 1 move  Sensors form left to right: AndorraMITes-0210, AndorraMITes-0995, AndorraMITes-0066,AndorraMITes-0325*/
     { name: "sensor-curtains", id: ["cur0210-value","cur0995-value","cur0066-value","cur0325-value"] },
     /* Temperature values: 0-30  Sensors: AndorraLight2, AndorraLight3, AndorraLight4,AndorraLight5, AndorraLight6 */
-    { name: "sensor-temperature", id: ["temp2-value_1_","temp3-value_1_","temp4-value_1_","temp4-value_1_","temp5-value_1_","temp6-value_1_"] },
+    { name: "sensor-temperature", id: ["temp2-value","temp3-value","temp4-value","temp4-value","temp5-value","temp6-value"] },
     /* CO2 values:  2.6-1 Inverted, volt sign Sensor: AndorraBob1 */
     { name: "sensor-co2", id: ["co21-value"] },
     /* Humidity values:  0-100%RH Sensor: AndorraHumidity1 */
@@ -330,12 +330,12 @@ function showSensorValue ( typeOfSensor ) {
           // Change value for each sensor.
           var numberOfSensors = sensorIDs[0].id.length;
           for (var i = 0; i < numberOfSensors; i++) {
-            $(svgDoc.getElementById(sensorIDs[0].id[i])).text("12°C");
+            $(svgDoc.getElementById(sensorIDs[0].id[i])).text("21°C");
           }
           // Display sensors on the SVG.
           sensor.setAttribute("display","block");
           previousQuery = typeOfSensor;
-      }
+      } 
     
     }
 
