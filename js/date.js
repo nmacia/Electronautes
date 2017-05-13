@@ -244,22 +244,25 @@ var sensorCatalog = [
     { name: "sensor-humidity", id: ["hum1-value"] }
 ]; 
 
+// This function id blocking all the code
+/*function showSensorValuePresence ( svgDoc, ) {
 
-function showSensorValuePresence ( svgDoc, ) {
-
-}
+}*/
 
 
 var previousQuery = "";
 var phantom = true;
 
-function showSensorValue ( typeOfSensor ) {
 
+
+function showSensorValue ( typeOfSensor ) {
+    
     var classroom = document.getElementById("santasensorssvg");
     
     // Get the inner DOM of svg file.
     var svgDoc = classroom.contentDocument;
-
+    
+    
     // Hide sensor values queried before.
     if ( previousQuery !== "" ) {
       svgDoc.getElementById( previousQuery ).setAttribute("display","none");
@@ -284,6 +287,7 @@ function showSensorValue ( typeOfSensor ) {
           case 'sensor-presence':
          
                 var numberOfSensors = sensorIDs[0].id.length;
+                // TODO: change the icon depending on the value of the sensor (0,1) if value=1 display-icon-1 else display-icon-0
                 for (var i = 0; i < numberOfSensors; i++) {
                   if ( phantom ) {
                     console.log(sensorIDs[0].id[i]+'-icon-0');
@@ -296,7 +300,7 @@ function showSensorValue ( typeOfSensor ) {
                     svgDoc.getElementById(sensorIDs[0].id[i]+'-icon-1').setAttribute("display","none");
                     phantom = true;
                   }
-                  $(svgDoc.getElementById(sensorIDs[0].id[i])).text("36");
+                  $(svgDoc.getElementById(sensorIDs[0].id[i])).text("1");
 
                 }
                 break;
@@ -316,10 +320,20 @@ function showSensorValue ( typeOfSensor ) {
           case 'sensor-door':
                 break;
           case 'sensor-light':
+                // Change value for each sensor.
+                var numberOfSensors = sensorIDs[0].id.length;
+                for (var i = 0; i < numberOfSensors; i++) {
+                  $(svgDoc.getElementById(sensorIDs[0].id[i])).text("1200");
+                }
                 break;
           case 'sensor-curtains':
                 break;
           case 'sensor-co2':
+                // Change value for each sensor.
+                var numberOfSensors = sensorIDs[0].id.length;
+                for (var i = 0; i < numberOfSensors; i++) {
+                  $(svgDoc.getElementById(sensorIDs[0].id[i])).text("2.4");
+                }
                 break;
           case 'sensor-humidity':
                 break;       
@@ -337,6 +351,9 @@ function showSensorValue ( typeOfSensor ) {
 $(document).ready(function() {
 
  var weatherCode = 0;
+    
+ formatSVG('santasensorssvg');
+ formatSVG('santasvg');
 
  $.simpleWeather({
     //zipcode: 'AD500',
@@ -378,7 +395,41 @@ $(document).ready(function() {
 
 });
 
+/* 
+* Preliminary set up of svg file
+*/
+function formatSVG(svgObjectId) {
+    var svgObj = document.getElementById(svgObjectId);
+    if (svgObj){
+        svgObj.addEventListener("load",function() { 
+            console.log('svg loaded');
+            var svgDoc = svgObj.contentDocument;
+            
+            // Set the size of the svg root element always to 100%
+            var rootLayer = svgDoc.getElementById('root-layer');
+            rootLayer.setAttribute('width', '100%');
+            rootLayer.setAttribute('height', '100%');
+ 
+            // create the style element within the svg and adds the import for the right font
+            var importStament = `
+                @import url(http://fonts.googleapis.com/css?family=Amatic+SC);
+            `;
+            var style = svgDoc.createElementNS("http://www.w3.org/2000/svg", 'style');        
+            style.innerHTML = style.innerHTML + importStament;
+            svgDoc.documentElement.appendChild(style);
+            
+            
+            // change all the .text font-family to the correct one
+            var textElements = svgDoc.getElementsByTagNameNS("http://www.w3.org/2000/svg",'text');
+            for (var i = 0; i <textElements.length; i++) {
+                var textElement = textElements[i];
+                textElement.setAttribute('font-family', 'Amatic SC');
+            }
+           
 
+        }, false);
+    }
+}
 
 
 
