@@ -8,7 +8,7 @@
 	<g id="Whitebackground">
 		<path fill="#FFFFFF" d="M115.8-467.366l61.864,777.448h636.213v-140.68h76.671v-12.649l-25.001-23.244h76.359l14.188,9.78
 			l0.089,44.82l173.37,144.518h27.051v-799.993H115.8L115.8-467.366z M406.877-367.776l-38.735-48.951l265.357,0.366l1.736,48.584
-			L406.877-367.776L406.877-367.776z M1013.205-368.143l-354.373,0.366l1.743-43.233l-0.027-5.718l412.186-0.088L1013.205-368.143z"
+			L406.877-367.776L406.877-367.776z M1013.205-368.143l-354.373,0.366l1.743-43.233l-0.027-5.718l412.188-0.088L1013.205-368.143z"
 			/>
 	</g>
 	<g id="GrayPav">
@@ -106,7 +106,7 @@
 			</g>
 			<g id="LWPOLYLINE_31_">
 				
-					<rect x="660.738" y="169.396" fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" width="139.61" height="127.161"/>
+					<rect x="660.738" y="169.396" fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" width="139.607" height="127.161"/>
 			</g>
 			<g id="LWPOLYLINE_32_">
 				<polygon fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
@@ -604,7 +604,7 @@
 				</g>
 				<g id="LWPOLYLINE_189_">
 					
-						<rect x="300.074" y="-262.151" transform="matrix(0.9969 -0.0787 0.0787 0.9969 21.399 23.1886)" fill="#FFFFFF" stroke="#666666" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" width="9.648" height="4.504"/>
+						<rect x="300.072" y="-262.153" transform="matrix(-0.9969 0.0787 -0.0787 -0.9969 588.3912 -542.9922)" fill="#FFFFFF" stroke="#666666" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" width="9.648" height="4.504"/>
 				</g>
 				<g id="LWPOLYLINE_190_">
 					
@@ -1163,48 +1163,48 @@
 				</g>
 				<g id="LWPOLYLINE_333_">
 					
-						<rect x="517.719" y="-281.556" fill="#FFFFFF" stroke="#666666" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" width="28.39" height="44.155"/>
+						<rect x="517.719" y="-281.556" fill="#FFFFFF" stroke="#666666" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" width="28.393" height="44.155"/>
 				</g>
 				<g id="LWPOLYLINE_334_">
 					
-						<rect x="546.104" y="-281.556" fill="#FFFFFF" stroke="#666666" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" width="28.39" height="44.155"/>
+						<rect x="546.104" y="-281.556" fill="#FFFFFF" stroke="#666666" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" width="28.393" height="44.155"/>
 				</g>
 				<g id="LWPOLYLINE_335_">
 					
-						<rect x="517.719" y="-325.71" fill="#FFFFFF" stroke="#666666" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" width="28.39" height="44.155"/>
+						<rect x="517.719" y="-325.71" fill="#FFFFFF" stroke="#666666" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" width="28.393" height="44.155"/>
 				</g>
 				<g id="LWPOLYLINE_336_">
 					
-						<rect x="546.104" y="-325.71" fill="#FFFFFF" stroke="#666666" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" width="28.39" height="44.155"/>
+						<rect x="546.104" y="-325.71" fill="#FFFFFF" stroke="#666666" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" width="28.393" height="44.155"/>
 				</g>
 				<g id="LWPOLYLINE_341_">
 					<path fill="#FFFFFF" stroke="#666666" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
-						M522.589-236.966l7.651,10.269c0.373,0.515,1.099,0.624,1.61,0.244c0.505-0.38,0.61-1.099,0.262-1.607l-6.475-8.906H522.589
+						M522.589-236.966l7.651,10.269c0.373,0.515,1.099,0.624,1.607,0.244c0.508-0.38,0.61-1.099,0.265-1.607l-6.478-8.906H522.589
 						L522.589-236.966z"/>
 				</g>
 				<g id="LWPOLYLINE_342_">
 					<path fill="#FFFFFF" stroke="#666666" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
-						M544.755-236.966l6.229,10.188c0.321,0.542,1.044,0.712,1.58,0.387c0.543-0.333,0.719-1.038,0.394-1.581l-5.338-8.994H544.755
+						M544.755-236.966l6.229,10.188c0.318,0.542,1.044,0.712,1.58,0.387c0.543-0.333,0.719-1.038,0.394-1.581l-5.338-8.994H544.755
 						L544.755-236.966z"/>
 				</g>
 				<g id="LWPOLYLINE_343_">
 					<path fill="#FFFFFF" stroke="#666666" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
-						M550.289-236.966l5.874,10.161c0.313,0.556,1.031,0.746,1.573,0.42c0.557-0.312,0.736-1.011,0.428-1.56l-5.066-9.021H550.289
+						M550.289-236.966l5.874,10.161c0.313,0.556,1.031,0.746,1.573,0.42c0.557-0.313,0.733-1.011,0.428-1.56l-5.066-9.021H550.289
 						L550.289-236.966z"/>
 				</g>
 				<g id="LWPOLYLINE_344_">
 					<path fill="#FFFFFF" stroke="#666666" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
-						M572.428-236.966l4.49,10.052c0.258,0.583,0.938,0.848,1.52,0.583c0.584-0.244,0.845-0.929,0.601-1.506l-4.354-10.133v1.004
+						M572.428-236.966l4.49,10.052c0.258,0.583,0.938,0.848,1.52,0.583c0.584-0.244,0.848-0.929,0.604-1.506l-4.354-10.133v1.004
 						H572.428L572.428-236.966z"/>
 				</g>
 				<g id="LWPOLYLINE_345_">
 					<path fill="#FFFFFF" stroke="#666666" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
-						M574.68-265.318l2.211,5.982c0.222,0.583,0.886,0.895,1.479,0.678c0.597-0.217,0.895-0.882,0.685-1.472l-4.389-12.284
+						M574.68-265.318l2.211,5.982c0.225,0.583,0.889,0.895,1.479,0.678c0.597-0.217,0.895-0.882,0.685-1.472l-4.389-12.284
 						L574.68-265.318L574.68-265.318z"/>
 				</g>
 				<g id="LWPOLYLINE_346_">
 					<path fill="#FFFFFF" stroke="#666666" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
-						M574.68-273.661l2.198,6.207c0.217,0.604,0.882,0.929,1.479,0.712c0.597-0.21,0.904-0.868,0.705-1.465l-4.375-12.819
+						M574.68-273.661l2.198,6.207c0.217,0.604,0.882,0.929,1.479,0.712c0.597-0.21,0.901-0.868,0.705-1.465l-4.375-12.819
 						L574.68-273.661L574.68-273.661z"/>
 				</g>
 				<g id="LWPOLYLINE_347_">
@@ -1401,7 +1401,7 @@
 				</g>
 				<g id="LWPOLYLINE_348_">
 					<path fill="#FFFFFF" stroke="#666666" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
-						M719.367-315.476l-4.396,14.956c-0.184,0.61,0.18,1.261,0.779,1.438c0.617,0.177,1.255-0.163,1.445-0.773l2.17-7.176
+						M719.367-315.476l-4.396,14.956c-0.184,0.61,0.183,1.261,0.779,1.438c0.617,0.177,1.255-0.163,1.445-0.773l2.17-7.176
 						L719.367-315.476L719.367-315.476L719.367-315.476z"/>
 				</g>
 				<g id="LWPOLYLINE_349_">
@@ -1416,7 +1416,7 @@
 				</g>
 				<g id="LWPOLYLINE_351_">
 					<path fill="#FFFFFF" stroke="#666666" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
-						M719.367-237.97l-4.341,10.126c-0.269,0.59,0.014,1.269,0.597,1.526c0.584,0.244,1.262-0.021,1.513-0.604l4.483-10.052h-2.245
+						M719.367-237.97l-4.341,10.126c-0.271,0.59,0.014,1.269,0.597,1.526c0.584,0.244,1.262-0.021,1.513-0.604l4.483-10.052h-2.245
 						L719.367-237.97L719.367-237.97z"/>
 				</g>
 				<g id="LWPOLYLINE_352_">
@@ -1721,17 +1721,17 @@
 				</g>
 				<g id="LWPOLYLINE_246_">
 					<path fill="#FFFFFF" stroke="#666666" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
-						M804.3,79.472l-9.407-8.933c-0.469-0.441-1.19-0.414-1.635,0.041c-0.435,0.461-0.421,1.188,0.027,1.635L804.3,82.883V79.472
+						M804.3,79.472l-9.407-8.933c-0.469-0.441-1.188-0.414-1.635,0.041c-0.435,0.461-0.421,1.188,0.027,1.635L804.3,82.883V79.472
 						L804.3,79.472L804.3,79.472z"/>
 				</g>
 				<g id="LWPOLYLINE_247_">
 					<path fill="#FFFFFF" stroke="#666666" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
-						M804.3,45.029l-9.528-6.946c-0.517-0.379-1.232-0.257-1.605,0.258c-0.365,0.509-0.271,1.221,0.245,1.601l10.896,8.166
+						M804.3,45.029l-9.528-6.946c-0.517-0.379-1.229-0.257-1.604,0.258c-0.365,0.509-0.271,1.221,0.245,1.601l10.896,8.166
 						L804.3,45.029L804.3,45.029z"/>
 				</g>
 				<g id="LWPOLYLINE_248_">
 					<path fill="#FFFFFF" stroke="#666666" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
-						M804.3,36.415l-9.55-6.443c-0.543-0.359-1.255-0.217-1.614,0.312c-0.355,0.529-0.218,1.234,0.298,1.601l10.866,7.529V36.415
+						M804.3,36.415l-9.55-6.443c-0.543-0.359-1.255-0.217-1.614,0.312c-0.354,0.529-0.218,1.234,0.298,1.601l10.866,7.529V36.415
 						L804.3,36.415z"/>
 				</g>
 				<g id="LWPOLYLINE_249_">
@@ -1750,7 +1750,7 @@
 				</g>
 				<g id="LWPOLYLINE_252_">
 					<path fill="#FFFFFF" stroke="#666666" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
-						M849.194,0.209l-7.915-2.733c-0.602-0.21-1.266,0.102-1.467,0.705c-0.202,0.604,0.105,1.255,0.696,1.472l1.556,0.542
+						M849.194,0.209l-7.915-2.733c-0.604-0.21-1.269,0.102-1.467,0.705c-0.202,0.604,0.104,1.255,0.693,1.472l1.559,0.542
 						L849.194,0.209L849.194,0.209z"/>
 				</g>
 				<g id="LWPOLYLINE_253_">
@@ -1925,12 +1925,12 @@
 				</g>
 				<g id="LWPOLYLINE_267_">
 					<path fill="#FFFFFF" stroke="#666666" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
-						M547.292-13.939l5.263-2.95c0.561-0.319,1.248-0.115,1.563,0.427c0.325,0.542,0.136,1.262-0.414,1.574l-1.604,0.942
+						M547.292-13.939l5.263-2.95c0.563-0.319,1.248-0.115,1.563,0.427c0.325,0.542,0.136,1.262-0.414,1.574l-1.604,0.942
 						L547.292-13.939L547.292-13.939z"/>
 				</g>
 				<g id="LWPOLYLINE_268_">
 					<path fill="#FFFFFF" stroke="#666666" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
-						M581.415-13.939l3.315-2.821c0.477-0.407,1.188-0.359,1.605,0.108c0.427,0.475,0.386,1.207-0.089,1.628l-1.193,1.085H581.415
+						M581.415-13.939l3.315-2.821c0.477-0.407,1.188-0.359,1.604,0.108c0.427,0.475,0.386,1.207-0.089,1.628l-1.193,1.085H581.415
 						L581.415-13.939z"/>
 				</g>
 				<g id="LWPOLYLINE_269_">
@@ -1940,7 +1940,7 @@
 				</g>
 				<g id="LWPOLYLINE_270_">
 					<path fill="#FFFFFF" stroke="#666666" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
-						M623.867-13.939l0.99-2.387c0.241-0.57,0.889-0.855,1.473-0.638c0.604,0.217,0.915,0.882,0.685,1.485l-0.556,1.533
+						M623.867-13.939l0.99-2.387c0.238-0.57,0.889-0.855,1.473-0.638c0.604,0.217,0.915,0.882,0.685,1.485l-0.556,1.533
 						L623.867-13.939L623.867-13.939z"/>
 				</g>
 				<g id="LWPOLYLINE_504_">
@@ -2114,7 +2114,7 @@
 			</g>
 			<g id="LWPOLYLINE_29_">
 				
-					<rect x="1012.398" y="156.753" fill="none" stroke="#666666" stroke-width="0.75" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" width="117.152" height="12.643"/>
+					<rect x="1012.398" y="156.753" fill="none" stroke="#666666" stroke-width="0.75" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" width="117.149" height="12.643"/>
 			</g>
 			<g id="LWPOLYLINE_37_">
 				
@@ -2212,7 +2212,7 @@
 			<g id="_x3C_Window_Up_Left_x3E_">
 				<path id="_x3C_Background_x3E_" fill="#FFFFFF" d="M633.499-411.443v-4.917H367.741l39.136,48.584h228.345L633.499-411.443z
 					 M627.271-414.123l1.141,19.907H517.577l-7.942-19.907H627.271L627.271-414.123z M380.736-414.123h115.469l8.722,19.907h-108.8
-					L380.736-414.123z M409.292-372.741l-10.385-13.24h113.25l5.644,13.24H409.292z M522.697-372.741l-5.437-13.24h115.251
+					L380.736-414.123z M409.292-372.741l-10.385-13.24h113.25l5.644,13.24H409.292z M522.697-372.741l-5.438-13.24H632.51
 					l0.604,13.24H522.697z"/>
 				<g id="LWPOLYLINE_46_">
 					
@@ -2289,8 +2289,8 @@
 				<path id="_x3C_Background_x3E__1_" fill="#FFFFFF" d="M660.548-416.361v4.904l-1.716,43.423h354.373l59.28-48.327H660.548
 					L660.548-416.361z M801.729-414.123H922.36l-15.898,19.907H792.789L801.729-414.123z M666.774-414.123h121.478l-8.152,19.907
 					H665.425L666.774-414.123z M660.928-372.741l0.611-13.24h118.777l-5.575,13.24H660.928z M779.672-372.741l5.785-13.24h117.998
-					l-10.73,13.24H779.672z M1011.326-372.741H899.02l11.012-13.24h117.205L1011.326-372.741z M920.602-394.222l16.764-19.9h119.779
-					l-23.689,19.9H920.602z"/>
+					l-10.73,13.24H779.672z M1011.326-372.741H899.02l11.015-13.24h117.205L1011.326-372.741z M920.602-394.222l16.767-19.9h119.776
+					l-23.688,19.9H920.602z"/>
 				<g id="LWPOLYLINE_48_">
 					
 						<polygon fill="none" stroke="#666666" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
@@ -2401,74 +2401,79 @@
 </g>
 <g id="TerMITes-Sensors">
 	<g id="sensor-humidity" display="none">
+		
+			<image display="inline" overflow="visible" enable-background="new    " width="121" height="150" id="hum1-icon" xlink:href="../img/Sensors/humidity-2-inv.png"  transform="matrix(1 0 0 1 824.5508 -298.353)">
+		</image>
+		
+			<text id="hum1-value" transform="matrix(1 0 0 1 847.2773 -191.4761)" display="inline" fill="none" stroke="#FFFFFF" stroke-miterlimit="10" font-family="'AmaticSC-Regular'" font-size="36">100%</text>
 	</g>
 	<g id="sensor-co2" display="none">
 		
-			<image display="inline" overflow="visible" enable-background="new    " width="103" height="150" id="co21-icon" xlink:href="../img/Sensors/co2-black.png"  transform="matrix(1 0 0 1 627.4297 -180.1387)">
+			<image display="inline" overflow="visible" enable-background="new    " width="103" height="150" id="co21-icon" xlink:href="../img/Sensors/co2-black.png"  transform="matrix(1 0 0 1 892.2227 -388.2651)">
 		</image>
 		
-			<text id="co21-value" transform="matrix(1 0 0 1 672.5166 -105.1387)" display="inline" fill="none" stroke="#FFFFFF" stroke-miterlimit="10" font-family="'AmaticSC-Regular'" font-size="36">2.6</text>
+			<text id="co21-value_1_" transform="matrix(1 0 0 1 937.3096 -313.2651)" display="inline" fill="none" stroke="#FFFFFF" stroke-miterlimit="10" font-family="'AmaticSC-Regular'" font-size="36">2.6</text>
 	</g>
 	<g id="sensor-temperature" display="none">
 		<g id="temp-andorra-light4" display="inline">
 			<g id="temp4-blackrect">
-				<rect x="854.017" y="0.718" width="95.106" height="63.404"/>
+				<rect x="854.748" y="1.85" width="95.104" height="63.404"/>
 			</g>
 			<g id="temp4-icon">
 				
-					<image overflow="visible" enable-background="new    " width="73" height="151" xlink:href="../img/Sensors/temperature-inv.png"  transform="matrix(0.2983 0 0 0.2983 859.9268 8.4072)">
+					<image overflow="visible" enable-background="new    " width="73" height="151" xlink:href="../img/Sensors/temperature-inv.png"  transform="matrix(0.2983 0 0 0.2983 860.6572 9.5386)">
 				</image>
 			</g>
 			
-				<text id="temp4-value" transform="matrix(1 0 0 1 889.6992 36.9805)" fill="none" stroke="#FFFFFF" stroke-miterlimit="10" font-family="'AmaticSC-Regular'" font-size="24.027">-00.0°C</text>
+				<text id="temp4-value" transform="matrix(1 0 0 1 890.4297 38.1128)" fill="none" stroke="#FFFFFF" stroke-miterlimit="10" font-family="'AmaticSC-Regular'" font-size="24.027">-00.0°C</text>
 		</g>
 		<g id="temp-andorra-light3" display="inline">
 			<g id="temp3-blackrect">
-				<rect x="370.712" y="51.188" width="95.106" height="63.404"/>
+				<rect x="371.442" y="52.32" width="95.105" height="63.404"/>
 			</g>
 			<g id="temp3-icon">
 				
-					<image overflow="visible" enable-background="new    " width="73" height="151" xlink:href="../img/Sensors/temperature-inv.png"  transform="matrix(0.2983 0 0 0.2983 376.623 58.8779)">
+					<image overflow="visible" enable-background="new    " width="73" height="151" xlink:href="../img/Sensors/temperature-inv.png"  transform="matrix(0.2983 0 0 0.2983 377.3535 60.0093)">
 				</image>
 			</g>
 			
-				<text id="temp3-value" transform="matrix(1 0 0 1 406.3906 87.4492)" fill="none" stroke="#FFFFFF" stroke-miterlimit="10" font-family="'AmaticSC-Regular'" font-size="24.027">-00.0°C</text>
+				<text id="temp3-value" transform="matrix(1 0 0 1 407.1211 88.5815)" fill="none" stroke="#FFFFFF" stroke-miterlimit="10" font-family="'AmaticSC-Regular'" font-size="24.027">-00.0°C</text>
 		</g>
 		<g id="temp-andorra-light2" display="inline">
 			<g id="temp2-blackrect">
-				<rect x="615.376" y="-99.068" width="95.106" height="63.404"/>
+				<rect x="616.106" y="-97.936" width="95.105" height="63.404"/>
 			</g>
 			<g id="temp2-icon">
 				
-					<image overflow="visible" enable-background="new    " width="73" height="151" xlink:href="../img/Sensors/temperature-inv.png"  transform="matrix(0.2983 0 0 0.2983 621.2861 -91.3721)">
+					<image overflow="visible" enable-background="new    " width="73" height="151" xlink:href="../img/Sensors/temperature-inv.png"  transform="matrix(0.2983 0 0 0.2983 622.0166 -90.2407)">
 				</image>
 			</g>
 			
-				<text id="temp2-value" transform="matrix(1 0 0 1 651.0586 -62.8008)" fill="none" stroke="#FFFFFF" stroke-miterlimit="10" font-family="'AmaticSC-Regular'" font-size="24.027">-00.0°C</text>
+				<text id="temp2-value" transform="matrix(1 0 0 1 651.7891 -61.6685)" fill="none" stroke="#FFFFFF" stroke-miterlimit="10" font-family="'AmaticSC-Regular'" font-size="24.027">-00.0°C</text>
 		</g>
 		<g id="temp-andorra-light5" display="inline">
 			<g id="temp5-blackrect">
-				<rect x="341.886" y="-304.332" width="95.106" height="63.404"/>
+				<rect x="342.616" y="-303.2" width="95.105" height="63.404"/>
 			</g>
 			<g id="temp5-icon">
 				
-					<image overflow="visible" enable-background="new    " width="73" height="151" xlink:href="../img/Sensors/temperature-inv.png"  transform="matrix(0.2983 0 0 0.2983 347.7969 -296.6416)">
+					<image overflow="visible" enable-background="new    " width="73" height="151" xlink:href="../img/Sensors/temperature-inv.png"  transform="matrix(0.2983 0 0 0.2983 348.5273 -295.5103)">
 				</image>
 			</g>
 			
-				<text id="temp5-value" transform="matrix(1 0 0 1 377.5703 -268.0703)" fill="none" stroke="#FFFFFF" stroke-miterlimit="10" font-family="'AmaticSC-Regular'" font-size="24.027">-00.0°C</text>
+				<text id="temp5-value" transform="matrix(1 0 0 1 378.3008 -266.938)" fill="none" stroke="#FFFFFF" stroke-miterlimit="10" font-family="'AmaticSC-Regular'" font-size="24.027">-00.0°C</text>
 		</g>
 		<g id="temp-andorra-light6" display="inline">
 			<g id="temp6-blackrect">
-				<rect x="855.61" y="-304.576" width="95.104" height="63.404"/>
+				<rect x="856.341" y="-303.444" width="95.104" height="63.404"/>
 			</g>
 			<g id="temp6-icon">
 				
-					<image overflow="visible" enable-background="new    " width="73" height="151" xlink:href="../img/Sensors/temperature-inv.png"  transform="matrix(0.2983 0 0 0.2983 861.5215 -296.8867)">
+					<image overflow="visible" enable-background="new    " width="73" height="151" xlink:href="../img/Sensors/temperature-inv.png"  transform="matrix(0.2983 0 0 0.2983 862.252 -295.7554)">
 				</image>
 			</g>
 			
-				<text id="temp6-value" transform="matrix(1 0 0 1 891.293 -268.3125)" fill="none" stroke="#FFFFFF" stroke-miterlimit="10" font-family="'AmaticSC-Regular'" font-size="24.027">-00.0°C</text>
+				<text id="temp6-value" transform="matrix(1 0 0 1 892.0234 -267.1802)" fill="none" stroke="#FFFFFF" stroke-miterlimit="10" font-family="'AmaticSC-Regular'" font-size="24.027">-00.0°C</text>
 		</g>
 	</g>
 	<g id="sensor-curtains" display="none">
@@ -2476,52 +2481,52 @@
 	<g id="sensor-light" display="none">
 		<g id="light-andorra-light4" display="inline">
 			<g id="light4-blackrect">
-				<rect x="854.43" y="0.718" width="95.105" height="63.404"/>
+				<rect x="855.16" y="1.85" width="95.104" height="63.404"/>
 			</g>
 			
-				<text id="light4-value" transform="matrix(1 0 0 1 906.6172 38.9814)" fill="none" stroke="#FFFFFF" stroke-miterlimit="10" font-family="'AmaticSC-Regular'" font-size="26">1250</text>
+				<text id="light4-value" transform="matrix(1 0 0 1 907.3477 40.1138)" fill="none" stroke="#FFFFFF" stroke-miterlimit="10" font-family="'AmaticSC-Regular'" font-size="26">1250</text>
 			
-				<image overflow="visible" enable-background="new    " width="97" height="150" id="light4-icon" xlink:href="../img/Sensors/light-inv.png"  transform="matrix(0.3864 0 0 0.3864 858.5029 1.3906)">
+				<image overflow="visible" enable-background="new    " width="97" height="150" id="light4-icon" xlink:href="../img/Sensors/light-inv.png"  transform="matrix(0.3864 0 0 0.3864 859.2334 2.5229)">
 			</image>
 		</g>
 		<g id="light-andorra-light3" display="inline">
 			<g id="light3-blackrect">
-				<rect x="370.712" y="51.181" width="95.105" height="63.404"/>
+				<rect x="371.442" y="52.313" width="95.104" height="63.404"/>
 			</g>
 			
-				<text id="light3-value" transform="matrix(1 0 0 1 422.8999 89.4443)" fill="none" stroke="#FFFFFF" stroke-miterlimit="10" font-family="'AmaticSC-Regular'" font-size="26">1250</text>
+				<text id="light3-value" transform="matrix(1 0 0 1 423.6299 90.5767)" fill="none" stroke="#FFFFFF" stroke-miterlimit="10" font-family="'AmaticSC-Regular'" font-size="26">1250</text>
 			
-				<image overflow="visible" enable-background="new    " width="97" height="150" id="light3-icon" xlink:href="../img/Sensors/light-inv.png"  transform="matrix(0.3864 0 0 0.3864 374.7852 51.8535)">
+				<image overflow="visible" enable-background="new    " width="97" height="150" id="light3-icon" xlink:href="../img/Sensors/light-inv.png"  transform="matrix(0.3864 0 0 0.3864 375.5156 52.9858)">
 			</image>
 		</g>
 		<g id="light-andorra-light2" display="inline">
 			<g id="light2-blackrect">
-				<rect x="615.377" y="-99.068" width="95.105" height="63.404"/>
+				<rect x="616.107" y="-97.936" width="95.104" height="63.404"/>
 			</g>
 			
-				<text id="light2-value" transform="matrix(1 0 0 1 667.5645 -60.8047)" fill="none" stroke="#FFFFFF" stroke-miterlimit="10" font-family="'AmaticSC-Regular'" font-size="26">1250</text>
+				<text id="light2-value" transform="matrix(1 0 0 1 668.2949 -59.6724)" fill="none" stroke="#FFFFFF" stroke-miterlimit="10" font-family="'AmaticSC-Regular'" font-size="26">1250</text>
 			
-				<image overflow="visible" enable-background="new    " width="97" height="150" id="light2-icon" xlink:href="../img/Sensors/light-inv.png"  transform="matrix(0.3864 0 0 0.3864 619.4492 -98.3955)">
+				<image overflow="visible" enable-background="new    " width="97" height="150" id="light2-icon" xlink:href="../img/Sensors/light-inv.png"  transform="matrix(0.3864 0 0 0.3864 620.1797 -97.2632)">
 			</image>
 		</g>
 		<g id="light-andorra-light5" display="inline">
 			<g id="light5-blackrect">
-				<rect x="341.886" y="-304.155" width="95.105" height="63.404"/>
+				<rect x="342.616" y="-303.023" width="95.104" height="63.404"/>
 			</g>
 			
-				<text id="light5-value" transform="matrix(1 0 0 1 394.0737 -265.8916)" fill="none" stroke="#FFFFFF" stroke-miterlimit="10" font-family="'AmaticSC-Regular'" font-size="26">1250</text>
+				<text id="light5-value" transform="matrix(1 0 0 1 394.8037 -264.7593)" fill="none" stroke="#FFFFFF" stroke-miterlimit="10" font-family="'AmaticSC-Regular'" font-size="26">1250</text>
 			
-				<image overflow="visible" enable-background="new    " width="97" height="150" id="light5-icon" xlink:href="../img/Sensors/light-inv.png"  transform="matrix(0.3864 0 0 0.3864 345.959 -303.4824)">
+				<image overflow="visible" enable-background="new    " width="97" height="150" id="light5-icon" xlink:href="../img/Sensors/light-inv.png"  transform="matrix(0.3864 0 0 0.3864 346.6895 -302.3501)">
 			</image>
 		</g>
 		<g id="light-andorra-light6" display="inline">
 			<g id="light6-blackrect">
-				<rect x="855.61" y="-303.992" width="95.104" height="63.404"/>
+				<rect x="856.341" y="-302.86" width="95.104" height="63.404"/>
 			</g>
 			
-				<text id="light6-value" transform="matrix(1 0 0 1 907.7979 -265.7285)" fill="none" stroke="#FFFFFF" stroke-miterlimit="10" font-family="'AmaticSC-Regular'" font-size="26">1250</text>
+				<text id="light6-value" transform="matrix(1 0 0 1 908.5283 -264.5962)" fill="none" stroke="#FFFFFF" stroke-miterlimit="10" font-family="'AmaticSC-Regular'" font-size="26">1250</text>
 			
-				<image overflow="visible" enable-background="new    " width="97" height="150" id="light6-icon" xlink:href="../img/Sensors/light-inv.png"  transform="matrix(0.3864 0 0 0.3864 859.6826 -303.3193)">
+				<image overflow="visible" enable-background="new    " width="97" height="150" id="light6-icon" xlink:href="../img/Sensors/light-inv.png"  transform="matrix(0.3864 0 0 0.3864 860.4131 -302.187)">
 			</image>
 		</g>
 	</g>
@@ -2534,13 +2539,13 @@
 	<g id="sensor-presence" display="none">
 		<g id="pres-Pir1" display="inline">
 			
-				<image overflow="visible" enable-background="new    " width="131" height="150" id="pres1-value-icon-1" xlink:href="../img/Sensors/Presence-inv.png"  transform="matrix(0.6667 0 0 0.6667 868.917 196.7056)">
+				<image overflow="visible" enable-background="new    " width="131" height="150" id="pres1-value-icon-1" xlink:href="../img/Sensors/Presence-inv.png"  transform="matrix(0.6667 0 0 0.6667 857.5586 201.0122)">
 			</image>
 			
-				<image overflow="visible" enable-background="new    " width="131" height="150" id="pres1-value-icon-0" xlink:href="../img/Sensors/Presence.png"  transform="matrix(0.5 0 0 0.5 886.749 221.7031)">
+				<image overflow="visible" enable-background="new    " width="131" height="150" id="pres1-value-icon-0" xlink:href="../img/Sensors/Presence.png"  transform="matrix(0.5 0 0 0.5 875.3906 226.0098)">
 			</image>
-			<rect x="947.023" y="256.498" fill="none" width="25" height="28"/>
-			<text id="pres1-value" transform="matrix(1 0 0 1 947.0234 280.2803)" font-family="'AmaticSC-Regular'" font-size="36">1</text>
+			<rect x="935.665" y="260.805" fill="none" width="25" height="28"/>
+			<text id="pres1-value" transform="matrix(1 0 0 1 935.665 284.5874)" font-family="'AmaticSC-Regular'" font-size="36">1</text>
 		</g>
 	</g>
 </g>

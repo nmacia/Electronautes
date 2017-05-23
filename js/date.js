@@ -329,13 +329,18 @@ function showSensorValue ( typeOfSensor ) {
           case 'sensor-curtains':
                 break;
           case 'sensor-co2':
-                // Change value for each sensor.
+                // Change value for each sensor. ***This value needs to be inverted volt sign
                 var numberOfSensors = sensorIDs[0].id.length;
                 for (var i = 0; i < numberOfSensors; i++) {
                   $(svgDoc.getElementById(sensorIDs[0].id[i])).text("2.4");
                 }
                 break;
           case 'sensor-humidity':
+                // Change value for each sensor. ***This value needs to be inverted volt sign
+                var numberOfSensors = sensorIDs[0].id.length;
+                for (var i = 0; i < numberOfSensors; i++) {
+                  $(svgDoc.getElementById(sensorIDs[0].id[i])).text("60%");
+                }
                 break;       
         }
         
