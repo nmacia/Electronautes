@@ -295,14 +295,14 @@ function showSensorValue ( typeOfSensor ) {
                     svgDoc.getElementById(sensorIDs[0].id[i]+'-icon-0').setAttribute("display","none");
                     svgDoc.getElementById(sensorIDs[0].id[i]+'-icon-1').setAttribute("display","block");
                     phantom = false;
+                    $(svgDoc.getElementById(sensorIDs[0].id[i])).text("1");
                   }
                   else {
                     svgDoc.getElementById(sensorIDs[0].id[i]+'-icon-0').setAttribute("display","block");
                     svgDoc.getElementById(sensorIDs[0].id[i]+'-icon-1').setAttribute("display","none");
                     phantom = true;
+                    $(svgDoc.getElementById(sensorIDs[0].id[i])).text("0");
                   }
-                  $(svgDoc.getElementById(sensorIDs[0].id[i])).text("1");
-
                 }
                 break;
           
