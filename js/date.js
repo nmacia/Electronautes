@@ -226,7 +226,7 @@ function changeBackground ( color ) {
 var sensorCatalog = [
     /* Presence values: 0 or 1  Sensors: AndorraPIR1 */
     { name: "sensor-presence", id: ["pres1-value"] },
-    /* Motion values: 0.00-0.10 Do we need to scale them? Sensors: AndorraMotion1, AndorraMotion2 */
+    /* Motion values: 0.00-0.10 Do we need to scale them yes, boolean. Sensors: AndorraMotion1, AndorraMotion2 */
     { name: "sensor-motion", id: ["mot1-value","mot2-value"] },
     /* Window values: 0 or 1  Sensors form left to right: AndorraMITes-0769, AndorraMITes-1012,AndorraMITes-0109, AndorraMITes-1001, AndorraMITes-333 */
     { name: "sensor-window", id: ["w0769-value", "w1012-value", "w0109-value", "w1001-value","w333-value"] },
