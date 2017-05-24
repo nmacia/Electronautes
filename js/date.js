@@ -252,6 +252,7 @@ var sensorCatalog = [
 
 var previousQuery = "";
 var phantom = true;
+var motion = true;
 
 
 
@@ -314,6 +315,23 @@ function showSensorValue ( typeOfSensor ) {
                 break;
 
           case 'sensor-motion':
+                var numberOfSensors = sensorIDs[0].id.length;
+                // TODO: change the icon depending on the value of the sensor (0,1) if value=1 display-icon-1 else display-icon-0
+                for (var i = 0; i < numberOfSensors; i++) {
+                  if ( motion ) {
+                    console.log(sensorIDs[0].id[i]+'-icon-0');
+                    svgDoc.getElementById(sensorIDs[0].id[i]+'-icon-0').setAttribute("display","none");
+                    svgDoc.getElementById(sensorIDs[0].id[i]+'-icon-1').setAttribute("display","block");
+                    motion = false;
+                  }
+                  else {
+                    svgDoc.getElementById(sensorIDs[0].id[i]+'-icon-0').setAttribute("display","block");
+                    svgDoc.getElementById(sensorIDs[0].id[i]+'-icon-1').setAttribute("display","none");
+                    motion = true;
+                  }
+                  $(svgDoc.getElementById(sensorIDs[0].id[i])).text("1");
+
+                }
                 break;
           case 'sensor-window':
                 break;
