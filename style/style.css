@@ -38,7 +38,7 @@ body {
 	color: #262626;
 	font-family: "Amatic SC", sans-serif;
 	margin: 0;	
-	overflow-x: hidden; 
+	overflow-x: hidden;
 	padding: 0;
 }
 
@@ -223,6 +223,11 @@ main .container {
 no-padding {
     padding-left: 0;
     padding-right: 0;
+}
+
+#santasensorssvg,
+#svgsanta {
+	width: 100%;
 }
 
 .block.no-margin {
