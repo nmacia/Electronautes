@@ -2535,21 +2535,21 @@
 	<g id="sensor-window" display="none">
 	</g>
 	<g id="sensor-motion" display="none">
-		<g id="mot1-value_1_" display="inline">
+		<g id="motion-mot1" display="inline">
 			
-				<image overflow="visible" enable-background="new    " width="150" height="150" id="mot1-icon-0" xlink:href="../img/Sensors/move3.png"  transform="matrix(0.5236 0 0 0.5236 774.4678 -116.6831)">
+				<image overflow="visible" enable-background="new    " width="150" height="150" id="mot1-value-icon-0" xlink:href="../img/Sensors/move3.png"  transform="matrix(0.5236 0 0 0.5236 774.4678 -116.6831)">
 			</image>
 			
-				<image overflow="visible" enable-background="new    " width="150" height="150" id="mot1-icon-1" xlink:href="../img/Sensors/moveanimation.gif"  transform="matrix(0.5236 0 0 0.5236 774.4678 -116.6831)">
+				<image overflow="visible" enable-background="new    " width="150" height="150" id="mot1-value-icon-1" xlink:href="../img/Sensors/moveanimation.gif"  transform="matrix(0.5236 0 0 0.5236 774.4678 -116.6831)">
 			</image>
 			<text id="mot1-value" transform="matrix(1 0 0 1 842.2783 -43.4121)" font-family="'AmaticSC-Regular'" font-size="36">1</text>
 		</g>
-		<g id="mot2-value_1_" display="inline">
+		<g id="motion-mot2" display="inline">
 			
-				<image overflow="visible" enable-background="new    " width="150" height="150" id="mot2-icon-0" xlink:href="../img/Sensors/move3.png"  transform="matrix(0.5236 0 0 0.5236 526.9043 -338.3135)">
+				<image overflow="visible" enable-background="new    " width="150" height="150" id="mot2-value-icon-0" xlink:href="../img/Sensors/move3.png"  transform="matrix(0.5236 0 0 0.5236 526.9043 -338.3135)">
 			</image>
 			
-				<image overflow="visible" enable-background="new    " width="150" height="150" id="mot2-icon-1" xlink:href="../img/Sensors/moveanimation.gif"  transform="matrix(0.5236 0 0 0.5236 526.9043 -338.3135)">
+				<image overflow="visible" enable-background="new    " width="150" height="150" id="mot2-value-icon-1" xlink:href="../img/Sensors/moveanimation.gif"  transform="matrix(0.5236 0 0 0.5236 526.9043 -338.3135)">
 			</image>
 			<text id="mot2-value" transform="matrix(1 0 0 1 594.7148 -265.0425)" font-family="'AmaticSC-Regular'" font-size="36">1</text>
 		</g>
