@@ -2537,7 +2537,7 @@
 	<g id="sensor-motion" display="none">
 		<g id="motion-mot1" display="inline">
 			
-				<image overflow="visible" enable-background="new    " width="150" height="150" id="mot1-value-icon-0" xlink:href="../img/Sensors/move3.png"  transform="matrix(0.5236 0 0 0.5236 774.4678 -116.6831)">
+				<image overflow="visible" enable-background="new    " width="150" height="150" id="mot1-value-icon-0" xlink:href="../img/Sensors/2move.png"  transform="matrix(0.5236 0 0 0.5236 774.4678 -116.6831)">
 			</image>
 			
 				<image overflow="visible" enable-background="new    " width="150" height="150" id="mot1-value-icon-1" xlink:href="../img/Sensors/moveanimation.gif"  transform="matrix(0.5236 0 0 0.5236 774.4678 -116.6831)">
@@ -2546,7 +2546,7 @@
 		</g>
 		<g id="motion-mot2" display="inline">
 			
-				<image overflow="visible" enable-background="new    " width="150" height="150" id="mot2-value-icon-0" xlink:href="../img/Sensors/move3.png"  transform="matrix(0.5236 0 0 0.5236 526.9043 -338.3135)">
+				<image overflow="visible" enable-background="new    " width="150" height="150" id="mot2-value-icon-0" xlink:href="../img/Sensors/2move.png"  transform="matrix(0.5236 0 0 0.5236 526.9043 -338.3135)">
 			</image>
 			
 				<image overflow="visible" enable-background="new    " width="150" height="150" id="mot2-value-icon-1" xlink:href="../img/Sensors/moveanimation.gif"  transform="matrix(0.5236 0 0 0.5236 526.9043 -338.3135)">
