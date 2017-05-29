@@ -336,6 +336,23 @@ function showSensorValue ( typeOfSensor ) {
           case 'sensor-window':
                 break;
           case 'sensor-door':
+                 var numberOfSensors = sensorIDs[0].id.length;
+                // TODO: change the icon depending on the value of the sensor (0,1) if value=1 display-icon-1 else display-icon-0
+                for (var i = 0; i < numberOfSensors; i++) {
+                  if ( phantom ) {
+                    console.log(sensorIDs[0].id[i]+'-icon-0');
+                    svgDoc.getElementById(sensorIDs[0].id[i]+'-icon-0').setAttribute("display","none");
+                    svgDoc.getElementById(sensorIDs[0].id[i]+'-icon-1').setAttribute("display","block");
+                    phantom = false;
+                    $(svgDoc.getElementById(sensorIDs[0].id[i])).text("1");
+                  }
+                  else {
+                    svgDoc.getElementById(sensorIDs[0].id[i]+'-icon-0').setAttribute("display","block");
+                    svgDoc.getElementById(sensorIDs[0].id[i]+'-icon-1').setAttribute("display","none");
+                    phantom = true;
+                    $(svgDoc.getElementById(sensorIDs[0].id[i])).text("0");
+                  }
+                }
                 break;
           case 'sensor-light':
                 // Change value for each sensor.
