@@ -310,7 +310,7 @@ function showSensorValue ( typeOfSensor ) {
                 // Change value for each sensor.
                 var numberOfSensors = sensorIDs[0].id.length;
                 for (var i = 0; i < numberOfSensors; i++) {
-                  $(svgDoc.getElementById(sensorIDs[0].id[i])).text("-12.4°C");
+                  $(svgDoc.getElementById(sensorIDs[0].id[i])).text("21.5°C");
                 }
                 break;
 
