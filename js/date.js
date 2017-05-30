@@ -334,20 +334,25 @@ function showSensorValue ( typeOfSensor ) {
                 }
                 break;
           case 'sensor-window':
+                
+                /*
+                DOES NOT WORK :(
+                */
+                
                 var numberOfSensors = sensorIDs[0].id.length;
                 // TODO: change the icon depending on the value of the sensor (0,1) if value=1 display-icon-1 else display-icon-0
                 for (var i = 0; i < numberOfSensors; i++) {
-                  if ( motion ) {
+                  if ( phantom ) {
                     console.log(sensorIDs[0].id[i]+'-icon-0');
                     svgDoc.getElementById(sensorIDs[0].id[i]+'-icon-0').setAttribute("display","none");
                     svgDoc.getElementById(sensorIDs[0].id[i]+'-icon-1').setAttribute("display","block");
-                    motion = false;
+                    phantom = false;
                     $(svgDoc.getElementById(sensorIDs[0].id[i])).text("1");
                   }
                   else {
                     svgDoc.getElementById(sensorIDs[0].id[i]+'-icon-0').setAttribute("display","block");
                     svgDoc.getElementById(sensorIDs[0].id[i]+'-icon-1').setAttribute("display","none");
-                    motion = true;
+                    phantom = true;
                     $(svgDoc.getElementById(sensorIDs[0].id[i])).text("0");
                   }
                 }
