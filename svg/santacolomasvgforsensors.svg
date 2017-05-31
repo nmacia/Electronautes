@@ -1179,7 +1179,7 @@
 				</g>
 				<g id="LWPOLYLINE_341_">
 					<path fill="#FFFFFF" stroke="#666666" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
-						M522.589-236.966l7.651,10.269c0.373,0.515,1.099,0.624,1.604,0.244c0.518-0.38,0.61-1.099,0.271-1.607l-6.479-8.906H522.589
+						M522.589-236.966l7.651,10.269c0.373,0.515,1.099,0.624,1.604,0.244c0.52-0.38,0.61-1.099,0.271-1.607l-6.479-8.906H522.589
 						L522.589-236.966z"/>
 				</g>
 				<g id="LWPOLYLINE_342_">
@@ -2477,6 +2477,30 @@
 		</g>
 	</g>
 	<g id="sensor-curtains" display="none">
+		<g id="curtains-right2" display="inline">
+			<text id="cur0325-value" transform="matrix(1 0 0 1 984.1846 -314)" font-family="'AmaticSC-Regular'" font-size="36">1</text>
+			
+				<image overflow="visible" enable-background="new    " width="132" height="73" id="curtain-right2-icon" xlink:href="../img/Sensors/curtain-right2.png"  transform="matrix(1 0 0 1 971.125 -416)">
+			</image>
+		</g>
+		<g id="curtains-right1" display="inline">
+			<text id="cur0066-value" transform="matrix(1 0 0 1 678.0557 -314)" font-family="'AmaticSC-Regular'" font-size="36">1</text>
+			
+				<image overflow="visible" enable-background="new    " width="40" height="69" id="curtain-right1-icon" xlink:href="../img/Sensors/curtain-right1.png"  transform="matrix(1 0 0 1 661.6406 -416)">
+			</image>
+		</g>
+		<g id="curtains-left2" display="inline">
+			<text id="cur0995-value" transform="matrix(1 0 0 1 617.3564 -314)" font-family="'AmaticSC-Regular'" font-size="36">1</text>
+			
+				<image overflow="visible" enable-background="new    " width="38" height="70" id="curtain-left2-icon" xlink:href="../img/Sensors/curtain-left2.png"  transform="matrix(1 0 0 1 596.2344 -416)">
+			</image>
+		</g>
+		<g id="curtains-left1" display="inline">
+			<text id="cur0210-value" transform="matrix(1 0 0 1 425.7432 -314)" font-family="'AmaticSC-Regular'" font-size="36">1</text>
+			
+				<image overflow="visible" enable-background="new    " width="93" height="69" id="curtain-left1-icon" xlink:href="../img/Sensors/curtain-left1.png"  transform="matrix(1 0 0 1 347.2158 -416)">
+			</image>
+		</g>
 	</g>
 	<g id="sensor-light" display="none">
 		<g id="light-andorra-light4" display="inline">
@@ -2545,7 +2569,7 @@
 	<g id="sensor-window" display="none">
 		<g id="window-left1" display="inline">
 			<text id="w0769-value" transform="matrix(1 0 0 1 443.1846 -396.0684)" font-family="'AmaticSC-Regular'" font-size="18">1</text>
-			<g id="w-left1-value-icon-0">
+			<g id="w0769-value-icon-0">
 				<path fill="none" stroke="#000000" stroke-miterlimit="10" d="M499.203-416.361H371.96l22.41,28.243h116.878L499.203-416.361z
 					 M377.691-414.123h118.514l10.322,23.577H396.12L377.691-414.123z"/>
 				<polygon fill="none" stroke="#000000" stroke-miterlimit="10" points="396.12,-390.546 396.127,-394.216 380.736,-414.123 
@@ -2553,7 +2577,7 @@
 				<polygon fill="none" stroke="#000000" stroke-miterlimit="10" points="506.527,-390.546 504.791,-394.512 396.127,-394.216 
 					396.12,-390.546 				"/>
 			</g>
-			<g id="w-left1-value-icon-1">
+			<g id="w0769-value-icon-1">
 				<path d="M499.203-416.361H371.96l22.41,28.243h116.878L499.203-416.361z M377.691-414.123h118.514l10.322,23.577H396.12
 					L377.691-414.123z"/>
 				<polygon stroke="#FFFFFF" stroke-miterlimit="10" points="396.12,-390.546 396.127,-394.216 380.736,-414.123 377.691,-414.123 
@@ -2564,15 +2588,15 @@
 		</g>
 		<g id="window-left2" display="inline">
 			<text id="w1012-value" transform="matrix(1 0 0 1 564.3291 -396.0684)" font-family="'AmaticSC-Regular'" font-size="18">1</text>
-			<g id="w-left2-value-icon-0">
+			<g id="w1012-value-icon-0">
 				<path fill="none" stroke="#000000" stroke-miterlimit="10" d="M631.118-416.361H503.19l11.706,28.243h117.518L631.118-416.361z
-					 M517.577-390.546l-9.519-23.577h119.213l1.355,23.577H517.577z"/>
+					 M517.577-390.546l-9.521-23.577h119.215l1.354,23.577H517.577z"/>
 				<polygon fill="none" stroke="#000000" stroke-miterlimit="10" points="517.577,-394.222 509.764,-413.8 508.061,-414.123 
 					517.577,-390.546 				"/>
 				<rect x="517.577" y="-394.222" fill="none" stroke="#000000" stroke-miterlimit="10" width="111.052" height="3.676"/>
 			</g>
-			<g id="w-left2-value-icon-1">
-				<path d="M631.118-416.361H503.19l11.706,28.243h117.518L631.118-416.361z M517.577-390.546l-9.519-23.577h119.213l1.355,23.577
+			<g id="w1012-value-icon-1">
+				<path d="M631.118-416.361H503.19l11.706,28.243h117.518L631.118-416.361z M517.577-390.546l-9.521-23.577h119.215l1.354,23.577
 					H517.577z"/>
 				<polygon stroke="#FFFFFF" stroke-miterlimit="10" points="517.577,-394.222 509.764,-413.8 508.061,-414.123 517.577,-390.546 
 									"/>
@@ -2581,16 +2605,16 @@
 		</g>
 		<g id="window-right1" display="inline">
 			<text id="w0109-value" transform="matrix(1 0 0 1 719.3672 -396.0684)" font-family="'AmaticSC-Regular'" font-size="18">1</text>
-			<g id="w-right1-value-icon-0">
+			<g id="w0109-value-icon-0">
 				<path fill="none" stroke="#000000" stroke-miterlimit="10" d="M662.929-416.361l-1.288,28.243h121.104l12.033-28.243H662.929z
-					 M780.1-390.546H665.425l1.352-23.577H789.88L780.1-390.546z"/>
+					 M780.1-390.546H665.425l1.354-23.577H789.88L780.1-390.546z"/>
 				<polygon fill="none" stroke="#000000" stroke-miterlimit="10" points="780.1,-394.216 665.635,-394.222 665.425,-390.546 
 					780.1,-390.546 				"/>
 				<polygon fill="none" stroke="#000000" stroke-miterlimit="10" points="789.88,-414.123 788.252,-414.123 780.1,-394.216 
 					780.1,-390.546 				"/>
 			</g>
-			<g id="w-right1-value-icon-1">
-				<path d="M662.929-416.361l-1.288,28.243h121.104l12.033-28.243H662.929z M780.1-390.546H665.425l1.352-23.577H789.88
+			<g id="w0109-value-icon-1">
+				<path d="M662.929-416.361l-1.288,28.243h121.104l12.033-28.243H662.929z M780.1-390.546H665.425l1.354-23.577H789.88
 					L780.1-390.546z"/>
 				<polygon stroke="#FFFFFF" stroke-miterlimit="10" points="780.1,-394.216 665.635,-394.222 665.425,-390.546 780.1,-390.546 
 									"/>
@@ -2600,7 +2624,7 @@
 		</g>
 		<g id="window-right2" display="inline">
 			<text id="w1001-value" transform="matrix(1 0 0 1 847.2969 -396.0684)" font-family="'Amatic-Bold'" font-size="18">0</text>
-			<g id="w-right2-value-icon-0">
+			<g id="w1001-value-icon-0">
 				<path fill="none" stroke="#000000" stroke-miterlimit="10" d="M798.752-416.361l-12.357,28.243h121.748l23.155-28.243H798.752z
 					 M906.453-390.546H791.142l10.587-23.577h123.784L906.453-390.546z"/>
 				<polygon fill="none" stroke="#000000" stroke-miterlimit="10" points="925.513,-414.123 921.748,-414.123 906.453,-394.222 
@@ -2608,7 +2632,7 @@
 				<polygon fill="none" stroke="#000000" stroke-miterlimit="10" points="792.905,-394.5 791.142,-390.546 906.453,-390.546 
 					906.453,-394.222 				"/>
 			</g>
-			<g id="w-right2-value-icon-1">
+			<g id="w1001-value-icon-1">
 				<path d="M798.752-416.361l-12.357,28.243h121.748l23.155-28.243H798.752z M906.453-390.546H791.142l10.587-23.577h123.784
 					L906.453-390.546z"/>
 				<polygon stroke="#FFFFFF" stroke-miterlimit="10" points="925.513,-414.123 921.748,-414.123 906.453,-394.222 
@@ -2619,16 +2643,16 @@
 		</g>
 		<g id="window-right3" display="inline">
 			<text id="w333-value" transform="matrix(1 0 0 1 984.4746 -396.0684)" font-family="'AmaticSC-Regular'" font-size="18">1</text>
-			<g id="w-right3-value-icon-0">
-				<path fill="none" stroke="#000000" stroke-miterlimit="10" d="M935.279-416.361L911.8-388.118h122.392l34.314-28.243H935.279z
+			<g id="w333-value-icon-0">
+				<path fill="none" stroke="#000000" stroke-miterlimit="10" d="M935.279-416.361L911.8-388.118h122.394l34.313-28.243H935.279z
 					 M1033.458-390.546H917.495l19.878-23.576l124.478-0.001L1033.458-390.546z"/>
 				<polygon fill="none" stroke="#000000" stroke-miterlimit="10" points="1061.851,-414.123 1056.405,-414 1033.458,-394.222 
 					1033.458,-390.546 				"/>
 				<polygon fill="none" stroke="#000000" stroke-miterlimit="10" points="921.369,-394.222 917.495,-390.546 1033.458,-390.546 
 					1033.458,-394.222 				"/>
 			</g>
-			<g id="w-right3-value-icon-1">
-				<path d="M935.279-416.361L911.8-388.118h122.392l34.314-28.243H935.279z M1033.458-390.546H917.495l19.878-23.576l124.478-0.001
+			<g id="w333-value-icon-1">
+				<path d="M935.279-416.361L911.8-388.118h122.394l34.313-28.243H935.279z M1033.458-390.546H917.495l19.878-23.576l124.478-0.001
 					L1033.458-390.546z"/>
 				<polygon stroke="#FFFFFF" stroke-miterlimit="10" points="1061.851,-414.123 1056.405,-414 1033.458,-394.222 
 					1033.458,-390.546 				"/>

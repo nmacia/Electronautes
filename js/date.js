@@ -384,6 +384,11 @@ function showSensorValue ( typeOfSensor ) {
                 }
                 break;
           case 'sensor-curtains':
+                // Change value for each sensor.
+                var numberOfSensors = sensorIDs[0].id.length;
+                for (var i = 0; i < numberOfSensors; i++) {
+                  $(svgDoc.getElementById(sensorIDs[0].id[i])).text("2");
+                }
                 break;
           case 'sensor-co2':
                 // Change value for each sensor. ***This value needs to be inverted volt sign
@@ -486,6 +491,10 @@ function formatSVG(svgObjectId) {
             for (var i = 0; i <textElements.length; i++) {
                 var textElement = textElements[i];
                 textElement.setAttribute('font-family', 'Amatic SC');
+                
+                if (!hasBlackBackground(textElement)){
+                    textElement.setAttribute('font-weight', '700'); //make text bold
+                }
             }
            
 
@@ -493,6 +502,13 @@ function formatSVG(svgObjectId) {
     }
 }
 
+function hasBlackBackground(element) {
+    var id = element.id;
+    return  id.startsWith('hum')    ||
+            id.startsWith('temp')   ||
+            id.startsWith('co2')    ||
+            id.startsWith('light');
+}
 
 
 
