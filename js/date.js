@@ -242,7 +242,6 @@ var sensorCatalog = [
      /* Curtains values: 0 or 1 move  Sensors form left to right: AndorraMITes-0210, AndorraMITes-0995, AndorraMITes-0066,AndorraMITes-0325*/
     { name: "sensor-curtains", id: ["cur0210-value","cur0995-value","cur0066-value","cur0325-value"] },
     /* Temperature values: 0-30  Sensors: AndorraLight2, AndorraLight3, AndorraLight4,AndorraLight5, AndorraLight6 */
-//     { name: "sensor-temperature", id: ["temp2-value","temp3-value","temp4-value","temp4-value","temp5-value","temp6-value"] },
     { name: "sensor-temperature", id: ["AndorraLight2","AndorraLight3","AndorraLight4","AndorraLight5","AndorraLight6"] },
     /* CO2 values:  2.6-1 Inverted, volt sign Sensor: AndorraBob1 */
     { name: "sensor-co2", id: ["AndorraBob1"] },
@@ -456,9 +455,7 @@ function showSensorValue ( typeOfSensor ) {
         sensor.setAttribute("display","block");
         previousQuery = typeOfSensor;
       } 
-    
     }
-
 }
 
 $(document).ready(function() {
@@ -542,8 +539,6 @@ function formatSVG(svgObjectId) {
                     textElement.setAttribute('font-weight', '700'); //make text bold
                 }
             }
-           
-
         }, false);
     }
 }
