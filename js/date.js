@@ -11,7 +11,7 @@
 
 /*
 	Added Standard calls for TerMITes API Database access
-	Server root: /replace.media.mit.edu:8080/
+	Server root: /replace.media.mit.edu/
 */
 
 var tday = ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
@@ -296,7 +296,7 @@ function showSensorValue ( typeOfSensor ) {
                 for (var i = 0; i < numberOfSensors; i++) {
 	                var sensorId = sensorIDs[0].id[i];   
 	                $.ajax({
-				        url: 'http://replace.media.mit.edu:8080/electronautes/php/getActivationCountTodayByName.php?name=' + sensorId,
+				        url: 'http://replace.media.mit.edu/electronautes/php/getActivationCountTodayByName.php?name=' + sensorId,
 				        async: false,
 				        dataType: 'json',
 				        success: function(data) {
@@ -320,7 +320,7 @@ function showSensorValue ( typeOfSensor ) {
    				for (var i = 0; i < numberOfSensors; i++) {
 	            	var sensorId = sensorIDs[0].id[i];
 	                $.ajax({
-				        url: 'http://replace.media.mit.edu:8080/electronautes/php/getActivationCountTodayByName.php?name=' + sensorId,
+				        url: 'http://replace.media.mit.edu/electronautes/php/getActivationCountTodayByName.php?name=' + sensorId,
 				        async: false,
 				        dataType: 'json',
 				        success: function(data) {
@@ -388,7 +388,7 @@ function showSensorValue ( typeOfSensor ) {
                 for (var i = 0; i < numberOfSensors; i++) {
 					var sensorId = sensorIDs[0].id[i];
 					$.ajax({
-				        url: 'http://replace.media.mit.edu:8080/electronautes/php/getLastValueByName.php?name=' + sensorId,
+				        url: 'http://replace.media.mit.edu/electronautes/php/getLastValueByName.php?name=' + sensorId,
 				        async: false,
 				        dataType: 'json',
 				        success: function(data) {
@@ -411,7 +411,7 @@ function showSensorValue ( typeOfSensor ) {
                 for (var i = 0; i < numberOfSensors; i++) {
 	                var sensorId = sensorIDs[0].id[i];  
 	           		$.ajax({
-				        url: 'http://replace.media.mit.edu:8080/electronautes/php/getLastValueByName.php?name=' + sensorId,
+				        url: 'http://replace.media.mit.edu/electronautes/php/getLastValueByName.php?name=' + sensorId,
 				        async: false,
 				        dataType: 'json',
 				        success: function(data) {
@@ -426,7 +426,7 @@ function showSensorValue ( typeOfSensor ) {
                 for (var i = 0; i < numberOfSensors; i++) {
 					var sensorId = sensorIDs[0].id[i];
 					$.ajax({
-				        url: 'http://replace.media.mit.edu:8080/electronautes/php/getLastValueByName.php?name=' + sensorId,
+				        url: 'http://replace.media.mit.edu/electronautes/php/getLastValueByName.php?name=' + sensorId,
 				        async: false,
 				        dataType: 'json',
 				        success: function(data) {
@@ -441,7 +441,7 @@ function showSensorValue ( typeOfSensor ) {
                 for (var i = 0; i < numberOfSensors; i++) {
 	                var sensorId = sensorIDs[0].id[i];                
 				    $.ajax({
-				        url: 'http://replace.media.mit.edu:8080/electronautes/php/getLastTemperatureByName.php?name=' + sensorId,
+				        url: 'http://replace.media.mit.edu/electronautes/php/getLastTemperatureByName.php?name=' + sensorId,
 				        async: false,
 				        dataType: 'json',
 				        success: function(data) {
