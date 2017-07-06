@@ -549,9 +549,11 @@ function hasBlackBackground(element) {
     return  id.startsWith('hum')    ||
             id.startsWith('temp')   ||
             id.startsWith('co2')    ||
-            id.startsWith('light');
+            id.startsWith('light')  ;
+            
 }
 
+    //for function hasBlackBackground(element) //and does not id.endsWith !('lastimevalue');
 
 
 
