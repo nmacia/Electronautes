@@ -5,7 +5,7 @@
                 Jason Nawyn
  Version:       2.2
  Date:          March 2017
- Last modified: June 2017 
+ Last modified: July 2017 
  */
 
 
@@ -392,7 +392,8 @@ function showSensorValue ( typeOfSensor ) {
 				        async: false,
 				        dataType: 'json',
 				        success: function(data) {
-							$(svgDoc.getElementById(sensorId + "-value")).text(data[0]['value']);	
+							$(svgDoc.getElementById(sensorId + "-value")).text(data[0]['value']);
+							$(svgDoc.getElementById(sensorId + "-light-lastimevalue")).text(data[0]['time'].split('.')[0]);	
 				        }    
 					});
                 }
@@ -445,7 +446,8 @@ function showSensorValue ( typeOfSensor ) {
 				        async: false,
 				        dataType: 'json',
 				        success: function(data) {
-							$(svgDoc.getElementById(sensorId + "-temp")).text(data[0]['temperature']);	
+							$(svgDoc.getElementById(sensorId + "-temp")).text(data[0]['temperature']);
+							$(svgDoc.getElementById(sensorId + "-temp-lastimevalue")).text(data[0]['time'].split('.')[0]);		
 				        }
 				    });
                 }
