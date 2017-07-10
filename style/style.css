@@ -122,6 +122,11 @@ header .container {
 	text-align: right;
 }
 
+/* no padding for hidden list */
+#nav .hidden-nav li {
+    padding: 0;
+}
+
 /* Style for menu links. */
 #nav li a {
 	display: block;
@@ -542,6 +547,8 @@ footer {
         
 }
 
+
+
 /*
 ==================================================
   05.2 - SMARTPHONES (Portrait and landscape)
@@ -654,5 +661,7 @@ and (max-width : 480px) {
 	}
 
 }
+
+
 
 

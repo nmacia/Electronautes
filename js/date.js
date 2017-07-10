@@ -539,25 +539,18 @@ function formatSVG(svgObjectId) {
             for (var i = 0; i <textElements.length; i++) {
                 var textElement = textElements[i];
                 textElement.setAttribute('font-family', 'Amatic SC');
-                
-                if (!hasBlackBackground(textElement)){
-                    textElement.setAttribute('font-weight', '700'); //make text bold
+                if(textElement.id.endsWith('lastimevalue')) {
+                    textElement.setAttribute('font-weight', '500');    
                 }
+                else {
+                    textElement.setAttribute('font-weight', '700');
+                }
+
             }
         }, false);
     }
 }
 
-function hasBlackBackground(element) {
-    var id = element.id;
-    return  id.startsWith('hum')    ||
-            id.startsWith('temp')   ||
-            id.startsWith('co2')    ||
-            id.startsWith('light')  ;
-            
-}
-
-    //for function hasBlackBackground(element) //and does not id.endsWith !('lastimevalue');
 
 
 
