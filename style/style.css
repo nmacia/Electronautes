@@ -665,3 +665,8 @@ and (max-width : 480px) {
 
 
 
+
+.informationsource {
+    font-weight: 800;
+    font-size: 15px;
+}
