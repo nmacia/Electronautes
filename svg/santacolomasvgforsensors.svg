@@ -913,10 +913,8 @@
 					
 						<rect x="362.302" y="191.168" fill="#FFFFFF" stroke="#666666" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" width="58.948" height="36.83"/>
 				</g>
-				<g id="LWPOLYLINE_273_">
-					<polygon fill="#FFFFFF" stroke="#666666" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
-						421.25,191.168 421.25,227.998 469.915,163.834 469.915,152.629 469.915,134.939 					"/>
-				</g>
+				<polygon fill="#FFFFFF" stroke="#666666" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
+					421.25,191.168 469.915,134.939 469.915,152.629 466.646,156.753 466.646,167.588 421.25,227.998 				"/>
 			</g>
 			<g id="_x3C_Audio_x3E_">
 				<g id="LWPOLYLINE_284_">
@@ -2408,6 +2406,9 @@
 			<text id="AndorraHumidity1-value" transform="matrix(1 0 0 1 847.2773 -191.4766)" display="inline" fill="none" stroke="#FFFFFF" stroke-miterlimit="10" font-family="'AmaticSC-Regular'" font-size="36">0%</text>
 		
 			<text id="AndorraHumidity1-lastimevalue" transform="matrix(1 0 0 1 827.5508 -131.7813)" display="inline" fill="none" stroke="#000000" stroke-miterlimit="10" font-family="'AmaticSC-Regular'" font-size="18">yyyy/mm/dd 24:00</text>
+		
+			<image display="none" overflow="visible" enable-background="new    " width="173" height="150" id="AndorraHumidity1-warning" xlink:href="../img/Sensors/warning-sign-inv.png"  transform="matrix(0.15 0 0 0.15 911 -277.7461)">
+		</image>
 	</g>
 	<g id="sensor-co2" display="none">
 		
@@ -2416,50 +2417,62 @@
 		
 			<text id="AndorraBob1-value" transform="matrix(1 0 0 1 937.3096 -313.2646)" display="inline" fill="none" stroke="#FFFFFF" stroke-miterlimit="10" font-family="'AmaticSC-Regular'" font-size="36">0.0</text>
 		
-			<text id="AndorraBob1-lastimevalue" transform="matrix(1 0 0 1 914.8633 -392.3838)" display="inline" fill="none" stroke="#000000" stroke-miterlimit="10" font-family="'AmaticSC-Regular'" font-size="18">yyyy/mm/dd 24:00</text>
+			<text id="AndorraBob1-lastimevalue" transform="matrix(1 0 0 1 928.8633 -392.3838)" display="inline" fill="none" stroke="#000000" stroke-miterlimit="10" font-family="'AmaticSC-Regular'" font-size="18">yyyy/mm/dd 24:00</text>
+		
+			<image display="none" overflow="visible" enable-background="new    " width="173" height="150" id="AndorraBob1-warning" xlink:href="../img/Sensors/warning-sign.png"  transform="matrix(0.18 0 0 0.18 995.916 -383.522)">
+		</image>
 	</g>
 	<g id="sensor-temperature" display="none">
 		<g id="temp-andorra-light4" display="inline">
 			<g id="temp4-blackrect">
-				<rect x="854.748" y="1.85" width="95.104" height="63.404"/>
+				<rect x="861.391" y="-27.908" width="95.104" height="63.404"/>
 			</g>
 			<g id="temp4-icon">
 				
-					<image overflow="visible" enable-background="new    " width="73" height="151" xlink:href="../img/sensors/temperature-inv.png"  transform="matrix(0.2983 0 0 0.2983 860.6572 9.5391)">
+					<image overflow="visible" enable-background="new    " width="73" height="151" xlink:href="../img/sensors/temperature-inv.png"  transform="matrix(0.2983 0 0 0.2983 867.2998 -20.2188)">
 				</image>
 			</g>
 			
-				<text id="AndorraLight4-temp" transform="matrix(1 0 0 1 890.4297 38.1133)" fill="none" stroke="#FFFFFF" stroke-miterlimit="10" font-family="'AmaticSC-Regular'" font-size="24.027">?</text>
+				<text id="AndorraLight4-temp-value" transform="matrix(1 0 0 1 897.0723 8.3555)" fill="none" stroke="#FFFFFF" stroke-miterlimit="10" font-family="'AmaticSC-Regular'" font-size="24.027">?</text>
 			
-				<text id="AndorraLight4-temp-lastimevalue" transform="matrix(1 0 0 1 854.748 81)" fill="none" stroke="#000000" stroke-miterlimit="10" font-family="'AmaticSC-Regular'" font-size="18">yyyy/mm/dd 24:00</text>
+				<text id="AndorraLight4-temp-lastimevalue" transform="matrix(1 0 0 1 861.3906 51.2422)" fill="none" stroke="#000000" stroke-miterlimit="10" font-family="'AmaticSC-Regular'" font-size="18">yyyy/mm/dd 24:00</text>
+			
+				<image display="none" overflow="visible" enable-background="new    " width="173" height="150" id="temp4-warning" xlink:href="../img/Sensors/warning-sign.png"  transform="matrix(0.18 0 0 0.18 958.4951 -27.9077)">
+			</image>
 		</g>
 		<g id="temp-andorra-light3" display="inline">
 			<g id="temp3-blackrect">
-				<rect x="371.442" y="52.32" width="95.104" height="63.404"/>
+				<rect x="371.442" y="48.32" width="95.104" height="63.404"/>
 			</g>
 			<g id="temp3-icon">
 				
-					<image overflow="visible" enable-background="new    " width="73" height="151" xlink:href="../img/sensors/temperature-inv.png"  transform="matrix(0.2983 0 0 0.2983 377.3535 60.0098)">
+					<image overflow="visible" enable-background="new    " width="73" height="151" xlink:href="../img/sensors/temperature-inv.png"  transform="matrix(0.2983 0 0 0.2983 377.3535 56.0098)">
 				</image>
 			</g>
 			
-				<text id="AndorraLight3-temp" transform="matrix(1 0 0 1 407.1211 88.582)" fill="none" stroke="#FFFFFF" stroke-miterlimit="10" font-family="'AmaticSC-Regular'" font-size="24.027">?</text>
+				<text id="AndorraLight3-value" transform="matrix(1 0 0 1 407.1211 84.582)" fill="none" stroke="#FFFFFF" stroke-miterlimit="10" font-family="'AmaticSC-Regular'" font-size="24.027">?</text>
 			
-				<text id="AndorraLight3-temp-lastimevalue" transform="matrix(1 0 0 1 371.4419 132)" fill="none" stroke="#000000" stroke-miterlimit="10" font-family="'AmaticSC-Regular'" font-size="18">yyyy/mm/dd 24:00</text>
+				<text id="AndorraLight3-temp-lastimevalue" transform="matrix(1 0 0 1 371.4419 128)" fill="none" stroke="#000000" stroke-miterlimit="10" font-family="'AmaticSC-Regular'" font-size="18">yyyy/mm/dd 24:00</text>
+			
+				<image display="none" overflow="visible" enable-background="new    " width="173" height="150" id="temp3-warning" xlink:href="../img/Sensors/warning-sign.png"  transform="matrix(0.18 0 0 0.18 468.5454 48.313)">
+			</image>
 		</g>
 		<g id="temp-andorra-light2" display="inline">
 			<g id="temp2-blackrect">
-				<rect x="616.106" y="-97.936" width="95.104" height="63.404"/>
+				<rect x="617.293" y="-121.665" width="95.104" height="63.404"/>
 			</g>
 			<g id="temp2-icon">
 				
-					<image overflow="visible" enable-background="new    " width="73" height="151" xlink:href="../img/sensors/temperature-inv.png"  transform="matrix(0.2983 0 0 0.2983 622.0166 -90.2402)">
+					<image overflow="visible" enable-background="new    " width="73" height="151" xlink:href="../img/sensors/temperature-inv.png"  transform="matrix(0.2983 0 0 0.2983 623.2031 -113.9688)">
 				</image>
 			</g>
 			
-				<text id="AndorraLight2-temp" transform="matrix(1 0 0 1 651.7891 -61.668)" fill="none" stroke="#FFFFFF" stroke-miterlimit="10" font-family="'AmaticSC-Regular'" font-size="24.027">?</text>
+				<text id="AndorraLight2-temp-value" transform="matrix(1 0 0 1 652.9756 -85.3965)" fill="none" stroke="#FFFFFF" stroke-miterlimit="10" font-family="'AmaticSC-Regular'" font-size="24.027">?</text>
 			
-				<text id="AndorraLight2-temp-lastimevalue" transform="matrix(1 0 0 1 616.1064 -19.5322)" fill="none" stroke="#000000" stroke-miterlimit="10" font-family="'AmaticSC-Regular'" font-size="18">yyyy/mm/dd 24:00</text>
+				<text id="AndorraLight2-temp-lastimevalue" transform="matrix(1 0 0 1 617.293 -42.2607)" fill="none" stroke="#000000" stroke-miterlimit="10" font-family="'AmaticSC-Regular'" font-size="18">yyyy/mm/dd 24:00</text>
+			
+				<image display="none" overflow="visible" enable-background="new    " width="173" height="150" id="temp2-warning" xlink:href="../img/Sensors/warning-sign.png"  transform="matrix(0.18 0 0 0.18 714.3984 -121.6646)">
+			</image>
 		</g>
 		<g id="temp-andorra-light5" display="inline">
 			<g id="temp5-blackrect">
@@ -2471,23 +2484,29 @@
 				</image>
 			</g>
 			
-				<text id="AndorraLight5-temp" transform="matrix(1 0 0 1 378.3008 -266.9375)" fill="none" stroke="#FFFFFF" stroke-miterlimit="10" font-family="'AmaticSC-Regular'" font-size="24.027">?</text>
+				<text id="AndorraLight5-temp-value" transform="matrix(1 0 0 1 378.3008 -266.9375)" fill="none" stroke="#FFFFFF" stroke-miterlimit="10" font-family="'AmaticSC-Regular'" font-size="24.027">?</text>
 			
 				<text id="AndorraLight5-temp-lastimevalue" transform="matrix(1 0 0 1 343.2461 -223.9414)" fill="none" stroke="#000000" stroke-miterlimit="10" font-family="'AmaticSC-Regular'" font-size="18">yyyy/mm/dd 24:00</text>
+			
+				<image display="none" overflow="visible" enable-background="new    " width="173" height="150" id="temp5-warning" xlink:href="../img/Sensors/warning-sign.png"  transform="matrix(0.18 0 0 0.18 439.7192 -303.0229)">
+			</image>
 		</g>
 		<g id="temp-andorra-light6" display="inline">
 			<g id="temp6-blackrect">
-				<rect x="856.341" y="-303.444" width="95.104" height="63.404"/>
+				<rect x="860.691" y="-303.825" width="95.104" height="63.404"/>
 			</g>
 			<g id="temp6-icon">
 				
-					<image overflow="visible" enable-background="new    " width="73" height="151" xlink:href="../img/sensors/temperature-inv.png"  transform="matrix(0.2983 0 0 0.2983 862.252 -295.7549)">
+					<image overflow="visible" enable-background="new    " width="73" height="151" xlink:href="../img/sensors/temperature-inv.png"  transform="matrix(0.2983 0 0 0.2983 866.6025 -296.1357)">
 				</image>
 			</g>
 			
-				<text id="AndorraLight6-temp" transform="matrix(1 0 0 1 892.0234 -267.1797)" fill="none" stroke="#FFFFFF" stroke-miterlimit="10" font-family="'AmaticSC-Regular'" font-size="24.027">?</text>
+				<text id="AndorraLight6-temp-value" transform="matrix(1 0 0 1 896.374 -267.561)" fill="none" stroke="#FFFFFF" stroke-miterlimit="10" font-family="'AmaticSC-Regular'" font-size="24.027">?</text>
 			
-				<text id="AndorraLight6-temp-lastimevalue" transform="matrix(1 0 0 1 856.3408 -225.3125)" fill="none" stroke="#000000" stroke-miterlimit="10" font-family="'AmaticSC-Regular'" font-size="18">yyyy/mm/dd 24:00</text>
+				<text id="AndorraLight6-temp-lastimevalue" transform="matrix(1 0 0 1 860.6924 -223.334)" fill="none" stroke="#000000" stroke-miterlimit="10" font-family="'AmaticSC-Regular'" font-size="18">yyyy/mm/dd 24:00</text>
+			
+				<image display="none" overflow="visible" enable-background="new    " width="173" height="150" id="temp4-warning_2_" xlink:href="../img/Sensors/warning-sign.png"  transform="matrix(0.18 0 0 0.18 957.7969 -303.2412)">
+			</image>
 		</g>
 	</g>
 	<g id="sensor-curtains" display="none">
@@ -2519,38 +2538,47 @@
 	<g id="sensor-light" display="none">
 		<g id="light-andorra-light4" display="inline">
 			<g id="light4-blackrect">
-				<rect x="855.16" y="1.85" width="95.104" height="63.404"/>
+				<rect x="861.803" y="-27.908" width="95.104" height="63.404"/>
 			</g>
 			
-				<text id="AndorraLight4-value" transform="matrix(1 0 0 1 907.3477 40.1143)" fill="none" stroke="#FFFFFF" stroke-miterlimit="10" font-family="'AmaticSC-Regular'" font-size="26">?</text>
+				<text id="AndorraLight4-value" transform="matrix(1 0 0 1 913.9902 10.3564)" fill="none" stroke="#FFFFFF" stroke-miterlimit="10" font-family="'AmaticSC-Regular'" font-size="26">?</text>
 			
-				<text id="AndorraLight4-light-lastimevalue" transform="matrix(1 0 0 1 854.748 81)" fill="none" stroke="#000000" stroke-miterlimit="10" font-family="'AmaticSC-Regular'" font-size="18">yyyy/mm/dd 24:00</text>
+				<text id="AndorraLight4-light-lastimevalue" transform="matrix(1 0 0 1 861.8027 51.2422)" fill="none" stroke="#000000" stroke-miterlimit="10" font-family="'AmaticSC-Regular'" font-size="18">yyyy/mm/dd 24:00</text>
 			
-				<image overflow="visible" enable-background="new    " width="97" height="150" id="light4-icon" xlink:href="../img/sensors/light-inv.png"  transform="matrix(0.3864 0 0 0.3864 859.2334 2.5225)">
+				<image overflow="visible" enable-background="new    " width="97" height="150" id="light4-icon" xlink:href="../img/sensors/light-inv.png"  transform="matrix(0.3864 0 0 0.3864 865.876 -27.2354)">
+			</image>
+			
+				<image display="none" overflow="visible" enable-background="new    " width="173" height="150" id="light4-warning" xlink:href="../img/Sensors/warning-sign.png"  transform="matrix(0.18 0 0 0.18 958.4951 -27.9077)">
 			</image>
 		</g>
 		<g id="light-andorra-light3" display="inline">
 			<g id="light3-blackrect">
-				<rect x="371.442" y="52.313" width="95.104" height="63.404"/>
+				<rect x="371.442" y="48.313" width="95.104" height="63.404"/>
 			</g>
 			
-				<text id="AndorraLight3-value" transform="matrix(1 0 0 1 423.6299 90.5771)" fill="none" stroke="#FFFFFF" stroke-miterlimit="10" font-family="'AmaticSC-Regular'" font-size="26">?</text>
+				<text id="AndorraLight3-value" transform="matrix(1 0 0 1 423.6299 86.5771)" fill="none" stroke="#FFFFFF" stroke-miterlimit="10" font-family="'AmaticSC-Regular'" font-size="26">?</text>
 			
-				<text id="AndorraLight3-light-lastimevalue" transform="matrix(1 0 0 1 371.4419 132)" fill="none" stroke="#000000" stroke-miterlimit="10" font-family="'AmaticSC-Regular'" font-size="18">yyyy/mm/dd 24:00</text>
+				<text id="AndorraLight3-light-lastimevalue" transform="matrix(1 0 0 1 371.4419 128)" fill="none" stroke="#000000" stroke-miterlimit="10" font-family="'AmaticSC-Regular'" font-size="18">yyyy/mm/dd 24:00</text>
 			
-				<image overflow="visible" enable-background="new    " width="97" height="150" id="light3-icon" xlink:href="../img/sensors/light-inv.png"  transform="matrix(0.3864 0 0 0.3864 375.5156 52.9854)">
+				<image overflow="visible" enable-background="new    " width="97" height="150" id="light3-icon" xlink:href="../img/sensors/light-inv.png"  transform="matrix(0.3864 0 0 0.3864 375.5156 48.9854)">
+			</image>
+			
+				<image display="none" overflow="visible" enable-background="new    " width="173" height="150" id="light3-warning" xlink:href="../img/Sensors/warning-sign.png"  transform="matrix(0.18 0 0 0.18 468.5454 48.313)">
 			</image>
 		</g>
 		<g id="light-andorra-light2" display="inline">
 			<g id="light2-blackrect">
-				<rect x="616.107" y="-97.936" width="95.104" height="63.404"/>
+				<rect x="617.294" y="-121.665" width="95.104" height="63.404"/>
 			</g>
 			
-				<text id="AndorraLight2-value" transform="matrix(1 0 0 1 668.2949 -59.6719)" fill="none" stroke="#FFFFFF" stroke-miterlimit="10" font-family="'AmaticSC-Regular'" font-size="26">?</text>
+				<text id="AndorraLight2-value" transform="matrix(1 0 0 1 669.4814 -83.4004)" fill="none" stroke="#FFFFFF" stroke-miterlimit="10" font-family="'AmaticSC-Regular'" font-size="26">?</text>
 			
-				<text id="AndorraLight2-light-lastimevalue" transform="matrix(1 0 0 1 616.1064 -19.5322)" fill="none" stroke="#000000" stroke-miterlimit="10" font-family="'AmaticSC-Regular'" font-size="18">yyyy/mm/dd 24:00</text>
+				<text id="AndorraLight2-light-lastimevalue" transform="matrix(1 0 0 1 617.293 -42.2607)" fill="none" stroke="#000000" stroke-miterlimit="10" font-family="'AmaticSC-Regular'" font-size="18">yyyy/mm/dd 24:00</text>
 			
-				<image overflow="visible" enable-background="new    " width="97" height="150" id="light2-icon" xlink:href="../img/sensors/light-inv.png"  transform="matrix(0.3864 0 0 0.3864 620.1797 -97.2637)">
+				<image overflow="visible" enable-background="new    " width="97" height="150" id="light2-icon" xlink:href="../img/sensors/light-inv.png"  transform="matrix(0.3864 0 0 0.3864 621.3662 -120.9922)">
+			</image>
+			
+				<image display="none" overflow="visible" enable-background="new    " width="173" height="150" id="light2-warning" xlink:href="../img/Sensors/warning-sign.png"  transform="matrix(0.18 0 0 0.18 714.3984 -121.6646)">
 			</image>
 		</g>
 		<g id="light-andorra-light5" display="inline">
@@ -2564,17 +2592,23 @@
 			
 				<image overflow="visible" enable-background="new    " width="97" height="150" id="light5-icon" xlink:href="../img/sensors/light-inv.png"  transform="matrix(0.3864 0 0 0.3864 346.6895 -302.3506)">
 			</image>
+			
+				<image display="none" overflow="visible" enable-background="new    " width="173" height="150" id="light5-warning" xlink:href="../img/Sensors/warning-sign.png"  transform="matrix(0.18 0 0 0.18 439.7192 -303.0229)">
+			</image>
 		</g>
 		<g id="light-andorra-light6" display="inline">
 			<g id="light6-blackrect">
-				<rect x="856.341" y="-302.86" width="95.104" height="63.404"/>
+				<rect x="860.69" y="-304.274" width="95.104" height="63.404"/>
 			</g>
 			
-				<text id="AndorraLight6-value" transform="matrix(1 0 0 1 908.5283 -264.5957)" fill="none" stroke="#FFFFFF" stroke-miterlimit="10" font-family="'AmaticSC-Regular'" font-size="26">?</text>
+				<text id="AndorraLight6-value" transform="matrix(1 0 0 1 912.8779 -266.0103)" fill="none" stroke="#FFFFFF" stroke-miterlimit="10" font-family="'AmaticSC-Regular'" font-size="26">?</text>
 			
-				<text id="AndorraLight6-light-lastimevalue" transform="matrix(1 0 0 1 856.3408 -225.3125)" fill="none" stroke="#000000" stroke-miterlimit="10" font-family="'AmaticSC-Regular'" font-size="18">yyyy/mm/dd 24:00</text>
+				<text id="AndorraLight6-light-lastimevalue" transform="matrix(1 0 0 1 860.6914 -224.3672)" fill="none" stroke="#000000" stroke-miterlimit="10" font-family="'AmaticSC-Regular'" font-size="18">yyyy/mm/dd 24:00</text>
 			
-				<image overflow="visible" enable-background="new    " width="97" height="150" id="light6-icon" xlink:href="../img/sensors/light-inv.png"  transform="matrix(0.3864 0 0 0.3864 860.4131 -302.1875)">
+				<image overflow="visible" enable-background="new    " width="97" height="150" id="light6-icon" xlink:href="../img/sensors/light-inv.png"  transform="matrix(0.3864 0 0 0.3864 864.7627 -303.6025)">
+			</image>
+			
+				<image display="none" overflow="visible" enable-background="new    " width="173" height="150" id="light4-warning_2_" xlink:href="../img/Sensors/warning-sign.png"  transform="matrix(0.18 0 0 0.18 957.7959 -304.2744)">
 			</image>
 		</g>
 	</g>
@@ -2614,13 +2648,13 @@
 			<text id="w1012-value" transform="matrix(1 0 0 1 564.3291 -396.0684)" font-family="'AmaticSC-Regular'" font-size="18">1</text>
 			<g id="w1012-value-icon-0">
 				<path fill="none" stroke="#000000" stroke-miterlimit="10" d="M631.118-416.361H503.19l11.706,28.243h117.518L631.118-416.361z
-					 M517.577-390.546l-9.521-23.577h119.219l1.354,23.577H517.577z"/>
+					 M517.577-390.546l-9.521-23.577H627.28l1.354,23.577H517.577z"/>
 				<polygon fill="none" stroke="#000000" stroke-miterlimit="10" points="517.577,-394.222 509.764,-413.8 508.061,-414.123 
 					517.577,-390.546 				"/>
 				<rect x="517.577" y="-394.222" fill="none" stroke="#000000" stroke-miterlimit="10" width="111.052" height="3.676"/>
 			</g>
 			<g id="w1012-value-icon-1">
-				<path d="M631.118-416.361H503.19l11.706,28.243h117.518L631.118-416.361z M517.577-390.546l-9.521-23.577h119.219l1.354,23.577
+				<path d="M631.118-416.361H503.19l11.706,28.243h117.518L631.118-416.361z M517.577-390.546l-9.521-23.577H627.28l1.354,23.577
 					H517.577z"/>
 				<polygon stroke="#FFFFFF" stroke-miterlimit="10" points="517.577,-394.222 509.764,-413.8 508.061,-414.123 517.577,-390.546 
 									"/>
@@ -2668,16 +2702,16 @@
 		<g id="window-right3" display="inline">
 			<text id="w333-value" transform="matrix(1 0 0 1 984.4746 -396.0684)" font-family="'AmaticSC-Regular'" font-size="18">1</text>
 			<g id="w333-value-icon-0">
-				<path fill="none" stroke="#000000" stroke-miterlimit="10" d="M935.279-416.361L911.8-388.118h122.396l34.313-28.243H935.279z
-					 M1033.458-390.546H917.495l19.878-23.576l124.478-0.001L1033.458-390.546z"/>
+				<path fill="none" stroke="#000000" stroke-miterlimit="10" d="M935.279-416.361L911.8-388.118h122.396l34.313-28.243H935.279
+					L935.279-416.361z M1033.458-390.546H917.495l19.878-23.576l124.478-0.001L1033.458-390.546z"/>
 				<polygon fill="none" stroke="#000000" stroke-miterlimit="10" points="1061.851,-414.123 1056.405,-414 1033.458,-394.222 
 					1033.458,-390.546 				"/>
 				<polygon fill="none" stroke="#000000" stroke-miterlimit="10" points="921.369,-394.222 917.495,-390.546 1033.458,-390.546 
 					1033.458,-394.222 				"/>
 			</g>
 			<g id="w333-value-icon-1">
-				<path d="M935.279-416.361L911.8-388.118h122.396l34.313-28.243H935.279z M1033.458-390.546H917.495l19.878-23.576l124.478-0.001
-					L1033.458-390.546z"/>
+				<path d="M935.279-416.361L911.8-388.118h122.396l34.313-28.243H935.279L935.279-416.361z M1033.458-390.546H917.495
+					l19.878-23.576l124.478-0.001L1033.458-390.546z"/>
 				<polygon stroke="#FFFFFF" stroke-miterlimit="10" points="1061.851,-414.123 1056.405,-414 1033.458,-394.222 
 					1033.458,-390.546 				"/>
 				<polygon stroke="#FFFFFF" stroke-miterlimit="10" points="921.369,-394.222 917.495,-390.546 1033.458,-390.546 

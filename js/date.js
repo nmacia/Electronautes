@@ -447,7 +447,7 @@ function showSensorValue ( typeOfSensor ) {
 				        async: false,
 				        dataType: 'json',
 				        success: function(data) {
-							$(svgDoc.getElementById(sensorId + "-temp")).text(data[0]['temperature']);
+							$(svgDoc.getElementById(sensorId + "-value")).text(data[0]['temperature'] + '&deg;C');
 							var lastDate = data[0]['time'].split('.')[0].replace(/-/g, '/');
 							$(svgDoc.getElementById(sensorId + "-temp-lastimevalue")).text(lastDate.substring(0, lastDate.lastIndexOf(":")));	
 				        }
