@@ -55,7 +55,7 @@
                 <input type="checkbox" id="show-icon-menu" role="button" />
                 <div id="nav">
                     <ul id="menu">
-                        <li><a href="TerMITesForElectronautes.html">home</a></li>
+                        <li><a href="TerMITesForElectronautes.php">home</a></li>
                         <li><a href="#">fun fact of the week</a></li>
                         <li><a href="#">classrooms</a>
                             <ul class="hidden-nav">
@@ -268,9 +268,6 @@
             </div>       
         </main>
 
-        <footer class="col-xs-12">
-            <div class="copyright">
-                <p><a class="informationsource" href="http://cities.media.mit.edu/andorra-energy-environment/#EnergyAwareness">(¡)</a> <a href="http://www.nuriamacia.com/">Núria Macià</a>, <a href="http://cp.media.mit.edu/juanita-devis/">Juanita Devis</a> and <a href="http://cp.media.mit.edu/jason-nawyn/">Jason Nawyn</a> &copy; 2017<p>
-            </div>
-        </footer>
+        <?php include './php/theme-functions/footer.php';?>
+
     </body>    
