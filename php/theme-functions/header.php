@@ -60,7 +60,7 @@
                         </li>
                         <li><a href="./sensors.php">sensors</a></li>
                         <li><a href="./data.php">data</a></li>
-                        <li><a target="_blank" href="http://miteaav.blogspot.com/">blog</a></li>
+                        <li><a href="./blog.php">blog</a></li>
                     </ul>
                 </div>
             </div>
