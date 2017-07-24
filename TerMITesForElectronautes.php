@@ -191,7 +191,7 @@
                                             </label>
                                         </div>
                                     </div> 
-                                        <input type="submit" class="btn pull-right" name="submit" onclick="return getForm()" />    
+                                        <input type="submit" class="btn pull-right" name="submit" value="Submit" onclick="return getForm()" />    
                                         <input type="password" id="password" name="password" placeholder="Secret CODE" />
                                         <span id="error"></span>
                                 </form> 
