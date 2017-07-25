@@ -120,6 +120,37 @@
                                     </div>
                                 </div>
                                 
+                                <!-- ROW 4 -->                           
+                                <div class="row-sensor">
+                                    <div class="button-sensor">
+                                        <label>
+                                            <input type="radio" name="sensor" id="pressure" value="pressure" onclick="showSensorValue('sensor-pressure');" />
+                                            <figure>
+                                                <img src="./img/sensors/pressure.png" alt="Pressure" />
+                                                <figcaption>Pressure</figcaption>
+                                            </figure>
+                                        </label>
+                                    </div>
+                                    <div class="button-sensor">
+                                        <label>
+                                            <input type="radio" name="sensor" id="proximity" value="promixity" onclick="showSensorValue('sensor-proximity');" />
+                                            <figure>
+                                                <img src="./img/sensors/proximity.png" alt="Proximity" />
+                                                <figcaption>Proximity</figcaption>
+                                            </figure>
+                                        </label>
+                                    </div>
+                                    <div class="button-sensor">
+                                        <label>
+                                            <input type="radio" name="sensor" id="proximity" value="promixity" onclick="showSensorValue('sensor-proximity');" />
+                                            <figure>
+                                                <img src="" alt="Report bug"/>
+                                                <figcaption>Report bug</figcaption>
+                                            </figure>
+                                        </label>
+                                    </div>
+                                </div>
+                                
                             </div>        
                         </div>   
                     </div>
