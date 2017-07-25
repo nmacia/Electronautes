@@ -46,19 +46,27 @@
                 <input type="checkbox" id="show-menu" role="button">
                 <div id="nav">
                     <ul id="menu">
-                        <li><a href="TerMITesForElectronautes.php">home</a></li>
-                        <li><a href="#">fun fact of the week</a></li>
-                        <li><a href="#">classrooms</a>
+                        <li><a href="TerMITesForElectronautes.php">fun fact of the week</a></li>
+                        <li><a href="#">survey</a>
                             <ul class="hidden-nav">
-                                <li><a href="#">ESFINX</a></li>
-                                <li><a href="">KREMLIN</a></li>
-                                <li><a href="">BIG BEN</a></li>
-                                <li><a href="">MOAIS</a></li>
-                                <li><a href="">ATONIUM</a></li>
-                                <li><a href="">KHEOPS</a></li>
+                                <li><a href="./survey.php">ESFINX</a></li>
+                                <li><a href="./survey.php">KREMLIN</a></li>
+                                <li><a href="./survey.php">BIG BEN</a></li>
+                                <li><a href="./survey.php">MOAIS</a></li>
+                                <li><a href="./survey.php">ATONIUM</a></li>
+                                <li><a href="./survey.php">KHEOPS</a></li>
                             </ul>
                         </li>
-                        <li><a href="./sensors.php">sensors</a></li>
+                        <li><a href="#">sensors</a>
+                            <ul class="hidden-nav">
+                                <li><a href="./sensors.php">ESFINX</a></li>
+                                <li><a href="./sensors.php">KREMLIN</a></li>
+                                <li><a href="./sensors.php">BIG BEN</a></li>
+                                <li><a href="./sensors.php">MOAIS</a></li>
+                                <li><a href="./sensors.php">ATONIUM</a></li>
+                                <li><a href="./sensors.php">KHEOPS</a></li>
+                            </ul>
+                        </li>
                         <li><a href="./data.php">data</a></li>
                         <li><a href="./blog.php">blog</a></li>
                     </ul>
