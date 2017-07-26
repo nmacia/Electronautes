@@ -144,7 +144,7 @@
                                         <label>
                                             <input type="radio" name="sensor" id="proximity" value="promixity" onclick="showSensorValue('sensor-proximity');" />
                                             <figure>
-                                                <img src="" alt="Report bug"/>
+                                                <img src="./img/errors/bug.png" alt="Report bug"/>
                                                 <figcaption>Report bug</figcaption>
                                             </figure>
                                         </label>
