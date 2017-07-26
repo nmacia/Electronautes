@@ -1,4 +1,5 @@
-
+./.DS_Store
+./*/.DS_Store
 php/pg_connect.php
 
 php/pg_disconnect.php
