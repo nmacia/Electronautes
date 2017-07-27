@@ -372,7 +372,7 @@ figcaption {
 /* Secret code */
 input[type=password] {
 	background-color: #fff;
-	border: 2px #ccc solid;
+	border: 2px #e9e6dc solid;
 	float: right;
 	font-size: 20px;
     font-weight: 700;
@@ -561,6 +561,43 @@ footer {
         
 }
 
+@media (min-width : 481px) 
+		and (max-width : 990px)
+    	{
+          header {
+            margin-left: 20px;
+          }
+          
+          .boxsensors {
+            max-width: 610px;
+            margin: auto;
+          }
+          
+          .boxbuttonssurvey {
+          max-width: 450px;
+          position: relative;
+          margin: auto;
+            
+          }
+          
+          .row-sensor {
+            width: 280px;
+            display: inline-flex;
+            margin-right: 20px;
+          }
+          
+          #nav {
+          
+          margin-bottom: 20px;
+          }
+          
+          #nav li {
+            padding-right: 30px;
+            padding-left: 0px;
+
+          }
+}
+
 
 
 /*
@@ -575,7 +612,11 @@ and (max-width : 480px) {
 
 	header {
 		margin-top: 10px;
+        height: 50px;
 	}
+  .boxsensors {
+    margin-top: 0px;
+  }
 
 	.brand{
 		margin-left: 15px;
@@ -653,6 +694,11 @@ and (max-width : 480px) {
     .buttonsurvey-noise figure img {
     	height: 45px;
 	}
+  
+  .row-sensor {
+  max-width: 260px;
+    margin: auto;
+}
      
     .row-sensor figure img {
     	height: 50px;
@@ -673,10 +719,18 @@ and (max-width : 480px) {
 		margin: auto;
 		width: 100%;
 	}
-
+  /* reduce the font size for mobile */
+  .welcome-weather-date,
+  .weather h2 
+  {
+    font-size: 20px;
+  }
+  
+  .welcome-weather-date {
+    margin-top: 20px;
+  }
+  
 }
-
-
 
 
 
