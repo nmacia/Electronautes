@@ -177,7 +177,7 @@ function getWeatherGraphicsParams( weatherCode ) {
                 img = "mixed-rss.png";
                 break;
         //Windy 23, 24 #648b3a
-        case '5': case '6': case '7': case '18':
+        case '23': case '24': 
                 color = "#648b3a";
                 img = "windy.gif";
                 break;
