@@ -638,7 +638,6 @@ and (max-width : 480px) {
 
 	/* Make dropdown links appear inline. */
 	#nav ul {
-		background: #38BFB3;
 		display: none;
 		left: 0;
 		position: absolute;
