@@ -224,9 +224,7 @@ function getWeatherGraphicsParams( weatherCode ) {
 function changeBackground ( color ) {
     // Change color background body.
     $('body').css('background', color);
-    // Change color background menu for mobile.
-    $('#nav ul').css('background', color);
-}
+ }
 
 // Catalog of sensors installed and their IDs in the SVG. 
 var sensorCatalog = [
