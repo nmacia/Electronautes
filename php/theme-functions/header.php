@@ -76,6 +76,7 @@
                             </ul>
                         </li>
                         <li><a href="./data.php">data</a></li>
+                        <li><a href="./relate.php">relate</a></li>
                         <li><a href="./blog.php">blog</a></li>
                     </ul>
                 </div>
