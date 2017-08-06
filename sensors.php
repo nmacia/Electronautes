@@ -166,6 +166,4 @@
             </div>       
         </main>
 
-        <?php include './php/theme-functions/footer.php';?>
-        
-    </body>    
+        <?php include './php/theme-functions/footer.php';?>   

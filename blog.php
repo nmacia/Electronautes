@@ -24,5 +24,3 @@
         </main>
 
         <?php include './php/theme-functions/footer.php';?>
-        
-    </body>    
