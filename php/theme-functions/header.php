@@ -20,13 +20,21 @@
         <!-- JS -->
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
         <script src="https://cdn.rawgit.com/monkeecreate/jquery.simpleWeather/master/jquery.simpleWeather.min.js" type="text/javascript"></script>
+        
+          <!-- Weather effect -->
+        <script src="//cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.11/p5.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.11/addons/p5.dom.js"></script>
+        <script type="text/javascript" src="js/rain.js"></script>
+        
         <script type="text/javascript" src="js/date.js"></script>
         <script src="https://www.gstatic.com/firebasejs/3.7.8/firebase.js"></script>
         <script>
             var bleep = new Audio();
             bleep.src = "audio/Silly_Snoring-Snore_Man-618028931.mp3"
         </script>
-
+        
+      
+        
         <!--script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"</script> 
         <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery.simpleWeather/3.1.0/jquery.simpleWeather.min.js"></script-->        
     </head>

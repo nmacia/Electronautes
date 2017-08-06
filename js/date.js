@@ -120,6 +120,7 @@ function getWeatherGraphicsParams( weatherCode ) {
         case '10': case '11': case '12': case '40': 
                 color = "#3E6A74";
                 img = "rain.png";
+                addRainToBackground( color )
                 break;
         //Sunny 32, 34 #FDCF07
         case '32': case '34':
@@ -225,6 +226,14 @@ function changeBackground ( color ) {
     // Change color background body.
     $('body').css('background', color);
  }
+
+
+
+
+
+
+
+
 
 // Catalog of sensors installed and their IDs in the SVG. 
 var sensorCatalog = [
