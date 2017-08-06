@@ -567,15 +567,14 @@ function allowDrop(ev) {
 var fromId = {};
 
 function drag(ev) {
-  var draggableButtonDiv = $(ev.target).closest('.r-button-sensor')[0];
+    var draggableButtonDiv = $(ev.target).closest('.r-button-sensor')[0];
   
-  var containerOfButton = draggableButtonDiv.parentElement;
-  if (containerOfButton.id !== 'center-dragbox-forsensors') {
-    fromId[draggableButtonDiv.id] = containerOfButton.id;
-      
-  }
-    ev.dataTransfer.setData("draggedId", draggableButtonDiv.id); 
+    var containerOfButton = draggableButtonDiv.parentElement;
+    if (containerOfButton.id !== 'center-dragbox-forsensors') {
+        fromId[draggableButtonDiv.id] = containerOfButton.id;
+    }
     
+    ev.dataTransfer.setData("draggedId", draggableButtonDiv.id);     
     console.log("containerOfButton.id: " + containerOfButton.id);  
 }
 
@@ -584,15 +583,12 @@ function drop(ev) {
     var draggedId = ev.dataTransfer.getData("draggedId");
     
     console.log(fromId);
-    if (event.target.id !== "center-dragbox-forsensors") {
-      $("#" + fromId[draggedId]).append(document.getElementById(draggedId));
+    if (ev.target.id !== "center-dragbox-forsensors") {
+        $("#" + fromId[draggedId]).append(document.getElementById(draggedId));
     }
     else {
-      $('#center-dragbox-forsensors').append(document.getElementById(draggedId));
-  
-    }
-  
-   
+        $('#center-dragbox-forsensors').append(document.getElementById(draggedId));  
+    }   
 }
 
 
