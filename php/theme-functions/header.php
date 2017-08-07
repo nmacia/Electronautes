@@ -29,6 +29,7 @@
         
         <script type="text/javascript" src="js/date.js"></script>
         <script type="text/javascript" src="js/survey.js"></script>
+        <script type="text/javascript" src="js/sensors.js"></script>
       
         <script src="https://www.gstatic.com/firebasejs/3.7.8/firebase.js"></script>
         <script>
