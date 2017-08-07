@@ -707,23 +707,6 @@ and (max-width : 480px) {
     .row-sensor figure img {
     	height: 50px;
     }
-  
-  .r-dragbox .r-button-sensor {
-    width: 30%;
-  }
-  
-  .r-sensorsbox-and-dragbox figcaption {
-	
-	font-size: 10px;
-    font-weight: 700;
-    letter-spacing: .5px;
-	
-}
-
-  
-.r-button-sensor .img-window-sensor {
-  width: 30px;
-}
     
     .img-window-sensor {
     	max-width: 80px;
@@ -781,7 +764,7 @@ and (max-width : 480px) {
   max-width: 50px;
 }
 
-.r-button-sensor label > figure {
+.r-button-sensor label > input + figure {
   position: relative;
   height: inherit;
 }
@@ -833,7 +816,6 @@ and (max-width : 480px) {
 }
 
 
-
 .r-dragbox figcaption {
 	
 	font-size: 12px;
@@ -853,8 +835,7 @@ and (max-width : 480px) {
 .r-sensorsbox-and-dragbox {
   /* width: 80%; */
   display: flex;
-  height: 100%;
-  padding-bottom: 20px;
+  height: 100%
 }
 
 
