@@ -1,10 +1,10 @@
 <!--
  Project:       terMITes
  Authors:       Nuria Macia
-                Juanita Devis
+                  Juanita Devis
  Version:       1.1
  Date:          March 2017
- Last modified: April 2017
+ Last modified: August 2017
  -->
 
     <?php include './php/theme-functions/header.php';?>
@@ -28,7 +28,6 @@
 
                             <div class="r-button-sensor" draggable="true" ondragstart="drag(event)" id="drag-presence">
                                   <label>
-                                      <input type="radio" name="sensor" id="presence" value="presence" />
                                       <figure>
                                           <img src="./img/sensors/presence.png" alt="Presence" />
                                           <figcaption>Presence</figcaption>
@@ -38,7 +37,6 @@
                   
                             <div class="r-button-sensor" draggable="true" ondragstart="drag(event)" id="drag-motion">
                                 <label>
-                                    <input type="radio" name="sensor" id="motion" value="motion" />
                                     <figure>
                                         <img src="./img/sensors/motion.png" alt="Motion" />
                                         <figcaption>Motion</figcaption>
@@ -48,7 +46,7 @@
                     
                             <div class="r-button-sensor" draggable="true" ondragstart="drag(event)" id="drag-proximity">
                                 <label>
-                                    <input type="radio" name="sensor" id="proximity" value="promixity" />
+                                  
                                     <figure>
                                         <img src="./img/sensors/proximity.png" alt="Proximity" />
                                         <figcaption>Proximity</figcaption>
@@ -58,7 +56,7 @@
 
                             <div class="r-button-sensor" draggable="true" ondragstart="drag(event)" id="drag-window">
                                 <label>
-                                      <input type="radio" name="sensor" id="window" value="window" />
+                                    
                                       <figure>
                                           <img class='img-window-sensor' src="./img/sensors/window.png" alt="Window" />
                                           <figcaption>Window</figcaption>
@@ -68,7 +66,7 @@
                   
                             <div class="r-button-sensor" draggable="true" ondragstart="drag(event)" id="drag-door">
                                 <label>
-                                    <input type="radio" name="sensor" id="door" value="door" />
+  
                                     <figure>
                                         <img src="./img/sensors/door.png" alt="I feel awesome." />
                                         <figcaption>Door</figcaption>
@@ -78,7 +76,7 @@
                             
                             <div class="r-button-sensor" draggable="true" ondragstart="drag(event)" id="drag-curtains">
                                 <label>
-                                    <input type="radio" name="sensor" id="curtains" value="curtains" />
+                                   
                                     <figure>
                                         <img src="./img/sensors/curtains.png" alt="I feel normal." />
                                         <figcaption>Curtains</figcaption>
@@ -97,7 +95,7 @@
 
                             <div class="r-button-sensor" draggable="true" ondragstart="drag(event)" id="drag-temperature">
                                 <label>
-                                    <input type="radio" name="sensor" id="temparature" value="temperature" />
+                                    
                                     <figure>
                                         <img src="./img/sensors/temperature.png" alt="Temperature" />
                                         <figcaption>Temperature</figcaption>
@@ -107,7 +105,7 @@
 
                             <div class="r-button-sensor" draggable="true" ondragstart="drag(event)" id="drag-humidity">
                                 <label>
-                                    <input type="radio" name="sensor" id="humidity" value="humidity" />
+                                   
                                     <figure>
                                         <img src="./img/sensors/humidity-2.png" alt="Humidity" />
                                         <figcaption>Humidity</figcaption>
@@ -117,7 +115,7 @@
                      
                             <div class="r-button-sensor" draggable="true" ondragstart="drag(event)" id="drag-pressure">
                                 <label>
-                                    <input type="radio" name="sensor" id="pressure" value="pressure" />
+                                    
                                     <figure>
                                         <img src="./img/sensors/pressure.png" alt="Pressure" />
                                         <figcaption>Pressure</figcaption>
@@ -127,7 +125,7 @@
                     
                             <div class="r-button-sensor" draggable="true" ondragstart="drag(event)" id="drag-co2">
                                 <label>
-                                    <input type="radio" name="sensor" id="co2" value="co2" />
+                                   
                                     <figure>
                                         <img src="./img/sensors/co2.png" alt="CO2" />
                                         <figcaption>CO2</figcaption>
@@ -137,7 +135,7 @@
                      
                             <div class="r-button-sensor" draggable="true" ondragstart="drag(event)" id="drag-light">
                                 <label>
-                                    <input type="radio" name="sensor" id="light" value="light" />
+                                   
                                     <figure>
                                         <img src="./img/sensors/light.png" alt="I feel energetic." />
                                         <figcaption>Light</figcaption>
@@ -146,7 +144,8 @@
                             </div>
 
                         </div>
-                    </div>
+                  </div>
+                  
                 </div>
 
                 <div class="col-xs-12 col-md-5 no-padding">
@@ -156,7 +155,20 @@
                             <span id="getDate"></span>
                             <div id="weather" class="weather"></div>
                         </div>
-                    </div>   
+                    </div> 
+                  <div class="boxbuttonssurvey">
+                    <div class="c-group-box">
+                    <div class="circle-group">
+                    </div>
+                    <div class="circle-group">
+                    </div>
+                    <div class="circle-group">
+                    </div>
+                    <div class="circle-group">
+                    </div>
+                      </div>
+                    <input type="submit" class="btn pull-right" name="submit" value="Submit" onclick="return getForm()" /> 
+                  </div>
                 </div>
            
             </div>

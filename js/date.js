@@ -209,6 +209,7 @@ function getWeatherGraphicsParams( weatherCode ) {
                 break;    
             
         //No asociation 0, 2, 3200 candiate for ups color #b71111
+        // Add i.error "There was a problem retrieving the latest weather information." to this case
         case '3200': case '0': case '2': 
                 color = "#ffcc00";
                 img = "ups.png";
