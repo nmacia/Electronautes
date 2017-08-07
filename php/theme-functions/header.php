@@ -20,8 +20,8 @@
         <!-- JS -->
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
         <script src="https://cdn.rawgit.com/monkeecreate/jquery.simpleWeather/master/jquery.simpleWeather.min.js" type="text/javascript"></script>
-        
-          <!-- Weather effect -->
+        <script type="text/javascript" src="js/svg.js"></script>
+       
         <script src="//cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.11/p5.js"></script>
         <script src="//cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.11/addons/p5.dom.js"></script>
         <script type="text/javascript" src="js/rain.js"></script>
