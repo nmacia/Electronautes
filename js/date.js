@@ -113,7 +113,7 @@ function getWeatherGraphicsParams( weatherCode ) {
     var weatherGraphics = { };
     var color = "#ffffff";
     var img = ""; // what is the default image?
-   
+   weatherCode = '10';
     switch ( weatherCode ) {
 
         //Rain showers 10, 11, 12, 40 color #3E6A74
@@ -225,15 +225,13 @@ function getWeatherGraphicsParams( weatherCode ) {
 function changeBackground ( color ) {
     // Change color background body.
     $('body').css('background', color);
- }
-
-
-
-
-
-
-
-
+    
+    //Javascript Browser Detection - Mobile    
+    if (/Android|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent)) {
+        // Change color background menu for mobile.
+        $('#nav ul').css('background', color);
+    }
+}
 
 // Catalog of sensors installed and their IDs in the SVG. 
 var sensorCatalog = [

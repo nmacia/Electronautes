@@ -33,10 +33,6 @@
             bleep.src = "audio/Silly_Snoring-Snore_Man-618028931.mp3"
         </script>
         
-      
-        
-        <!--script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"</script> 
-        <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery.simpleWeather/3.1.0/jquery.simpleWeather.min.js"></script-->        
     </head>
     
     <body class="no-scrolling">
@@ -50,7 +46,7 @@
                     <a href="TerMITesForElectronautes.php"><img src="img/TerMITeslogoname.png" alt="logo" /></a>
                 </div>
                 <!-- Navigation bar -->
-                <label for="show-menu" class="show-menu"></label>
+                <label for="show-menu" class="show-menu">&#9776;</label>
                 <input type="checkbox" id="show-menu" role="button">
                 <div id="nav">
                     <ul id="menu">

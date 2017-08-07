@@ -102,7 +102,7 @@ header .container {
 
 /* MENU */
 #nav {
-	display: inline-block;
+    display: inline-block;
 	float: right;
 	margin-top: 4px;
 }
@@ -187,7 +187,7 @@ header .container {
 
 /* Menu icon for mobile devices */
 /* Style 'show menu' label button and hide it by default. */
-.show-icon-menu {
+.show-menu {
 	display: none;
 	font-size: 30px;
 	right: 20px;
@@ -614,9 +614,10 @@ and (max-width : 480px) {
 		margin-top: 10px;
         height: 50px;
 	}
-  .boxsensors {
-    margin-top: 0px;
-  }
+  
+    .boxsensors {
+        margin-top: 0px;
+    }
 
 	.brand{
 		margin-left: 15px;
@@ -632,7 +633,7 @@ and (max-width : 480px) {
 	}
 
 	/* Display 'show menu' link. */
-	.show-icon-menu {
+	.show-menu {
 		display: block;
 	}
 
@@ -678,6 +679,10 @@ and (max-width : 480px) {
 		width: 100%;
 	}
 
+    
+    
+    
+    
 .buttonsurvey-energy {
     	max-width: 45px;
 	}
