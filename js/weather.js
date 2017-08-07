@@ -167,7 +167,6 @@ function getWeatherGraphicsParams (weatherCode) {
 
 function changeBackground ( color ) {
   // Change color background body.
-  console.log("holita3");
   $('body').css('background', color);
 
   //Javascript Browser Detection - Mobile    
