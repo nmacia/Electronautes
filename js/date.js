@@ -113,7 +113,7 @@ function getWeatherGraphicsParams( weatherCode ) {
     var weatherGraphics = { };
     var color = "#ffffff";
     var img = ""; // what is the default image?
-   weatherCode = '10';
+
     switch ( weatherCode ) {
 
         //Rain showers 10, 11, 12, 40 color #3E6A74
