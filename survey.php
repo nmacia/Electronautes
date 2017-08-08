@@ -26,7 +26,7 @@
                             </div>
                         
                             <div class="boxbuttonssurvey">
-                                <form name="survey" id="survey" method="post" action="" onsubmit="return validateForm()">
+                                <form name="survey" id="survey" method="post" action="sensors.php" onsubmit="return validateForm()">
                                    
                                     <!-- MOOD -->   
                                     <p class="emotion-title">MOOD<span id="error-mood"></span></p>   
@@ -191,9 +191,9 @@
                                             </label>
                                         </div>
                                     </div> 
-                                        <input type="submit" class="btn pull-right" name="submit" value="Submit" onclick="return getForm()" />    
-                                        <input type="password" id="password" name="password" placeholder="Secret CODE" />
-                                        <span id="error"></span>
+                                    <input type="submit" class="btn pull-right" name="submit" value="Submit" onclick="return getForm()" />    
+                                    <input type="password" id="password" name="password" placeholder="Secret CODE" />
+                                    <span id="error"></span>
                                 </form> 
                             </div>        
                         </div>   
