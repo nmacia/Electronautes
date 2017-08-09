@@ -634,6 +634,14 @@ footer {
     color: #F6F6F6 ;
 }
 
+.bug {
+    float: right;
+}
+
+.button-reportbug img {
+    height: 35px;
+}
+
 #temp4-value {
 	font-family: "Amatic SC", sans-serif;
 }
