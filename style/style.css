@@ -219,19 +219,10 @@ input[type=checkbox]:checked ~ #nav #menu {
 */
 
 .container {
-    height: 120px;
     margin-left: auto;
     margin-right: auto;
     padding-left: 15px;
     padding-right: 15px;
-}
-
-.bug {
-    float: right;
-}
-
-.button-reportbug img {
-    height: 35px;
 }
 
 
@@ -557,15 +548,18 @@ input[type=password] {
 }
 
 .r-emotions {
-  padding-left: 10%;
-  padding-right: 10%;
-  height: 122px;
-  margin-bottom: 10px;
+  padding-left: 11.5%;
+  padding-right: 11.5%;
+  height: inherit;
+  margin-bottom: 0px;
   margin-top: 0;
   position: relative;
-  text-align: center;
   width: 100%;
   
+}
+
+.r-buttonsurvey-mood > label < figure < img {
+  height: 40px;
 }
 
 
@@ -613,15 +607,43 @@ input[type=password] {
 ==================================================
 */
 
+.bug {
+    float: right;
+    height: auto;
+    width: auto;
+    margin-left: 2.5%;
+  
+}
+
+.button-reportbug img {
+    height: 30px;
+}
+
+.button-reportbug label > input + figure {
+  position: relative;
+}
+
+.button-reportbug {
+  height: auto;
+  width: auto;
+  float: right;
+  position: relative;
+}
+
+.bug-caption {
+  display: inline-block;
+  vertical-align: top;
+}
+
 footer {
-	height: 80px;
 	margin-bottom: 0;    
 }
 
 .copyright {
-	bottom: 10px;
-	margin-left: 50px;
-	position: absolute;
+	position: relative;
+    width:auto;
+    bottom: 0px; 
+    margin: auto;
 }
 
 .copyright p {
@@ -634,13 +656,6 @@ footer {
     color: #F6F6F6 ;
 }
 
-.bug {
-    float: right;
-}
-
-.button-reportbug img {
-    height: 35px;
-}
 
 [data-tip] {
 	position: relative;
@@ -700,6 +715,10 @@ footer {
                 height: 90px;
     }
           
+    footer {
+     height: auto;
+    }
+          
     .boxsensors {
     margin-top: 30px;
           }
@@ -724,13 +743,7 @@ footer {
     	height: 45px;
 	}
           
-    .copyright {
-    bottom: 0px; 
-          }
-          
-    footer {
-      height: 30px;
-          }
+   
      
     .row-sensor figure img {
     	height: 50px;
@@ -907,10 +920,7 @@ and (max-width : 480px) {
         
 
 
-	.copyright {
-		margin: auto;
-		width: 100%;
-	}
+	
   /* reduce the font size for mobile */
   .welcome-weather-date,
   .weather h2 
@@ -936,4 +946,29 @@ and (max-width : 480px) {
     font-weight: 800;
     font-size: 15px;
 }
+
+
+
+
+.r-buttonsurvey-mood {
+  display: inline-block;
+    height: 60px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
+    width: 60px;
+}
+
+.r-buttonsurvey-mood label {
+  text-align: center;
+  position: relative;
+      width: 100%;
+}
+
+.r-buttonsurvey-mood label:hover > figure > figcaption{
+  opacity: 1;
+}
+
+
+
 

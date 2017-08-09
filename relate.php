@@ -22,11 +22,10 @@
 
                     <div class="r-emotions">
                       <!--Mood-->
-                      <div class="buttonsurvey-mood">
+                      <div class="r-buttonsurvey-mood">
                        <label>
-                          <input type="radio" name="mood" id="happy" value="happy" />
                               <figure>
-                                  <img src="./img/emotions/mood-happy.png" alt="I'm happy." />
+                                  <img src="./img/emotions/mood-happy.png" alt="I'm happy." style="height: 40px;" />
                                       <figcaption>Happy</figcaption>
                               </figure>
                         </label>
