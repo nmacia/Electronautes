@@ -1834,6 +1834,8 @@ pre code {
     margin-left: auto
 }
 
+
+
 @media (min-width: 768px) {
     .container {
         width:750px
@@ -1841,15 +1843,16 @@ pre code {
 }
 
 @media (min-width: 992px) {
-    .container {
+    .container, .box-cont-footer {
         width:970px
     }
 }
 
 @media (min-width: 1281px) {
-    .container {
+    .container, .box-cont-footer {
         width:1170px
     }
+
 }
 
 .container-fluid {

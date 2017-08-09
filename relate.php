@@ -31,8 +31,32 @@
                         </label>
                         </div>
                       <!--Energy-->
+                       <div class="r-buttonsurvey-mood">
+                       <label>
+                              <figure>
+                                  <img src="./img/emotions/energy-superenergetic.png" alt="I feel awesome." style="height: 40px;" />
+                                      <figcaption>S Energetic</figcaption>
+                              </figure>
+                        </label>
+                        </div>
                       <!--Temperature-->
+                       <div class="r-buttonsurvey-mood">
+                       <label>
+                              <figure>
+                                  <img src="./img/emotions/temperature-good.png" alt="Good temperature." style="height: 40px;" />
+                                      <figcaption>Good</figcaption>
+                              </figure>
+                        </label>
+                        </div>
                       <!--Noise-->
+                       <div class="r-buttonsurvey-mood">
+                       <label>
+                              <figure>
+                                  <img src="./img/emotions/noise-normal.png" alt="Regular noise" style="height: 40px;" />
+                                      <figcaption>Regular</figcaption>
+                              </figure>
+                        </label>
+                        </div>
                     
                       
                     

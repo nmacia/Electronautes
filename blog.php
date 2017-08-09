@@ -15,7 +15,7 @@
             <div class="container no-padding">
                 <div class="block no-margin clearfix">
                     <div class="col-xs-12 col-md-12 no-padding">
-                        <iframe src="http://miteaav.blogspot.com/" width="100%" height="600">
+                        <iframe src="http://miteaav.blogspot.com/" width="100%" height="500">
                              <p>Your browser does not support iframes.</p>
                         </iframe>
                     </div>
