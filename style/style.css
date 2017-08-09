@@ -450,11 +450,13 @@ input[type=password] {
 }
 
 
-.button-sensor label {
+.button-sensor label,
+.button-relate label, {
     text-align: center;
 }
 
-.button-sensor {
+.button-sensor,
+.button-relate {
 	display: inline-block;
     height: 75px;
     margin-left: auto;
@@ -463,6 +465,10 @@ input[type=password] {
     position: relative;
     width: 90px;
     text-align: center;
+}
+
+.button-relate {
+  display: none;
 }
 
 .img-window-sensor {
@@ -796,7 +802,8 @@ footer {
     	max-width: 80px;
     }
     
-    .button-sensor {
+    .button-sensor,
+    .button-relate {
     	max-width: 80px;
         margin-bottom: 0px;
         height: 70px;
@@ -956,7 +963,8 @@ and (max-width : 480px) {
     	max-width: 80px;
     }
     
-    .button-sensor {
+    .button-sensor,
+    .button-relate {
     	max-width: 80px;
         margin-bottom: 0px;
     }     

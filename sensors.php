@@ -94,59 +94,71 @@
 
                                 <!-- ROW 3 -->                           
                                 <div class="row-sensor">
-                                    <div class="button-sensor">
-                                        <label>
-                                            <input type="radio" name="sensor" id="temparature" value="temperature" onclick="showSensorValue('sensor-temperature');" />
-                                            <figure>
-                                                <img src="./img/sensors/temperature.png" alt="Temperature" />
-                                                <figcaption>Temperature</figcaption>
-                                            </figure>
-                                        </label>
-                                    </div>
+                                  <!-- Temperature -->
                                   <div class="button-sensor">
-                                        <label>
-                                            <input type="radio" name="sensor" id="humidity" value="humidity" onclick="showSensorValue('sensor-humidity');" />
-                                            <figure>
-                                                <img src="./img/sensors/humidity-2.png" alt="Humidity" />
-                                                <figcaption>Humidity</figcaption>
-                                            </figure>
-                                        </label>
-                                    </div>
-                                   <div class="button-sensor">
-                                        <label>
-                                            <input type="radio" name="sensor" id="pressure" value="pressure" onclick="showSensorValue('sensor-pressure');" />
-                                            <figure>
-                                                <img src="./img/sensors/pressure.png" alt="Pressure" />
-                                                <figcaption>Pressure</figcaption>
-                                            </figure>
-                                        </label>
-                                    </div>
-                                    
+                                    <label>
+                                      <input type="radio" name="sensor" id="temparature" value="temperature" onclick="showSensorValue('sensor-temperature');" />
+                                      <figure>
+                                        <img src="./img/sensors/temperature.png" alt="Temperature" />
+                                        <figcaption>Temperature</figcaption>
+                                      </figure>
+                                    </label>
+                                  </div>
+                                  <!-- Humidity -->
+                                  <div class="button-sensor">
+                                    <label>
+                                      <input type="radio" name="sensor" id="humidity" value="humidity" onclick="showSensorValue('sensor-humidity');" />
+                                      <figure>
+                                        <img src="./img/sensors/humidity-2.png" alt="Humidity" />
+                                        <figcaption>Humidity</figcaption>
+                                      </figure>
+                                    </label>
+                                  </div>
+                                  <!-- Pressure -->
+                                  <div class="button-sensor">
+                                    <label>
+                                      <input type="radio" name="sensor" id="pressure" value="pressure" onclick="showSensorValue('sensor-pressure');" />
+                                      <figure>
+                                        <img src="./img/sensors/pressure.png" alt="Pressure" />
+                                        <figcaption>Pressure</figcaption>
+                                      </figure>
+                                    </label>
+                                  </div>            
                                 </div>
                                 
                                 <!-- ROW 4 -->                           
-                                <div class="row-sensor">
-                                    
-                                   <div class="button-sensor">
-                                        <label>
-                                            <input type="radio" name="sensor" id="co2" value="co2" onclick="showSensorValue('sensor-co2');" />
-                                            <figure>
-                                                <img src="./img/sensors/co2.png" alt="CO2" />
-                                                <figcaption>CO2</figcaption>
-                                            </figure>
-                                        </label>
-                                    </div>
-                                  
-                                    <div class="button-sensor">
-                                        <label>
-                                            <input type="radio" name="sensor" id="light" value="light" onclick="showSensorValue('sensor-light');" />
-                                            <figure>
-                                                <img src="./img/sensors/light.png" alt="I feel energetic." />
-                                                <figcaption>Light</figcaption>
-                                            </figure>
-                                        </label>
-                                    </div>
-                              </div>
+                                <div class="row-sensor">  
+                                  <!-- CO2 -->
+                                  <div class="button-sensor">
+                                    <label>
+                                      <input type="radio" name="sensor" id="co2" value="co2" onclick="showSensorValue('sensor-co2');" />
+                                      <figure>
+                                        <img src="./img/sensors/co2.png" alt="CO2" />
+                                        <figcaption>CO2</figcaption>
+                                      </figure>
+                                    </label>
+                                  </div>
+                                  <!--Light -->
+                                  <div class="button-sensor">
+                                    <label>
+                                      <input type="radio" name="sensor" id="light" value="light" onclick="showSensorValue('sensor-light');" />
+                                      <figure>
+                                        <img src="./img/sensors/light.png" alt="I feel energetic." />
+                                        <figcaption>Light</figcaption>
+                                      </figure>
+                                    </label>
+                                  </div>
+                                  <!-- Game -->
+                                  <div class="button-relate">
+                                    <label>
+                                      <input type="button" name="relate" id="relate" value="relate" onclick="window.location.href='relate.php'" />
+                                      <figure>
+                                        <img src="./img/sensors/humidity.png" alt="Relate feelings and sensors" />
+                                        <figcaption>Relate</figcaption>
+                                      </figure>
+                                    </label>
+                                  </div>
+                                </div>
                                 
                             </div>        
                         </div>   

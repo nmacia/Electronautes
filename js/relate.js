@@ -41,5 +41,7 @@ function drop(ev) {
   }   
 }
 
-
+$(document).ready(function() {
+  window.sessionStorage.clear();
+});
 

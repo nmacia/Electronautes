@@ -8,7 +8,6 @@
  Last modified: July 2017 
  */
 
-
 function validatePassword( password ) {  
   if ( password === "12345" ) {
     return true;
@@ -73,6 +72,7 @@ function getForm() {
   var temperature = document.querySelector('input[name = "temperature"]:checked').value;
   var noise = document.querySelector('input[name = "noise"]:checked').value;
   var password = document.getElementById("password").value;
+  saveSessionStorage(mood, energy, temperature, noise, password);
   writeUserData(mood, energy, temperature, noise, password);
 }
 
@@ -87,6 +87,13 @@ function writeUserData(mood, energy, temperature, noise, password) {
     noise : noise,
     class : password
   });
+}
+
+function saveSessionStorage(mood, energy, temperature, noise) {
+  window.sessionStorage["mood"] = mood;
+  window.sessionStorage["energy"] = energy;
+  window.sessionStorage["temperature"] = temperature;
+  window.sessionStorage["noise"] = noise;
 }
 
 $(document).ready(function() {

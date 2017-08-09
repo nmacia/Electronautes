@@ -236,3 +236,9 @@ function showSensorValue ( typeOfSensor ) {
     } 
   }
 }
+
+$(document).ready(function() {
+  if (window.sessionStorage.length != 0) {
+    $('.button-relate').css('display', 'inline-block');
+  }
+});
