@@ -17,8 +17,26 @@
                 
                 <!-- Drag and drop -->
                 <div class="col-xs-12 col-md-7 no-padding">
+                    
+                  <!-- Tab emotions -->
 
                     <div class="r-emotions">
+                      <!--Mood-->
+                      <div class="buttonsurvey-mood">
+                       <label>
+                          <input type="radio" name="mood" id="happy" value="happy" />
+                              <figure>
+                                  <img src="./img/emotions/mood-happy.png" alt="I'm happy." />
+                                      <figcaption>Happy</figcaption>
+                              </figure>
+                        </label>
+                        </div>
+                      <!--Energy-->
+                      <!--Temperature-->
+                      <!--Noise-->
+                    
+                      
+                    
                     </div>
 
                     <div class="r-sensorsbox-and-dragbox">
@@ -158,6 +176,7 @@
                     </div> 
                   <div class="boxbuttonssurvey">
                     <div class="c-group-box">
+                      <!--Mood, ENERGY, Temperature, Noise -->
                     <div class="circle-group">
                     </div>
                     <div class="circle-group">

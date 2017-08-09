@@ -212,6 +212,12 @@ input[type=checkbox]:checked ~ #nav #menu {
 ==================================================
 */
 
+/*
+---------------------------------------------------------
+  05.0 - GENERAL
+---------------------------------------------------------
+*/
+
 .container {
     height: 120px;
     margin-left: auto;
@@ -219,6 +225,15 @@ input[type=checkbox]:checked ~ #nav #menu {
     padding-left: 15px;
     padding-right: 15px;
 }
+
+.bug {
+    float: right;
+}
+
+.button-reportbug img {
+    height: 35px;
+}
+
 
 main .container {
     padding-bottom: 10px;
@@ -457,6 +472,142 @@ input[type=password] {
 }
 
 /*
+---------------------------------------------------------
+  05.1 - RELATE ( Drag and drop relate sensors emotions)
+---------------------------------------------------------
+*/
+
+
+.r-button-sensor  label{
+    width: 100%;
+}
+
+.r-button-sensor img {
+    max-width: 90%;
+    max-height: 40px; 
+}
+
+
+.r-button-sensor .img-window-sensor {
+  min-height: 25px;
+}
+
+.r-button-sensor .img-window-sensor {
+  max-width: 50px;
+}
+
+.r-button-sensor label > input + figure {
+  position: relative;
+  height: inherit;
+}
+
+.r-button-sensor  label:hover > figure { /* Invert color for drag and drop */
+	filter: invert(100%);
+}
+
+.r-button-sensor  label:hover > figure > figcaption { /* display figure caption when hover */
+	opacity: 1;
+}
+
+.r-dragbox {
+  float:left;
+    width: 80%;
+    height:initial;
+    margin-left: 1.5%;
+    margin-right: 1.5%;
+    margin-top: 0px;
+    padding: 2.5%;
+    border: .2em dashed black;
+  background-color: rgba(255, 255, 255, 0.72);
+}
+
+.r-dragbox .r-button-sensor img {
+   height: 40px;
+  
+}
+
+.r-dragbox .r-button-sensor {
+    max-width: 20%;
+    min-width: 15%;
+    margin: 2px;
+    text-align: center;
+    display: inline-flex;
+  
+}
+
+.r-dragbox .r-button-sensor label {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-bottom: 0px;
+  
+}
+
+.r-dragbox .r-button-sensor:hover {
+  background-color: #262626;
+  border-radius: 10%;
+}
+
+
+.r-dragbox figcaption {
+	
+	font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1px;
+	
+}
+
+.r-emotions {
+  padding-left: 10%;
+  padding-right: 10%;
+  height: 122px;
+  margin-bottom: 10px;
+  margin-top: 0;
+  position: relative;
+  text-align: center;
+  width: 100%;
+  
+}
+
+
+.r-sensorsbox-and-dragbox {
+  /* width: 80%; */
+  display: flex;
+  height: 100%
+}
+
+
+.r-sensors-side {
+  width: 10%;
+  height: auto;
+  display: block;
+  margin-bottom: 0px;
+  margin-top: 0;
+  position: relative;
+  text-align: center;
+}
+
+.r-sensors-side .r-button-sensor {
+  max-width: 90%;
+  max-height: auto;
+}
+
+
+.circle-group {
+  border-radius: 100%;
+  border-style: dashed;
+  width: 100px;
+  height: 100px;
+  margin-left: 5%;
+  margin-bottom: 5%;
+  display: inline-flex;
+}
+
+.c-group-box {
+  width: 100%;
+}
+
+
+/*
 ==================================================
   04 - FOOTER
 ==================================================
@@ -494,9 +645,9 @@ footer {
 */
 
 /*
-==================================================
+--------------------------------------------------
   05.1 - DESKTOP 
-==================================================
+--------------------------------------------------
 */
 
 @media (min-width : 991px) 
@@ -601,9 +752,9 @@ footer {
 
 
 /*
-==================================================
+--------------------------------------------------
   05.2 - SMARTPHONES (Portrait and landscape)
-==================================================
+--------------------------------------------------
 */
 
 @media only screen 
@@ -734,6 +885,12 @@ and (max-width : 480px) {
     margin-top: 20px;
   }
   
+  /* reduce the image width of the window img in relate */
+  
+  .r-button-sensor .img-window-sensor {
+    max-width: 30px;
+  }
+  
 }
 
 
@@ -743,128 +900,3 @@ and (max-width : 480px) {
     font-size: 15px;
 }
 
-/* Drag and drop relate sensors emotions */
-
-
-.r-button-sensor  label{
-    width: 100%;
-}
-
-.r-button-sensor img {
-    max-width: 90%;
-    max-height: 40px; 
-}
-
-
-.r-button-sensor .img-window-sensor {
-  min-height: 25px;
-}
-
-.r-button-sensor .img-window-sensor {
-  max-width: 50px;
-}
-
-.r-button-sensor label > input + figure {
-  position: relative;
-  height: inherit;
-}
-
-.r-button-sensor  label:hover > figure { /* Invert color for drag and drop */
-	filter: invert(100%);
-}
-
-.r-button-sensor  label:hover > figure > figcaption { /* display figure caption when hover */
-	opacity: 1;
-}
-
-.r-dragbox {
-  float:left;
-    width: 80%;
-    height:initial;
-    margin-left: 10px;
-    margin-right: 10px;
-    margin-top: 0px;
-    padding: 2.5%;
-    border: .2em dashed black;
-  background-color: rgba(255, 255, 255, 0.72);
-}
-
-.r-dragbox .r-button-sensor img {
-   height: 40px;
-  
-}
-
-.r-dragbox .r-button-sensor {
-    max-width: 20%;
-    min-width: 15%;
-    margin: 2px;
-    text-align: center;
-    display: inline-flex;
-  
-}
-
-.r-dragbox .r-button-sensor label {
-    padding-top: 5px;
-    padding-bottom: 5px;
-    margin-bottom: 0px;
-  
-}
-
-.r-dragbox .r-button-sensor:hover {
-  background-color: #262626;
-  border-radius: 10%;
-}
-
-
-.r-dragbox figcaption {
-	
-	font-size: 12px;
-    font-weight: 700;
-    letter-spacing: 1px;
-	
-}
-
-.r-emotions {
-  padding-left: 10%;
-  padding-right: 10%;
-  height: 122px;
-  
-}
-
-
-.r-sensorsbox-and-dragbox {
-  /* width: 80%; */
-  display: flex;
-  height: 100%
-}
-
-
-.r-sensors-side {
-  width: 10%;
-  height: auto;
-  display: block;
-  margin-bottom: 0px;
-  margin-top: 0;
-  position: relative;
-  text-align: center;
-}
-
-.r-sensors-side .r-button-sensor {
-  max-width: 90%;
-  max-height: auto;
-}
-
-
-.circle-group {
-  border-radius: 100%;
-  border-style: dashed;
-  width: 100px;
-  height: 100px;
-  margin-left: 5%;
-  margin-bottom: 5%;
-  display: inline-flex;
-}
-
-.c-group-box {
-  width: 100%;
-}
