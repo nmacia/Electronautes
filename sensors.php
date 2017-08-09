@@ -146,18 +146,7 @@
                                             </figure>
                                         </label>
                                     </div>
-                                  
-                                  
-                                    <div class="button-sensor">
-                                        <label>
-                                            <input type="radio" name="sensor" id="proximity" value="promixity" onclick="showSensorValue('sensor-proximity');" />
-                                            <figure>
-                                                <img src="./img/errors/bug.png" alt="Report bug"/>
-                                                <figcaption>Report bug</figcaption>
-                                            </figure>
-                                        </label>
-                                    </div>
-                                </div>
+                              </div>
                                 
                             </div>        
                         </div>   
