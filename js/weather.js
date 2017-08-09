@@ -67,6 +67,7 @@ function getWeatherGraphicsParams (weatherCode) {
     case '47':
       color = "#445197";
       img = "thunderstorms.png";
+      addRainToBackground( color )
       break; 
     //Hail 17, 35, #6b6b6b
     case '17': 
