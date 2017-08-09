@@ -491,6 +491,35 @@ footer {
     height: 35px;
 }
 
+[data-tip] {
+	position: relative;
+}
+
+[data-tip]:before {
+	/* hides the tooltip when not hovered */
+    display: none;
+}
+
+[data-tip]:after {
+	background: #262626;;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+    color: #fff;
+    content: attr(data-tip);
+	display: none;
+	left: -220px;
+    padding: 5px 8px;
+    position: absolute;
+	top: -10px;
+	width: 180px;
+}
+
+[data-tip]:hover:before,
+[data-tip]:hover:after {
+	display: block;
+}
+
 #temp4-value {
 	font-family: "Amatic SC", sans-serif;
 }
