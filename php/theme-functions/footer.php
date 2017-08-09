@@ -4,13 +4,15 @@
       </div>
       <div class="bug col-xs-12 col-md-2">
         <div class="button-reportbug">
-          <label>
-            <input type="button" onclick="" />
-            <figure>
-              <img src="./img/errors/bug.png" />
-              <figcaption>Report bug</figcaption>
-            </figure>
-          </label>   
+          <div data-tip="Find the true story about the term bug. Was it really Grace Hopper who coined the term computer bug: 'First actual case of bug being found'?">
+            <label>
+              <input type="button" onclick="" />
+              <figure>
+                <img src="./img/errors/bug.png" />
+                <figcaption>Report bug</figcaption>
+              </figure>          
+            </label>   
+         </div>
         </div>
       </div>
     </footer>
