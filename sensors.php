@@ -149,7 +149,7 @@
                                     </label>
                                   </div>
                                   <!-- Game -->
-                                  <div class="button-relate">
+                                 <!-- <div class="button-relate">
                                     <label>
                                       <input type="button" name="relate" id="relate" value="relate" onclick="window.location.href='relate.php'" />
                                       <figure>
@@ -157,10 +157,13 @@
                                         <figcaption>Relate</figcaption>
                                       </figure>
                                     </label>
-                                  </div>
+                                  </div>-->
                                 </div>
                                 
-                            </div>        
+                            </div> 
+                          <!-- Game -->
+                          <input type="button" class="btn pull-right button-relate" name="relate" value="relate" onclick="window.location.href='relate.php'" />
+                          
                         </div>   
                     </div>
                 </div>

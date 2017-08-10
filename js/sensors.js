@@ -240,5 +240,8 @@ function showSensorValue ( typeOfSensor ) {
 $(document).ready(function() {
   if (window.sessionStorage.length != 0) {
     $('.button-relate').css('display', 'inline-block');
+    $('.row-sensor').css('border-bottom', 'none');
+    $('.row-sensor').css('border-top', '.2em solid #262626');
+    
   }
 });

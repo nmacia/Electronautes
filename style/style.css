@@ -455,8 +455,8 @@ input[type=password] {
     text-align: center;
 }
 
-.button-sensor,
-.button-relate {
+.button-sensor
+/*,.button-relate*/ {
 	display: inline-block;
     height: 75px;
     margin-left: auto;
@@ -802,8 +802,7 @@ footer {
     	max-width: 80px;
     }
     
-    .button-sensor,
-    .button-relate {
+    .button-sensor/*,.button-relate*/ {
     	max-width: 80px;
         margin-bottom: 0px;
         height: 70px;
@@ -846,6 +845,10 @@ footer {
             padding-right: 30px;
             padding-left: 0px;
 
+          }
+          
+          .r-sensorsbox-and-dragbox {
+            margin-bottom: 20px;
           }
 }
 
@@ -963,8 +966,7 @@ and (max-width : 480px) {
     	max-width: 80px;
     }
     
-    .button-sensor,
-    .button-relate {
+    .button-sensor/*,.button-relate*/ {
     	max-width: 80px;
         margin-bottom: 0px;
     }     
@@ -988,6 +990,12 @@ and (max-width : 480px) {
   .r-button-sensor .img-window-sensor {
     max-width: 30px;
   }
+  
+  .c-group-box {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
   
 }
 
