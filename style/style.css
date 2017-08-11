@@ -483,33 +483,44 @@ input[type=password] {
 
 .r-buttonsurvey-mood {
   display: inline-block;
-    height: 75px;
     margin-left: auto;
     margin-right: auto;
-    padding-top: 15px;
-    width: 75px;
+    
+    
 }
+
+
+.r-buttonsurvey-mood > label > input:checked + figure {
+      background: white;
+  
+}
+
+.r-buttonsurvey-mood > label > input + figure {
+  height: 75px;
+  width: 75px;
+  padding-top: 15px;
+  position: relative;
+  
+}
+
+
 
 .r-buttonsurvey-mood label {
   text-align: center;
   position: relative;
-      width: 100%;
+  width: 100%;
+  margin-bottom: 0px;
 }
 
 .r-buttonsurvey-mood label:hover > figure > figcaption{
   opacity: 1;
 }
 
-.r-buttonsurvey-mood label:hover {
+/*.r-buttonsurvey-mood label:hover {
 
 filter: invert(100%);
   
-}
-
-.r-buttonsurvey-mood:active {
-background-color: black;
-  
-}
+}*/
 
 
 .r-button-sensor  label{

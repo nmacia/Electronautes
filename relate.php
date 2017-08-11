@@ -24,6 +24,8 @@
                       <!--Mood-->
                       <div class="r-buttonsurvey-mood">
                        <label>
+                         
+                        <input type="radio" name="tab-mood" id="noisy" value="mood" checked />
                               <figure>
                                   <img src="./img/emotions/mood-happy.png" alt="I'm happy." style="height: 40px;" />
                                       <figcaption>Happy</figcaption>
@@ -33,6 +35,7 @@
                       <!--Energy-->
                        <div class="r-buttonsurvey-mood">
                        <label>
+                         <input type="radio" name="tab-mood" id="noisy" value="energy" />
                               <figure>
                                   <img src="./img/emotions/energy-superenergetic.png" alt="I feel awesome." style="height: 40px;" />
                                       <figcaption>S Energetic</figcaption>
@@ -42,6 +45,7 @@
                       <!--Temperature-->
                        <div class="r-buttonsurvey-mood">
                        <label>
+                         <input type="radio" name="tab-mood" id="noisy" value="temperature" />
                               <figure>
                                   <img src="./img/emotions/temperature-good.png" alt="Good temperature." style="height: 40px;" />
                                       <figcaption>Good</figcaption>
@@ -51,6 +55,7 @@
                       <!--Noise-->
                        <div class="r-buttonsurvey-mood">
                        <label>
+                         <input type="radio" name="tab-mood" id="noisy" value="noise" />
                               <figure>
                                   <img src="./img/emotions/noise-normal.png" alt="Regular noise" style="height: 40px;" />
                                       <figcaption>Regular</figcaption>
