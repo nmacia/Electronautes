@@ -632,16 +632,28 @@ background-color: black;
 .circle-group {
   border-radius: 100%;
   border-style: dashed;
-  width: 100px;
-  height: 100px;
-  margin-left: 5%;
-  margin-bottom: 5%;
-  display: inline-flex;
+  width: 110px;
+  height: 110px;
+  padding: 10px;
+  
 }
 
 .c-group-box {
   width: 100%;
+  margin-bottom: 2.5%;
 }
+
+.emotion-c-group {
+  margin-left: 5%;
+  display: block;
+  
+}
+
+.c-group-road {
+  display: inline-flex;
+    width: 100%;
+}
+
 
 
 /*
@@ -737,6 +749,20 @@ footer {
 
 #temp4-value {
 	font-family: "Amatic SC", sans-serif;
+}
+
+.informationsource {
+    font-weight: 800;
+    font-size: 15px;
+}
+
+
+
+.box-cont-footer {
+  padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 /*
@@ -990,33 +1016,11 @@ and (max-width : 480px) {
   .r-button-sensor .img-window-sensor {
     max-width: 30px;
   }
+    
   
-  .c-group-box {
-    width: 80%;
-    margin-left: auto;
-    margin-right: auto;
-}
-  
-}
-
-
-
-.informationsource {
-    font-weight: 800;
-    font-size: 15px;
-}
+} /* End responsiveness*/
 
 
 
 
 
-
-
-
-
-.box-cont-footer {
-  padding-right: 15px;
-    padding-left: 15px;
-    margin-right: auto;
-    margin-left: auto;
-}

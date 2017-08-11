@@ -29,7 +29,7 @@
                                       <figcaption>Happy</figcaption>
                               </figure>
                         </label>
-                        </div>
+                      </div>
                       <!--Energy-->
                        <div class="r-buttonsurvey-mood">
                        <label>
@@ -57,11 +57,9 @@
                               </figure>
                         </label>
                         </div>
-                    
                       
                     
-                    </div>
-
+                  </div>
                     <div class="r-sensorsbox-and-dragbox">
 
                         <!-- Left side sensors -->
@@ -200,13 +198,27 @@
                   <div class="boxbuttonssurvey">
                     <div class="c-group-box">
                       <!--Mood, ENERGY, Temperature, Noise -->
-                    <div class="circle-group">
+                      
+                    <div class="c-group-road">
+                      <div class="emotion-c-group">
+                      <p class="emotion-title">Mood<span id="current-mood"></span></p>
+                      <div class="circle-group"></div>
+                      </div>
+                      <div class="emotion-c-group">
+                      <p class="emotion-title">Energy<span id="current-energy"></span></p> 
+                      <div class="circle-group"></div>
+                      </div>  
                     </div>
-                    <div class="circle-group">
-                    </div>
-                    <div class="circle-group">
-                    </div>
-                    <div class="circle-group">
+                       
+                    <div class="c-group-road">
+                      <div class="emotion-c-group">
+                      <p class="emotion-title">Temperature<span id="error-temperature"></span></p>
+                      <div class="circle-group"></div>
+                      </div>
+                      <div class="emotion-c-group">
+                      <p class="emotion-title">Noise<span id="error-noise"></span></p>
+                      <div class="circle-group"></div>
+                      </div>  
                     </div>
                       </div>
                     <input type="submit" class="btn pull-right" name="submit" value="Submit" onclick="return getForm()" /> 
