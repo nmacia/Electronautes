@@ -86,17 +86,17 @@ header .container {
 
 /* LOGO */
 
-.brand {
+.logo {
 	float: left;
 	height: 100%;
 	left: 5px;
 }
 
-.brand:hover{
-        filter: invert(100%);
+.logo:hover{
+    filter: invert(100%);
 }
 
-.brand img {
+.logo img {
 	height: 100px;
 }
 
@@ -808,15 +808,15 @@ footer {
     }
           
     footer {
-     height: auto;
+      height: auto;
     }
           
     .boxsensors {
-    margin-top: 30px;
-          }
+        margin-top: 30px;
+    }
             
-    .brand img {
-    height: 90px;
+    .logo img {
+        height: 90px;
     }
     
 	.buttonsurvey-energy {
@@ -916,12 +916,12 @@ and (max-width : 480px) {
         margin-top: 0px;
     }
 
-	.brand{
+	.logo {
 		margin-left: 15px;
 		margin-top: -10px;
 	}
     
-    .brand img {
+    .logo img {
 	    display: block;
 	    height: 50px;
 	    margin-top: 20px;

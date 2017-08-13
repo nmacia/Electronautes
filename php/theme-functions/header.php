@@ -48,7 +48,7 @@
     <header>
       <div class="container">
         <!-- Logo -->
-        <div class="brand">
+        <div class="logo">
           <a href="TerMITesForElectronautes.php"><img src="img/TerMITeslogoname.png" alt="logo" /></a>
         </div>
         <!-- Navigation bar -->
