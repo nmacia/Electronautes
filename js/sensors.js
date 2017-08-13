@@ -40,15 +40,16 @@ var phantom = true;
 var motion = true;
 
 function showSensorValue ( typeOfSensor ) {
-    
-  var classroom = document.getElementById("santasensorssvg");
-
+  
+  // var classroom = document.getElementById("img-sensor-" + sessionStorage.getItem("sensors-classroom") );
+  var classroom = document.getElementById("img-sensors-esfinx");
+ 
   // Get the inner DOM of svg file.
   var svgDoc = classroom.contentDocument;
 
   // Hide sensor values queried before.
   if ( previousQuery !== "" ) {
-    svgDoc.getElementById( previousQuery ).setAttribute("display","none");
+    svgDoc.getElementById( previousQuery ).setAttribute("display", "none");
   }
 
   // Get the inner element by id.
@@ -244,4 +245,22 @@ $(document).ready(function() {
     $('.row-sensor').css('border-top', '.2em solid #262626');
     
   }
+  
+  // Display svg for the selected classroom.  
+  var selectedClassroom = sessionStorage.getItem("sensors-classroom") ;
+  var classrooms = ['sensors-esfinx', 'sensors-kremlin', 'sensors-bigben', 'sensors-moais', 'sensors-atonium', 'sensors-kheops'];
+  var c1 = ['esfinx', 'kremlin', 'bigben', 'moais', 'atonium', 'kheops'];
+  
+  for (i = 0; i < classrooms.length; i++) {
+    console.log(classrooms[i]);
+    console.log(selectedClassroom);
+    
+    if ( classrooms[i] === selectedClassroom ) {
+      $('#img-sensors-'+c1[i]).css('display', 'block');
+    }
+    else {
+      $('#img-sensors-'+c1[i]).css('display', 'none');
+    }
+  }
+  
 });

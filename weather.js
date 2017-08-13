@@ -12,6 +12,14 @@
 var tday = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
 var tmonth = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December']; 
 
+// Retrieve date.
+window.onload = function getClock() {
+  var today = new Date();
+  today.setTime(today.getTime());   
+  document.getElementById('getDate').innerHTML = tmonth[today.getMonth()] + " " + today.getDate() + ", " + today.getFullYear();
+  document.getElementById('getDayOfWeek').innerHTML = tday[today.getDay()];
+}
+
 // returns the graphical parameters (for now background color and image filename) of a given weather code
 function getWeatherGraphicsParams (weatherCode) {  
   // TODO: if previously computed weatherParams are cached, performance can be improved
@@ -172,10 +180,7 @@ function changeBackground ( color ) {
 $(document).ready(function() {
 
   var weatherCode = 0;
-
-  formatSVG('santasensorssvg');
-  formatSVG('santasvg');
-
+  
   $.simpleWeather({
       //zipcode: 'AD500',
       //woeid: '2357536', //2357536

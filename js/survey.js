@@ -112,6 +112,19 @@ $(document).ready(function() {
   // Get a reference to the database service
   var database = firebase.database();
 
+  // Display svg for the selected classroom.  
+  var selectedClassroom = sessionStorage.getItem("survey-classroom") ;
+  var classrooms = ['esfinx', 'kremlin', 'bigben', 'moais', 'atonium', 'kheops'];
+  
+  for (i = 0; i < classrooms.length; i++) {
+    if ( classrooms[i] === selectedClassroom ) {
+      $('#img-'+classrooms[i]).css('display', 'block');
+    }
+    else {
+      $('#img-'+classrooms[i]).css('display', 'none');
+    }
+  }
+  
 });
 
 

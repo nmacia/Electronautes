@@ -15,7 +15,14 @@
 			<div class="container no-padding">
                 <div class="block no-margin clearfix">
                     <div class="col-xs-12 col-md-7 no-padding">
-                        <object data="svg/santacolomasvgforsensors.svg" type="image/svg+xml" id="santasensorssvg"></object>
+                      <!--object data="svg/santacolomaill.svg" type="image/svg+xml" id="santasvg"></object-->
+                      <object data="svg/santacolomasvgforsensors.svg" type="image/svg+xml" id="img-sensors-esfinx"></object> 
+                      <!-- TODO: Add svg for each class -->
+                      <object data="svg/test.svg" type="image/svg+xml" id="img-sensors-kremlin"></object>
+                      <object data="svg/test.svg" type="image/svg+xml" id="img-sensors-bigben"></object>
+                      <object data="svg/test.svg" type="image/svg+xml" id="img-sensors-moais"></object>
+                      <object data="svg/test.svg" type="image/svg+xml" id="img-sensors-atonium"></object>
+                      <object data="svg/test.svg" type="image/svg+xml" id="img-sensors-kheops"></object>  
                     </div>
                     <div class="col-xs-12 col-md-5 no-padding">
                         <div>

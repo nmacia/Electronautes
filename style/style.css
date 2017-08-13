@@ -244,7 +244,13 @@ no-padding {
 }
 
 #santasensorssvg,
-#svgsanta {
+#svgsanta,
+#img-esfinx, #img-sensors-esfinx,
+#img-kremlin, #img-sensors-kremlin,
+#img-bigben, #img-sensors-bigben,
+#img-moais, #img-sensors-moais,
+#img-atonium, #img-sensors-atonium,
+#img-kheops, #img-sensors-kheops {
 	width: 100%;
 }
 

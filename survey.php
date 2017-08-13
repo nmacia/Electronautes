@@ -15,8 +15,15 @@
 			<div class="container no-padding">
                 <div class="block no-margin clearfix">
                     <div class="col-xs-12 col-md-7 no-padding">
-                        <object data="svg/santacolomaill.svg" type="image/svg+xml" id="santasvg"></object>
-                    </div>
+                      <!--object data="svg/santacolomaill.svg" type="image/svg+xml" id="santasvg"></object-->
+                      <object data="svg/santacolomaill.svg" type="image/svg+xml" id="img-esfinx"></object> 
+                      <!-- TODO: Add svg for each class -->
+                      <object data="svg/test.svg" type="image/svg+xml" id="img-kremlin"></object>
+                      <object data="svg/test.svg" type="image/svg+xml" id="img-bigben"></object>
+                      <object data="svg/test.svg" type="image/svg+xml" id="img-moais"></object>
+                      <object data="svg/test.svg" type="image/svg+xml" id="img-atonium"></object>
+                      <object data="svg/test.svg" type="image/svg+xml" id="img-kheops"></object>
+                     </div>
                     <div class="col-xs-12 col-md-5 no-padding">
                         <div>
                             <div class="welcome-weather-date">      
