@@ -1,0 +1,22 @@
+<main>	
+  <div class="container no-padding">
+    <div class="block no-margin clearfix">
+      <div class="col-xs-12 col-md-7 no-padding">
+        <img src="./img/funfact/2017-SDG-Comic-1.png" alt="SDG Comic" width="33%"/>
+        <img src="./img/funfact/2017-SDG-Comic-2.png" alt="SDG Comic" width="66%"/>
+      </div>
+      <div class="col-xs-12 col-md-5 no-padding">
+        <!-- Weather panel -->
+        <t-weather></t-weather>        
+        <!-- Report bug -->
+        <t-report-bug></t-report-bug>
+        <!-- Fun fact reference -->
+        <div ng-hide="bugReport.startReporting === true">
+          <p class="funfact">http://www.comicsunitingnations.org/comics/</p>
+          <p class="funfact">"Co-founded by PCI Media Impact, Reading with Pictures and UNICEF
+Launched at the New York City ComicCon in 2015, Comics Uniting Nations works with world-renown comic book artists and story-tellers to bring the SDGs to life through Comics."</p>  
+        </div>
+      </div>
+    </div>
+  </div>       
+</main>

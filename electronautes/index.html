@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html lang="en" ng-app="myApp" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html lang="en" ng-app="myApp" class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html lang="en" ng-app="myApp" class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en" ng-app="electronautes" class="no-js"> <!--<![endif]-->
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>TerMITes</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="bower_components/html5-boilerplate/dist/css/normalize.css">
+  <link rel="stylesheet" href="bower_components/html5-boilerplate/dist/css/main.css">
+  <script src="bower_components/html5-boilerplate/dist/js/vendor/modernizr-2.8.3.min.js"></script>
+ 
+  <link href="img/TerMITes27x32.png" rel="shortcut icon" type="image/x-icon">
+  <link rel="stylesheet" href="./style/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,400,300">
+  <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Amatic+SC">
+
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="style/style.css">
+  
+  <!-- JS -->
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+  <script src="https://cdn.rawgit.com/monkeecreate/jquery.simpleWeather/master/jquery.simpleWeather.min.js" type="text/javascript"></script>
+  <!--script type="text/javascript" src="js/svg.js"></script-->
+ 
+  <script src="//cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.11/p5.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.11/addons/p5.dom.js"></script>
+  <script type="text/javascript" src="functions/rain.js"></script>
+  <!--script type="text/javascript" src="functions/svg.js"></script-->
+  
+  <script src="https://www.gstatic.com/firebasejs/3.7.8/firebase.js"></script>
+  <script>
+    var bleep = new Audio();
+    bleep.src = "audio/Silly_Snoring-Snore_Man-618028931.mp3"
+  </script>
+</head>
+
+<body class="no-scrolling" ng-controller="electronautesCtrl">
+
+  <!-- HEADER -->
+
+  <header>
+    <div class="container">
+      <!-- Logo -->
+      <div class="logo">
+        <a href="#/funfact"><img src="img/TerMITeslogoname.png" alt="logo" /></a>
+      </div>
+      <!-- Navigation bar -->
+      <label for="show-menu" class="show-menu">&#9776;</label>
+      <input type="checkbox" id="show-menu" role="button">
+      <div id="nav">
+        <ul id="menu">
+          <li><a href="#/funfact">fun fact of the week</a></li>
+          <li><a href="#/survey">survey</a>
+            <ul id="survey-menu" class="hidden-nav">
+              <li ng-click="classroom='esfinx'"><a href="#/survey">ESFINX</a></li>
+              <li ng-click="classroom='kremlin'"><a href="#/survey">KREMLIN</a></li>
+              <li ng-click="classroom='bigben'"><a href="#/survey">BIG BEN</a></li>
+              <li ng-click="classroom='moais'"><a href="#/survey">MOAIS</a></li>
+              <li ng-click="classroom='atomium'"><a href="#/survey">ATOMIUM</a></li>
+              <li ng-click="classroom='kheops'"><a href="#/survey">KHEOPS</a></li>
+            </ul>
+          </li>
+          <li><a href="#/sensors">sensors</a>
+            <ul id="sensors-menu" class="hidden-nav">
+              <li ng-click="classroom='esfinx'"><a href="#/sensors">ESFINX</a></li>
+              <li ng-click="classroom='kremlin'"><a href="#/sensors">KREMLIN</a></li>
+              <li ng-click="classroom='bigben'"><a href="#/sensors">BIG BEN</a></li>
+              <li ng-click="classroom='moais'"><a href="#/sensors">MOAIS</a></li>
+              <li ng-click="classroom='atomium'"><a href="#/sensors">ATOMIUM</a></li>
+              <li ng-click="classroom='kheops'"><a href="#/sensors">KHEOPS</a></li>
+            </ul>
+          </li>
+          <li><a href="#/data">data</a></li>
+          <li><a href="#/blog">blog</a></li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+  <div ng-view></div>
+
+  <!-- In production use:
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/x.x.x/angular.min.js"></script>
+  -->
+  <script src="bower_components/angular/angular.js"></script>
+  <script src="bower_components/angular-route/angular-route.js"></script>
+  <script src="electronautes.js"></script>
+  <script src="funfact/funfact.js"></script>
+  <script src="survey/survey.js"></script>
+  <script src="sensors/sensors.js"></script>
+  <script src="data/data.js"></script>
+  <script src="relate/relate.js"></script>
+  <script src="blog/blog.js"></script>
+  <script src="directives/drag.js"></script>
+  <script src="directives/drop.js"></script>
+  <script src="directives/weather.js"></script>
+  <script src="directives/report.js"></script>
+  <script src="components/version/version.js"></script>
+  <script src="components/version/version-directive.js"></script>
+  <script src="components/version/interpolate-filter.js"></script>
+  <script src="bower_components/jquery-ui/jquery-ui.min.js"></script>
+
+  <footer class="box-footer">
+    <div class="box-cont-footer">
+      <div class="copyright col-xs-12 col-md-10">
+        <p><a class="informationsource" target="_blank" href="http://cities.media.mit.edu/andorra-energy-environment/#EnergyAwareness">(¡)</a> <a target="_blank" href="http://www.nuriamacia.com/">Núria Macià</a>, <a  target="_blank" href="http://cp.media.mit.edu/juanita-devis/">Juanita Devis</a> and <a target="_blank" href="http://cp.media.mit.edu/jason-nawyn/">Jason Nawyn</a> &copy; 2017</p>
+      </div>
+      <div class="bug" >
+        <div class="button-reportbug">
+          <label>
+            <input type="button" ng-click="bugReport.startReporting = true" />
+            <figure>
+              <figcaption class='bug-caption'>Report bug</figcaption>
+              <img src="./img/errors/bug.png" />
+            </figure>          
+          </label>   
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

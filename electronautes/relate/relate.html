@@ -1,0 +1,172 @@
+<main>	
+  <div class="container no-padding">
+    <div class="block no-margin clearfix">
+
+      <!-- Drag and drop -->
+      <div class="col-xs-12 col-md-7 no-padding">
+
+        <!-- Tab emotions -->
+        <!-- Do not remove; attempt to implement tab with ng-repeat -->
+        <!--div class="r-emotions">
+          <div class="r-buttonsurvey" ng-repeat="(key, value) in surveyResults" ng-if="key != 'password' && key != 'group'">
+            <label>
+              <input type="radio" ng-model="$parent.selectedTab" name="tab" ng-value="{{ key }}" />
+              <figure>
+                <img src="./img/emotions/{{ key }}-{{ value }}.png" alt="{{ key }}" />
+                <figcaption>{{ value }}</figcaption>
+              </figure>
+            </label>
+          </div>
+        </div--> 
+        <div class="r-emotions">
+          <div class="r-buttonsurvey">
+            <label>
+              <input type="radio" ng-model="selectedTab" name="tab" value="mood" />
+              <figure>
+                <img src="./img/emotions/mood-{{ surveyResults.mood }}.png" alt="mood" />
+                <figcaption>{{ surveyResults.mood }}</figcaption>
+              </figure>
+            </label>
+          </div>
+          <div class="r-buttonsurvey">
+            <label>
+              <input type="radio" ng-model="selectedTab" name="tab" value="energy" />
+              <figure>
+                <img src="./img/emotions/energy-{{ surveyResults.energy }}.png" alt="energy" />
+                <figcaption>{{ surveyResults.energy }}</figcaption>
+              </figure>
+            </label>
+          </div>
+          <div class="r-buttonsurvey">
+            <label>
+              <input type="radio" ng-model="selectedTab" name="tab" value="temperature" />
+              <figure>
+                <img src="./img/emotions/temperature-{{ surveyResults.temperature }}.png" alt="temperature" />
+                <figcaption>{{ surveyResults.temperature }}</figcaption>
+              </figure>
+            </label>
+          </div> 
+          <div class="r-buttonsurvey">
+            <label>
+              <input type="radio" ng-model="selectedTab" name="tab" value="noise" />
+              <figure>
+                <img src="./img/emotions/noise-{{ surveyResults.noise }}.png" alt="noise" />
+                <figcaption>{{ surveyResults.noise }}</figcaption>
+              </figure>
+            </label>
+          </div>
+        </div>
+        <!-- Sensor options -->
+        <div class="r-sensorsbox-and-dragbox">
+          <!-- Left side sensors -->
+          <div class="r-sensors-side" id="left-buttonbox-sensors" t-drop-target="true" on-drop="moveSensor(dragEl, dropEl)">
+            <div ng-repeat="option in sensorsLeftSide" class="r-button-sensor" id="{{option}}-out" t-draggable="true" ng-hide="selectedSensors['{{option}}'][selectedTab]">
+              <label>
+                <figure>
+                  <img src="./img/sensors/{{option}}.png"/>
+                  <figcaption>{{option}}</figcaption>
+                </figure>
+              </label>
+            </div>
+          </div> <!-- End left side sensors -->
+
+          <!-- Dropzone -->    
+          <div class="r-dragbox" id="center-dragbox-forsensors" t-drop-target="true" on-drop="moveSensor(dragEl, dropEl)">
+            <div ng-repeat="option in all = sensorsLeftSide.concat(sensorsRightSide)" class="r-button-sensor" id="{{option}}-in"  t-draggable="true" ng-show="selectedSensors['{{option}}'][selectedTab]">
+              <label>
+                <figure>
+                  <img src="./img/sensors/{{option}}.png" alt="{{optios}}"/>
+                  <figcaption>{{option}}</figcaption>
+                </figure>
+              </label>
+            </div>         
+          </div> <!-- End dropzone -->
+
+          <!-- Right side sensors -->
+          <div class="r-sensors-side" id="right-buttonbox-sensors" t-drop-target="true" on-drop="moveSensor(dragEl, dropEl)">
+            <div ng-repeat="option in sensorsRightSide" class="r-button-sensor" id="{{option}}-out" t-draggable="true" ng-hide="selectedSensors['{{option}}'][selectedTab]">
+              <label>
+                <figure>
+                  <img src="./img/sensors/{{option}}.png"/>
+                  <figcaption>{{option}}</figcaption>
+                </figure>
+              </label>
+            </div>
+          </div> <!-- End right side sensors -->
+        </div> <!-- End drag and drop -->
+      </div>
+        
+      <div class="col-xs-12 col-md-5 no-padding">
+        <!-- Weather panel -->
+        <t-weather></t-weather>
+        <!-- Report bug -->
+        <t-report-bug></t-report-bug>        
+        <!-- Groups -->
+        <div class="boxbuttonssurvey" ng-hide="bugReport.startReporting === true">
+          <!-- Mood, Energy, Temperature, Noise -->
+          <div class="c-group-box">
+            <!-- Row 1 -->
+            <div class="c-group-road">
+              <div class="emotion-c-group">
+                <p class="emotion-title">Mood</p>
+                <ul class="circle-container">
+                  <li ng-repeat="(key, value) in selectedSensors" ng-show="value['mood']">
+                    <label>
+                      <figure>
+                        <img src="./img/sensors/{{key}}.png" alt="{{key}}" />
+                        <figcaption>{{selected}}</figcaption>
+                      </figure>
+                    </label>
+                  </li>
+                </ul>
+              </div>
+              <div class="emotion-c-group">
+                <p class="emotion-title">Energy</p> 
+                <ul class="circle-container">
+                  <li ng-repeat="(key, value) in selectedSensors" ng-show="value['energy']">
+                    <label>
+                      <figure>
+                        <img src="./img/sensors/{{key}}.png" alt="{{key}}"/>
+                        <figcaption>{{selected}}</figcaption>
+                      </figure>
+                    </label>
+                  </li>
+                </ul>
+              </div>  
+            </div>
+            <!-- Row 2 -->
+            <div class="c-group-road">
+              <div class="emotion-c-group">
+                <p class="emotion-title">Temperature</p>
+                <ul class="circle-container">
+                  <li ng-repeat="(key, value) in selectedSensors" ng-show="value['temperature']">
+                    <label>
+                      <figure>
+                        <img src="./img/sensors/{{key}}.png" alt="{{key}}"/>
+                        <figcaption>{{selected}}</figcaption>
+                      </figure>
+                    </label>
+                  </li>
+                </ul>
+              </div>
+              <div class="emotion-c-group">
+                <p class="emotion-title">Noise</p>
+                <ul class="circle-container">
+                  <li ng-repeat="(key, value) in selectedSensors" ng-show="value['noise']">
+                    <label>
+                      <figure>
+                        <img src="./img/sensors/{{key}}.png" alt="{{key}}"/>
+                        <figcaption>{{selected}}</figcaption>
+                      </figure>
+                    </label>
+                  </li>
+                </ul>
+              </div>  
+            </div>
+          </div>
+          <input type="submit" class="btn pull-right" name="submitResults" value="Submit" ng-click="submitRelation()" />  
+        </div>
+      </div>
+    </div>
+  </div>       
+</main>

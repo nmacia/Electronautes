@@ -1,0 +1,106 @@
+<main>	
+  <div class="container no-padding">
+    <div class="block no-margin clearfix">
+      <div class="col-xs-12 col-md-7 no-padding">
+        <!--object data="svg/santacolomaill.svg" type="image/svg+xml" id="santasvg"></object-->
+        <object data="svg/santacolomaill.svg" type="image/svg+xml" ng-show="classroom == 'esfinx'" id="img-esfinx"></object>
+
+        <!-- TODO: Add svg for each class -->
+        <object data="svg/test.svg" type="image/svg+xml" ng-show="classroom == 'kremlin'" id="img-kremlin"></object>
+        <object data="svg/test.svg" type="image/svg+xml" ng-show="classroom == 'bigben'" id="img-bigben"></object>
+        <object data="svg/test.svg" type="image/svg+xml" ng-show="classroom == 'moais'" id="img-moais"></object>
+        <object data="svg/test.svg" type="image/svg+xml" ng-show="classroom == 'atonium'" id="img-atonium"></object>
+        <object data="svg/test.svg" type="image/svg+xml" ng-show="classroom == 'kheops'" id="img-kheops"></object>
+      </div>
+      <div class="col-xs-12 col-md-5 no-padding">   
+        <!-- Weather panel -->
+        <t-weather></t-weather>
+        <!-- Report bug -->
+        <t-report-bug></t-report-bug>
+        <!-- Survey -->
+        <div class="boxbuttonssurvey" ng-show="classroom === undefined && bugReport.startReporting === false">
+          <ul>
+            <li>STEP 0. Choose your classroom</li>
+            <li>STEP 1. Fill out the survey</li>
+            <li>STEP 2. Check the sensor values once you submit the survey</li>
+            <li>STEP 3. Connect sensors and emotions</li>
+          </ul>
+        </div>  
+        <div class="boxbuttonssurvey" ng-hide="classroom === undefined || bugReport.startReporting ===  true">
+          <form name="survey" id="survey" novalidate>
+
+            <!-- MOOD -->   
+            <p class="emotion-title">MOOD<span class="error" ng-show="errorMessage.mood === true" >Missing value</span></p>   
+            <div class="row-survey"> 
+              <div class="button-survey-mood" ng-repeat="typeOfMood in ['happy', 'normal', 'sad', 'angry']">
+                <label>
+                  <input type="radio" ng-model="surveyResults.mood" name="mood" value="{{ typeOfMood }}" />
+                  <figure>
+                    <img src="./img/emotions/mood-{{ typeOfMood }}.png" alt="{{ typeOfMood }}" />
+                    <figcaption>{{ typeOfMood }}</figcaption>
+                  </figure>
+                </label>
+              </div>
+            </div> <!-- End MOOD -->
+
+            <!-- ENERGY -->
+            <p class="emotion-title">ENERGY<span class="error" ng-show="errorMessage.energy === true" >Missing value</span></p> 
+            <div class="row-survey">
+              <div class="button-survey-energy" ng-repeat="levelOfEnergy in ['superenergetic', 'energetic', 'normal', 'low']">
+                <label>
+                  <input type="radio" ng-model="surveyResults.energy" name="energy" value="{{ levelOfEnergy }}" />
+                  <figure>
+                    <img src="./img/emotions/energy-{{ levelOfEnergy }}.png" alt="{{ levelOfEnergy }}" />
+                    <figcaption>{{ levelOfEnergy }}</figcaption>
+                  </figure>
+                </label>
+              </div>          
+              <div class="button-survey-energy">
+                <label>
+                  <input type="radio" ng-model="surveyResults.energy" name="energy" value="verylow" />
+                  <figure>
+                    <img onmousedown="bleep.play()" src="./img/emotions/energy-verylow.png" alt="I'm sleepy." />
+                    <figcaption>Sleepy</figcaption>
+                  </figure>
+                </label>
+              </div>
+            </div> <!-- End ENERGY -->
+
+            <!-- TEMPERATURE -->                           
+            <p class="emotion-title">TEMPERATURE<span class="error" ng-show="errorMessage.temperature === true" >Missing value</span></p>   
+            <div class="row-survey">
+              <div class="button-survey-temperature" ng-repeat="feelLikeTemperature in ['hot', 'good', 'cold']">
+                <label>
+                  <input type="radio" ng-model="surveyResults.temperature" name="temperature" value="{{ feelLikeTemperature }}" />
+                  <figure>
+                    <img src="./img/emotions/temperature-{{ feelLikeTemperature }}.png" alt="{{ feelLikeTemperature }}" />
+                    <figcaption>{{ feelLikeTemperature }}</figcaption>
+                  </figure>
+                </label>
+              </div>
+            </div> <!-- End TEMPERATURE -->
+
+            <!-- NOISE -->
+            <p class="emotion-title">NOISE<span class="error" ng-show="errorMessage.noise === true" >Missing value</span></p>
+            <div class="row-survey">    
+              <div class="button-survey-noise" ng-repeat="levelOfNoise in ['noisy', 'normal', 'whisper', 'quiet']" ng-class="{'noise-n': levelOfNoise === 'noisy'}">
+                <label>
+                  <input type="radio" ng-model="surveyResults.noise" name="noise" value="{{ levelOfNoise }}" />
+                  <figure>
+                    <img src="./img/emotions/noise-{{ levelOfNoise }}.png" alt="{{ levelOfNoise }}" />
+                    <figcaption>{{ levelOfNoise }}</figcaption>
+                  </figure>
+                </label>
+              </div>
+            </div> <!-- End NOISE --> 
+
+            <!-- Submit -->
+            <input type="submit" class="btn pull-right" name="submit" value="Submit" ng-click="submitSurvey()"/>    
+            <input type="password" ng-model="surveyPassword" id="password" name="password" placeholder="Secret CODE" />
+            <span class="error" ng-show="errorMessage.password === true">Wrong password</span>
+          </form> 
+        </div>             
+      </div>
+    </div>
+  </div>       
+</main>

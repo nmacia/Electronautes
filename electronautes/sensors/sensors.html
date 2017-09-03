@@ -1,0 +1,38 @@
+<main>	
+  <div class="container no-padding">
+    <div class="block no-margin clearfix">
+      <div class="col-xs-12 col-md-7 no-padding">
+        <!--object data="svg/santacolomaill.svg" type="image/svg+xml" id="santasvg"></object-->
+        <object data="svg/santacolomasvgforsensors.svg" type="image/svg+xml" ng-show="classroom == 'esfinx'" id="img-sensors-esfinx"></object> 
+        <!-- TODO: Add svg for each class -->
+        <object data="svg/test.svg" type="image/svg+xml" ng-show="classroom == 'kremlin'" id="img-sensors-kremlin"></object>
+        <object data="svg/test.svg" type="image/svg+xml" ng-show="classroom == 'bigben'" id="img-sensors-bigben"></object>
+        <object data="svg/test.svg" type="image/svg+xml" ng-show="classroom == 'moais'" id="img-sensors-moais"></object>
+        <object data="svg/test.svg" type="image/svg+xml" ng-show="classroom == 'atonium'" id="img-sensors-atonium"></object>
+        <object data="svg/test.svg" type="image/svg+xml" ng-show="classroom == 'kheops'" id="img-sensors-kheops"></object>  
+      </div>
+      <div class="col-xs-12 col-md-5 no-padding">
+        <!-- Weather panel -->
+        <t-weather></t-weather>
+        <!-- Report bug -->
+        <t-report-bug></t-report-bug>
+        <!-- Sensors -->
+        <div class="boxsensors" ng-hide="bugReport.startReporting === true"> 
+          <div class="row-sensor" ng-repeat="row in [0, 1, 2, 3]" >      
+            <div class="button-sensor" ng-repeat="col in [0, 1, 2]" ng-if="listOfSensors[row][col] != null">
+              <label>
+                <input type="radio" name="sensor" id="{{ listOfSensors[row][col] }}" value="{{ listOfSensors[row][col] }}" ng-click="showSensorValue('sensor-'+ listOfSensors[row][col] );" ng-disabled="!activeSensors['{{ listOfSensors[row][col] }}'][classroom]" />
+                <figure>
+                  <img ng-class="{'img-window-sensor': listOfSensors[row][col] == 'window'}" ng-src="./img/sensors/{{ listOfSensors[row][col] }}.png" alt="{{ listOfSensors[row][col] }}" />
+                  <figcaption>{{ listOfSensors[row][col] }}</figcaption>
+                </figure>
+              </label>
+            </div>
+          </div>
+          <!-- Game -->
+          <input type="button" class="btn pull-right button-relate" name="button-relate" value="relate" ng-show="surveyClassroom != null" ng-click="goToRelate()">  
+        </div>                
+      </div>
+    </div> 
+  </div>
+</main>
