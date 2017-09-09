@@ -2400,7 +2400,7 @@
 <g id="TerMITes-Sensors">
 	<g id="sensor-humidity" display="none">
 		
-			<image display="inline" overflow="visible" enable-background="new    " width="121" height="150" id="hum1-icon" xlink:href="../img/sensors/humidity-2-inv.png"  transform="matrix(1 0 0 1 824.5508 -298.3535)">
+			<image display="inline" overflow="visible" enable-background="new    " width="121" height="150" id="hum1-icon" xlink:href="../img/sensors/humidity-inv.png"  transform="matrix(1 0 0 1 824.5508 -298.3535)">
 		</image>
 		
 			<text id="AndorraHumidity1-value" transform="matrix(1 0 0 1 847.2773 -191.4766)" display="inline" fill="none" stroke="#FFFFFF" stroke-miterlimit="10" font-family="'AmaticSC-Regular'" font-size="36">0%</text>

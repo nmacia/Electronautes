@@ -372,7 +372,8 @@ label > input:checked + figure { /* (RADIO CHECKED) IMAGE STYLES */
 
 label > input:disabled + figure {
     cursor: none;
-    filter: invert(50%);
+    filter: invert(0%);
+    opacity: .5;
 }
 
 label > input:hover + figure > figcaption,
