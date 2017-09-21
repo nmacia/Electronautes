@@ -29,6 +29,7 @@ angular.module('electronautes')
   
   // takes the classroom id from the route param if defined  
   $rootScope.classroom = $routeParams.classroom ? $routeParams.classroom : "school-plan";
+  $scope.classroom = $rootScope.classroom;
   
   // Store values checked on the survey.
   $rootScope.surveyResults = {
@@ -95,7 +96,7 @@ angular.module('electronautes')
       $rootScope.surveyClassroom = $scope.classroom;
       // TODO: Store values in Jason's database.
       //writeUserData();
-      $location.path('/sensors');
+      $location.path('/sensors/' + $scope.classroom);
     }
   }
   
