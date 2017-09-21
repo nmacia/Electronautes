@@ -12,7 +12,7 @@ angular.module('electronautes')
 .controller('SurveyCtrl', function($scope, $rootScope, $location) {
   
   // Format SVG.
-  $rootScope.formatSVG("img-esfinx");
+  $rootScope.formatSVG("img-las-vegas");
   $rootScope.formatSVG("img-kremlin");
   $rootScope.formatSVG("img-bigben");
   $rootScope.formatSVG("img-moais");
