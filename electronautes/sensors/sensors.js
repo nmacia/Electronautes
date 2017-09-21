@@ -12,26 +12,27 @@ angular.module('electronautes')
 .controller('SensorsCtrl', function($scope, $rootScope, $location) {
 
   // Format SVG.
+  $rootScope.formatSVG("img-sensors-school-plan");
   $rootScope.formatSVG("img-sensors-las-vegas");
-  $rootScope.formatSVG("img-sensors-kremlin");
-  $rootScope.formatSVG("img-sensors-bigben");
-  $rootScope.formatSVG("img-sensors-moais");
-  $rootScope.formatSVG("img-sensors-atonium");
-  $rootScope.formatSVG("img-sensors-kheops");
-  $rootScope.formatSVG("img-sensors-las-vegas");
+  $rootScope.formatSVG("img-sensors-pompeia");
+  $rootScope.formatSVG("img-sensors-oimiakon");
+  $rootScope.formatSVG("img-sensors-honolulu");
+  $rootScope.formatSVG("img-sensors-hong-kong");
+  $rootScope.formatSVG("img-sensors-monaco");
+  
   
   $scope.activeSensors = {
-    'co2': { 'las-vegas': true, 'kremlin': true, 'bigben': false, 'moais': false, 'atomium': false, 'kheop': false },
-    'curtains': { 'las-vegas': true, 'kremlin': false, 'bigben': false, 'moais': false, 'atomium': false, 'kheop': false },
-    'door': { 'las-vegas': true, 'kremlin': true, 'bigben': false, 'moais': false, 'atomium': false, 'kheop': false },
-    'humidity': { 'las-vegas': true, 'kremlin': true, 'bigben': false, 'moais': false, 'atomium': false, 'kheop': false },
-    'light': { 'las-vegas': true, 'kremlin': false, 'bigben': false, 'moais': false, 'atomium': false, 'kheop': false },
-    'motion': { 'las-vegas': true, 'kremlin': false, 'bigben': false, 'moais': false, 'atomium': false, 'kheop': false },
-    'presence': { 'las-vegas': true, 'kremlin': false, 'bigben': false, 'moais': false, 'atomium': false, 'kheop': false },
-    'pressure': { 'las-vegas': false, 'kremlin': false, 'bigben': false, 'moais': false, 'atomium': false, 'kheop': false },
-    'proximity': { 'las-vegas': false, 'kremlin': false, 'bigben': false, 'moais': false, 'atomium': false, 'kheop': false },
-    'temperature': { 'las-vegas': true, 'kremlin': true, 'bigben': false, 'moais': false, 'atomium': false, 'kheop': false },
-    'window': { 'las-vegas': true, 'kremlin': false, 'bigben': false, 'moais': false, 'atomium': false, 'kheop': false }
+    'co2': { 'las-vegas': true, 'pompeia': true, 'oimiakon': false, 'honolulu': false, 'hong-kong': false, 'monaco': false },
+    'curtains': { 'las-vegas': true, 'pompeia': false, 'oimiakon': false, 'honolulu': false, 'hong-kong': false, 'monaco': false },
+    'door': { 'las-vegas': true, 'pompeia': true, 'oimiakon': false, 'honolulu': false, 'hong-kong': false, 'monaco': false },
+    'humidity': { 'las-vegas': true, 'pompeia': true, 'oimiakon': false, 'honolulu': false, 'hong-kong': false, 'monaco': false },
+    'light': { 'las-vegas': true, 'pompeia': false, 'oimiakon': false, 'honolulu': false, 'hong-kong': false, 'monaco': false },
+    'motion': { 'las-vegas': true, 'pompeia': false, 'oimiakon': false, 'honolulu': false, 'hong-kong': false, 'monaco': false },
+    'presence': { 'las-vegas': true, 'pompeia': false, 'oimiakon': false, 'honolulu': false, 'hong-kong': false, 'monaco': false },
+    'pressure': { 'las-vegas': false, 'pompeia': false, 'oimiakon': false, 'honolulu': false, 'hong-kong': false, 'monaco': false },
+    'proximity': { 'las-vegas': false, 'pompeia': false, 'oimiakon': false, 'honolulu': false, 'hong-kong': false, 'monaco': false },
+    'temperature': { 'las-vegas': true, 'pompeia': true, 'oimiakon': false, 'honolulu': false, 'hong-kong': false, 'monaco': false },
+    'window': { 'las-vegas': true, 'pompeia': false, 'oimiakon': false, 'honolulu': false, 'hong-kong': false, 'monaco': false }
   };
 
   

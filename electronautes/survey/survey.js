@@ -14,11 +14,11 @@ angular.module('electronautes')
   // Format SVG.
   $rootScope.formatSVG("img-school-plan");
   $rootScope.formatSVG("img-las-vegas");
-  $rootScope.formatSVG("img-kremlin");
-  $rootScope.formatSVG("img-bigben");
-  $rootScope.formatSVG("img-moais");
-  $rootScope.formatSVG("img-atonium");
-  $rootScope.formatSVG("img-kheops");
+  $rootScope.formatSVG("img-pompeia");
+  $rootScope.formatSVG("img-oimiakon");
+  $rootScope.formatSVG("img-honolulu");
+  $rootScope.formatSVG("img-hong-kong");
+  $rootScope.formatSVG("img-monaco");
   
   // Store values checked on the survey.
   $rootScope.surveyResults = {
