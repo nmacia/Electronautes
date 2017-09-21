@@ -20,6 +20,8 @@ angular.module('electronautes')
   $rootScope.formatSVG("img-sensors-hong-kong");
   $rootScope.formatSVG("img-sensors-monaco");
   
+  // adding a default classroom when the page is refreshed without click
+  $rootScope.classroom="school-plan";
   
   $scope.activeSensors = {
     'co2': { 'las-vegas': true, 'pompeia': true, 'oimiakon': false, 'honolulu': false, 'hong-kong': false, 'monaco': false },

@@ -9,7 +9,7 @@
 	.st2{
   fill:none;
   pointer-events:all;}
-    .st2:hover {fill:#ffffff;}
+    .st2:hover {fill:#ffffff; cursor:pointer;}
 </style>
 <g id="generalplan">
 	<g>

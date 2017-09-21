@@ -28,6 +28,8 @@ angular.module('electronautes')
     noise: null,
     group: null
   };
+  // adding a default classroom when the page is refreshed without click
+  $rootScope.classroom="school-plan";
   
   $scope.surveyPassword = null;
   
