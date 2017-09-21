@@ -7,9 +7,13 @@ angular.module('electronautes')
     templateUrl: 'survey/survey.html',
     controller: 'SurveyCtrl'
   });
+  $routeProvider.when('/survey/:classroom', {
+    templateUrl: 'survey/survey.html',
+    controller: 'SurveyCtrl'
+  });
 }])
 
-.controller('SurveyCtrl', function($scope, $rootScope, $location) {
+.controller('SurveyCtrl', function($scope, $rootScope, $location, $routeParams) {
   
   // Format SVG.
   $rootScope.formatSVG("img-school-plan");
@@ -20,6 +24,12 @@ angular.module('electronautes')
   $rootScope.formatSVG("img-hong-kong");
   $rootScope.formatSVG("img-monaco");
   
+  // clickable SVG school-plan
+  $rootScope.addClickableEventToClassroomsInSVG("img-survey-school-plan");
+  
+  // takes the classroom id from the route param if defined  
+  $rootScope.classroom = $routeParams.classroom ? $routeParams.classroom : "school-plan";
+  
   // Store values checked on the survey.
   $rootScope.surveyResults = {
     mood: null,
@@ -28,8 +38,6 @@ angular.module('electronautes')
     noise: null,
     group: null
   };
-  // adding a default classroom when the page is refreshed without click
-  $rootScope.classroom="school-plan";
   
   $scope.surveyPassword = null;
   

@@ -7,10 +7,14 @@ angular.module('electronautes')
     templateUrl: 'sensors/sensors.html',
     controller: 'SensorsCtrl'
   });
+  $routeProvider.when('/sensors/:classroom', {
+    templateUrl: 'sensors/sensors.html',
+    controller: 'SensorsCtrl'
+  });
 }])
 
-.controller('SensorsCtrl', function($scope, $rootScope, $location) {
-
+.controller('SensorsCtrl', function($scope, $rootScope, $location, $routeParams) {
+  
   // Format SVG.
   $rootScope.formatSVG("img-sensors-school-plan");
   $rootScope.formatSVG("img-sensors-las-vegas");
@@ -20,8 +24,12 @@ angular.module('electronautes')
   $rootScope.formatSVG("img-sensors-hong-kong");
   $rootScope.formatSVG("img-sensors-monaco");
   
-  // adding a default classroom when the page is refreshed without click
-  $rootScope.classroom="school-plan";
+  // clickable SVG school-plan
+  $rootScope.addClickableEventToClassroomsInSVG("img-sensors-school-plan");
+  
+  
+  // takes the classroom id from the route param if defined  
+  $rootScope.classroom = $routeParams.classroom ? $routeParams.classroom : "school-plan";
   
   $scope.activeSensors = {
     'co2': { 'las-vegas': true, 'pompeia': true, 'oimiakon': false, 'honolulu': false, 'hong-kong': false, 'monaco': false },
