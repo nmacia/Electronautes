@@ -47,7 +47,7 @@ angular.module('electronautes')
 
   
   $scope.goToRelate = function () {
-    $location.path('/relate')
+    $location.path('/relate');
   }
   
   // Catalog of sensors installed and their IDs in the SVG. 
