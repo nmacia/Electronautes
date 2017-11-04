@@ -28,16 +28,18 @@ angular.module('electronautes').directive('tWeather', ($rootScope) => {
         var weatherGraphics = { };
         var color = "#ffffff";
         var img = ""; // what is the default image?
-
+        
+//        weatherCode = "46"; // only for test snow - TOREMOVE
         switch (weatherCode) {
           //Rain showers 10, 11, 12, 40 color #3E6A74
           case "10": 
           case "11": 
           case "12": 
           case "40": 
+            console.log("rain");
             color = "#3e6a74";
             img = "rain.png";
-            addRainToBackground( color )
+            addRainToBackground(color);
             break;
           //Sunny 32, 34 #FDCF07
           case "32": 
@@ -54,8 +56,10 @@ angular.module('electronautes').directive('tWeather', ($rootScope) => {
           case "42":
           case "43":
           case "46":
+            console.log("snow");
             color = "#ccceda";
             img = "snow.png";
+            addSnowToBackground( color );
             break;     
           //Thunderstorms 1, 3, 4,37, 38, 39, 45, 47 color #445197
           case "1": 
