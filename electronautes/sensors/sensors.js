@@ -13,26 +13,25 @@ angular.module('electronautes')
 
   // Format SVG.
   $rootScope.formatSVG("img-floorplan");
-  $rootScope.formatSVG("img-sensors-esfinx");
-  $rootScope.formatSVG("img-sensors-kremlin");
-  $rootScope.formatSVG("img-sensors-bigben");
-  $rootScope.formatSVG("img-sensors-moais");
-  $rootScope.formatSVG("img-sensors-atonium");
-  $rootScope.formatSVG("img-sensors-kheops");
-  $rootScope.formatSVG("img-sensors-esfinx");
+  $rootScope.formatSVG("img-sensors-lasvegas");
+  $rootScope.formatSVG("img-sensors-pompeia");
+  $rootScope.formatSVG("img-sensors-oimiakon");
+  $rootScope.formatSVG("img-sensors-honolulu");
+  $rootScope.formatSVG("img-sensors-hongkong");
+  $rootScope.formatSVG("img-sensors-monaco");
   
   $scope.activeSensors = {
-    'co2': { 'esfinx': true, 'kremlin': true, 'bigben': false, 'moais': false, 'atomium': false, 'kheop': false },
-    'curtains': { 'esfinx': true, 'kremlin': false, 'bigben': false, 'moais': false, 'atomium': false, 'kheop': false },
-    'door': { 'esfinx': true, 'kremlin': true, 'bigben': false, 'moais': false, 'atomium': false, 'kheop': false },
-    'humidity': { 'esfinx': true, 'kremlin': true, 'bigben': false, 'moais': false, 'atomium': false, 'kheop': false },
-    'light': { 'esfinx': true, 'kremlin': false, 'bigben': false, 'moais': false, 'atomium': false, 'kheop': false },
-    'motion': { 'esfinx': true, 'kremlin': false, 'bigben': false, 'moais': false, 'atomium': false, 'kheop': false },
-    'presence': { 'esfinx': true, 'kremlin': false, 'bigben': false, 'moais': false, 'atomium': false, 'kheop': false },
-    'pressure': { 'esfinx': false, 'kremlin': false, 'bigben': false, 'moais': false, 'atomium': false, 'kheop': false },
-    'proximity': { 'esfinx': false, 'kremlin': false, 'bigben': false, 'moais': false, 'atomium': false, 'kheop': false },
-    'temperature': { 'esfinx': true, 'kremlin': true, 'bigben': false, 'moais': false, 'atomium': false, 'kheop': false },
-    'window': { 'esfinx': true, 'kremlin': false, 'bigben': false, 'moais': false, 'atomium': false, 'kheop': false }
+    'co2': { 'lasvegas': true, 'pompeia': true, 'oimiakon': false, 'honolulu': false, 'hongkong': false, 'kheop': false },
+    'curtains': { 'lasvegas': true, 'pompeia': false, 'oimiakon': false, 'honolulu': false, 'hongkong': false, 'kheop': false },
+    'door': { 'lasvegas': true, 'pompeia': true, 'oimiakon': false, 'honolulu': false, 'hongkong': false, 'kheop': false },
+    'humidity': { 'lasvegas': true, 'pompeia': true, 'oimiakon': false, 'honolulu': false, 'hongkong': false, 'kheop': false },
+    'light': { 'lasvegas': true, 'pompeia': false, 'oimiakon': false, 'honolulu': false, 'hongkong': false, 'kheop': false },
+    'motion': { 'lasvegas': true, 'pompeia': false, 'oimiakon': false, 'honolulu': false, 'hongkong': false, 'kheop': false },
+    'presence': { 'lasvegas': true, 'pompeia': false, 'oimiakon': false, 'honolulu': false, 'hongkong': false, 'kheop': false },
+    'pressure': { 'lasvegas': false, 'pompeia': false, 'oimiakon': false, 'honolulu': false, 'hongkong': false, 'kheop': false },
+    'proximity': { 'lasvegas': false, 'pompeia': false, 'oimiakon': false, 'honolulu': false, 'hongkong': false, 'kheop': false },
+    'temperature': { 'lasvegas': true, 'pompeia': true, 'oimiakon': false, 'honolulu': false, 'hongkong': false, 'kheop': false },
+    'window': { 'lasvegas': true, 'pompeia': false, 'oimiakon': false, 'honolulu': false, 'hongkong': false, 'kheop': false }
   };
 
   
@@ -69,7 +68,7 @@ angular.module('electronautes')
   $scope.showSensorValue = function(typeOfSensor) {
 
     // var classroom = document.getElementById("img-sensor-" + sessionStorage.getItem("sensors-classroom") );
-    var classr = document.getElementById("img-sensors-esfinx");
+    var classr = document.getElementById("img-sensors-lasvegas");
 
     // Get the inner DOM of svg file.
     var svgDoc = classr.contentDocument;
