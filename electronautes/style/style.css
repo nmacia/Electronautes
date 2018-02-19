@@ -225,8 +225,6 @@ input[type=checkbox]:checked ~ #nav #menu {
 ---------------------------------------------------------
 */
 
-
-
 .container {
     margin-left: auto;
     margin-right: auto;
@@ -252,12 +250,12 @@ no-padding {
 
 #santasensorssvg,
 #svgsanta,
-#img-las-vegas, #img-sensors-las-vegas,
-#img-pompeia, #img-sensors-pompeia,
-#img-oimiakon, #img-sensors-oimiakon,
-#img-honolulu, #img-sensors-honolulu,
-#img-hong-kong, #img-sensors-hong-kong,
-#img-monaco, #img-sensors-monaco {
+#img-esfinx, #img-sensors-esfinx,
+#img-kremlin, #img-sensors-kremlin,
+#img-bigben, #img-sensors-bigben,
+#img-moais, #img-sensors-moais,
+#img-atonium, #img-sensors-atonium,
+#img-kheops, #img-sensors-kheops {
 	width: 100%;
 }
 
@@ -295,16 +293,6 @@ no-padding {
 	text-transform: uppercase;
 }
 
-/* steps style*/
-.steps-style {
-  font-size: 22px;
-  list-style: none;
-  padding-left: 0px;
-}
-
-.steps-style li{
-  padding-bottom: 10px;
-}
 
 /* FORM */
 .row-survey {

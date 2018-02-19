@@ -7,47 +7,37 @@ angular.module('electronautes')
     templateUrl: 'sensors/sensors.html',
     controller: 'SensorsCtrl'
   });
-  $routeProvider.when('/sensors/:classroom', {
-    templateUrl: 'sensors/sensors.html',
-    controller: 'SensorsCtrl'
-  });
 }])
 
-.controller('SensorsCtrl', function($scope, $rootScope, $location, $routeParams) {
-  
+.controller('SensorsCtrl', function($scope, $rootScope, $location) {
+
   // Format SVG.
-  $rootScope.formatSVG("img-sensors-school-plan");
-  $rootScope.formatSVG("img-sensors-las-vegas");
-  $rootScope.formatSVG("img-sensors-pompeia");
-  $rootScope.formatSVG("img-sensors-oimiakon");
-  $rootScope.formatSVG("img-sensors-honolulu");
-  $rootScope.formatSVG("img-sensors-hong-kong");
-  $rootScope.formatSVG("img-sensors-monaco");
-  
-  // clickable SVG school-plan
-  $rootScope.addClickableEventToClassroomsInSVG("img-sensors-school-plan");
-  
-  
-  // takes the classroom id from the route param if defined  
-  $rootScope.classroom = $routeParams.classroom ? $routeParams.classroom : "school-plan";
+  $rootScope.formatSVG("img-floorplan");
+  $rootScope.formatSVG("img-sensors-esfinx");
+  $rootScope.formatSVG("img-sensors-kremlin");
+  $rootScope.formatSVG("img-sensors-bigben");
+  $rootScope.formatSVG("img-sensors-moais");
+  $rootScope.formatSVG("img-sensors-atonium");
+  $rootScope.formatSVG("img-sensors-kheops");
+  $rootScope.formatSVG("img-sensors-esfinx");
   
   $scope.activeSensors = {
-    'co2': { 'las-vegas': true, 'pompeia': true, 'oimiakon': false, 'honolulu': false, 'hong-kong': false, 'monaco': false },
-    'curtains': { 'las-vegas': true, 'pompeia': false, 'oimiakon': false, 'honolulu': false, 'hong-kong': false, 'monaco': false },
-    'door': { 'las-vegas': true, 'pompeia': true, 'oimiakon': false, 'honolulu': false, 'hong-kong': false, 'monaco': false },
-    'humidity': { 'las-vegas': true, 'pompeia': true, 'oimiakon': false, 'honolulu': false, 'hong-kong': false, 'monaco': false },
-    'light': { 'las-vegas': true, 'pompeia': false, 'oimiakon': false, 'honolulu': false, 'hong-kong': false, 'monaco': false },
-    'motion': { 'las-vegas': true, 'pompeia': false, 'oimiakon': false, 'honolulu': false, 'hong-kong': false, 'monaco': false },
-    'presence': { 'las-vegas': true, 'pompeia': false, 'oimiakon': false, 'honolulu': false, 'hong-kong': false, 'monaco': false },
-    'pressure': { 'las-vegas': false, 'pompeia': false, 'oimiakon': false, 'honolulu': false, 'hong-kong': false, 'monaco': false },
-    'proximity': { 'las-vegas': false, 'pompeia': false, 'oimiakon': false, 'honolulu': false, 'hong-kong': false, 'monaco': false },
-    'temperature': { 'las-vegas': true, 'pompeia': true, 'oimiakon': false, 'honolulu': false, 'hong-kong': false, 'monaco': false },
-    'window': { 'las-vegas': true, 'pompeia': false, 'oimiakon': false, 'honolulu': false, 'hong-kong': false, 'monaco': false }
+    'co2': { 'esfinx': true, 'kremlin': true, 'bigben': false, 'moais': false, 'atomium': false, 'kheop': false },
+    'curtains': { 'esfinx': true, 'kremlin': false, 'bigben': false, 'moais': false, 'atomium': false, 'kheop': false },
+    'door': { 'esfinx': true, 'kremlin': true, 'bigben': false, 'moais': false, 'atomium': false, 'kheop': false },
+    'humidity': { 'esfinx': true, 'kremlin': true, 'bigben': false, 'moais': false, 'atomium': false, 'kheop': false },
+    'light': { 'esfinx': true, 'kremlin': false, 'bigben': false, 'moais': false, 'atomium': false, 'kheop': false },
+    'motion': { 'esfinx': true, 'kremlin': false, 'bigben': false, 'moais': false, 'atomium': false, 'kheop': false },
+    'presence': { 'esfinx': true, 'kremlin': false, 'bigben': false, 'moais': false, 'atomium': false, 'kheop': false },
+    'pressure': { 'esfinx': false, 'kremlin': false, 'bigben': false, 'moais': false, 'atomium': false, 'kheop': false },
+    'proximity': { 'esfinx': false, 'kremlin': false, 'bigben': false, 'moais': false, 'atomium': false, 'kheop': false },
+    'temperature': { 'esfinx': true, 'kremlin': true, 'bigben': false, 'moais': false, 'atomium': false, 'kheop': false },
+    'window': { 'esfinx': true, 'kremlin': false, 'bigben': false, 'moais': false, 'atomium': false, 'kheop': false }
   };
 
   
   $scope.goToRelate = function () {
-    $location.path('/relate');
+    $location.path('/relate')
   }
   
   // Catalog of sensors installed and their IDs in the SVG. 
@@ -79,7 +69,7 @@ angular.module('electronautes')
   $scope.showSensorValue = function(typeOfSensor) {
 
     // var classroom = document.getElementById("img-sensor-" + sessionStorage.getItem("sensors-classroom") );
-    var classr = document.getElementById("img-sensors-las-vegas");
+    var classr = document.getElementById("img-sensors-esfinx");
 
     // Get the inner DOM of svg file.
     var svgDoc = classr.contentDocument;

@@ -7,29 +7,18 @@ angular.module('electronautes')
     templateUrl: 'survey/survey.html',
     controller: 'SurveyCtrl'
   });
-  $routeProvider.when('/survey/:classroom', {
-    templateUrl: 'survey/survey.html',
-    controller: 'SurveyCtrl'
-  });
 }])
 
-.controller('SurveyCtrl', function($scope, $rootScope, $location, $routeParams) {
+.controller('SurveyCtrl', function($scope, $rootScope, $location) {
   
   // Format SVG.
-  $rootScope.formatSVG("img-school-plan");
-  $rootScope.formatSVG("img-las-vegas");
-  $rootScope.formatSVG("img-pompeia");
-  $rootScope.formatSVG("img-oimiakon");
-  $rootScope.formatSVG("img-honolulu");
-  $rootScope.formatSVG("img-hong-kong");
-  $rootScope.formatSVG("img-monaco");
-  
-  // clickable SVG school-plan
-  $rootScope.addClickableEventToClassroomsInSVG("img-survey-school-plan");
-  
-  // takes the classroom id from the route param if defined  
-  $rootScope.classroom = $routeParams.classroom ? $routeParams.classroom : "school-plan";
-  $scope.classroom = $rootScope.classroom;
+  $rootScope.formatSVG("img-floorplan");
+  $rootScope.formatSVG("img-esfinx");
+  $rootScope.formatSVG("img-kremlin");
+  $rootScope.formatSVG("img-bigben");
+  $rootScope.formatSVG("img-moais");
+  $rootScope.formatSVG("img-atonium");
+  $rootScope.formatSVG("img-kheops");
   
   // Store values checked on the survey.
   $rootScope.surveyResults = {
@@ -96,7 +85,7 @@ angular.module('electronautes')
       $rootScope.surveyClassroom = $scope.classroom;
       // TODO: Store values in Jason's database.
       //writeUserData();
-      $location.path('/sensors/' + $scope.classroom);
+      $location.path('/sensors');
     }
   }
   

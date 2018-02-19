@@ -2,17 +2,15 @@
   <div class="container no-padding">
     <div class="block no-margin clearfix">
       <div class="col-xs-12 col-md-7 no-padding">
-        <!--object data="svg/santacolomaill.svg" type="image/svg+xml" id="santasvg"></object-->
-        <object data="svg/school-plan.svg" type="image/svg+xml" ng-show="classroom == 'school-plan'" id="img-sensors-school-plan"></object>
-        
-        
-        <object data="svg/santacolomasvgforsensors.svg" type="image/svg+xml" ng-show="classroom == 'las-vegas'" id="img-sensors-las-vegas"></object> 
-        <!-- TODO: Add svg for each class -->
-        <object data="svg/test.svg" type="image/svg+xml" ng-show="classroom == 'pompeia'" id="img-sensors-pompeia"></object>
-        <object data="svg/test.svg" type="image/svg+xml" ng-show="classroom == 'oimiakon'" id="img-sensors-oimiakon"></object>
-        <object data="svg/test.svg" type="image/svg+xml" ng-show="classroom == 'honolulu'" id="img-sensors-honolulu"></object>
-        <object data="svg/test.svg" type="image/svg+xml" ng-show="classroom == 'hong-kong'" id="img-sensors-hong-kong"></object>
-        <object data="svg/test.svg" type="image/svg+xml" ng-show="classroom == 'monaco'" id="img-sensors-monaco"></object>  
+        <!-- SVG: Floor Plan -->
+        <object data="svg/floorplan.svg" type="image/svg+xml" ng-show="classroom == 'floorplan'" id="img-floorplan"></object>
+        <!-- SVG: Classrooms -->
+        <object data="svg/santacolomasvgforsensors.svg" type="image/svg+xml" ng-show="classroom == 'esfinx'" id="img-sensors-esfinx"></object> 
+        <object data="svg/test.svg" type="image/svg+xml" ng-show="classroom == 'kremlin'" id="img-sensors-kremlin"></object>
+        <object data="svg/test.svg" type="image/svg+xml" ng-show="classroom == 'bigben'" id="img-sensors-bigben"></object>
+        <object data="svg/test.svg" type="image/svg+xml" ng-show="classroom == 'moais'" id="img-sensors-moais"></object>
+        <object data="svg/test.svg" type="image/svg+xml" ng-show="classroom == 'atonium'" id="img-sensors-atonium"></object>
+        <object data="svg/test.svg" type="image/svg+xml" ng-show="classroom == 'kheops'" id="img-sensors-kheops"></object>  
       </div>
       <div class="col-xs-12 col-md-5 no-padding">
         <!-- Weather panel -->
@@ -20,9 +18,7 @@
         <!-- Report bug -->
         <t-report-bug></t-report-bug>
         <!-- Sensors -->
-        
-        
-        <div class="boxsensors" ng-hide="classroom === 'school-plan' || bugReport.startReporting ===  true"> 
+        <div class="boxsensors" ng-hide="bugReport.startReporting === true"> 
           <div class="row-sensor" ng-repeat="row in [0, 1, 2, 3]" >      
             <div class="button-sensor" ng-repeat="col in [0, 1, 2]" ng-if="listOfSensors[row][col] != null">
               <label>

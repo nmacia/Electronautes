@@ -2,17 +2,15 @@
   <div class="container no-padding">
     <div class="block no-margin clearfix">
       <div class="col-xs-12 col-md-7 no-padding">
-        <!--object data="svg/santacolomaill.svg" type="image/svg+xml" id="santasvg"></object-->
-        <object data="svg/school-plan.svg" type="image/svg+xml" ng-show="classroom == 'school-plan'" id="img-survey-school-plan"></object>
-        
-        <object data="svg/santacolomaill.svg" type="image/svg+xml" ng-show="classroom == 'las-vegas'" id="img-las-vegas"></object>
-
-        <!-- TODO: Add svg for each class -->
-        <object data="svg/test.svg" type="image/svg+xml" ng-show="classroom == 'pompeia'" id="img-pompeia"></object>
-        <object data="svg/test.svg" type="image/svg+xml" ng-show="classroom == 'oimiakon'" id="img-oimiakon"></object>
-        <object data="svg/test.svg" type="image/svg+xml" ng-show="classroom == 'honolulu'" id="img-honolulu"></object>
-        <object data="svg/test.svg" type="image/svg+xml" ng-show="classroom == 'hong-kong'" id="img-hong-kong"></object>
-        <object data="svg/test.svg" type="image/svg+xml" ng-show="classroom == 'monaco'" id="img-monaco"></object>
+        <!-- SVG: Floor Plan -->
+        <object data="svg/floorplan.svg" type="image/svg+xml" ng-show="classroom == 'floorplan'" id="img-floorplan"></object>
+        <!-- SVG: Classrooms -->
+        <object data="svg/santacolomaill.svg" type="image/svg+xml" ng-show="classroom == 'esfinx'" id="img-esfinx"></object>
+        <object data="svg/test.svg" type="image/svg+xml" ng-show="classroom == 'kremlin'" id="img-kremlin"></object>
+        <object data="svg/test.svg" type="image/svg+xml" ng-show="classroom == 'bigben'" id="img-bigben"></object>
+        <object data="svg/test.svg" type="image/svg+xml" ng-show="classroom == 'moais'" id="img-moais"></object>
+        <object data="svg/test.svg" type="image/svg+xml" ng-show="classroom == 'atonium'" id="img-atonium"></object>
+        <object data="svg/test.svg" type="image/svg+xml" ng-show="classroom == 'kheops'" id="img-kheops"></object>
       </div>
       <div class="col-xs-12 col-md-5 no-padding">   
         <!-- Weather panel -->
@@ -20,15 +18,15 @@
         <!-- Report bug -->
         <t-report-bug></t-report-bug>
         <!-- Survey -->
-        <div class="boxbuttonssurvey" ng-show="classroom === 'school-plan' && bugReport.startReporting === false">
-          <ul class="steps-style">STEPS:
-            <li><b>0.</b> Choose your classroom</li>
-            <li><b>1.</b> Fill out the survey</li>
-            <li><b>2.</b> Check the sensor values once you submit the survey</li>
-            <li><b>3.</b> Connect sensors and emotions</li>
+        <div class="boxbuttonssurvey" ng-show="classroom == 'floorplan' && bugReport.startReporting === false">
+          <ul>
+            <li>STEP 0. Choose your classroom</li>
+            <li>STEP 1. Fill out the survey</li>
+            <li>STEP 2. Check the sensor values once you submit the survey</li>
+            <li>STEP 3. Connect sensors and emotions</li>
           </ul>
         </div>  
-        <div class="boxbuttonssurvey" ng-hide="classroom === 'school-plan' || bugReport.startReporting ===  true">
+        <div class="boxbuttonssurvey" ng-hide="classroom == 'floorplan' || bugReport.startReporting ===  true">
           <form name="survey" id="survey" novalidate>
 
             <!-- MOOD -->   

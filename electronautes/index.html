@@ -30,7 +30,6 @@
   <script src="//cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.11/p5.js"></script>
   <script src="//cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.11/addons/p5.dom.js"></script>
   <script type="text/javascript" src="functions/rain.js"></script>
-  <script type="text/javascript" src="functions/snow.js"></script>
   <!--script type="text/javascript" src="functions/svg.js"></script-->
   
   <script src="https://www.gstatic.com/firebasejs/3.7.8/firebase.js"></script>
@@ -56,26 +55,24 @@
       <div id="nav">
         <ul id="menu">
           <li><a href="#/funfact">fun fact of the week</a></li>
-          <li><a href="#/survey">survey</a>
+          <li><a href="#/survey" ng-click="classroom='floorplan'">survey</a>
             <ul id="survey-menu" class="hidden-nav">
-              <li><a href="#/survey/las-vegas">Las Vegas</a></li>
-              <li><a href="#/survey/pompeia">Pompeia</a></li>
-              <li><a href="#/survey/oimiakon">Oimiakon</a></li>
-              <li><a href="#/survey/honolulu">Honolulu</a></li>
-              <!-- Space for las vegas -->
-              <li><a href="#/survey/hong-kong">Hong Kong</a></li>
-              <li><a href="#/survey/monaco">Mònaco</a></li>
+              <li ng-click="classroom='esfinx'"><a href="#/survey">ESFINX</a></li>
+              <li ng-click="classroom='kremlin'"><a href="#/survey">KREMLIN</a></li>
+              <li ng-click="classroom='bigben'"><a href="#/survey">BIG BEN</a></li>
+              <li ng-click="classroom='moais'"><a href="#/survey">MOAIS</a></li>
+              <li ng-click="classroom='atomium'"><a href="#/survey">ATOMIUM</a></li>
+              <li ng-click="classroom='kheops'"><a href="#/survey">KHEOPS</a></li>
             </ul>
           </li>
-          <li><a href="#/sensors">sensors</a>
+          <li><a href="#/sensors" ng-click="classroom='floorplan'">sensors</a>
             <ul id="sensors-menu" class="hidden-nav">
-              <li ><a href="#/sensors/las-vegas">Las Vegas</a></li>
-              <li ><a href="#/sensors/pompeia">Pompeia</a></li>
-              <li ><a href="#/sensors/oimiakon">Oimiakon</a></li>
-              <li ><a href="#/sensors/honolulu">Honolulu</a></li>
-              <!-- Space for las vegas -->
-              <li><a href="#/sensors/hong-kong">Hong Kong</a></li>
-              <li><a href="#/sensors/monaco">Mònaco</a></li>
+              <li ng-click="classroom='esfinx'"><a href="#/sensors">ESFINX</a></li>
+              <li ng-click="classroom='kremlin'"><a href="#/sensors">KREMLIN</a></li>
+              <li ng-click="classroom='bigben'"><a href="#/sensors">BIG BEN</a></li>
+              <li ng-click="classroom='moais'"><a href="#/sensors">MOAIS</a></li>
+              <li ng-click="classroom='atomium'"><a href="#/sensors">ATOMIUM</a></li>
+              <li ng-click="classroom='kheops'"><a href="#/sensors">KHEOPS</a></li>
             </ul>
           </li>
           <li><a href="#/data">data</a></li>
