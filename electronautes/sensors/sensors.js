@@ -9,7 +9,7 @@ angular.module('electronautes')
   });
 }])
 
-.controller('SensorsCtrl', function($scope, $rootScope, $location) {
+.controller('SensorsCtrl', function($scope, $rootScope, $location, $routeParams) {
 
   // Format SVG.
   $rootScope.formatSVG("img-floorplan");
@@ -19,6 +19,13 @@ angular.module('electronautes')
   $rootScope.formatSVG("img-sensors-honolulu");
   $rootScope.formatSVG("img-sensors-hongkong");
   $rootScope.formatSVG("img-sensors-monaco");
+  
+  // Make flooplan clickable.
+  $rootScope.addClickableEventToClassroomsInSVG("img-floorplan");
+  
+  // Get id from the route param if defined.  
+  //$rootScope.classroom;
+  //$rootScope.classroom = $routeParams.classroom ? $routeParams.classroom : "floorplan";
   
   $scope.activeSensors = {
     'co2': { 'lasvegas': true, 'pompeia': true, 'oimiakon': false, 'honolulu': false, 'hongkong': false, 'kheop': false },
@@ -67,7 +74,7 @@ angular.module('electronautes')
 
   $scope.showSensorValue = function(typeOfSensor) {
 
-    // var classroom = document.getElementById("img-sensor-" + sessionStorage.getItem("sensors-classroom") );
+    //var classroom = document.getElementById("img-sensor-" + sessionStorage.getItem("sensors-classroom") );
     var classr = document.getElementById("img-sensors-lasvegas");
 
     // Get the inner DOM of svg file.

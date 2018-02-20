@@ -10,9 +10,10 @@ angular.module('electronautes', [
   $routeProvider.otherwise({redirectTo: '/funfact'});
 }])
 
-.controller('electronautesCtrl', function($scope, $rootScope) { 
+.controller('electronautesCtrl', function($scope, $rootScope, $location) { 
 
   // VARIABLES
+  
   // List of sensors following the grid order.
   $rootScope.listOfSensors = [
     ['presence', 'motion', 'proximity'], 
@@ -61,6 +62,38 @@ angular.module('electronautes', [
         }
       }, false);
     }
+  };
+  
+  // Add click event listener to floorplan svg file.
+  $rootScope.addClickableEventToClassroomsInSVG = function(svgObjectId) {
+    var svgObj = document.getElementById(svgObjectId);
+    if (svgObj) {
+      svgObj.addEventListener("load", function() { 
+
+        var svgDoc = svgObj.contentDocument;
+        var classroomPaths = svgDoc.getElementsByClassName("svg-clickable-classroom");
+
+        for (var i = 0; i < classroomPaths.length; i++) {
+          var classroomPath = classroomPaths[i];
+          classroomPath.addEventListener("click", function(event) {
+            var parentGroup = event.path[1];
+            if (parentGroup) {    
+              var classId = parentGroup.id;
+              $rootScope.classroom = classId;
+              goToClass(classId);                  
+            }          
+          });
+        }             
+      });
+    }
+  };
+  
+  var goToClass = function(classId) {
+    // console.log(classId);
+    // console.log($location);
+    $scope.classroom = classId;
+    $location.path('/sensors');
+    $rootScope.$apply();
   }
   
 });

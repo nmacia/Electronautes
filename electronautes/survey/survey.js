@@ -20,6 +20,9 @@ angular.module('electronautes')
   $rootScope.formatSVG("img-hongkong");
   $rootScope.formatSVG("img-monaco");
   
+  // Make flooplan clickable.
+  $rootScope.addClickableEventToClassroomsInSVG("img-floorplan");
+ 
   // Store values checked on the survey.
   $rootScope.surveyResults = {
     mood: null,
