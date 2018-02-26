@@ -13,6 +13,7 @@ angular.module('electronautes')
 
   // Format SVG.
   $rootScope.formatSVG("img-floorplan");
+  $rootScope.formatSVG("img-sensors");
   $rootScope.formatSVG("img-sensors-lasvegas");
   $rootScope.formatSVG("img-sensors-pompeia");
   $rootScope.formatSVG("img-sensors-oimiakon");
@@ -30,18 +31,17 @@ angular.module('electronautes')
   $scope.activeSensors = {
     'co2': { 'lasvegas': true, 'pompeia': true, 'oimiakon': false, 'honolulu': false, 'hongkong': false, 'kheop': false },
     'curtains': { 'lasvegas': true, 'pompeia': false, 'oimiakon': false, 'honolulu': false, 'hongkong': false, 'kheop': false },
-    'door': { 'lasvegas': true, 'pompeia': true, 'oimiakon': false, 'honolulu': false, 'hongkong': false, 'kheop': false },
+    'door': { 'lasvegas': true, 'pompeia': true, 'oimiakon': false, 'honolulu': true, 'hongkong': false, 'kheop': false },
     'humidity': { 'lasvegas': true, 'pompeia': true, 'oimiakon': false, 'honolulu': false, 'hongkong': false, 'kheop': false },
-    'light': { 'lasvegas': true, 'pompeia': false, 'oimiakon': false, 'honolulu': false, 'hongkong': false, 'kheop': false },
-    'motion': { 'lasvegas': true, 'pompeia': false, 'oimiakon': false, 'honolulu': false, 'hongkong': false, 'kheop': false },
+    'light': { 'lasvegas': true, 'pompeia': false, 'oimiakon': true, 'honolulu': false, 'hongkong': false, 'kheop': true },
+    'motion': { 'lasvegas': true, 'pompeia': false, 'oimiakon': false, 'honolulu': false, 'hongkong': true, 'kheop': false },
     'presence': { 'lasvegas': true, 'pompeia': false, 'oimiakon': false, 'honolulu': false, 'hongkong': false, 'kheop': false },
     'pressure': { 'lasvegas': false, 'pompeia': false, 'oimiakon': false, 'honolulu': false, 'hongkong': false, 'kheop': false },
-    'proximity': { 'lasvegas': false, 'pompeia': false, 'oimiakon': false, 'honolulu': false, 'hongkong': false, 'kheop': false },
+    'proximity': { 'lasvegas': false, 'pompeia': false, 'oimiakon': false, 'honolulu': false, 'hongkong': true, 'kheop': false },
     'temperature': { 'lasvegas': true, 'pompeia': true, 'oimiakon': false, 'honolulu': false, 'hongkong': false, 'kheop': false },
-    'window': { 'lasvegas': true, 'pompeia': false, 'oimiakon': false, 'honolulu': false, 'hongkong': false, 'kheop': false }
+    'window': { 'lasvegas': true, 'pompeia': false, 'oimiakon': false, 'honolulu': true, 'hongkong': false, 'kheop': false }
   };
 
-  
   $scope.goToRelate = function () {
     $location.path('/relate')
   }
@@ -49,13 +49,14 @@ angular.module('electronautes')
   // Catalog of sensors installed and their IDs in the SVG. 
   var sensorCatalog = [
     /* Presence values: 0 or 1  Sensors: AndorraPIR1 */
-    { name: "sensor-presence", id: ["AndorraPIR1"] },
+    { name: "sensor-presence", group: "lasvegas", id: ["AndorraPIR1"] },
     /* Motion values: 0.00-0.10 Do we need to scale them yes, boolean. Sensors: AndorraMotion1, AndorraMotion2 */
-    { name: "sensor-motion", id: ["AndorraMotion1","AndorraMotion2"] },
+    { name: "sensor-motion", group: "lasvegas", id: ["AndorraMotion1","AndorraMotion2"] },
     /* Window values: 0 or 1  Sensors form left to right: AndorraMITes-0769, AndorraMITes-1012,AndorraMITes-0109, AndorraMITes-1001, AndorraMITes-333 */
-    { name: "sensor-window", id: ["w0769-value", "w1012-value", "w0109-value", "w1001-value","w333-value"] },
+    { name: "sensor-window", group: "lasvegas", id: ["w0769-value", "w1012-value", "w0109-value", "w1001-value","w333-value"] },
     /* Door values: 0 or 1 close  Sensors: Reed2 */
-    { name: "sensor-door", id: ["door2-value"] },
+    { name: "sensor-door", group: "honolulu", id: ["door2-value"] },
+    { name: "sensor-door", group: "pompeia", id: ["door2-value"] },
     /* Light values: 0-1250  Sensors: AndorraLight2, AndorraLight3, AndorraLight4,AndorraLight5, AndorraLight6 */
     { name: "sensor-light", id: ["AndorraLight2","AndorraLight3","AndorraLight4","AndorraLight5","AndorraLight6"] },
      /* Curtains values: 0 or 1 move  Sensors form left to right: AndorraMITes-0210, AndorraMITes-0995, AndorraMITes-0066,AndorraMITes-0325*/
@@ -75,7 +76,11 @@ angular.module('electronautes')
   $scope.showSensorValue = function(typeOfSensor) {
 
     //var classroom = document.getElementById("img-sensor-" + sessionStorage.getItem("sensors-classroom") );
-    var classr = document.getElementById("img-sensors-lasvegas");
+    //var classr = document.getElementById("img-sensors-"+ $scope.classroom);
+    var classr = document.getElementById("img-sensors");
+    
+    console.log("ID img-sensors");
+    console.log("what's this" + classr);
 
     // Get the inner DOM of svg file.
     var svgDoc = classr.contentDocument;
@@ -92,7 +97,7 @@ angular.module('electronautes')
 
       // Search the sensor IDs for the SVG.
       var sensorIDs = $.grep(sensorCatalog, function( element ){ 
-          return element.name === typeOfSensor; 
+          return element.name === typeOfSensor && element.group === $scope.classroom; 
         }
       );
 

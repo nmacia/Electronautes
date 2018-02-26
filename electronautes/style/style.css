@@ -1030,6 +1030,10 @@ and (max-width : 480px) {
 } /* End responsiveness*/
 
 
-
+object {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
 
 
