@@ -29,17 +29,17 @@ angular.module('electronautes')
   //$rootScope.classroom = $routeParams.classroom ? $routeParams.classroom : "floorplan";
   
   $scope.activeSensors = {
-    'co2': { 'lasvegas': true, 'pompeia': true, 'oimiakon': false, 'honolulu': false, 'hongkong': false, 'kheop': false },
-    'curtains': { 'lasvegas': true, 'pompeia': false, 'oimiakon': false, 'honolulu': false, 'hongkong': false, 'kheop': false },
-    'door': { 'lasvegas': true, 'pompeia': true, 'oimiakon': false, 'honolulu': true, 'hongkong': false, 'kheop': false },
-    'humidity': { 'lasvegas': true, 'pompeia': true, 'oimiakon': false, 'honolulu': false, 'hongkong': false, 'kheop': false },
-    'light': { 'lasvegas': true, 'pompeia': false, 'oimiakon': true, 'honolulu': false, 'hongkong': false, 'kheop': true },
-    'motion': { 'lasvegas': true, 'pompeia': false, 'oimiakon': false, 'honolulu': false, 'hongkong': true, 'kheop': false },
-    'presence': { 'lasvegas': true, 'pompeia': false, 'oimiakon': false, 'honolulu': false, 'hongkong': false, 'kheop': false },
-    'pressure': { 'lasvegas': false, 'pompeia': false, 'oimiakon': false, 'honolulu': false, 'hongkong': false, 'kheop': false },
-    'proximity': { 'lasvegas': false, 'pompeia': false, 'oimiakon': false, 'honolulu': false, 'hongkong': true, 'kheop': false },
-    'temperature': { 'lasvegas': true, 'pompeia': true, 'oimiakon': false, 'honolulu': false, 'hongkong': false, 'kheop': false },
-    'window': { 'lasvegas': true, 'pompeia': false, 'oimiakon': false, 'honolulu': true, 'hongkong': false, 'kheop': false }
+    'co2': { 'lasvegas': true, 'pompeia': false, 'oimiakon': false, 'honolulu': false, 'hongkong': false, 'monaco': false },
+    'curtains': { 'lasvegas': true, 'pompeia': false, 'oimiakon': false, 'honolulu': false, 'hongkong': false, 'monaco': false },
+    'door': { 'lasvegas': true, 'pompeia': false, 'oimiakon': false, 'honolulu': false, 'hongkong': false, 'monaco': false },
+    'humidity': { 'lasvegas': true, 'pompeia': false, 'oimiakon': false, 'honolulu': false, 'hongkong': false, 'monaco': false },
+    'light': { 'lasvegas': true, 'pompeia': true, 'oimiakon': true, 'honolulu': true, 'hongkong': true, 'monaco': true },
+    'motion': { 'lasvegas': true, 'pompeia': false, 'oimiakon': false, 'honolulu': false, 'hongkong': false, 'monaco': false },
+    'presence': { 'lasvegas': true, 'pompeia': true, 'oimiakon': true, 'honolulu': true, 'hongkong': true, 'monaco': true },
+    'pressure': { 'lasvegas': true, 'pompeia': true, 'oimiakon': true, 'honolulu': true, 'hongkong': true, 'monaco': true },
+    'proximity': { 'lasvegas': true, 'pompeia': true, 'oimiakon': true, 'honolulu': true, 'hongkong': true, 'monaco': true },
+    'temperature': { 'lasvegas': true, 'pompeia': true, 'oimiakon': true, 'honolulu': true, 'hongkong': true, 'monaco': true },
+    'window': { 'lasvegas': true, 'pompeia': false, 'oimiakon': false, 'honolulu': false, 'hongkong': false, 'monaco': false }
   };
 
   $scope.goToRelate = function () {
@@ -48,25 +48,64 @@ angular.module('electronautes')
   
   // Catalog of sensors installed and their IDs in the SVG. 
   var sensorCatalog = [
+   
     /* Presence values: 0 or 1  Sensors: AndorraPIR1 */
-    { name: "sensor-presence", group: "lasvegas", id: ["AndorraPIR1"] },
+    { name: "sensor-presence", group: "lasvegas", id: ["AndorraPIR1","ATP080"] },
+    { name: "sensor-presence", group: "pompeia", id: ["ATP074"] },
+    { name: "sensor-presence", group: "oimiakon", id: ["ATP075", "ATP076"] },
+    { name: "sensor-presence", group: "honolulu", id: ["ATP079"] },
+    { name: "sensor-presence", group: "hongkong", id: ["ATP081"] },
+    { name: "sensor-presence", group: "monaco", id: ["ATP082"] },
+    
     /* Motion values: 0.00-0.10 Do we need to scale them yes, boolean. Sensors: AndorraMotion1, AndorraMotion2 */
     { name: "sensor-motion", group: "lasvegas", id: ["AndorraMotion1","AndorraMotion2"] },
+    
     /* Window values: 0 or 1  Sensors form left to right: AndorraMITes-0769, AndorraMITes-1012,AndorraMITes-0109, AndorraMITes-1001, AndorraMITes-333 */
     { name: "sensor-window", group: "lasvegas", id: ["w0769-value", "w1012-value", "w0109-value", "w1001-value","w333-value"] },
+    
     /* Door values: 0 or 1 close  Sensors: Reed2 */
-    { name: "sensor-door", group: "honolulu", id: ["door2-value"] },
-    { name: "sensor-door", group: "pompeia", id: ["door2-value"] },
+    { name: "sensor-door", group: "lasvegas", id: ["door2-value"] },
+    
     /* Light values: 0-1250  Sensors: AndorraLight2, AndorraLight3, AndorraLight4,AndorraLight5, AndorraLight6 */
-    { name: "sensor-light", id: ["AndorraLight2","AndorraLight3","AndorraLight4","AndorraLight5","AndorraLight6"] },
-     /* Curtains values: 0 or 1 move  Sensors form left to right: AndorraMITes-0210, AndorraMITes-0995, AndorraMITes-0066,AndorraMITes-0325*/
-    { name: "sensor-curtains", id: ["cur0210-value","cur0995-value","cur0066-value","cur0325-value"] },
+    { name: "sensor-light", group: "lasvegas", id: ["AndorraLight2", "AndorraLight3", "AndorraLight4", "AndorraLight5", "AndorraLight6", "ATP080", "AT007"] },
+    { name: "sensor-light", group: "pompeia", id: ["ATP074", "AT001"] },
+    { name: "sensor-light", group: "oimiakon", id: ["ATP075", "ATP076", "AT003"] },
+    { name: "sensor-light", group: "honolulu", id: ["ATP079", "AT006"] },
+    { name: "sensor-light", group: "hongkong", id: ["ATP081", "AT008"] },
+    { name: "sensor-light", group: "monaco", id: ["ATP082", "AT009"] },
+    
+    /* Curtains values: 0 or 1 move  Sensors form left to right: AndorraMITes-0210, AndorraMITes-0995, AndorraMITes-0066,AndorraMITes-0325*/
+    { name: "sensor-curtains", group: "lasvegas", id: ["cur0210-value","cur0995-value","cur0066-value","cur0325-value"] },
+    
     /* Temperature values: 0-30  Sensors: AndorraLight2, AndorraLight3, AndorraLight4,AndorraLight5, AndorraLight6 */
-    { name: "sensor-temperature", id: ["AndorraLight2","AndorraLight3","AndorraLight4","AndorraLight5","AndorraLight6"] },
+    { name: "sensor-temperature", group: "lasvegas", id: ["AndorraLight2", "AndorraLight3", "AndorraLight4", "AndorraLight5", "AndorraLight6", "ATP080", "AT007"] },
+    { name: "sensor-temperature", group: "pompeia", id: ["ATP074", "AT001"] },
+    { name: "sensor-temperature", group: "oimiakon", id: ["ATP075", "ATP076", "AT003"] },
+    { name: "sensor-temperature", group: "honolulu", id: ["ATP079", "AT006"] },
+    { name: "sensor-temperature", group: "hongkong", id: ["ATP081", "AT008"] },
+    { name: "sensor-temperature", group: "monaco", id: ["ATP082", "AT009"] },
+    
     /* CO2 values:  2.6-1 Inverted, volt sign Sensor: AndorraBob1 */
-    { name: "sensor-co2", id: ["AndorraBob1"] },
+    { name: "sensor-co2", group: "lasvegas", id: ["AndorraBob1"] },
+    
     /* Humidity values:  0-100%RH Sensor: AndorraHumidity1 */
-    { name: "sensor-humidity", id: ["AndorraHumidity1"] }
+    { name: "sensor-humidity", group: "lasvegas", id: ["AndorraHumidity1"] },
+    
+    /* Proximity */
+    { name: "sensor-proximity", group: "lasvegas", id: ["ATP080", "AT007"] },
+    { name: "sensor-proximity", group: "pompeia", id: ["ATP074", "AT001"] },
+    { name: "sensor-proximity", group: "oimiakon", id: ["ATP075", "ATP076", "AT003"] },
+    { name: "sensor-proximity", group: "honolulu", id: ["ATP079", "AT006"] },
+    { name: "sensor-proximity", group: "hongkong", id: ["ATP081", "AT008"] },
+    { name: "sensor-proximity", group: "monaco", id: ["ATP082", "AT009"] },
+    
+    /* Pressure */
+    { name: "sensor-pressure", group: "lasvegas", id: ["ATP080", "AT007"] },
+    { name: "sensor-pressure", group: "pompeia", id: ["ATP074", "AT001"] },
+    { name: "sensor-pressure", group: "oimiakon", id: ["ATP075", "ATP076", "AT003"] },
+    { name: "sensor-pressure", group: "honolulu", id: ["ATP079", "AT006"] },
+    { name: "sensor-pressure", group: "hongkong", id: ["ATP081", "AT008"] },
+    { name: "sensor-pressure", group: "monaco", id: ["ATP082", "AT009"] }
   ]; 
 
   var previousQuery = "";
