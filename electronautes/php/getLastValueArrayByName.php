@@ -7,7 +7,7 @@ $name = $_GET["name"];
 $dtstart = $_GET["start"];
 $dtend = $_GET["end"];
 
-$query="SELECT time, temperature FROM andorraschool WHERE (name LIKE '%$name%') ORDER BY time DESC limit 1";
+$query="SELECT inserttime, values FROM andorra2017 WHERE (sensorname LIKE '%$name%') ORDER BY inserttime DESC limit 1";
 
 $result = pg_query($query);
 
@@ -18,8 +18,7 @@ if (!$result) {
 
 $arr = pg_fetch_all($result);
 
-echo $_GET['callback'] . json_encode($arr, JSON_NUMERIC_CHECK);   
-
+echo $_GET['callback'] . json_encode($arr);
 
 include('pg_disconnect.php');
 
