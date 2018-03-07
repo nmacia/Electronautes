@@ -14,12 +14,12 @@ angular.module('electronautes')
   // Format SVG.
   $rootScope.formatSVG("img-floorplan");
   $rootScope.formatSVG("img-sensors");
-  $rootScope.formatSVG("img-sensors-lasvegas");
-  $rootScope.formatSVG("img-sensors-pompeia");
-  $rootScope.formatSVG("img-sensors-oimiakon");
-  $rootScope.formatSVG("img-sensors-honolulu");
-  $rootScope.formatSVG("img-sensors-hongkong");
-  $rootScope.formatSVG("img-sensors-monaco");
+  // $rootScope.formatSVG("img-sensors-lasvegas");
+  // $rootScope.formatSVG("img-sensors-pompeia");
+  // $rootScope.formatSVG("img-sensors-oimiakon");
+  // $rootScope.formatSVG("img-sensors-honolulu");
+  // $rootScope.formatSVG("img-sensors-hongkong");
+  // $rootScope.formatSVG("img-sensors-monaco");
   
   // Make flooplan clickable.
   $rootScope.addClickableEventToClassroomsInSVG("img-floorplan");
@@ -29,17 +29,17 @@ angular.module('electronautes')
   //$rootScope.classroom = $routeParams.classroom ? $routeParams.classroom : "floorplan";
   
   $scope.activeSensors = {
-    'co2': { 'lasvegas': true, 'pompeia': false, 'oimiakon': false, 'honolulu': false, 'hongkong': false, 'monaco': false },
-    'curtains': { 'lasvegas': true, 'pompeia': false, 'oimiakon': false, 'honolulu': false, 'hongkong': false, 'monaco': false },
-    'door': { 'lasvegas': true, 'pompeia': false, 'oimiakon': false, 'honolulu': false, 'hongkong': false, 'monaco': false },
-    'humidity': { 'lasvegas': true, 'pompeia': false, 'oimiakon': false, 'honolulu': false, 'hongkong': false, 'monaco': false },
+    'co2': { 'lasvegas': false, 'pompeia': false, 'oimiakon': false, 'honolulu': false, 'hongkong': false, 'monaco': false },
+    'curtains': { 'lasvegas': false, 'pompeia': false, 'oimiakon': false, 'honolulu': false, 'hongkong': false, 'monaco': false },
+    'door': { 'lasvegas': false, 'pompeia': false, 'oimiakon': false, 'honolulu': false, 'hongkong': false, 'monaco': false },
+    'humidity': { 'lasvegas': true, 'pompeia': true, 'oimiakon': true, 'honolulu': true, 'hongkong': true, 'monaco': true },
     'light': { 'lasvegas': true, 'pompeia': true, 'oimiakon': true, 'honolulu': true, 'hongkong': true, 'monaco': true },
-    'motion': { 'lasvegas': true, 'pompeia': false, 'oimiakon': false, 'honolulu': false, 'hongkong': false, 'monaco': false },
-    'presence': { 'lasvegas': true, 'pompeia': true, 'oimiakon': true, 'honolulu': true, 'hongkong': true, 'monaco': true },
+    'motion': { 'lasvegas': false, 'pompeia': false, 'oimiakon': false, 'honolulu': false, 'hongkong': false, 'monaco': false },
+    'presence': { 'lasvegas': false, 'pompeia': false, 'oimiakon': false, 'honolulu': false, 'hongkong': false, 'monaco': false },
     'pressure': { 'lasvegas': true, 'pompeia': true, 'oimiakon': true, 'honolulu': true, 'hongkong': true, 'monaco': true },
     'proximity': { 'lasvegas': true, 'pompeia': true, 'oimiakon': true, 'honolulu': true, 'hongkong': true, 'monaco': true },
     'temperature': { 'lasvegas': true, 'pompeia': true, 'oimiakon': true, 'honolulu': true, 'hongkong': true, 'monaco': true },
-    'window': { 'lasvegas': true, 'pompeia': false, 'oimiakon': false, 'honolulu': false, 'hongkong': false, 'monaco': false }
+    'window': { 'lasvegas': false, 'pompeia': false, 'oimiakon': false, 'honolulu': false, 'hongkong': false, 'monaco': false }
   };
 
   $scope.goToRelate = function () {
@@ -50,7 +50,7 @@ angular.module('electronautes')
   var sensorCatalog = [
    
     /* Presence values: 0 or 1  Sensors: AndorraPIR1 */
-    { name: "sensor-presence", group: "lasvegas", id: ["AndorraPIR1","ATP080"] },
+    { name: "sensor-presence", group: "lasvegas", id: ["ATP080"] },
     { name: "sensor-presence", group: "pompeia", id: ["ATP074"] },
     { name: "sensor-presence", group: "oimiakon", id: ["ATP075", "ATP076"] },
     { name: "sensor-presence", group: "honolulu", id: ["ATP079"] },
@@ -63,49 +63,55 @@ angular.module('electronautes')
     /* Window values: 0 or 1  Sensors form left to right: AndorraMITes-0769, AndorraMITes-1012,AndorraMITes-0109, AndorraMITes-1001, AndorraMITes-333 */
     { name: "sensor-window", group: "lasvegas", id: ["w0769-value", "w1012-value", "w0109-value", "w1001-value","w333-value"] },
     
-    /* Door values: 0 or 1 close  Sensors: Reed2 */
-    { name: "sensor-door", group: "lasvegas", id: ["door2-value"] },
+    // /* Door values: 0 or 1 close  Sensors: Reed2 */
+    // { name: "sensor-door", group: "lasvegas", id: ["door2-value"] },
     
     /* Light values: 0-1250  Sensors: AndorraLight2, AndorraLight3, AndorraLight4,AndorraLight5, AndorraLight6 */
-    { name: "sensor-light", group: "lasvegas", id: ["AndorraLight2", "AndorraLight3", "AndorraLight4", "AndorraLight5", "AndorraLight6", "ATP080", "AT007"] },
-    { name: "sensor-light", group: "pompeia", id: ["ATP074", "AT001"] },
-    { name: "sensor-light", group: "oimiakon", id: ["ATP075", "ATP076", "AT003"] },
-    { name: "sensor-light", group: "honolulu", id: ["ATP079", "AT006"] },
-    { name: "sensor-light", group: "hongkong", id: ["ATP081", "AT008"] },
-    { name: "sensor-light", group: "monaco", id: ["ATP082", "AT009"] },
+    { name: "sensor-light", group: "lasvegas", id: ["AT007"] },
+    { name: "sensor-light", group: "pompeia", id: ["AT001"] },
+    { name: "sensor-light", group: "oimiakon", id: ["AT003"] },
+    { name: "sensor-light", group: "honolulu", id: ["AT006"] },
+    { name: "sensor-light", group: "hongkong", id: ["AT008"] },
+    { name: "sensor-light", group: "monaco", id: ["ATP082"] },
     
-    /* Curtains values: 0 or 1 move  Sensors form left to right: AndorraMITes-0210, AndorraMITes-0995, AndorraMITes-0066,AndorraMITes-0325*/
-    { name: "sensor-curtains", group: "lasvegas", id: ["cur0210-value","cur0995-value","cur0066-value","cur0325-value"] },
+    // /* Curtains values: 0 or 1 move  Sensors form left to right: AndorraMITes-0210, AndorraMITes-0995, AndorraMITes-0066,AndorraMITes-0325*/
+    // { name: "sensor-curtains", group: "lasvegas", id: ["cur0210-value","cur0995-value","cur0066-value","cur0325-value"] },
     
     /* Temperature values: 0-30  Sensors: AndorraLight2, AndorraLight3, AndorraLight4,AndorraLight5, AndorraLight6 */
-    { name: "sensor-temperature", group: "lasvegas", id: ["AndorraLight2", "AndorraLight3", "AndorraLight4", "AndorraLight5", "AndorraLight6", "ATP080", "AT007"] },
-    { name: "sensor-temperature", group: "pompeia", id: ["ATP074", "AT001"] },
-    { name: "sensor-temperature", group: "oimiakon", id: ["ATP075", "ATP076", "AT003"] },
-    { name: "sensor-temperature", group: "honolulu", id: ["ATP079", "AT006"] },
-    { name: "sensor-temperature", group: "hongkong", id: ["ATP081", "AT008"] },
-    { name: "sensor-temperature", group: "monaco", id: ["ATP082", "AT009"] },
-    
-    /* CO2 values:  2.6-1 Inverted, volt sign Sensor: AndorraBob1 */
-    { name: "sensor-co2", group: "lasvegas", id: ["AndorraBob1"] },
-    
+    { name: "sensor-temperature", group: "lasvegas", id: ["AT007"] },
+    { name: "sensor-temperature", group: "pompeia", id: ["AT001"] },
+    { name: "sensor-temperature", group: "oimiakon", id: ["AT003"] },
+    { name: "sensor-temperature", group: "honolulu", id: ["AT006"] },
+    { name: "sensor-temperature", group: "hongkong", id: ["AT008"] },
+    { name: "sensor-temperature", group: "monaco", id: ["ATP082"] },
+
+    // /* CO2 values:  2.6-1 Inverted, volt sign Sensor: AndorraBob1 */
+    // { name: "sensor-co2", group: "lasvegas", id: ["AndorraBob1"] },
+
     /* Humidity values:  0-100%RH Sensor: AndorraHumidity1 */
-    { name: "sensor-humidity", group: "lasvegas", id: ["AndorraHumidity1"] },
+
+    { name: "sensor-humidity", group: "lasvegas", id: ["AT007"] },
+    { name: "sensor-humidity", group: "pompeia", id: ["AT001"] },
+    { name: "sensor-humidity", group: "oimiakon", id: ["AT003"] },
+    { name: "sensor-humidity", group: "honolulu", id: ["AT006"] },
+    { name: "sensor-humidity", group: "hongkong", id: ["AT008"] },
+    { name: "sensor-humidity", group: "monaco", id: ["ATP082"] },
     
     /* Proximity */
-    { name: "sensor-proximity", group: "lasvegas", id: ["ATP080", "AT007"] },
-    { name: "sensor-proximity", group: "pompeia", id: ["ATP074", "AT001"] },
-    { name: "sensor-proximity", group: "oimiakon", id: ["ATP075", "ATP076", "AT003"] },
-    { name: "sensor-proximity", group: "honolulu", id: ["ATP079", "AT006"] },
-    { name: "sensor-proximity", group: "hongkong", id: ["ATP081", "AT008"] },
-    { name: "sensor-proximity", group: "monaco", id: ["ATP082", "AT009"] },
+    { name: "sensor-proximity", group: "lasvegas", id: ["AT007"] },
+    { name: "sensor-proximity", group: "pompeia", id: ["AT001"] },
+    { name: "sensor-proximity", group: "oimiakon", id: ["AT003"] },
+    { name: "sensor-proximity", group: "honolulu", id: ["AT006"] },
+    { name: "sensor-proximity", group: "hongkong", id: ["AT008"] },
+    { name: "sensor-proximity", group: "monaco", id: ["ATP082"] },
     
     /* Pressure */
-    { name: "sensor-pressure", group: "lasvegas", id: ["ATP080", "AT007"] },
-    { name: "sensor-pressure", group: "pompeia", id: ["ATP074", "AT001"] },
-    { name: "sensor-pressure", group: "oimiakon", id: ["ATP075", "ATP076", "AT003"] },
-    { name: "sensor-pressure", group: "honolulu", id: ["ATP079", "AT006"] },
-    { name: "sensor-pressure", group: "hongkong", id: ["ATP081", "AT008"] },
-    { name: "sensor-pressure", group: "monaco", id: ["ATP082", "AT009"] }
+    { name: "sensor-pressure", group: "lasvegas", id: ["AT007"] },
+    { name: "sensor-pressure", group: "pompeia", id: ["AT001"] },
+    { name: "sensor-pressure", group: "oimiakon", id: ["AT003"] },
+    { name: "sensor-pressure", group: "honolulu", id: ["AT006"] },
+    { name: "sensor-pressure", group: "hongkong", id: ["AT008"] },
+    { name: "sensor-pressure", group: "monaco", id: ["ATP082"] }
   ]; 
 
   var previousQuery = "";
@@ -117,7 +123,7 @@ angular.module('electronautes')
     //var classroom = document.getElementById("img-sensor-" + sessionStorage.getItem("sensors-classroom") );
     //var classr = document.getElementById("img-sensors-"+ $scope.classroom);
     var classr = document.getElementById("img-sensors");
-    
+
     console.log("ID img-sensors");
     console.log("what's this" + classr);
 
@@ -233,23 +239,6 @@ angular.module('electronautes')
               }
             }
             break;
-          case "sensor-light":
-            // Change value for each sensor.
-            var numberOfSensors = sensorIDs[0].id.length;
-            for (var i = 0; i < numberOfSensors; i++) {
-              var sensorId = sensorIDs[0].id[i];
-              $.ajax({
-                url: 'http://replace.media.mit.edu/electronautes/php/getLastValueByName.php?name=' + sensorId,
-                async: false,
-                dataType: 'json',
-                success: function(data) {
-                  $(svgDoc.getElementById(sensorId + "-value")).text(data[0]['value']);
-                  var lastDate = data[0]['time'].split('.')[0].replace(/-/g, '/');
-                  $(svgDoc.getElementById(sensorId + "-light-lastimevalue")).text(lastDate.substring(0, lastDate.lastIndexOf(":")));	
-                }    
-              });
-            }
-            break;   
           case "sensor-curtains":
             // Change value for each sensor.
             var numberOfSensors = sensorIDs[0].id.length;
@@ -278,12 +267,16 @@ angular.module('electronautes')
             for (var i = 0; i < numberOfSensors; i++) {
               var sensorId = sensorIDs[0].id[i];
               $.ajax({
-                url: 'http://replace.media.mit.edu/electronautes/php/getLastValueByName.php?name=' + sensorId,
-                async: false,
-                dataType: 'json',
-                success: function(data) {
-                  $(svgDoc.getElementById(sensorId + "-value")).text(data[0]['value'] + '%');	
-                }    
+                  url: 'http://replace.media.mit.edu/andorra/electronautes/php/getLastValueArrayByName.php?name=' + sensorId,
+                  async: false,
+                  dataType: 'json',
+                  success: function(data) {
+                      var values = data[0]['values'];
+                      var valuejson = JSON.parse(values);
+                      $(svgDoc.getElementById("sensor-humidity-value")).text(valuejson['humidity'] + '%');
+                      var lastDate = data[0]['inserttime'].split('.')[0].replace(/-/g, '/');
+                      $(svgDoc.getElementById("sensor-humidity-lastimevalue")).text(lastDate.substring(0, lastDate.lastIndexOf(":")));
+                  }
               });
             }
             break;
@@ -291,19 +284,78 @@ angular.module('electronautes')
             // Change value for each sensor.
             var numberOfSensors = sensorIDs[0].id.length;
             for (var i = 0; i < numberOfSensors; i++) {
-              var sensorId = sensorIDs[0].id[i];                
+              var sensorId = sensorIDs[0].id[i];
               $.ajax({
-                url: 'http://replace.media.mit.edu/electronautes/php/getLastTemperatureByName.php?name=' + sensorId,
+                url: 'http://replace.media.mit.edu/andorra/electronautes/php/getLastValueArrayByName.php?name=' + sensorId,
                 async: false,
                 dataType: 'json',
                 success: function(data) {
-                  $(svgDoc.getElementById(sensorId + "-value")).text(data[0]['temperature'] + '&deg;C');
-                  var lastDate = data[0]['time'].split('.')[0].replace(/-/g, '/');
-                  $(svgDoc.getElementById(sensorId + "-temp-lastimevalue")).text(lastDate.substring(0, lastDate.lastIndexOf(":")));	
+                  var values = data[0]['values'];
+                  var valuejson = JSON.parse(values);
+                  $(svgDoc.getElementById("sensor-temp-value")).text(valuejson['temperature'] + '° C');
+                  var lastDate = data[0]['inserttime'].split('.')[0].replace(/-/g, '/');
+                  $(svgDoc.getElementById("sensor-temp-lastimevalue")).text(lastDate.substring(0, lastDate.lastIndexOf(":")));
                 }
               });
             }
-            break;   
+            break;
+          case "sensor-proximity":
+              // Change value for each sensor.
+              var numberOfSensors = sensorIDs[0].id.length;
+              for (var i = 0; i < numberOfSensors; i++) {
+                  var sensorId = sensorIDs[0].id[i];
+                  $.ajax({
+                      url: 'http://replace.media.mit.edu/andorra/electronautes/php/getLastValueArrayByName.php?name=' + sensorId,
+                      async: false,
+                      dataType: 'json',
+                      success: function(data) {
+                          var values = data[0]['values'];
+                          var valuejson = JSON.parse(values);
+                          $(svgDoc.getElementById("sensor-proximity-value")).text((valuejson['proximity']).split(".")[0] + " mm");
+                          var lastDate = data[0]['inserttime'].split('.')[0].replace(/-/g, '/');
+                          $(svgDoc.getElementById("sensor-proximity-lastimevalue")).text(lastDate.substring(0, lastDate.lastIndexOf(":")));
+                      }
+                  });
+              }
+              break;
+          case "sensor-pressure":
+              // Change value for each sensor.
+              var numberOfSensors = sensorIDs[0].id.length;
+              for (var i = 0; i < numberOfSensors; i++) {
+                  var sensorId = sensorIDs[0].id[i];
+                  $.ajax({
+                      url: 'http://replace.media.mit.edu/andorra/electronautes/php/getLastValueArrayByName.php?name=' + sensorId,
+                      async: false,
+                      dataType: 'json',
+                      success: function(data) {
+                          var values = data[0]['values'];
+                          var valuejson = JSON.parse(values);
+                          $(svgDoc.getElementById("sensor-pressure-value")).text((valuejson['pressure']).split(".")[0] + " Pa");
+                          var lastDate = data[0]['inserttime'].split('.')[0].replace(/-/g, '/');
+                          $(svgDoc.getElementById("sensor-pressure-lastimevalue")).text(lastDate.substring(0, lastDate.lastIndexOf(":")));
+                      }
+                  });
+              }
+              break;
+            case "sensor-light":
+              // Change value for each sensor.
+              var numberOfSensors = sensorIDs[0].id.length;
+              for (var i = 0; i < numberOfSensors; i++) {
+                var sensorId = sensorIDs[0].id[i];
+                $.ajax({
+                  url: 'http://replace.media.mit.edu/andorra/electronautes/php/getLastValueArrayByName.php?name=' + sensorId,
+                  async: false,
+                  dataType: 'json',
+                  success: function(data) {
+                      var values = data[0]['values'];
+                      var valuejson = JSON.parse(values);
+                      $(svgDoc.getElementById("sensor-light-value")).text((valuejson['ambientLight']).split(".")[0]);
+                      var lastDate = data[0]['inserttime'].split('.')[0].replace(/-/g, '/');
+                      $(svgDoc.getElementById("sensor-light-lastimevalue")).text(lastDate.substring(0, lastDate.lastIndexOf(":")));
+                  }
+                });
+              }
+              break;
         }
 
         // Display sensors on the SVG.
