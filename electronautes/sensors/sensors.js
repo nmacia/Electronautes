@@ -252,7 +252,7 @@ angular.module('electronautes')
             for (var i = 0; i < numberOfSensors; i++) {
               var sensorId = sensorIDs[0].id[i];  
               $.ajax({
-                url: 'http://replace.media.mit.edu/electronautes/php/getLastValueByName.php?name=' + sensorId,
+                url: 'http://replace.media.mit.edu/andorra/electronautes/php/getLastValueArrayByName.php?name=' + sensorId,
                 async: false,
                 dataType: 'json',
                 success: function(data) {
