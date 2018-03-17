@@ -159,7 +159,7 @@ angular.module('electronautes').directive('tWeather', ($rootScope) => {
           case "0":
           case "2": 
             color = "#ffcc00";
-            img = "ups.png";
+            img = "oops.png";
             break;
         }
 

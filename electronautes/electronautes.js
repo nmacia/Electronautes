@@ -11,8 +11,11 @@ angular.module('electronautes', [
 }])
 
 .controller('electronautesCtrl', function($scope, $rootScope, $location) { 
+  
 
   // VARIABLES
+  
+  $rootScope.classroom = 'floorplan'; // default value when the page is loaded
   
   // List of sensors following the grid order.
   $rootScope.listOfSensors = [
@@ -29,6 +32,8 @@ angular.module('electronautes', [
   };
   
   // SVG STYLE
+  
+  //TODO in style .st0{font-family:'AmaticSC-Regular';}
   $rootScope.formatSVG = function (svgObjectId) {
     var svgObj = document.getElementById(svgObjectId);
     if (svgObj) {
@@ -89,10 +94,8 @@ angular.module('electronautes', [
   };
   
   var goToClass = function(classId) {
-    // console.log(classId);
-    // console.log($location);
+    
     $scope.classroom = classId;
-    $location.path('/sensors');
     $rootScope.$apply();
   }
   
