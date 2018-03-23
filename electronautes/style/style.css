@@ -762,7 +762,9 @@ footer {
 	position: relative;
     width:auto;
     bottom: 0px; 
-    margin: auto;
+    margin-bottom: 0px;
+    margin-top: 10px;
+    padding-left: 5px;
 }
 
 .copyright p {
@@ -789,6 +791,23 @@ footer {
     padding-left: 15px;
     margin-right: auto;
     margin-left: auto;
+}
+
+          
+.ml-logos  {
+    position: relative;
+    width: auto;
+    display: inline-block;
+    float: left;
+}
+
+.ml-logos img {
+    height: 23px;
+    padding-right: 5px;
+}
+
+.ml-logos img:hover {
+    filter: invert(100%);
 }
 
 /*
@@ -823,6 +842,8 @@ footer {
     .boxsensors {
         margin-top: 30px;
     }
+          
+   
             
     .logo img {
         height: 90px;
@@ -1026,8 +1047,30 @@ and (max-width : 480px) {
     .r-button-sensor .img-window-sensor {
         max-width: 30px;
     }
-
-} /* End responsiveness*/
+  
+  .ml-logos {
+    position: relative;
+    width: auto;
+    display: block;
+    float: initial;
+  }
+  
+  .ml-logos img {
+    margin-top: 20px;
+    height: 20px;
+  }
+  
+      
+  .copyright {
+    padding-left: 0px;
+  } 
+  
+  figcaption.bug-caption {
+    display: none;
+  }
+}
+  
+/* End responsiveness*/
 
 
 object {
