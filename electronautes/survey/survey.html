@@ -5,12 +5,21 @@
         <!-- SVG: Floor Plan -->
         <object data="svg/floorplan.svg" type="image/svg+xml" ng-show="classroom == 'floorplan'" id="img-floorplan"></object>
         <!-- SVG: Classrooms -->
-        <object data="svg/las-vegas.svg" type="image/svg+xml" ng-show="classroom == 'lasvegas'" id="img-lasvegas"></object>
-        <object data="svg/pompeia.svg" type="image/svg+xml" ng-show="classroom == 'pompeia'" id="img-sensors-pompeia"></object>
-        <object data="svg/oimiakon.svg" type="image/svg+xml" ng-show="classroom == 'oimiakon'" id="img-sensors-oimiakon"></object>
-        <object data="svg/honolulu.svg" type="image/svg+xml" ng-show="classroom == 'honolulu'" id="img-sensors-honolulu"></object>
-        <object data="svg/hong-kong.svg" type="image/svg+xml" ng-show="classroom == 'hongkong'" id="img-sensors-hongkong"></object>
-        <object data="svg/monaco.svg" type="image/svg+xml" ng-show="classroom == 'monaco'" id="img-sensors-monaco"></object>
+        <object data="svg/lasvegas.svg" type="image/svg+xml" ng-show="classroom == 'lasvegas'" id="img-classroom-lasvegas"></object> 
+        <object data="svg/pompeia.svg" type="image/svg+xml" ng-show="classroom == 'pompeia'" id="img-classroom-pompeia"></object>
+        <object data="svg/oimiakon.svg" type="image/svg+xml" ng-show="classroom == 'oimiakon'" id="img-classroom-oimiakon"></object>
+        <object data="svg/honolulu.svg" type="image/svg+xml" ng-show="classroom == 'honolulu'" id="img-classroom-honolulu"></object>
+        <object data="svg/hongkong.svg" type="image/svg+xml" ng-show="classroom == 'hongkong'" id="img-classroom-hongkong"></object>
+        <object data="svg/monaco.svg" type="image/svg+xml" ng-show="classroom == 'monaco'" id="img-classroom-monaco"></object> 
+        <!-- TODO: Remove following line when each classroom has its own sensor svg !-->
+        <object data="svg/sensors.svg" type="image/svg+xml" ng-hide="classroom == 'floorplan'" id="img-sensors"></object>
+        <!-- SVG: Sensors by classroom -->
+        <object data="svg/s-lasvegas.svg" type="image/svg+xml" ng-show="classroom == 'lasvegas'" id="img-sensors-lasvegas"></object> 
+        <object data="svg/s-pompeia.svg" type="image/svg+xml" ng-show="classroom == 'pompeia'" id="img-sensors-pompeia"></object>
+        <object data="svg/s-oimiakon.svg" type="image/svg+xml" ng-show="classroom == 'oimiakon'" id="img-sensors-oimiakon"></object>
+        <object data="svg/s-honolulu.svg" type="image/svg+xml" ng-show="classroom == 'honolulu'" id="img-sensors-honolulu"></object>
+        <object data="svg/s-hong-kong.svg" type="image/svg+xml" ng-show="classroom == 'hongkong'" id="img-sensors-hongkong"></object>
+        <object data="svg/s-monaco.svg" type="image/svg+xml" ng-show="classroom == 'monaco'" id="img-sensors-monaco"></object> 
       </div>
       <div class="col-xs-12 col-md-5 no-padding">   
         <!-- Weather panel -->

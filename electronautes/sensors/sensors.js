@@ -12,8 +12,8 @@ angular.module('electronautes')
 .controller('SensorsCtrl', function($scope, $rootScope, $location, $routeParams) {
 
   // Format SVG.
-  $rootScope.formatSVG("img-floorplan");
-  $rootScope.formatSVG("img-sensors");
+  // $rootScope.formatSVG("img-floorplan");
+  // $rootScope.formatSVG("img-sensors");
   // $rootScope.formatSVG("img-sensors-lasvegas");
   // $rootScope.formatSVG("img-sensors-pompeia");
   // $rootScope.formatSVG("img-sensors-oimiakon");

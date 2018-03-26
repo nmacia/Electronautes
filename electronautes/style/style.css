@@ -250,12 +250,12 @@ no-padding {
 
 #santasensorssvg,
 #svgsanta,
-#img-lasvegas, #img-sensors-lasvegas,
-#img-pompeia, #img-sensors-pompeia,
-#img-oimiakon, #img-sensors-oimiakon,
-#img-honolulu, #img-sensors-honolulu,
-#img-hongkong, #img-sensors-hongkong,
-#img-monaco, #img-sensors-monaco {
+#img-classroom-lasvegas, #img-sensors-lasvegas,
+#img-classroom-pompeia, #img-sensors-pompeia,
+#img-classroom-oimiakon, #img-sensors-oimiakon,
+#img-classroom-honolulu, #img-sensors-honolulu,
+#img-classroom-hongkong, #img-sensors-hongkong,
+#img-classroom-monaco, #img-sensors-monaco {
 	width: 100%;
 }
 
@@ -1079,8 +1079,12 @@ object {
   left: 0;
 }
 
-object#img-sensors {
+object#img-sensors, /* TODO: Remove this line when each classroom has its sensor svg */
+object#img-sensors-lasvegas,
+object#img-sensors-pompeia,
+object#img-sensors-oimiakon,
+object#img-sensors-honolulu,
+object#img-sensors-hongkong,
+object#img-sensors-monaco {
    position: absolute;
 }
-
-
