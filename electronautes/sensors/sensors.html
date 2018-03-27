@@ -29,15 +29,16 @@
         <!-- Sensors -->
         <div class="boxsensors" ng-hide="bugReport.startReporting === true"> 
           <div class="row-sensor" ng-repeat="row in [0, 1, 2, 3]" >      
-            <div class="button-sensor" ng-repeat="col in [0, 1, 2]" ng-if="listOfSensors[row][col] != null">
-              <label>
+            <div class="button-sensor" ng-repeat="col in [0, 1, 2]">
+              <label ng-if="listOfSensors[row][col] != null">
                 <input type="radio" name="sensor" id="{{ listOfSensors[row][col] }}" value="{{ listOfSensors[row][col] }}" ng-click="showSensorValue('sensor-'+ listOfSensors[row][col] );" ng-disabled="!activeSensors['{{ listOfSensors[row][col] }}'][classroom]" />
                 <figure>
                   <img ng-class="{'img-window-sensor': listOfSensors[row][col] == 'window'}" ng-src="./img/sensors/{{ listOfSensors[row][col] }}.png" alt="{{ listOfSensors[row][col] }}" />
                   <figcaption>{{ listOfSensors[row][col] }}</figcaption>
                 </figure>
               </label>
-            </div>
+              <input ng-if="listOfSensors[row][col] == null && surveyClassroom == null" type="button" class="btn button-sensor" name="button-learnmore" value="learn more" ng-click="goToLearnMore()" />
+            </div>     
           </div>
           <!-- Game -->
           <input type="button" class="btn pull-right button-relate" name="button-relate" value="relate" ng-show="surveyClassroom != null" ng-click="goToRelate()">  
