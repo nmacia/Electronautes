@@ -1076,11 +1076,17 @@ and (max-width : 480px) {
   
 /* End responsiveness*/
 
+/* Svg Style*/
 
 object {
   position: relative;
   top: 0;
   left: 0;
+}
+
+/* TODO: Remove this line when each classroom has its sensor svg */
+object#img-sensors {
+width: 100%;
 }
 
 object#img-sensors, /* TODO: Remove this line when each classroom has its sensor svg */

@@ -29,13 +29,13 @@ angular.module('electronautes')
   //$rootScope.classroom = $routeParams.classroom ? $routeParams.classroom : "floorplan";
   
   $scope.activeSensors = {
-    'co2': { 'lasvegas': false, 'pompeia': false, 'oimiakon': false, 'honolulu': false, 'hongkong': false, 'monaco': false },
+    'co2': { 'lasvegas': true, 'pompeia': false, 'oimiakon': false, 'honolulu': true, 'hongkong': false, 'monaco': true },
     'curtains': { 'lasvegas': false, 'pompeia': false, 'oimiakon': false, 'honolulu': false, 'hongkong': false, 'monaco': false },
     'door': { 'lasvegas': false, 'pompeia': false, 'oimiakon': false, 'honolulu': false, 'hongkong': false, 'monaco': false },
     'humidity': { 'lasvegas': true, 'pompeia': true, 'oimiakon': true, 'honolulu': true, 'hongkong': true, 'monaco': true },
     'light': { 'lasvegas': true, 'pompeia': true, 'oimiakon': true, 'honolulu': true, 'hongkong': true, 'monaco': true },
     'motion': { 'lasvegas': false, 'pompeia': false, 'oimiakon': false, 'honolulu': false, 'hongkong': false, 'monaco': false },
-    'presence': { 'lasvegas': false, 'pompeia': false, 'oimiakon': false, 'honolulu': false, 'hongkong': false, 'monaco': false },
+    'presence': { 'lasvegas': true, 'pompeia': true, 'oimiakon': true, 'honolulu': true, 'hongkong': true, 'monaco': true },
     'pressure': { 'lasvegas': true, 'pompeia': true, 'oimiakon': true, 'honolulu': true, 'hongkong': true, 'monaco': true },
     'proximity': { 'lasvegas': true, 'pompeia': true, 'oimiakon': true, 'honolulu': true, 'hongkong': true, 'monaco': true },
     'temperature': { 'lasvegas': true, 'pompeia': true, 'oimiakon': true, 'honolulu': true, 'hongkong': true, 'monaco': true },
@@ -49,69 +49,71 @@ angular.module('electronautes')
   // Catalog of sensors installed and their IDs in the SVG. 
   var sensorCatalog = [
    
-    /* Presence values: 0 or 1  Sensors: AndorraPIR1 */
-    { name: "sensor-presence", group: "lasvegas", id: ["ATP080"] },
+    /* Presence values: 0 or 1  Sensors: PIR */
     { name: "sensor-presence", group: "pompeia", id: ["ATP074"] },
     { name: "sensor-presence", group: "oimiakon", id: ["ATP075", "ATP076"] },
     { name: "sensor-presence", group: "honolulu", id: ["ATP079"] },
+    { name: "sensor-presence", group: "lasvegas", id: ["ATP080"] },
     { name: "sensor-presence", group: "hongkong", id: ["ATP081"] },
     { name: "sensor-presence", group: "monaco", id: ["ATP082"] },
     
-    /* Motion values: 0.00-0.10 Do we need to scale them yes, boolean. Sensors: AndorraMotion1, AndorraMotion2 */
-    { name: "sensor-motion", group: "lasvegas", id: ["AndorraMotion1","AndorraMotion2"] },
+    ///* Motion values: 0.00-0.10 Do we need to scale them yes, boolean. Sensors: AndorraMotion1, AndorraMotion2 */
+    //{ name: "sensor-motion", group: "lasvegas", id: ["AndorraMotion1","AndorraMotion2"] },
     
     /* Window values: 0 or 1  Sensors form left to right: AndorraMITes-0769, AndorraMITes-1012,AndorraMITes-0109, AndorraMITes-1001, AndorraMITes-333 */
-    { name: "sensor-window", group: "lasvegas", id: ["w0769-value", "w1012-value", "w0109-value", "w1001-value","w333-value"] },
+    //{ name: "sensor-window", group: "lasvegas", id: ["w0769-value", "w1012-value", "w0109-value", "w1001-value","w333-value"] },
     
     // /* Door values: 0 or 1 close  Sensors: Reed2 */
     // { name: "sensor-door", group: "lasvegas", id: ["door2-value"] },
     
-    /* Light values: 0-1250  Sensors: AndorraLight2, AndorraLight3, AndorraLight4,AndorraLight5, AndorraLight6 */
-    { name: "sensor-light", group: "lasvegas", id: ["AT007"] },
-    { name: "sensor-light", group: "pompeia", id: ["AT001"] },
-    { name: "sensor-light", group: "oimiakon", id: ["AT003"] },
-    { name: "sensor-light", group: "honolulu", id: ["AT006"] },
-    { name: "sensor-light", group: "hongkong", id: ["AT008"] },
-    { name: "sensor-light", group: "monaco", id: ["ATP082"] },
+    /* Light values: 0-1250 */
+    { name: "sensor-light", group: "pompeia", id: ["AT001", "ATP074"] },
+    { name: "sensor-light", group: "oimiakon", id: ["AT003", "ATP075", "ATP076"] },
+    { name: "sensor-light", group: "honolulu", id: ["AT006", "ATP079"] },
+    { name: "sensor-light", group: "lasvegas", id: ["AT007", "ATP080"] },
+    { name: "sensor-light", group: "hongkong", id: ["AT008", "ATP081"] },
+    { name: "sensor-light", group: "monaco", id: ["AT008","ATP082"] },
     
     // /* Curtains values: 0 or 1 move  Sensors form left to right: AndorraMITes-0210, AndorraMITes-0995, AndorraMITes-0066,AndorraMITes-0325*/
     // { name: "sensor-curtains", group: "lasvegas", id: ["cur0210-value","cur0995-value","cur0066-value","cur0325-value"] },
     
-    /* Temperature values: 0-30  Sensors: AndorraLight2, AndorraLight3, AndorraLight4,AndorraLight5, AndorraLight6 */
-    { name: "sensor-temperature", group: "lasvegas", id: ["AT007"] },
-    { name: "sensor-temperature", group: "pompeia", id: ["AT001"] },
-    { name: "sensor-temperature", group: "oimiakon", id: ["AT003"] },
-    { name: "sensor-temperature", group: "honolulu", id: ["AT006"] },
-    { name: "sensor-temperature", group: "hongkong", id: ["AT008"] },
-    { name: "sensor-temperature", group: "monaco", id: ["ATP082"] },
+    /* Temperature values: 0-30  Sensors: sensor-temperature */
+    { name: "sensor-temperature", group: "pompeia", id: ["AT001", "ATP074"] },
+    { name: "sensor-temperature", group: "oimiakon", id: ["AT003", "ATP075", "ATP076"] },
+    { name: "sensor-temperature", group: "honolulu", id: ["AT006", "ATP079"] },
+    { name: "sensor-temperature", group: "lasvegas", id: ["AT007", "ATP080"] },
+    { name: "sensor-temperature", group: "hongkong", id: ["AT008", "ATP081"] },
+    { name: "sensor-temperature", group: "monaco", id: ["AT008","ATP082"] },
 
-    // /* CO2 values:  2.6-1 Inverted, volt sign Sensor: AndorraBob1 */
-    // { name: "sensor-co2", group: "lasvegas", id: ["AndorraBob1"] },
+     /* CO2 values:  2.6-1 Inverted, volt sign Sensor: AndorraBob1 */
+    { name: "sensor-co2", group: "honolulu", id: ["AndorraBob6"] },
+    { name: "sensor-co2", group: "lasvegas", id: ["AndorraBob1"] },
+    { name: "sensor-co2", group: "monaco", id: ["AndorraBob5"] },
 
-    /* Humidity values:  0-100%RH Sensor: AndorraHumidity1 */
+    /* Humidity values:  0-100% Relative Humidity */
 
-    { name: "sensor-humidity", group: "lasvegas", id: ["AT007"] },
     { name: "sensor-humidity", group: "pompeia", id: ["AT001"] },
     { name: "sensor-humidity", group: "oimiakon", id: ["AT003"] },
     { name: "sensor-humidity", group: "honolulu", id: ["AT006"] },
+    { name: "sensor-humidity", group: "lasvegas", id: ["AT007"] },
     { name: "sensor-humidity", group: "hongkong", id: ["AT008"] },
-    { name: "sensor-humidity", group: "monaco", id: ["ATP082"] },
+    { name: "sensor-humidity", group: "monaco", id: ["AT009"] },
     
-    /* Proximity */
-    { name: "sensor-proximity", group: "lasvegas", id: ["AT007"] },
-    { name: "sensor-proximity", group: "pompeia", id: ["AT001"] },
-    { name: "sensor-proximity", group: "oimiakon", id: ["AT003"] },
-    { name: "sensor-proximity", group: "honolulu", id: ["AT006"] },
-    { name: "sensor-proximity", group: "hongkong", id: ["AT008"] },
-    { name: "sensor-proximity", group: "monaco", id: ["ATP082"] },
+    /* Proximity sensor-proximity*/
+    { name: "sensor-proximity", group: "pompeia", id: ["AT001", "ATP074"] },
+    { name: "sensor-proximity", group: "oimiakon", id: ["AT003", "ATP075", "ATP076"] },
+    { name: "sensor-proximity", group: "honolulu", id: ["AT006", "ATP079"] },
+    { name: "sensor-proximity", group: "lasvegas", id: ["AT007", "ATP080"] },
+    { name: "sensor-proximity", group: "hongkong", id: ["AT008", "ATP081"] },
+    { name: "sensor-proximity", group: "monaco", id: ["AT008","ATP082"] },
     
-    /* Pressure */
-    { name: "sensor-pressure", group: "lasvegas", id: ["AT007"] },
-    { name: "sensor-pressure", group: "pompeia", id: ["AT001"] },
-    { name: "sensor-pressure", group: "oimiakon", id: ["AT003"] },
-    { name: "sensor-pressure", group: "honolulu", id: ["AT006"] },
-    { name: "sensor-pressure", group: "hongkong", id: ["AT008"] },
-    { name: "sensor-pressure", group: "monaco", id: ["ATP082"] }
+    /* Pressure sensor-pressure */
+    { name: "sensor-sensor-pressure", group: "pompeia", id: ["AT001", "ATP074"] },
+    { name: "sensor-sensor-pressure", group: "oimiakon", id: ["AT003", "ATP075", "ATP076"] },
+    { name: "sensor-sensor-pressure", group: "honolulu", id: ["AT006", "ATP079"] },
+    { name: "sensor-sensor-pressure", group: "lasvegas", id: ["AT007", "ATP080"] },
+    { name: "sensor-sensor-pressure", group: "hongkong", id: ["AT008", "ATP081"] },
+    { name: "sensor-sensor-pressure", group: "monaco", id: ["AT008","ATP082"] },
   ]; 
 
   var previousQuery = "";
