@@ -4,7 +4,7 @@
                 Juanita Devis
  Version:       1.1
  Date:          March 2017
- Last modified: May 2017
+ Last modified: March 2018
  */
 
 
@@ -29,48 +29,50 @@
 ==================================================
 */
 
-
 html {
-	overflow-y: scroll;
+  overflow-y: scroll;
 }
 
 body {
-	background: #ffffff;
-	color: #262626;
-	font-family: "Amatic SC", sans-serif;
-	margin: 0;	
-	overflow-x: hidden;
-	padding: 0;
+  background: #ffffff;
+  color: #262626;
+  font-family: "Amatic SC", sans-serif;
+  margin: 0;	
+  overflow-x: hidden;
+  padding: 0;
 }
 
 #fitScreen {
-	height: 100%;
+  height: 100%;
 }
 
 input, button, textarea, select{
-  	border-radius: 0;
-	-webkit-appearance:none;
- 	-webkit-border-radius: 0;
+  border-radius: 0;
+  -webkit-appearance: none;
+  -webkit-border-radius: 0;
 }
 
-a, a:hover, a:focus {
-	color: inherit;
-	text-decoration: none;
+a, 
+a:hover, 
+a:focus {
+  color: inherit;
+  text-decoration: none;
 }
 
-q:after, q:before {
-	content: none;
+q:after,
+q:before {
+  content: none;
 }
 
 h2 {
-	font-weight: 700;
-	letter-spacing: 2px;
+  font-weight: 700;
+  letter-spacing: 2px;
 }
 
 p.description {
-    font-family: "Open Sans";
-    font-size: 12px;
-    text-transform: lowercase;
+  font-family: "Open Sans";
+  font-size: 12px;
+  text-transform: lowercase;
 }
 
 .narrow {
@@ -84,138 +86,139 @@ p.description {
 */
 
 header {
-	height: 120px;
-	margin-bottom: 30px;
-	margin-top: 50px;
- 	padding-top: 10px;
-	text-transform: uppercase;
+  height: 120px;
+  margin-bottom: 30px;
+  margin-top: 50px;
+  padding-top: 10px;
+  text-transform: uppercase;
 }
 
 header .container {
-	padding: 0;
+  padding: 0;
 }
 
 /* LOGO */
 
 .logo {
-	float: left;
-	height: 100%;
-	left: 5px;
+  float: left;
+  height: 100%;
+  left: 5px;
 }
 
 .logo:hover{
-    filter: invert(100%);
+  filter: invert(100%);
 }
 
 .logo img {
-	height: 100px;
+  height: 100px;
 }
 
 /* MENU */
+
 #nav {
-    display: inline-block;
-	float: right;
-	margin-top: 4px;
+  display: inline-block;
+  float: right;
+  margin-top: 4px;
 }
 
 /* Strip the ul of padding and list styling. */
 #nav ul {
-	list-style-type: none;
-	margin: 0;
-	padding: 0;
-	text-align: center;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
 }
 
 /* Create a horizontal list with spacing. */
 #nav li {
-	display: inline-block;
-	padding: 0 35px;
-	text-align: right;
+  display: inline-block;
+  padding: 0 35px;
+  text-align: right;
 }
 
-/* no padding for hidden list */
+/* No padding for hidden list, */
 #nav .hidden-nav li {
-    padding: 0;
+  padding: 0;
 }
 
 /* Style for menu links. */
 #nav li a {
-	display: block;
-	font-size: 20px;
-	font-weight: 700;
-	letter-spacing: 2px;
+  display: block;
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 2px;
 }
 
 /* Hover state for top level links. */
 #nav li:hover a {
- 	color: #F6F6F6;
+  color: #F6F6F6;
 }
 
 /* SUBMENU */
 /* Style for dropdown links. */
+
 #nav li:hover ul a {
-	background: #F6F6F6;
-	color: #262626;
-	font-size: 14px;
-	font-weight: 700;
-	letter-spacing: 2px;
-	padding-left: 30px;
-	text-align: left;
+  background: #F6F6F6;
+  color: #262626;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  padding-left: 30px;
+  text-align: left;
 }
 
 /* Hover state for dropdown links. */
 #nav li:hover ul a:hover {
-    background: #262626;
-    color: #F6F6F6;
+  background: #262626;
+  color: #F6F6F6;
 }
 
 /* Hide dropdown links until they are needed. */
 #nav li ul {
-	display: none;
- 	position: absolute;
-    width: inherit;
+  display: none;
+  position: absolute;
+  width: inherit;
 }
 
 /* Make dropdown links vertical. */
 #nav li ul li {
-	display: block;
-	line-height: 40px;
-	float: none;
+  display: block;
+  line-height: 40px;
+  float: none;
 }
 
 /* Prevent text wrapping. */
 #nav li ul li a {
-	width: auto;
-	min-width: 100px;
-	padding: 0;
+  width: auto;
+  min-width: 100px;
+  padding: 0;
 }
 
 /* Display the dropdown on hover. */
 #nav ul li:hover .hidden-nav {
-	display: block;
-    z-index: 1;
+  display: block;
+  z-index: 1;
 }
 
 /* Menu icon for mobile devices */
 /* Style 'show menu' label button and hide it by default. */
 .show-menu {
-	display: none;
-	font-size: 30px;
-	right: 20px;
-  	position: absolute;
-  	top: 25px;
+  display: none;
+  font-size: 30px;
+  right: 20px;
+  position: absolute;
+  top: 25px;
 }
 
 /* Hide checkbox. */
-input[type=checkbox]{
-    display: none;
+input[type=checkbox] {
+  display: none;
 }
 
 /* Show menu when invisible checkbox is checked. */
 input[type=checkbox]:checked ~ #nav #menu {
-    display: block;
+  display: block;
 }
-
 
 /*
 ==================================================
@@ -223,37 +226,29 @@ input[type=checkbox]:checked ~ #nav #menu {
 ==================================================
 */
 
-/*
----------------------------------------------------------
-  05.0 - GENERAL
----------------------------------------------------------
-*/
-
 .container {
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 15px;
-    padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .box-footer {
-    bottom: 0;
-    position: relative;
-    width: 100%;
+  bottom: 0;
+  position: relative;
+  width: 100%;
 }
 
 main .container {
-    padding-bottom: 10px;
-    height: inherit;
+  padding-bottom: 10px;
+  height: inherit;
 }
 
 no-padding {
-    padding-left: 0;
-    padding-right: 0;
+  padding-left: 0;
+  padding-right: 0;
 }
 
-#santasensorssvg,
-#svgsanta,
 #img-classroom-lasvegas, #img-sensors-lasvegas,
 #img-classroom-pompeia, #img-sensors-pompeia,
 #img-classroom-oimiakon, #img-sensors-oimiakon,
@@ -263,369 +258,378 @@ no-padding {
 	position: absolute;
 }
 
+/* Svg Style*/
+
+object {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+/* TODO: Remove this line when each classroom has its sensor svg */
+object#img-sensors {
+width: 100%;
+}
+
+#img-classroom-hongkong, object#img-sensors-hongkong,
+#img-classroom-honolulu, object#img-sensors-honolulu {
+  max-height: 100%;
+}
+
+
 .block.no-margin {
-	margin-bottom: 0;	
+  margin-bottom: 0;	
 }
 
 .weather-panel {
-    font-size: 30px;
-    font-weight: 700;
-    letter-spacing: 1px;
-    margin-bottom: 20px;
-    margin-top: 0;
+  font-size: 30px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+  margin-top: 0;
 }
 
 .weather h2 {
-	margin-top: 0px;
-    margin-bottom: 0px;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .weather-icon {
-	float: left;
-    height: 35px;
-    padding-right: 10px;
-	width: auto;
+  float: left;
+  height: 35px;
+  padding-right: 10px;
+  width: auto;
 }
 
 .weather-region {
-	font-size: 10px;
-	font-weight: 700;
-	padding-bottom: 0px;
+  font-size: 10px;
+  font-weight: 700;
+  padding-bottom: 0;
 }
 
 #getDayOfWeek {
-	text-transform: uppercase;
+  text-transform: uppercase;
 }
 
-
-/* FORM */
+/* Form */
 .row-survey {
-	border-top: .2em solid #262626;
-	margin-bottom: 10px;
-	margin-top: 0;
- 	position: relative;
-	text-align: center;
-    width: 100%;
+  border-top: .2em solid #262626;
+  margin-bottom: 10px;
+  margin-top: 0;
+  position: relative;
+  text-align: center;
+  width: 100%;
 }
 
 .row-survey figure img {
-	height: 50px;
+  height: 50px;
 }
 
 .emotion-title {
-	font-size: 18px;
-    font-weight: 700;
-    letter-spacing: 1px;
-    margin-bottom: 0;
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin-bottom: 0;
 }
 
 .button-survey label {
-    text-align: center;
+  text-align: center;
 }
 
 .button-survey-mood,
 .button-survey-energy,
 .button-survey-noise {
-	display: inline-block;
-    height: 65px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 15px;
-    position: relative;
-    width: 60px;
+  display: inline-block;
+  height: 65px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 15px;
+  position: relative;
+  width: 60px;
 }
 
 .button-survey-temperature {
-	display: inline-block;
-    height: 65px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 15px;
-    position: relative;
-    width: 70px;
+  display: inline-block;
+  height: 65px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 15px;
+  position: relative;
+  width: 70px;
 }
 
 /* This road needs a special height */
 .button-survey-temperature figure img {
-    height: 65px;
+  height: 65px;
 }
 
 .button-survey-noise .noise-n {
-	width: 72px !important;  
+  width: 72px !important;  
 }
 
-label > input { 			/* HIDE RADIO */
- 	position: absolute; 	/* Remove input from document flow */
-	visibility: hidden; 	/* Makes input not-clickable */
+label > input { 		/* HIDE RADIO */
+  position: absolute; 	/* Remove input from document flow */
+  visibility: hidden; 	/* Makes input not-clickable */
 }
 
 label > input + figure { 	/* IMAGE STYLES */
-	cursor: pointer;
-    height: 50px;
-    left: 0;
-    margin: auto;
-	position: absolute;
-    right: 0;
-    top: 0;
+  cursor: pointer;
+  height: 50px;
+  left: 0;
+  margin: auto;
+  position: absolute;
+  right: 0;
+  top: 0;
 }
 
 label > input:hover + figure,
 label > input:checked + figure { /* (RADIO CHECKED) IMAGE STYLES */
-	filter: invert(100%);
+  filter: invert(100%);
 }
 
 label > input:disabled + figure {
-    cursor: none;
-    filter: invert(0%);
-    opacity: .5;
+  cursor: none;
+  filter: invert(0%);
+  opacity: .5;
 }
 
 label > input:hover + figure > figcaption,
 label > input:checked + figure > figcaption { /* (RADIO CHECKED) IMAGE STYLES */
-	opacity: 1;
+   opacity: 1;
 }
 
 figcaption {
-	caption-side: bottom;
-	color: #000;
-	font-size: 14px;
-    font-weight: 700;
-    letter-spacing: 1px;
-	opacity: 0;
-    line-height: 90%;
-    padding-top: 1px;
+  caption-side: bottom;
+  color: #000000;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  opacity: 0;
+  line-height: 90%;
+  padding-top: 1px;
 }
 
 /* Secret code */
 input[type=password] {
-	background-color: #fff;
-	border: 2px #e9e6dc solid;
-	float: right;
-	font-size: 20px;
-    font-weight: 700;
-    letter-spacing: 1px;
-	margin-right: 10px;
-    padding: 0 3px 0 3px;
+  background-color: #ffffff;
+  border: 2px #e9e6dc solid;
+  float: right;
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin-right: 10px;
+  padding: 0 3px 0 3px;
 }
 
 /* Error messages */
 .error {
-	color: #fff;
-	font-size: 20px;
-	padding-left: 20px;
-    font-weight: normal;
+  color: #fff;
+  font-size: 20px;
+  padding-left: 20px;
+  font-weight: normal;
 }
 
 /* Submit button */
-
 .btn {
-	border-radius: 0;
-	background-color: #262626;
-	color: #fff;
-    font-size: 20px;
-    font-weight: 700;
-    letter-spacing: 1px;
-    padding: 0 3px 0 3px;
+  border-radius: 0;
+  background-color: #262626;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  padding: 0 3px 0 3px;
 }
 
 .btn:hover,
 .btn:focus,
 .btn:active {
-	border-radius: 0;
-	background-color: #F6F6F6;
-	float: right;
-    font-size: 20px;
-    font-weight: 700;
-    letter-spacing: 1px;
-    padding: 0 3px 0 3px;
+  border-radius: 0;
+  background-color: #F6F6F6;
+  float: right;
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  padding: 0 3px 0 3px;
 }
 
 .btn-space {
   margin-right: 5px 
 }
 
-/* GRID SENSORS */
-
+/* Grid sensorss */
 .row-sensor {
-	margin-bottom: 0px;
-	margin-top: 0;
- 	position: relative;
-    width: 100%;
-    border-bottom: .2em solid #262626;
+  margin-bottom: 0px;
+  margin-top: 0;
+  position: relative;
+  width: 100%;
+  border-bottom: .2em solid #262626;
 }
 
 .row-sensor figure img {
-	height: 60px;
+  height: 60px;
 }
 
 .boxsensors {
-    margin-top: 60px;
+  margin-top: 60px;
 }
 
 .button-sensor label,
-.button-relate label, {
-    text-align: center;
+.button-relate label {
+  text-align: center;
 }
 
 .button-sensor {
-	display: inline-block;
-    height: 75px;
-    margin-left: auto;
-    margin-top: 15px;
-    margin-bottom: 3px;
-    position: relative;
-    width: 90px;
-    text-align: center;
+  display: inline-block;
+  height: 75px;
+  margin-left: auto;
+  margin-top: 15px;
+  margin-bottom: 3px;
+  position: relative;
+  width: 90px;
+  text-align: center;
 }
 
 .img-window-sensor {
-    max-width: 90px;
+  max-width: 90px;
 }
 
-/*
----------------------------------------------------------
-  05.1 - RELATE ( Drag and drop relate sensors emotions)
----------------------------------------------------------
-*/
+/* Relate ( Drag and drop relate sensors emotions) */
 
 .r-buttonsurvey {
-    display: inline-block;
-    margin-left: auto;
-    margin-right: auto;    
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;    
 }
 
 .r-buttonsurvey > label > input:checked + figure {
-    background: #ffffff;  
+  background: #ffffff;  
 }
 
 .r-buttonsurvey > label > input + figure {
-    height: 75px;
-    padding-top: 15px;
-    position: relative;
-    width: 75px;
+  height: 75px;
+  padding-top: 15px;
+  position: relative;
+  width: 75px;
 }
 
 .r-buttonsurvey label {
-    text-align: center;
-    position: relative;
-    width: 100%;
-    margin-bottom: 0px;
+  margin-bottom: 0;
+  position: relative;
+  text-align: center;
+  width: 100%;
+  
 }
 
-.r-buttonsurvey label:hover > figure > figcaption{
-    opacity: 1;
+.r-buttonsurvey label:hover > figure > figcaption {
+  opacity: 1;
 }
 
 .r-buttonsurvey label:hover {
-    filter: invert(100%);
+  filter: invert(100%);
 }
 
-.r-button-sensor label{
-    width: 100%;
+.r-button-sensor label {
+  width: 100%;
 }
 
 .r-button-sensor img {
-    max-width: 90%;
-    max-height: 40px; 
+  max-height: 40px; 
+  max-width: 90%;
 }
 
 .r-button-sensor .img-window-sensor {
-    min-height: 25px;
-}
-
-.r-button-sensor .img-window-sensor {
-    max-width: 50px;
+  max-width: 50px;
+  min-height: 25px;
+  
 }
 
 .r-button-sensor label > input + figure {
-    position: relative;
-    height: inherit;
+  height: inherit;
+  position: relative;
 }
 
 .r-button-sensor label:hover > figure { /* Invert color for drag and drop */
-	filter: invert(100%);
+  filter: invert(100%);
 }
 
 .r-button-sensor label:hover > figure > figcaption { /* display figure caption when hover */
-	opacity: 1;
+  opacity: 1;
 }
 
 .r-dragbox {
-    float:left;
-    width: 80%;
-    height: 320px;
-    margin-left: 1.5%;
-    margin-right: 1.5%;
-    margin-top: 0px;
-    padding: 2.5%;
-    border: .2em dashed #000000;
-    background-color: rgba(255, 255, 255, 0.72);
+  background-color: rgba(255, 255, 255, 0.72);
+  border: .2em dashed #000000;
+  float: left;
+  height: 320px;
+  margin-left: 1.5%;
+  margin-right: 1.5%;
+  margin-top: 0;
+  padding: 2.5%;
+  width: 80%;
 }
 
 .r-dragbox .r-button-sensor img {
-   height: 40px;
+  height: 40px;
 }
 
 .r-dragbox .r-button-sensor {
-    max-width: 20%;
-    min-width: 15%;
-    margin: 2px;
-    text-align: center;
-    display: inline-flex;
+  display: inline-flex;
+  max-width: 20%;
+  margin: 2px;
+  min-width: 15%;
+  text-align: center;
 }
 
 .r-dragbox .r-button-sensor label {
-    padding-top: 5px;
-    padding-bottom: 5px;
-    margin-bottom: 0px; 
+  margin-bottom: 0;
+  padding-bottom: 5px;
+  padding-top: 5px;
 }
 
 .r-dragbox .r-button-sensor:hover {
-    background-color: #262626;
-    border-radius: 10%;
+  background-color: #262626;
+  border-radius: 10%;
 }
 
 .r-dragbox figcaption {	
-	font-size: 12px;
-    font-weight: 700;
-    letter-spacing: 1px;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1px;
 }
 
 .r-emotions {
-    padding-left: 11.5%;
-    padding-right: 11.5%;
-    height: inherit;
-    margin-bottom: 0px;
-    margin-top: 45px;
-    position: relative;
-    width: 100%;
+  padding-left: 11.5%;
+  padding-right: 11.5%;
+  height: inherit;
+  margin-bottom: 0px;
+  margin-top: 45px;
+  position: relative;
+  width: 100%;
 }
 
 .r-buttonsurvey > label > figure > img {
-    height: 40px;
+  height: 40px;
 }
 
 .r-sensorsbox-and-dragbox {
-    /* width: 80%; */
-    display: flex;
-    height: 100%
+  display: flex;
+  height: 100%
 }
 
 .r-sensors-side {
-    width: 10%;
-    height: auto;
-    display: block;
-    margin-bottom: 0px;
-    margin-top: 0;
-    position: relative;
-    text-align: center;
+  display: block;
+  height: auto;
+  margin-bottom: 0;
+  margin-top: 0;
+  position: relative;
+  text-align: center;
+  width: 10%;
 }
 
 .r-sensors-side .r-button-sensor {
-    max-width: 90%;
-    max-height: auto;
+  max-height: auto;
+  max-width: 90%;
 }
-
 
 /* Check the following link to adjust the sensors' position in the circles */ 
 /* hhttps://codepen.io/HugoGiraudel/pen/vEJXGm */
@@ -654,42 +658,52 @@ input[type=password] {
   -webkit-transform: rotate(0deg) translate(31.42857px) rotate(0deg);
           transform: rotate(0deg) translate(31.42857px) rotate(0deg);
 }
+
 .circle-container > *:nth-of-type(2) {
   -webkit-transform: rotate(65.45455deg) translate(31.42857px) rotate(-65.45455deg);
           transform: rotate(65.45455deg) translate(31.42857px) rotate(-65.45455deg);
 }
+
 .circle-container > *:nth-of-type(3) {
   -webkit-transform: rotate(130.90909deg) translate(31.42857px) rotate(-130.90909deg);
           transform: rotate(130.90909deg) translate(31.42857px) rotate(-130.90909deg);
 }
+
 .circle-container > *:nth-of-type(4) {
   -webkit-transform: rotate(196.36364deg) translate(31.42857px) rotate(-196.36364deg);
           transform: rotate(196.36364deg) translate(31.42857px) rotate(-196.36364deg);
 }
+
 .circle-container > *:nth-of-type(5) {
   -webkit-transform: rotate(261.81818deg) translate(31.42857px) rotate(-261.81818deg);
           transform: rotate(261.81818deg) translate(31.42857px) rotate(-261.81818deg);
 }
+
 .circle-container > *:nth-of-type(6) {
   -webkit-transform: rotate(327.27273deg) translate(31.42857px) rotate(-327.27273deg);
           transform: rotate(327.27273deg) translate(31.42857px) rotate(-327.27273deg);
 }
+
 .circle-container > *:nth-of-type(7) {
   -webkit-transform: rotate(392.72727deg) translate(31.42857px) rotate(-392.72727deg);
           transform: rotate(392.72727deg) translate(31.42857px) rotate(-392.72727deg);
 }
+
 .circle-container > *:nth-of-type(8) {
   -webkit-transform: rotate(458.18182deg) translate(31.42857px) rotate(-458.18182deg);
           transform: rotate(458.18182deg) translate(31.42857px) rotate(-458.18182deg);
 }
+
 .circle-container > *:nth-of-type(9) {
   -webkit-transform: rotate(523.63636deg) translate(31.42857px) rotate(-523.63636deg);
           transform: rotate(523.63636deg) translate(31.42857px) rotate(-523.63636deg);
 }
+
 .circle-container > *:nth-of-type(10) {
   -webkit-transform: rotate(589.09091deg) translate(31.42857px) rotate(-589.09091deg);
           transform: rotate(589.09091deg) translate(31.42857px) rotate(-589.09091deg);
 }
+
 .circle-container > *:nth-of-type(11) {
   -webkit-transform: rotate(654.54545deg) translate(31.42857px) rotate(-654.54545deg);
           transform: rotate(654.54545deg) translate(31.42857px) rotate(-654.54545deg);
@@ -703,23 +717,23 @@ input[type=password] {
 }
 
 .c-group-box {
-    width: 100%;
-    margin-bottom: 2.5%;
+  margin-bottom: 2.5%;
+  width: 100%;
 }
 
 .emotion-c-group {
-    margin-left: 5%;
-    display: block;  
+  display: block;  
+  margin-left: 5%;
 }
 
 .c-group-road {
-    display: inline-flex;
-    width: 100%;
+  display: inline-flex;
+  width: 100%;
 }
 
 #textareaEdit {
-  width: 100%;
   height: 300px;
+  width: 100%;
 }
 
 /*
@@ -729,89 +743,83 @@ input[type=password] {
 */
 
 .bug {
-    float: right;
-    height: auto;
-    width: auto;
-    margin-left: 2.5%;
-  
-}
-
-.button-reportbug img {
-    height: 30px;
-}
-
-.button-reportbug label > input + figure { 
-    height: auto;
-    margin-top: 5px;
-    position: relative;
+  float: right;
+  height: auto;
+  margin-left: 2.5%;
+  width: auto;
 }
 
 .button-reportbug {
-    float: right; 
-    height: auto;
-    position: relative;
-    width: auto;
+  float: right; 
+  height: auto;
+  position: relative;
+  width: auto;
+}
+
+.button-reportbug img {
+  height: 30px;
+}
+
+.button-reportbug label > input + figure { 
+  height: auto;
+  margin-top: 5px;
+  position: relative;
 }
 
 .bug-caption {
-    display: inline-block;
-    vertical-align: top;
+  display: inline-block;
+  vertical-align: top;
 }
 
 footer {
-	margin-bottom: 0;    
+  margin-bottom: 0;    
 }
 
 .copyright {
-	position: relative;
-    width:auto;
-    bottom: 0px; 
-    margin-bottom: 0px;
-    margin-top: 10px;
-    padding-left: 5px;
+  bottom: 0;
+  margin-bottom: 0;
+  margin-top: 10px;
+  padding-left: 5px;
+  position: relative;
+  width:auto;
 }
 
 .copyright p {
-	font-size: 12px;
-    font-weight: 600;
-    letter-spacing: 1px;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 1px;
 }
 
 .copyright a:hover {
-    color: #F6F6F6 ;
+  color: #F6F6F6;
 }
 
-/*#temp4-value {
-	font-family: "Amatic SC", sans-serif;
-}*/
-
-.informationsource {
-    font-weight: 800;
-    font-size: 15px;
+.informationsource {  
+  font-size: 15px;
+  font-weight: 800;
 }
 
 .box-cont-footer {
-    padding-right: 15px;
-    padding-left: 15px;
-    margin-right: auto;
-    margin-left: auto;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
-          
-.ml-logos  {
-    position: relative;
-    width: auto;
-    display: inline-block;
-    float: left;
+.ml-logos {
+  display: inline-block;
+  float: left;
+  position: relative;
+  width: auto;
 }
 
 .ml-logos img {
-    height: 23px;
-    padding-right: 5px;
+  height: 23px;
+  padding-right: 5px;
 }
 
 .ml-logos img:hover {
-    filter: invert(100%);
+  filter: invert(100%);
 }
 
 /*
@@ -826,103 +834,99 @@ footer {
 --------------------------------------------------
 */
 
-@media (min-width : 991px) 
-		and (max-width : 1281px)
-    	{
+@media  (min-width : 991px) and
+        (max-width : 1281px) {
             
-    header {
-        height: auto;
-        margin-top: 30px;
-    }
-            
-    header .container {
-                height: 90px;
-    }
+  header {
+    height: auto;
+    margin-top: 30px;
+  }
+
+  header .container {
+    height: 90px;
+  }
           
-    footer {
-      height: auto;
-    }
+  .logo img {
+    height: 90px;
+  } 
+
+  footer {
+    height: auto;
+  }
           
-    .boxsensors {
-        margin-top: 30px;
-    }
-          
-   
-            
-    .logo img {
-        height: 90px;
-    }   
-	 
-	.button-survey-energy {
-    	max-width: 45px;
-	}
+  .boxsensors {
+    margin-top: 30px;
+  }  
+             
+  .button-survey-energy {
+    max-width: 45px;
+  }
+
+  .button-survey-energy figure img {
+    height: 45px;
+  }
     
-    .button-survey-energy figure img {
-    	height: 45px;
-	}
-    
-    .button-survey-noise {
-    	max-width: 55px;
-    }
-    
-    .button-survey-noise figure img {
-    	height: 45px;
-	}
+  .button-survey-noise {
+    max-width: 55px;
+  }
+
+  .button-survey-noise figure img {
+    height: 45px;
+  }
      
-    .row-sensor figure img {
-    	height: 50px;
-    }
+  .row-sensor figure img {
+    height: 50px;
+  }
     
-    .img-window-sensor {
-    	max-width: 80px;
-    }
+  .img-window-sensor {
+    max-width: 80px;
+  }
     
-    .button-sensor/*,.button-relate*/ {
-    	max-width: 80px;
-        margin-bottom: 0px;
-        height: 70px;
-        margin-top: 10px;
-    }             
+  .button-sensor {
+    height: 70px;
+    margin-bottom: 0;
+    margin-top: 10px;
+    max-width: 80px;
+  }             
 }
 
-@media (min-width : 481px) 
-		and (max-width : 990px)
-    	{
-          header {
-            margin-left: 20px;
-          }
-          
-          .boxsensors {
-            max-width: 610px;
-            margin: auto;
-          }
-          
-          .boxbuttonssurvey {
-              max-width: 450px;
-              position: relative;
-              margin: auto;      
-          }
-          
-          .row-sensor {
-              width: 280px;
-              display: inline-flex;
-              margin-right: 20px;
-          }
-          
-          #nav {     
-              margin-bottom: 20px;
-          }
-          
-          #nav li {
-              padding-left: 0px;
-              padding-right: 30px;            
-          }
-          
-          .r-sensorsbox-and-dragbox {
-              margin-bottom: 20px;
-          }
-}
+@media  (min-width : 481px) and
+        (max-width : 990px) {
+  
+  header {
+    margin-left: 20px;
+  }
 
+  .boxsensors {
+    max-width: 610px;
+    margin: auto;
+  }
+
+  .boxbuttonssurvey {
+    margin: auto;      
+    max-width: 450px;
+    position: relative;
+  }
+
+  .row-sensor {
+    display: inline-flex;
+    margin-right: 20px;
+    width: 280px;
+  }
+
+  #nav {     
+    margin-bottom: 20px;
+  }
+
+  #nav li {
+    padding-left: 0;
+    padding-right: 30px;            
+  }
+
+  .r-sensorsbox-and-dragbox {
+    margin-bottom: 20px;
+  }
+}
 
 /*
 --------------------------------------------------
@@ -930,167 +934,146 @@ footer {
 --------------------------------------------------
 */
 
-@media only screen 
-and (min-width : 320px) 
-and (max-width : 480px) {
+@media  only screen and 
+        (min-width : 320px) and
+        (max-width : 480px) {
 
-	header {
-		margin-top: 10px;
-        height: 50px;
-	}
-  
-    .boxsensors {
-        margin-top: 0px;
-    }
+  header {
+    height: 50px;
+    margin-top: 10px;
+  }
 
-	.logo {
-		margin-left: 15px;
-		margin-top: -10px;
-	}
-    
-    .logo img {
-	    display: block;
-	    height: 50px;
-	    margin-top: 20px;
-	    position: absolute;
-	    z-index: 2;
-	}
+  .boxsensors {
+    margin-top: 0px;
+  }
 
-	/* Display 'show menu' link. */
-	.show-menu {
-		display: block;
-	}
+  .logo {
+    margin-left: 15px;
+    margin-top: -10px;
+  }
 
-	/* Make dropdown links appear inline. */
-	#nav ul {
-		display: none;
-		left: 0;
-		position: absolute;
-		top: 60px;
-		width: 100%;
-		z-index: 1;
-	}
+  .logo img {
+    display: block;
+    height: 50px;
+    margin-top: 20px;
+    position: absolute;
+    z-index: 2;
+  }
 
-	/* Create vertical spacing. */
-	#nav li {
-		margin-bottom: 1px;
-		padding: 0;
-		text-align: center;
-	}
+  /* Display 'show menu' link. */
+  .show-menu {
+    display: block;
+  }
 
-	/* Dropdown position */
-	#nav li ul {
-		display: none;
-		position: static;
-	}
+  /* Make dropdown links appear inline. */
+  #nav ul {
+    display: none;
+    left: 0;
+    position: absolute;
+    top: 60px;
+    width: 100%;
+    z-index: 1;
+  }
 
-	/* Style for dropdown links. */
-	#nav li:hover ul a {
-		text-align: center;
-		padding: 0;
-		width: 100%;
-	}	
+  /* Create vertical spacing. */
+  #nav li {
+    margin-bottom: 1px;
+    padding: 0;
+    text-align: center;
+  }
 
-	/* Expand with of all menu links. */
-	#nav li a {
-		display:block;
-		height: 50px;
-		line-height: 50px;
-		text-align: center;
-	}
-	
-	#nav ul li {
-		width: 100%;
-	}
- 
-    .button-survey-energy {
-    	max-width: 45px;
-	}
-    
-    .button-survey-energy figure img {
-    	height: 45px;
-	}
-    
-    .button-survey-noise {
-    	max-width: 55px;
-    }
-    
-    .button-survey-noise figure img {
-    	height: 45px;
-	}
-  
-    .row-sensor {
-        margin: auto;
-        max-width: 260px;
-    }
-     
-    .row-sensor figure img {
-        height: 50px;
-    }
-    
-    .img-window-sensor {
-    	max-width: 80px;
-    }
-    
-    .button-sensor {
-    	max-width: 80px;
-        margin-bottom: 0px;
-    }     
-        
-    /* reduce the font size for mobile */
-    .weather-panel,
-    .weather h2 {
-        font-size: 20px;
-    }
+  /* Dropdown position */
+  #nav li ul {
+    display: none;
+    position: static;
+  }
 
-    .weather-panel {
-        margin-top: 20px;
-    }
+  /* Style for dropdown links. */
+  #nav li:hover ul a {
+    text-align: center;
+    padding: 0;
+    width: 100%;
+  }	
 
-    /* reduce the image width of the window img in relate */
-    .r-button-sensor .img-window-sensor {
-        max-width: 30px;
-    }
-  
+  /* Expand with of all menu links. */
+  #nav li a {
+    display:block;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+  }
+
+  #nav ul li {
+    width: 100%;
+  }
+
+  .button-survey-energy {
+    max-width: 45px;
+  }
+
+  .button-survey-energy figure img {
+    height: 45px;
+  }
+
+  .button-survey-noise {
+    max-width: 55px;
+  }
+
+  .button-survey-noise figure img {
+    height: 45px;
+  }
+
+  .row-sensor {
+    margin: auto;
+    max-width: 260px;
+  }
+
+  .row-sensor figure img {
+    height: 50px;
+  }
+
+  .img-window-sensor {
+    max-width: 80px;
+  }
+
+  .button-sensor {
+    max-width: 80px;
+    margin-bottom: 0;
+  }     
+
+  /* reduce the font size for mobile */
+  .weather-panel,
+  .weather h2 {
+    font-size: 20px;
+  }
+
+  .weather-panel {
+    margin-top: 20px;
+  }
+
+  /* reduce the image width of the window img in relate */
+  .r-button-sensor .img-window-sensor {
+    max-width: 30px;
+  }
+
   .ml-logos {
-    position: relative;
-    width: auto;
     display: block;
     float: initial;
+    position: relative;
+    width: auto;  
   }
-  
+
   .ml-logos img {
+     height: 20px;
     margin-top: 20px;
-    height: 20px;
   }
-  
-      
+
   .copyright {
     padding-left: 0px;
   } 
-  
+
   figcaption.bug-caption {
     display: none;
   }
 }
   
-/* End responsiveness*/
-
-/* Svg Style*/
-
-object {
-  position: relative;
-  top: 0;
-  left: 0;
-}
-
-/* TODO: Remove this line when each classroom has its sensor svg */
-object#img-sensors {
-width: 100%;
-}
-
-#img-classroom-hongkong, object#img-sensors-hongkong,
-#img-classroom-honolulu, object#img-sensors-honolulu
-{
-  max-height: 100%;
-}
