@@ -260,7 +260,7 @@ no-padding {
 #img-classroom-honolulu, #img-sensors-honolulu,
 #img-classroom-hongkong, #img-sensors-hongkong,
 #img-classroom-monaco, #img-sensors-monaco {
-	width: 100%;
+	position: absolute;
 }
 
 .block.no-margin {
@@ -1089,12 +1089,8 @@ object#img-sensors {
 width: 100%;
 }
 
-object#img-sensors, /* TODO: Remove this line when each classroom has its sensor svg */
-object#img-sensors-lasvegas,
-object#img-sensors-pompeia,
-object#img-sensors-oimiakon,
-object#img-sensors-honolulu,
-object#img-sensors-hongkong,
-object#img-sensors-monaco {
-   position: absolute;
+#img-classroom-hongkong, object#img-sensors-hongkong,
+#img-classroom-honolulu, object#img-sensors-honolulu
+{
+  max-height: 100%;
 }
