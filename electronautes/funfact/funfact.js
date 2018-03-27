@@ -10,6 +10,4 @@ angular.module('electronautes')
 }])
 
 .controller('FunFactCtrl', function($scope, $rootScope) {
-  $rootScope.list1 = {title: 'Presence'};
-  $rootScope.list2 = {};
 });

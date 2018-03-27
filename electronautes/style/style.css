@@ -67,10 +67,14 @@ h2 {
 	letter-spacing: 2px;
 }
 
-p.funfact {
+p.description {
     font-family: "Open Sans";
     font-size: 12px;
     text-transform: lowercase;
+}
+
+.narrow {
+  width: 75%;
 }
 
 /*
