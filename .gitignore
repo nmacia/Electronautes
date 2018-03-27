@@ -4,3 +4,4 @@
 php/pg_connect.php
 
 php/pg_disconnect.php
+electronautes/password.json

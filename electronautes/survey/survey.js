@@ -46,10 +46,10 @@ angular.module('electronautes')
   }
   
   $scope.checkPassword = function () {
-    // TODO: Search password in database and validate classroom
-    // Retrieve group to add to the results from the relation game.
-    // $rootScope.surveyResults.group =
-    return ($scope.surveyPassword === "12345");
+    var url="./password.json";  
+    $.getJSON(url, function (data) {   // This method gets the json file and fetches the data inside it.
+      return ( data[$scope.classroom] === $scope.surveyPassword );
+    });              
   }
    
   function validateForm() { 
@@ -61,7 +61,7 @@ angular.module('electronautes')
     $rootScope.surveyResults.energy === null ? $scope.errorMessage.energy = true : $scope.errorMessage.energy = false;
     $rootScope.surveyResults.temperature === null ? $scope.errorMessage.temperature = true : $scope.errorMessage.temperature = false;
     $rootScope.surveyResults.noise === null ? $scope.errorMessage.noise = true : $scope.errorMessage.noise = false;
-    $scope.checkPassword() ? $scope.errorMessage.password = false : $scope.errorMessage.password = true;
+    $scope.checkPassword() ? $scope.errorMessage.password = true : $scope.errorMessage.password = false;
     
     for ( var key in $scope.errorMessage ) {
       if ( $scope.errorMessage[key] ) {
@@ -73,13 +73,11 @@ angular.module('electronautes')
      
   /*function writeUserData() {
     var dt = new Date();
-
-    firebase.database().ref('entry/' + dt).set({
-      mood: $scope.surveyResults.mood,
-      energy: $scope.surveyResults.energy,
-      temperature : $scope.surveyResults.temperature,
-      noise : $scope.surveyResults.noise,
-      class : $scope.surveyClassroom
+    // MOOD: $scope.surveyResults.mood
+    // ENERGY: $scope.surveyResults.energy
+    // TEMPERATURE: $scope.surveyResults.temperature
+    // NOISE: $scope.surveyResults.noise
+    // CLASSROOM: $scope.surveyClassroom
     });
   }*/
   
@@ -87,7 +85,7 @@ angular.module('electronautes')
     if ( validateForm() ) {
       $rootScope.surveyClassroom = $scope.classroom;
       // TODO: Store values in Jason's database.
-      //writeUserData();
+      // writeUserData();
       $location.path('/sensors');
     }
   }

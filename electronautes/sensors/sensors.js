@@ -17,7 +17,7 @@ angular.module('electronautes')
   // $rootScope.formatSVG("img-sensors-lasvegas");
   // $rootScope.formatSVG("img-sensors-pompeia");
   // $rootScope.formatSVG("img-sensors-oimiakon");
-  // $rootScope.formatSVG("img-sensors-honolulu");
+  // $rootScope.formatSVG("imgadd-sensors-honolulu");
   // $rootScope.formatSVG("img-sensors-hongkong");
   // $rootScope.formatSVG("img-sensors-monaco");
   
