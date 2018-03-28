@@ -37,7 +37,13 @@
                   <figcaption>{{ listOfSensors[row][col] }}</figcaption>
                 </figure>
               </label>
+             
               <input ng-if="listOfSensors[row][col] == null && surveyClassroom == null" type="button" class="btn button-sensor" name="button-learnmore" value="learn more" ng-click="goToLearnMore()" />
+              <!--<figure>
+                  <img src="./img/sensors/termite-button.png" />
+                  <figcaption>learn more</figcaption>
+                </figure>-->
+      
             </div>     
           </div>
           <!-- Game -->
