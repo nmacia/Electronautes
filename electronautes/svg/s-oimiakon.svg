@@ -1,20 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Generator: Adobe Illustrator 21.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+<svg version="1.1" id="s-oimiakon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 800 559.2" style="enable-background:new 0 0 800 559.2;" xml:space="preserve">
 <style type="text/css">
 	.st0{display:none;}
 	.st1{display:inline;}
 	.st2{fill:#FFFFFF;}
 	.st3{fill:#E9E6DC;}
-	.st4{fill:none;stroke:#000000;stroke-width:0.68;stroke-miterlimit:10;}
+	.st4{fill:none;stroke:#FFFFFF;stroke-miterlimit:10;}
 	.st5{font-family:'AmaticSC-Regular';}
 	.st6{font-size:10px;}
-	.st7{fill:none;stroke:#FFFFFF;stroke-width:0.68;stroke-miterlimit:10;}
-	.st8{fill:none;}
-	.st9{display:inline;fill:none;stroke:#000000;stroke-width:0.5984;stroke-miterlimit:10;}
-	.st10{font-size:14.3616px;}
-	.st11{font-size:10.7712px;}
+	.st7{fill:none;stroke:#000000;stroke-miterlimit:10;}
+	.st8{font-size:18px;}
+	.st9{font-size:14px;}
 </style>
 <g id="oimiakon" class="st0">
 	<g id="whitebackground" class="st1">
@@ -895,200 +893,196 @@
 		</g>
 	</g>
 </g>
-<g id="s-oimiakon">
-	<g id="root-layer">
-		<g id="img-sensors">
-			<g id="sensor-temperature" class="st0">
-				<g id="sensor-temperature-AT003" class="st1">
-					<g id="AT003-sensor-temperature-blackrect">
-						<rect x="785.6" y="374.2" width="64.7" height="43.1"/>
-					</g>
-					<g id="AT001-temperature-icon">
-						
-							<image style="overflow:visible;enable-background:new    ;" width="73" height="151" xlink:href="../img/sensors/temperature-inv.png"  transform="matrix(0.2028 0 0 0.2028 789.656 379.4067)">
-						</image>
-					</g>
-					<text id="AT003-sensor-temp-value" transform="matrix(1 0 0 1 809.9011 398.8358)" class="st7 st5 st6">?</text>
-					<text id="AT003-sensor-temp-lastimevalue" transform="matrix(1 0 0 1 785.6375 428.1688)" class="st4 st5 st6">yyyy/mm/dd 24:00</text>
+<g id="root-layer">
+	<g id="img-sensors">
+		<g id="sensor-temperature" class="st0">
+			<g id="sensor-temperature-ATP076" class="st1">
+				<g id="ATP076-sensor-temperature-blackrect">
+					<rect x="206.5" y="352.5" width="64.7" height="43.1"/>
+				</g>
+				<g id="ATP076-temperature-icon">
 					
-						<image style="overflow:visible;enable-background:new    ;" width="173" height="150" id="AT003-temp-warning" xlink:href="../img/sensors/warning-sign.png"  transform="matrix(0.1224 0 0 0.1224 851.6688 374.1735)">
+						<image style="overflow:visible;enable-background:new    ;" width="73" height="151" xlink:href="../img/sensors/temperature-inv.png"  transform="matrix(0.2028 0 0 0.2028 210.451 357.7335)">
 					</image>
 				</g>
-				<g id="sensor-temperature-ATP075" class="st1">
-					<g id="ATP075-sensor-temperature-blackrect">
-						<rect x="626" y="479.8" width="64.7" height="43.1"/>
-					</g>
-					<g id="ATP075-temperature-icon">
-						
-							<image style="overflow:visible;enable-background:new    ;" width="73" height="151" xlink:href="../img/sensors/temperature-inv.png"  transform="matrix(0.2028 0 0 0.2028 629.9991 484.9893)">
-						</image>
-					</g>
-					<text id="ATP075-sensor-temp-value" transform="matrix(1 0 0 1 650.2449 504.4188)" class="st7 st5 st6">?</text>
-					<text id="ATP075-sensor-temp-lastimevalue" transform="matrix(1 0 0 1 625.9802 533.7508)" class="st4 st5 st6">yyyy/mm/dd 24:00</text>
+				<text id="ATP076-sensor-temp-value" transform="matrix(1 0 0 1 230.6968 377.163)" class="st4 st5 st6">?</text>
+				<text id="ATP076-sensor-temp-lastimevalue" transform="matrix(1 0 0 1 206.4322 406.495)" class="st7 st5 st6">yyyy/mm/dd 24:00</text>
+				
+					<image style="display:none;overflow:visible;enable-background:new    ;" width="173" height="150" id="ATP076-temp-warning" xlink:href="../img/sensors/warning-sign.png"  transform="matrix(0.1224 0 0 0.1224 271.5895 353.4867)">
+				</image>
+			</g>
+			<g id="sensor-temperature-ATP075" class="st1">
+				<g id="ATP075-sensor-temperature-blackrect">
+					<rect x="518.2" y="262.3" width="64.7" height="43.1"/>
+				</g>
+				<g id="ATP075-temperature-icon">
 					
-						<image style="overflow:visible;enable-background:new    ;" width="173" height="150" id="ATP075-temp-warning" xlink:href="../img/sensors/warning-sign.png"  transform="matrix(0.1224 0 0 0.1224 691.1376 480.7425)">
+						<image style="overflow:visible;enable-background:new    ;" width="73" height="151" xlink:href="../img/sensors/temperature-inv.png"  transform="matrix(0.2028 0 0 0.2028 522.1745 267.4895)">
 					</image>
 				</g>
-				<g id="sensor-temperature-ATP076" class="st1">
-					<g id="ATP076-sensor-temperature-blackrect">
-						<rect x="626" y="479.8" width="64.7" height="43.1"/>
-					</g>
-					<g id="ATP076-temperature-icon">
-						
-							<image style="overflow:visible;enable-background:new    ;" width="73" height="151" xlink:href="../img/sensors/temperature-inv.png"  transform="matrix(0.2028 0 0 0.2028 629.9991 484.9893)">
-						</image>
-					</g>
-					<text id="ATP076-sensor-temp-value" transform="matrix(1 0 0 1 650.2449 504.4188)" class="st7 st5 st6">?</text>
-					<text id="ATP076-sensor-temp-lastimevalue" transform="matrix(1 0 0 1 625.9802 533.7508)" class="st4 st5 st6">yyyy/mm/dd 24:00</text>
+				<text id="ATP075-sensor-temp-value" transform="matrix(1 0 0 1 542.4203 286.919)" class="st4 st5 st6">?</text>
+				<text id="ATP075-sensor-temp-lastimevalue" transform="matrix(1 0 0 1 518.1556 316.251)" class="st7 st5 st6">yyyy/mm/dd 24:00</text>
+				
+					<image style="display:none;overflow:visible;enable-background:new    ;" width="173" height="150" id="ATP075-temp-warning" xlink:href="../img/sensors/warning-sign.png"  transform="matrix(0.1224 0 0 0.1224 583.313 263.2427)">
+				</image>
+			</g>
+			<g id="sensor-temperature-AT003" class="st1">
+				<g id="AT003-sensor-temperature-blackrect">
+					<rect x="680.3" y="264.6" width="64.7" height="43.1"/>
+				</g>
+				<g id="AT001-temperature-icon">
 					
-						<image style="overflow:visible;enable-background:new    ;" width="173" height="150" id="ATP076-temp-warning" xlink:href="../img/sensors/warning-sign.png"  transform="matrix(0.1224 0 0 0.1224 691.1376 480.7425)">
+						<image style="overflow:visible;enable-background:new    ;" width="73" height="151" xlink:href="../img/sensors/temperature-inv.png"  transform="matrix(0.2028 0 0 0.2028 684.3699 269.8466)">
+					</image>
+				</g>
+				<text id="AT003-sensor-temp-value" transform="matrix(1 0 0 1 704.615 289.2757)" class="st4 st5 st6">?</text>
+				<text id="AT003-sensor-temp-lastimevalue" transform="matrix(1 0 0 1 680.3514 318.6087)" class="st7 st5 st6">yyyy/mm/dd 24:00</text>
+				
+					<image style="display:none;overflow:visible;enable-background:new    ;" width="173" height="150" id="AT003-temp-warning" xlink:href="../img/sensors/warning-sign.png"  transform="matrix(0.1224 0 0 0.1224 746.3827 264.6134)">
+				</image>
+			</g>
+		</g>
+		<g id="sensor-light" class="st0">
+			<g id="sensor-light-ATP075" class="st1">
+				<g id="ATP075-sensor-light-displayarea">
+					<g id="ATP075-sensor-light-blackrect">
+						<rect x="518.2" y="261.1" width="64.7" height="43.1"/>
+					</g>
+					<text id="ATP075-sensor-light-value" transform="matrix(1 0 0 1 553.5871 287.1838)" class="st4 st5 st6">?</text>
+					<text id="ATP075-sensor-light-lastimevalue" transform="matrix(1 0 0 1 518.0998 315.1594)" class="st7 st5 st6">yyyy/mm/dd 24:00</text>
+					
+						<image style="overflow:visible;enable-background:new    ;" width="97" height="150" id="ATP075-light-icon" xlink:href="../img/sensors/light-inv.png"  transform="matrix(0.2628 0 0 0.2628 520.8693 261.6217)">
+					</image>
+					
+						<image style="display:none;overflow:visible;enable-background:new    ;" width="173" height="150" id="ATP075-light-warning" xlink:href="../img/sensors/warning-sign.png"  transform="matrix(0.1224 0 0 0.1224 584.131 261.1644)">
 					</image>
 				</g>
 			</g>
-			<g id="sensor-light" class="st0">
-				<g id="sensor-light-ATP075" class="st1">
-					<g id="ATP075-sensor-light-displayarea">
-						<g id="ATP075-sensor-light-blackrect">
-							<rect x="784.3" y="388" width="64.7" height="43.1"/>
-						</g>
-						<text id="ATP075-sensor-light-value" transform="matrix(1 0 0 1 819.7312 414.0555)" class="st7 st5 st6">?</text>
-						<text id="ATP075-sensor-light-lastimevalue" transform="matrix(1 0 0 1 784.2439 442.0311)" class="st4 st5 st6">yyyy/mm/dd 24:00</text>
-						
-							<image style="overflow:visible;enable-background:new    ;" width="97" height="150" id="ATP075-light-icon" xlink:href="../img/sensors/light-inv.png"  transform="matrix(0.2628 0 0 0.2628 787.0134 388.4934)">
-						</image>
-						
-							<image style="overflow:visible;enable-background:new    ;" width="173" height="150" id="ATP075-light-warning" xlink:href="../img/sensors/warning-sign.png"  transform="matrix(0.1224 0 0 0.1224 850.2751 388.0361)">
-						</image>
+			<g id="sensor-light-ATP076" class="st1">
+				<g id="ATP074-sensor-light-displayarea">
+					<g id="ATP076-sensor-light-blackrect">
+						<rect x="206.4" y="353.5" width="64.7" height="43.1"/>
 					</g>
+					<text id="ATP076-sensor-light-value" transform="matrix(1 0 0 1 241.888 379.5197)" class="st4 st5 st6">?</text>
+					<text id="ATP076-sensor-light-lastimevalue" transform="matrix(1 0 0 1 206.3997 407.4943)" class="st7 st5 st6">yyyy/mm/dd 24:00</text>
+					
+						<image style="overflow:visible;enable-background:new    ;" width="97" height="150" id="ATP076-light-icon" xlink:href="../img/sensors/light-inv.png"  transform="matrix(0.2628 0 0 0.2628 209.1694 353.9573)">
+					</image>
+					
+						<image style="display:none;overflow:visible;enable-background:new    ;" width="173" height="150" id="ATP076-light-warning" xlink:href="../img/sensors/warning-sign.png"  transform="matrix(0.1224 0 0 0.1224 272.4312 353.5)">
+					</image>
 				</g>
-				<g id="sensor-light-ATP076" class="st1">
-					<g id="ATP074-sensor-light-displayarea">
-						<g id="ATP076-sensor-light-blackrect">
-							<rect x="621.3" y="480.8" width="64.7" height="43.1"/>
-						</g>
-						<text id="ATP076-sensor-light-value" transform="matrix(1 0 0 1 656.7556 506.8172)" class="st7 st5 st6">?</text>
-						<text id="ATP076-sensor-light-lastimevalue" transform="matrix(1 0 0 1 621.2673 534.7918)" class="st4 st5 st6">yyyy/mm/dd 24:00</text>
-						
-							<image style="overflow:visible;enable-background:new    ;" width="97" height="150" id="ATP076-light-icon" xlink:href="../img/sensors/light-inv.png"  transform="matrix(0.2628 0 0 0.2628 624.037 481.2548)">
-						</image>
-						
-							<image style="overflow:visible;enable-background:new    ;" width="173" height="150" id="ATP076-light-warning" xlink:href="../img/sensors/warning-sign.png"  transform="matrix(0.1224 0 0 0.1224 687.2988 480.7975)">
-						</image>
+			</g>
+			<g id="sensor-light-AT003" class="st1">
+				<g id="AT003-sensor-light-displayarea">
+					<g id="AT003-sensor-light-blackrect">
+						<rect x="680.3" y="265.6" width="64.7" height="43.1"/>
 					</g>
-				</g>
-				<g id="sensor-light-AT003" class="st1">
-					<g id="AT003-sensor-light-displayarea">
-						<g id="AT003-sensor-light-blackrect">
-							<rect x="621.3" y="480.8" width="64.7" height="43.1"/>
-						</g>
-						<text id="AT003-sensor-light-value" transform="matrix(1 0 0 1 656.7556 506.8172)" class="st7 st5 st6">?</text>
-						<text id="AT003-sensor-light-lastimevalue" transform="matrix(1 0 0 1 621.2673 534.7918)" class="st4 st5 st6">yyyy/mm/dd 24:00</text>
-						
-							<image style="overflow:visible;enable-background:new    ;" width="97" height="150" id="AT003-light-icon" xlink:href="../img/sensors/light-inv.png"  transform="matrix(0.2628 0 0 0.2628 624.037 481.2548)">
-						</image>
-						
-							<image style="overflow:visible;enable-background:new    ;" width="173" height="150" id="AT003-light-warning" xlink:href="../img/sensors/warning-sign.png"  transform="matrix(0.1224 0 0 0.1224 687.2988 480.7975)">
-						</image>
-					</g>
-				</g>
-			</g>
-			<g id="sensor-humidity" class="st0">
-				<g id="sensor-humidity-AT003" class="st1">
+					<text id="AT003-sensor-light-value" transform="matrix(1 0 0 1 715.8022 291.6111)" class="st4 st5 st6">?</text>
+					<text id="AT003-sensor-light-lastimevalue" transform="matrix(1 0 0 1 680.3138 319.5858)" class="st7 st5 st6">yyyy/mm/dd 24:00</text>
 					
-						<image style="overflow:visible;enable-background:new    ;" width="121" height="150" id="AT003-hum-icon" xlink:href="../img/sensors/humidity-inv.png"  transform="matrix(0.68 0 0 0.68 784.7925 368.674)">
+						<image style="overflow:visible;enable-background:new    ;" width="97" height="150" id="AT003-light-icon" xlink:href="../img/sensors/light-inv.png"  transform="matrix(0.2628 0 0 0.2628 683.0836 266.0487)">
 					</image>
-					<text id="AT003-sensor-humidity-value" transform="matrix(1 0 0 1 800.2468 441.3504)" class="st7 st5 st6">0%</text>
-					<text id="AT003-sensor-humidity-lastimevalue" transform="matrix(1 0 0 1 786.8328 481.9432)" class="st4 st5 st6">yyyy/mm/dd 24:00</text>
 					
-						<image style="overflow:visible;enable-background:new    ;" width="173" height="150" id="AT003-humidity-warning" xlink:href="../img/sensors/warning-sign-inv.png"  transform="matrix(0.102 0 0 0.102 844.4619 380.035)">
+						<image style="display:none;overflow:visible;enable-background:new    ;" width="173" height="150" id="AT003-light-warning" xlink:href="../img/sensors/warning-sign.png"  transform="matrix(0.1224 0 0 0.1224 746.3454 265.5914)">
 					</image>
 				</g>
 			</g>
-			<g id="sensor-presence" class="st0">
-				<g id="sensor-presence-ATP075" class="st1">
-					
-						<image style="overflow:visible;enable-background:new    ;" width="131" height="150" id="ATP075-icon-1" xlink:href="../img/sensors/presence-inv.png"  transform="matrix(0.4534 0 0 0.4534 617.1977 472.4309)">
-					</image>
-					
-						<image style="overflow:visible;enable-background:new    ;" width="131" height="150" id="ATP075-icon-0" xlink:href="../img/sensors/presence.png"  transform="matrix(0.34 0 0 0.34 629.3243 489.4294)">
-					</image>
-					<rect x="670.3" y="513.1" class="st8" width="17" height="19"/>
-					<text id="ATP075-sensor-presence-value" transform="matrix(1 0 0 1 670.3108 529.2625)" class="st5 st6">?</text>
-				</g>
-				<g id="sensor-presence-ATP076" class="st1">
-					
-						<image style="overflow:visible;enable-background:new    ;" width="131" height="150" id="ATP076-icon-1" xlink:href="../img/sensors/presence-inv.png"  transform="matrix(0.4534 0 0 0.4534 617.1977 472.4309)">
-					</image>
-					
-						<image style="overflow:visible;enable-background:new    ;" width="131" height="150" id="ATP076-icon-0" xlink:href="../img/sensors/presence.png"  transform="matrix(0.34 0 0 0.34 629.3243 489.4294)">
-					</image>
-					<rect x="670.3" y="513.1" class="st8" width="17" height="19"/>
-					<text id="ATP076-sensor-presence-value" transform="matrix(1 0 0 1 670.3108 529.2625)" class="st5 st6">?</text>
-				</g>
+		</g>
+		<g id="sensor-humidity" class="st0">
+			<g id="sensor-humidity-AT003" class="st1">
+				
+					<image style="overflow:visible;enable-background:new    ;" width="121" height="150" id="AT003-hum-icon" xlink:href="../img/sensors/humidity-inv.png"  transform="matrix(0.68 0 0 0.68 690.8 200.1561)">
+				</image>
+				<text id="AT003-sensor-humidity-value" transform="matrix(1 0 0 1 706.2543 272.8325)" class="st4 st5 st8">0%</text>
+				<text id="AT003-sensor-humidity-lastimevalue" transform="matrix(1 0 0 1 692.8403 313.4253)" class="st7 st5 st6">yyyy/mm/dd 24:00</text>
+				
+					<image style="display:none;overflow:visible;enable-background:new    ;" width="173" height="150" id="AT003-humidity-warning" xlink:href="../img/sensors/warning-sign-inv.png"  transform="matrix(0.102 0 0 0.102 750.4694 211.5171)">
+				</image>
 			</g>
-			<g id="sensor-proximity" class="st0">
-				<g id="sensor-proximity-ATP075" class="st1">
-					
-						<image style="overflow:visible;enable-background:new    ;" width="150" height="150" id="ATP075-proximity-icon" xlink:href="../img/sensors/proximity.png"  transform="matrix(0.4256 0 0 0.4256 788.2603 380.8459)">
-					</image>
-					<text id="ATP075-sensor-proximity-value" transform="matrix(1 0 0 1 805.9402 458.9217)" class="st4 st5 st6">0%</text>
-					<text id="ATP075-sensor-proximity-lastimevalue" transform="matrix(1 0 0 1 792.5261 472.3143)" class="st4 st5 st6">yyyy/mm/dd 24:00</text>
-					
-						<image style="overflow:visible;enable-background:new    ;" width="173" height="150" id="ATP075-proximity-warning" xlink:href="../img/sensors/warning-sign.png"  transform="matrix(0.102 0 0 0.102 791.7901 425.2502)">
-					</image>
-				</g>
-				<g id="sensor-proximity-ATP076" class="st1">
-					
-						<image style="overflow:visible;enable-background:new    ;" width="150" height="150" id="ATP076-proximity-icon" xlink:href="../img/sensors/proximity.png"  transform="matrix(0.4256 0 0 0.4256 617.5854 452.2643)">
-					</image>
-					<text id="ATP076-sensor-proximity-value" transform="matrix(1 0 0 1 635.2654 530.3397)" class="st4 st5 st6">0%</text>
-					<text id="ATP076-sensor-proximity-lastimevalue" transform="matrix(1 0 0 1 621.8513 543.7332)" class="st4 st5 st6">yyyy/mm/dd 24:00</text>
-					
-						<image style="overflow:visible;enable-background:new    ;" width="173" height="150" id="ATP076-proximity-warning" xlink:href="../img/sensors/warning-sign.png"  transform="matrix(0.102 0 0 0.102 621.1152 496.6685)">
-					</image>
-				</g>
-				<g id="sensor-proximity-AT003" class="st1">
-					
-						<image style="overflow:visible;enable-background:new    ;" width="150" height="150" id="AT003-proximity-icon" xlink:href="../img/sensors/proximity.png"  transform="matrix(0.4256 0 0 0.4256 617.5854 452.2643)">
-					</image>
-					<text id="AT003-sensor-proximity-value" transform="matrix(1 0 0 1 635.2654 530.3397)" class="st4 st5 st6">0%</text>
-					<text id="AT003-sensor-proximity-lastimevalue" transform="matrix(1 0 0 1 621.8513 543.7332)" class="st4 st5 st6">yyyy/mm/dd 24:00</text>
-					
-						<image style="overflow:visible;enable-background:new    ;" width="173" height="150" id="AT003-proximity-warning" xlink:href="../img/sensors/warning-sign.png"  transform="matrix(0.102 0 0 0.102 621.1152 496.6685)">
-					</image>
-				</g>
+		</g>
+		<g id="sensor-presence" class="st0">
+			<g id="sensor-presence-ATP075" class="st1">
+				
+					<image style="overflow:visible;enable-background:new    ;" width="131" height="150" id="ATP075-icon-1" xlink:href="../img/sensors/presence-inv.png"  transform="matrix(0.4534 0 0 0.4534 515.4047 246.9683)">
+				</image>
+				
+					<image style="display:none;overflow:visible;enable-background:new    ;" width="131" height="150" id="ATP075-icon-0" xlink:href="../img/sensors/presence.png"  transform="matrix(0.34 0 0 0.34 527.5312 263.9668)">
+				</image>
+				<text id="ATP075-sensor-presence-value" transform="matrix(1 0 0 1 521.5178 315.7999)" class="st5 st8">?</text>
 			</g>
-			<g id="sensor-pressure">
-				<g id="sensor-pressure-AT003" class="st0">
-					
-						<image style="display:inline;overflow:visible;enable-background:new    ;" width="123" height="150" id="AT003-pressure-icon" xlink:href="../img/sensors/pressure.png"  transform="matrix(0.4096 0 0 0.4096 701.1141 232.8747)">
-					</image>
-					<text id="AT003-sensor-pressure-value" transform="matrix(1 0 0 1 713.7722 308.5401)" class="st9 st5 st10">0%</text>
-					<text id="AT003-sensor-pressure-lastimevalue" transform="matrix(1 0 0 1 701.9685 320.3252)" class="st9 st5 st11">yyyy/mm/dd 24:00</text>
-					
-						<image style="overflow:visible;enable-background:new    ;" width="173" height="150" id="AT003-pressure-warning" xlink:href="../img/sensors/warning-sign.png"  transform="matrix(8.976001e-02 0 0 8.976001e-02 705.8543 236.3911)">
-					</image>
-				</g>
-				<g id="sensor-pressure-ATP075" class="st0">
-					
-						<image style="display:inline;overflow:visible;enable-background:new    ;" width="123" height="150" id="ATP075-pressure-icon" xlink:href="../img/sensors/pressure.png"  transform="matrix(0.4096 0 0 0.4096 522.0659 220.8698)">
-					</image>
-					<text id="ATP075-sensor-pressure-value" transform="matrix(1 0 0 1 534.7236 296.5352)" class="st9 st5 st10">0%</text>
-					<text id="ATP075-sensor-pressure-lastimevalue" transform="matrix(1 0 0 1 522.9199 308.3203)" class="st9 st5 st6">yyyy/mm/dd 24:00</text>
-					
-						<image style="overflow:visible;enable-background:new    ;" width="173" height="150" id="ATP075-pressure-warning" xlink:href="../img/sensors/warning-sign.png"  transform="matrix(8.976001e-02 0 0 8.976001e-02 526.8061 224.3861)">
-					</image>
-				</g>
-				<g id="sensor-pressure-ATP076" class="st0">
-					
-						<image style="display:inline;overflow:visible;enable-background:new    ;" width="123" height="150" id="ATP076-pressure-icon" xlink:href="../img/sensors/pressure.png"  transform="matrix(0.4096 0 0 0.4096 203.3866 319.0268)">
-					</image>
-					<text id="ATP076-sensor-pressure-value" transform="matrix(1 0 0 1 216.0437 394.6923)" class="st9 st5 st10">0%</text>
-					<text id="ATP076-sensor-pressure-lastimevalue" transform="matrix(1 0 0 1 204.24 406.4765)" class="st9 st5 st11">yyyy/mm/dd 24:00</text>
-					
-						<image style="overflow:visible;enable-background:new    ;" width="173" height="150" id="ATP076-pressure-warning" xlink:href="../img/sensors/warning-sign.png"  transform="matrix(8.976001e-02 0 0 8.976001e-02 208.1267 322.5431)">
-					</image>
-				</g>
+			<g id="sensor-presence-ATP076" class="st1">
+				
+					<image style="overflow:visible;enable-background:new    ;" width="131" height="150" id="ATP076-icon-1" xlink:href="../img/sensors/presence-inv.png"  transform="matrix(0.4534 0 0 0.4534 201.7046 338.1)">
+				</image>
+				
+					<image style="display:none;overflow:visible;enable-background:new    ;" width="131" height="150" id="ATP076-icon-0" xlink:href="../img/sensors/presence.png"  transform="matrix(0.34 0 0 0.34 213.8312 355.0985)">
+				</image>
+				<text id="ATP076-sensor-presence-value" transform="matrix(1 0 0 1 207.8177 406.9316)" class="st5 st8">?</text>
+			</g>
+		</g>
+		<g id="sensor-proximity" class="st0">
+			<g id="sensor-proximity-ATP076" class="st1">
+				
+					<image style="overflow:visible;enable-background:new    ;" width="150" height="150" id="ATP076-proximity-icon" xlink:href="../img/sensors/proximity.png"  transform="matrix(0.4256 0 0 0.4256 202.4 319.7177)">
+				</image>
+				<text id="ATP076-sensor-proximity-value" transform="matrix(1 0 0 1 206.08 397.7931)" class="st7 st5 st9">0%</text>
+				<text id="ATP076-sensor-proximity-lastimevalue" transform="matrix(1 0 0 1 206.6659 411.1867)" class="st7 st5 st6">yyyy/mm/dd 24:00</text>
+				
+					<image style="display:none;overflow:visible;enable-background:new    ;" width="173" height="150" id="ATP076-proximity-warning" xlink:href="../img/sensors/warning-sign.png"  transform="matrix(0.102 0 0 0.102 205.9299 368.122)">
+				</image>
+			</g>
+			<g id="sensor-proximity-ATP075" class="st1">
+				
+					<image style="overflow:visible;enable-background:new    ;" width="150" height="150" id="ATP075-proximity-icon" xlink:href="../img/sensors/proximity.png"  transform="matrix(0.4256 0 0 0.4256 534.6166 217.9584)">
+				</image>
+				<text id="ATP075-sensor-proximity-value" transform="matrix(1 0 0 1 539.2964 296.0342)" class="st7 st5 st9">0%</text>
+				<text id="ATP075-sensor-proximity-lastimevalue" transform="matrix(1 0 0 1 538.8824 309.4268)" class="st7 st5 st6">yyyy/mm/dd 24:00</text>
+				
+					<image style="display:none;overflow:visible;enable-background:new    ;" width="173" height="150" id="ATP075-proximity-warning" xlink:href="../img/sensors/warning-sign.png"  transform="matrix(0.102 0 0 0.102 538.1464 266.3627)">
+				</image>
+			</g>
+			<g id="sensor-proximity-AT003" class="st1">
+				
+					<image style="overflow:visible;enable-background:new    ;" width="150" height="150" id="AT003-proximity-icon" xlink:href="../img/sensors/proximity.png"  transform="matrix(0.4256 0 0 0.4256 702.8 233.8655)">
+				</image>
+				<text id="AT003-sensor-proximity-value" transform="matrix(1 0 0 1 707.48 311.9409)" class="st7 st5 st9">0%</text>
+				<text id="AT003-sensor-proximity-lastimevalue" transform="matrix(1 0 0 1 707.0659 325.3345)" class="st7 st5 st6">yyyy/mm/dd 24:00</text>
+				
+					<image style="display:none;overflow:visible;enable-background:new    ;" width="173" height="150" id="AT003-proximity-warning" xlink:href="../img/sensors/warning-sign.png"  transform="matrix(0.102 0 0 0.102 706.3298 282.2698)">
+				</image>
+			</g>
+		</g>
+		<g id="sensor-pressure" class="st0">
+			<g id="sensor-pressure-AT003" class="st1">
+				
+					<image style="overflow:visible;enable-background:new    ;" width="123" height="150" id="AT003-pressure-icon" xlink:href="../img/sensors/pressure.png"  transform="matrix(0.4096 0 0 0.4096 701.1141 232.8747)">
+				</image>
+				<text id="AT003-sensor-pressure-value" transform="matrix(1 0 0 1 713.7722 308.5401)" class="st7 st5 st9">0%</text>
+				<text id="AT003-sensor-pressure-lastimevalue" transform="matrix(1 0 0 1 701.9685 320.3252)" class="st7 st5 st6">yyyy/mm/dd 24:00</text>
+				
+					<image style="display:none;overflow:visible;enable-background:new    ;" width="173" height="150" id="AT003-pressure-warning" xlink:href="../img/sensors/warning-sign.png"  transform="matrix(8.976001e-02 0 0 8.976001e-02 705.8543 236.3911)">
+				</image>
+			</g>
+			<g id="sensor-pressure-ATP075" class="st1">
+				
+					<image style="overflow:visible;enable-background:new    ;" width="123" height="150" id="ATP075-pressure-icon" xlink:href="../img/sensors/pressure.png"  transform="matrix(0.4096 0 0 0.4096 522.0659 220.8698)">
+				</image>
+				<text id="ATP075-sensor-pressure-value" transform="matrix(1 0 0 1 534.7236 296.5352)" class="st7 st5 st9">0%</text>
+				<text id="ATP075-sensor-pressure-lastimevalue" transform="matrix(1 0 0 1 522.9199 308.3203)" class="st7 st5 st6">yyyy/mm/dd 24:00</text>
+				
+					<image style="display:none;overflow:visible;enable-background:new    ;" width="173" height="150" id="ATP075-pressure-warning" xlink:href="../img/sensors/warning-sign.png"  transform="matrix(8.976001e-02 0 0 8.976001e-02 526.8061 224.3861)">
+				</image>
+			</g>
+			<g id="sensor-pressure-ATP076" class="st1">
+				
+					<image style="overflow:visible;enable-background:new    ;" width="123" height="150" id="ATP076-pressure-icon" xlink:href="../img/sensors/pressure.png"  transform="matrix(0.4096 0 0 0.4096 203.3866 319.0268)">
+				</image>
+				<text id="ATP076-sensor-pressure-value" transform="matrix(1 0 0 1 216.0437 394.6923)" class="st7 st5 st9">0%</text>
+				<text id="ATP076-sensor-pressure-lastimevalue" transform="matrix(1 0 0 1 204.24 406.4765)" class="st7 st5 st6">yyyy/mm/dd 24:00</text>
+				
+					<image style="display:none;overflow:visible;enable-background:new    ;" width="173" height="150" id="ATP076-pressure-warning" xlink:href="../img/sensors/warning-sign.png"  transform="matrix(8.976001e-02 0 0 8.976001e-02 208.1267 322.5431)">
+				</image>
 			</g>
 		</g>
 	</g>
