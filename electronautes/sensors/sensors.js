@@ -112,12 +112,12 @@ angular.module('electronautes')
     { name: "sensor-proximity", group: "monaco", id: ["AT008","ATP082"] },
     
     /* Pressure sensor-pressure */
-    { name: "sensor-sensor-pressure", group: "pompeia", id: ["AT001", "ATP074"] },
-    { name: "sensor-sensor-pressure", group: "oimiakon", id: ["AT003", "ATP075", "ATP076"] },
-    { name: "sensor-sensor-pressure", group: "honolulu", id: ["AT006", "ATP079"] },
-    { name: "sensor-sensor-pressure", group: "lasvegas", id: ["AT007", "ATP080"] },
-    { name: "sensor-sensor-pressure", group: "hongkong", id: ["AT008", "ATP081"] },
-    { name: "sensor-sensor-pressure", group: "monaco", id: ["AT008","ATP082"] },
+    { name: "sensor-pressure", group: "pompeia", id: ["AT001", "ATP074"] },
+    { name: "sensor-pressure", group: "oimiakon", id: ["AT003", "ATP075", "ATP076"] },
+    { name: "sensor-pressure", group: "honolulu", id: ["AT006", "ATP079"] },
+    { name: "sensor-pressure", group: "lasvegas", id: ["AT007", "ATP080"] },
+    { name: "sensor-pressure", group: "hongkong", id: ["AT008", "ATP081"] },
+    { name: "sensor-pressure", group: "monaco", id: ["AT008","ATP082"] },
   ]; 
 
   var previousQuery = "";
@@ -126,9 +126,9 @@ angular.module('electronautes')
 
   $scope.showSensorValue = function(typeOfSensor) {
 
-    //var classroom = document.getElementById("img-sensor-" + sessionStorage.getItem("sensors-classroom") );
-    //var classr = document.getElementById("img-sensors-"+ $scope.classroom);
-    var classr = document.getElementById("img-sensors");
+    var classroom = document.getElementById("img-sensor-" + sessionStorage.getItem("sensors-classroom") );
+    var classr = document.getElementById("img-sensors-"+ $scope.classroom);
+    //var classr = document.getElementById("img-sensors");
 
     console.log("ID img-sensors");
     console.log("what's this" + classr);
@@ -138,7 +138,7 @@ angular.module('electronautes')
 
     // Hide sensor values queried before.
     if ( previousQuery !== "" ) {
-      svgDoc.getElementById( previousQuery ).setAttribute("display", "none");
+      svgDoc.getElementById( previousQuery ).setAttribute("class", "st0");
     }
 
     // Get the inner element by id.
@@ -152,8 +152,8 @@ angular.module('electronautes')
         }
       );
 
-      var status = sensor.getAttribute("display");    
-      if ( status === "none" ) {      
+      var status = sensor.getAttribute("class");    
+      if ( status === "st0" ) {      
 
         switch ( typeOfSensor ) {
 
@@ -365,7 +365,7 @@ angular.module('electronautes')
         }
 
         // Display sensors on the SVG.
-        sensor.setAttribute("display","block");
+        sensor.setAttribute("class","sshow");
         previousQuery = typeOfSensor;
       } 
     }
