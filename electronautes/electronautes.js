@@ -40,10 +40,10 @@ angular.module('electronautes', [
       svgObj.addEventListener("load", function() { 
         var svgDoc = svgObj.contentDocument;
 
-        // Set the size of the svg root element always to 100%.
+        /*// Set the size of the svg root element always to 100%.
         var rootLayer = svgDoc.getElementById('root-layer');
         rootLayer.setAttribute("width", "100%");
-        rootLayer.setAttribute("height", "100%");
+        rootLayer.setAttribute("height", "100%");*/
 
         // Create the style element within the svg and add the import for the right font.
         var importStament = `
