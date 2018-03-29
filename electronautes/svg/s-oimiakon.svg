@@ -930,7 +930,7 @@
 				<g id="AT003-sensor-temperature-blackrect">
 					<rect x="680.3" y="264.6" width="64.7" height="43.1"/>
 				</g>
-				<g id="AT001-temperature-icon">
+				<g id="AT003-temperature-icon">
 					
 						<image style="overflow:visible;enable-background:new    ;" width="73" height="151" xlink:href="../img/sensors/temperature-inv.png"  transform="matrix(0.2028 0 0 0.2028 684.3699 269.8466)">
 					</image>
