@@ -33,21 +33,15 @@ angular.module('electronautes', [
   
   // SVG STYLE
   
-  //TODO in style .st0{font-family:'AmaticSC-Regular';}
-  $rootScope.formatSVG = function (svgObjectId) {
+  /*$rootScope.formatSVG = function (svgObjectId) {
     var svgObj = document.getElementById(svgObjectId);
     if (svgObj) {
       svgObj.addEventListener("load", function() { 
         var svgDoc = svgObj.contentDocument;
 
-        /*// Set the size of the svg root element always to 100%.
-        var rootLayer = svgDoc.getElementById('root-layer');
-        rootLayer.setAttribute("width", "100%");
-        rootLayer.setAttribute("height", "100%");*/
-
         // Create the style element within the svg and add the import for the right font.
         var importStament = `
-            @import url(http://fonts.googleapis.com/css?family=Amatic+SC);
+            @import url(https://fonts.googleapis.com/css?family=Amatic+SC);
         `;
         var style = svgDoc.createElementNS("http://www.w3.org/2000/svg", "style");        
         style.innerHTML = style.innerHTML + importStament;
@@ -55,7 +49,7 @@ angular.module('electronautes', [
 
         // Change all the .text font-family to the correct one.
         var textElements = svgDoc.getElementsByTagNameNS("http://www.w3.org/2000/svg", "text");
-        for (var i = 0; i <textElements.length; i++) {
+        for (var i = 0; i < textElements.length; i++) {   
           var textElement = textElements[i];
           textElement.setAttribute("font-family", "Amatic SC");
           if(textElement.id.endsWith("lastimevalue")) {
@@ -67,7 +61,7 @@ angular.module('electronautes', [
         }
       }, false);
     }
-  };
+  };*/
   
   // Add click event listener to floorplan svg file.
   $rootScope.addClickableEventToClassroomsInSVG = function(svgObjectId) {
@@ -93,8 +87,7 @@ angular.module('electronautes', [
     }
   };
   
-  var goToClass = function(classId) {
-    
+  var goToClass = function(classId) {  
     $scope.classroom = classId;
     $rootScope.$apply();
   }

@@ -12,14 +12,13 @@ angular.module('electronautes')
 .controller('SensorsCtrl', function($scope, $rootScope, $location, $routeParams) {
 
   // Format SVG.
-  // $rootScope.formatSVG("img-floorplan");
-  // $rootScope.formatSVG("img-sensors");
-  // $rootScope.formatSVG("img-sensors-lasvegas");
-  // $rootScope.formatSVG("img-sensors-pompeia");
-  // $rootScope.formatSVG("img-sensors-oimiakon");
-  // $rootScope.formatSVG("imgadd-sensors-honolulu");
-  // $rootScope.formatSVG("img-sensors-hongkong");
-  // $rootScope.formatSVG("img-sensors-monaco");
+  /*$rootScope.formatSVG("img-floorplan");
+  $rootScope.formatSVG("img-sensors-lasvegas");
+  $rootScope.formatSVG("img-sensors-pompeia");
+  $rootScope.formatSVG("img-sensors-oimiakon");
+  $rootScope.formatSVG("imgadd-sensors-honolulu");
+  $rootScope.formatSVG("img-sensors-hongkong");
+  $rootScope.formatSVG("img-sensors-monaco");*/
   
   // Make flooplan clickable.
   $rootScope.addClickableEventToClassroomsInSVG("img-floorplan");
