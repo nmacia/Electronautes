@@ -42,10 +42,6 @@ body {
   padding: 0;
 }
 
-#fitScreen {
-  height: 100%;
-}
-
 input, button, textarea, select{
   border-radius: 0;
   -webkit-appearance: none;
@@ -266,16 +262,16 @@ object {
   left: 0;
 }
 
-/* TODO: Remove this line when each classroom has its sensor svg */
-object#img-sensors {
-width: 100%;
+object#img-classroom-lasvegas, object#img-sensors-lasvegas,
+object#img-classroom-hongkong, object#img-sensors-hongkong,
+object#img-classroom-honolulu, object#img-sensors-honolulu {
+  height: 530px;
+  width: auto;
 }
 
-#img-classroom-hongkong, object#img-sensors-hongkong,
-#img-classroom-honolulu, object#img-sensors-honolulu {
-  max-height: 100%;
+.sshow {
+  display: block;
 }
-
 
 .block.no-margin {
   margin-bottom: 0;	
@@ -772,7 +768,7 @@ input[type=password] {
 }
 
 footer {
-  margin-bottom: 0;    
+  margin-bottom: 0;  
 }
 
 .copyright {
@@ -1076,4 +1072,3 @@ footer {
     display: none;
   }
 }
-.sshow {display:block;}  
