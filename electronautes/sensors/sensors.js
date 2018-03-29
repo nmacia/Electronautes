@@ -22,11 +22,7 @@ angular.module('electronautes')
   
   // Make flooplan clickable.
   $rootScope.addClickableEventToClassroomsInSVG("img-floorplan");
-  
-  // Get id from the route param if defined.  
-  //$rootScope.classroom;
-  //$rootScope.classroom = $routeParams.classroom ? $routeParams.classroom : "floorplan";
-  
+    
   $scope.activeSensors = {
     'co2': { 'lasvegas': true, 'pompeia': false, 'oimiakon': false, 'honolulu': true, 'hongkong': false, 'monaco': true },
     'curtains': { 'lasvegas': false, 'pompeia': false, 'oimiakon': false, 'honolulu': false, 'hongkong': false, 'monaco': false },
@@ -48,6 +44,15 @@ angular.module('electronautes')
   $scope.goToLearnMore = function () {
     $location.path('/learnmore')
   }
+  
+  // Unselect sensor when looking at another classroom
+  $scope.$watch('classroom', function() {
+    if ( previousQuery != null ) {
+      var unselectSensor = previousQuery.replace(/sensor-/, "");
+      document.getElementById(unselectSensor).checked = false;
+    }
+  });
+
   
   // Catalog of sensors installed and their IDs in the SVG. 
   var sensorCatalog = [
