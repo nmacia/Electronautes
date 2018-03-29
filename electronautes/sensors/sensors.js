@@ -45,15 +45,6 @@ angular.module('electronautes')
     $location.path('/learnmore')
   }
   
-  // Unselect sensor when looking at another classroom
-  $scope.$watch('classroom', function() {
-    if ( previousQuery != null ) {
-      var unselectSensor = previousQuery.replace(/sensor-/, "");
-      document.getElementById(unselectSensor).checked = false;
-    }
-  });
-
-  
   // Catalog of sensors installed and their IDs in the SVG. 
   var sensorCatalog = [
    
@@ -373,6 +364,16 @@ angular.module('electronautes')
         previousQuery = typeOfSensor;
       } 
     }
+  }
+  
+  // Unselect sensor when looking at another classroom.
+  if ( $scope.classroom != null ) {
+    $scope.$watch('classroom', function() {
+      if ( previousQuery != "" ) {
+        var unselectSensor = previousQuery.replace(/sensor-/, "");
+        document.getElementById(unselectSensor).checked = false;
+      }
+    });
   }
 
 });
