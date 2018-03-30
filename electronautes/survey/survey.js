@@ -10,16 +10,7 @@ angular.module('electronautes')
 }])
 
 .controller('SurveyCtrl', function($scope, $rootScope, $location) {
-  
-  // Format SVG.
-  /*$rootScope.formatSVG("img-floorplan");
-  $rootScope.formatSVG("img-sensors-lasvegas");
-  $rootScope.formatSVG("img-sensors-pompeia");
-  $rootScope.formatSVG("img-sensors-oimiakon");
-  $rootScope.formatSVG("img-sensors-honolulu");
-  $rootScope.formatSVG("img-sensors-hongkong");
-  $rootScope.formatSVG("img-sensors-monaco");*/
-  
+    
   // Make flooplan clickable.
   $rootScope.addClickableEventToClassroomsInSVG("img-floorplan");
  

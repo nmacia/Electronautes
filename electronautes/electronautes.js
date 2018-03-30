@@ -31,38 +31,6 @@ angular.module('electronautes', [
     'bugDescription': ""
   };
   
-  // SVG STYLE
-  
-  /*$rootScope.formatSVG = function (svgObjectId) {
-    var svgObj = document.getElementById(svgObjectId);
-    if (svgObj) {
-      svgObj.addEventListener("load", function() { 
-        var svgDoc = svgObj.contentDocument;
-
-        // Create the style element within the svg and add the import for the right font.
-        var importStament = `
-            @import url(https://fonts.googleapis.com/css?family=Amatic+SC);
-        `;
-        var style = svgDoc.createElementNS("http://www.w3.org/2000/svg", "style");        
-        style.innerHTML = style.innerHTML + importStament;
-        svgDoc.documentElement.appendChild(style);
-
-        // Change all the .text font-family to the correct one.
-        var textElements = svgDoc.getElementsByTagNameNS("http://www.w3.org/2000/svg", "text");
-        for (var i = 0; i < textElements.length; i++) {   
-          var textElement = textElements[i];
-          textElement.setAttribute("font-family", "Amatic SC");
-          if(textElement.id.endsWith("lastimevalue")) {
-            textElement.setAttribute("font-weight", "500");    
-          }
-          else {
-            textElement.setAttribute("font-weight", "700");
-          }
-        }
-      }, false);
-    }
-  };*/
-  
   // Add click event listener to floorplan svg file.
   $rootScope.addClickableEventToClassroomsInSVG = function(svgObjectId) {
     var svgObj = document.getElementById(svgObjectId);
