@@ -252,9 +252,12 @@ no-padding {
 #img-classroom-hongkong, #img-sensors-hongkong,
 #img-classroom-monaco, #img-sensors-monaco {
 	position: absolute;
+    max-width: 100%;
 }
 
 /* Svg Style*/
+
+
 
 object {
   position: relative;
@@ -262,11 +265,9 @@ object {
   left: 0;
 }
 
-object#img-classroom-lasvegas, object#img-sensors-lasvegas,
-object#img-classroom-hongkong, object#img-sensors-hongkong,
-object#img-classroom-honolulu, object#img-sensors-honolulu {
-  height: 530px;
-  width: auto;
+.sen-clasr-h #img-classroom-hongkong, .sen-clasr-h object#img-sensors-hongkong,
+.sen-clasr-h #img-classroom-honolulu, .sen-clasr-h object#img-sensors-honolulu {
+    max-height: 100%;
 }
 
 .sshow {
@@ -732,6 +733,10 @@ input[type=password] {
   width: 100%;
 }
 
+.sen-clasr-h {
+    min-height: 483px;
+  }
+
 /*
 ==================================================
   04 - FOOTER
@@ -818,6 +823,8 @@ footer {
   filter: invert(100%);
 }
 
+
+
 /*
 ==================================================
   05 - RESPONSIVENESS
@@ -829,6 +836,12 @@ footer {
   05.1 - DESKTOP 
 --------------------------------------------------
 */
+
+@media (min-width : 1281px){
+  .sen-clasr-h {
+    min-height: 532px;
+  }
+}
 
 @media  (min-width : 991px) and
         (max-width : 1281px) {
@@ -883,7 +896,10 @@ footer {
     margin-bottom: 0;
     margin-top: 10px;
     max-width: 80px;
-  }             
+  }
+ .sen-clasr-h {
+    min-height: 483px;
+  }
 }
 
 @media  (min-width : 481px) and
@@ -922,6 +938,17 @@ footer {
   .r-sensorsbox-and-dragbox {
     margin-bottom: 20px;
   }
+  .sen-clasr-h, .sur-clasr-h {
+    min-height: 483px;
+  }
+  #img-classroom-lasvegas, object#img-sensors-lasvegas {
+    max-height: 100%;
+  }
+  .sur-clasr-h #img-classroom-hongkong, .sur-clasr-h object#img-sensors-hongkong,
+  .sur-clasr-h #img-classroom-honolulu, .sur-clasr-h object#img-sensors-honolulu {
+    max-height: 100%
+  }
+
 }
 
 /*
@@ -1070,5 +1097,14 @@ footer {
 
   figcaption.bug-caption {
     display: none;
+  }
+  .sen-clasr-h, .sur-clasr-h {
+    min-height: 310px;
+  }
+}
+
+@media (max-width : 320px){
+  .sen-clasr-h, .sur-clasr-h {
+    min-height: 200px !important;
   }
 }
