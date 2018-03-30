@@ -27,7 +27,7 @@
         <!-- Sensors -->
         <div class="boxsensors" ng-hide="bugReport.startReporting === true"> 
           <div class="row-sensor" ng-repeat="row in [0, 1, 2, 3]" >      
-            <div class="button-sensor" ng-repeat="col in [0, 1, 2]">
+            <div class="button-sensor" ng-repeat="col in [0, 1, 2]" ng-if="listOfSensors[row][col] != null || surveyClassroom == null">
               <label ng-if="listOfSensors[row][col] != null">
                 <input type="radio" name="sensor" id="{{ listOfSensors[row][col] }}" value="{{ listOfSensors[row][col] }}" ng-click="showSensorValue('sensor-'+ listOfSensors[row][col] );" ng-disabled="!activeSensors['{{ listOfSensors[row][col] }}'][classroom]" />
                 <figure>
@@ -35,7 +35,7 @@
                   <figcaption>{{ listOfSensors[row][col] }}</figcaption>
                 </figure>
               </label>
-              <label ng-if="listOfSensors[row][col] == null && surveyClassroom == null" >
+              <label ng-if="listOfSensors[row][col] == null">
                 <input type="submit" name="button-learnmore" value="learn more" ng-click="goToLearnMore()" />
                 <figure>
                   <img ng-src="./img/sensors/termite-button.png" />
