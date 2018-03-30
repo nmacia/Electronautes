@@ -11,7 +11,7 @@ angular.module('electronautes')
 
 .controller('LearnMoreCtrl', function($scope, $rootScope) { 
   
-  $scope.content = "presence";
+  $scope.content = "termitesen";
   
   $scope.setValue = function(row, col) {
     $scope.content = $rootScope.listOfSensors[row][col];
