@@ -163,13 +163,13 @@ angular.module('electronautes')
                   success: function(data) {
                     var count = data["count"];
                     if (count > 0) {
-                      svgDoc.getElementById(sensorId+"-icon-0").setAttribute("display","none");
-                      svgDoc.getElementById(sensorId+"-icon-1").setAttribute("display","block");
+                      svgDoc.getElementById(sensorId+"-icon-0").setAttribute("class", "st0");
+                      svgDoc.getElementById(sensorId+"-icon-1").setAttribute("class","sshow");
                       $(svgDoc.getElementById(sensorId+"-value")).text(count.toString());
                     }
                     else {
-                      svgDoc.getElementById(sensorId+"-icon-0").setAttribute("display","block");
-                      svgDoc.getElementById(sensorId+"-icon-1").setAttribute("display","none");
+                      svgDoc.getElementById(sensorId+"-icon-0").setAttribute("class","sshow");
+                      svgDoc.getElementById(sensorId+"-icon-1").setAttribute("class", "st0");
                       $(svgDoc.getElementById(sensorId+"-value")).text("0");
                     }
                   }
@@ -187,13 +187,13 @@ angular.module('electronautes')
                   success: function(data) {
                     var count = data['count'];
                     if (count > 0) {
-                      svgDoc.getElementById(sensorId+'-icon-0').setAttribute("display","none");
-                      svgDoc.getElementById(sensorId+'-icon-1').setAttribute("display","block");
+                      svgDoc.getElementById(sensorId+'-icon-0').setAttribute("class", "st0");
+                      svgDoc.getElementById(sensorId+'-icon-1').setAttribute("class","sshow");
                       $(svgDoc.getElementById(sensorId+'-value')).text(count.toString());
                     }
                     else {
-                      svgDoc.getElementById(sensorId+'-icon-0').setAttribute("display","block");
-                      svgDoc.getElementById(sensorId+'-icon-1').setAttribute("display","none");
+                      svgDoc.getElementById(sensorId+'-icon-0').setAttribute("class","sshow");
+                      svgDoc.getElementById(sensorId+'-icon-1').setAttribute("class", "st0");
                       $(svgDoc.getElementById(sensorId+'-value')).text("0");
                     }
                   }
@@ -209,14 +209,14 @@ angular.module('electronautes')
             // TODO: change the icon depending on the value of the sensor (0,1) if value=1 display-icon-1 else display-icon-0
             for (var i = 0; i < numberOfSensors; i++) {
               if ( phantom ) {
-                svgDoc.getElementById(sensorIDs[0].id[i]+'-icon-0').setAttribute("display","none");
-                svgDoc.getElementById(sensorIDs[0].id[i]+'-icon-1').setAttribute("display","block");
+                svgDoc.getElementById(sensorIDs[0].id[i]+'-icon-0').setAttribute("class", "st0");
+                svgDoc.getElementById(sensorIDs[0].id[i]+'-icon-1').setAttribute("class","sshow");
                 phantom = false;
                 $(svgDoc.getElementById(sensorIDs[0].id[i])).text("1");
               }
               else {
-                svgDoc.getElementById(sensorIDs[0].id[i]+'-icon-0').setAttribute("display","block");
-                svgDoc.getElementById(sensorIDs[0].id[i]+'-icon-1').setAttribute("display","none");
+                svgDoc.getElementById(sensorIDs[0].id[i]+'-icon-0').setAttribute("class","sshow");
+                svgDoc.getElementById(sensorIDs[0].id[i]+'-icon-1').setAttribute("class", "st0");
                 phantom = true;
                 $(svgDoc.getElementById(sensorIDs[0].id[i])).text("0");
               }
@@ -227,14 +227,14 @@ angular.module('electronautes')
             // TODO: change the icon depending on the value of the sensor (0,1) if value=1 display-icon-1 else display-icon-0
             for (var i = 0; i < numberOfSensors; i++) {
               if ( phantom ) {
-                svgDoc.getElementById(sensorIDs[0].id[i]+'-icon-0').setAttribute("display","none");
-                svgDoc.getElementById(sensorIDs[0].id[i]+'-icon-1').setAttribute("display","block");
+                svgDoc.getElementById(sensorIDs[0].id[i]+'-icon-0').setAttribute("class", "st0");
+                svgDoc.getElementById(sensorIDs[0].id[i]+'-icon-1').setAttribute("class","sshow");
                 phantom = false;
                 $(svgDoc.getElementById(sensorIDs[0].id[i])).text("1");
               }
               else {
-                svgDoc.getElementById(sensorIDs[0].id[i]+'-icon-0').setAttribute("display","block");
-                svgDoc.getElementById(sensorIDs[0].id[i]+'-icon-1').setAttribute("display","none");
+                svgDoc.getElementById(sensorIDs[0].id[i]+'-icon-0').setAttribute("class","sshow");
+                svgDoc.getElementById(sensorIDs[0].id[i]+'-icon-1').setAttribute("class", "st0");
                 phantom = true;
                 $(svgDoc.getElementById(sensorIDs[0].id[i])).text("0");
               }
