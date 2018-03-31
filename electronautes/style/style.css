@@ -1,7 +1,8 @@
 /*
- Project:       terMITes
+ Project:       terMITes for Electronautes
  Authors:       Nuria Macia
                 Juanita Devis
+                Jason Nawyn
  Version:       1.1
  Date:          March 2017
  Last modified: March 2018
@@ -245,6 +246,8 @@ no-padding {
   padding-right: 0;
 }
 
+/* Svg Style*/
+
 #img-classroom-lasvegas, #img-sensors-lasvegas,
 #img-classroom-pompeia, #img-sensors-pompeia,
 #img-classroom-oimiakon, #img-sensors-oimiakon,
@@ -255,16 +258,6 @@ no-padding {
     max-width: 100%;
 }
 
-/* Svg Style*/
-
-
-
-object {
-  position: relative;
-  top: 0;
-  left: 0;
-}
-
 .sen-clasr-h #img-classroom-hongkong, .sen-clasr-h object#img-sensors-hongkong,
 .sen-clasr-h #img-classroom-honolulu, .sen-clasr-h object#img-sensors-honolulu {
     max-height: 100%;
@@ -273,6 +266,14 @@ object {
 .sshow {
   display: block;
 }
+
+
+object {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
 
 .block.no-margin {
   margin-bottom: 0;	
@@ -484,6 +485,10 @@ input[type=password] {
   position: relative;
   width: 90px;
   text-align: center;
+}
+
+.mirror {
+  transform: scaleX(-1);
 }
 
 .img-window-sensor {
@@ -736,6 +741,14 @@ input[type=password] {
 .sen-clasr-h {
     min-height: 483px;
   }
+
+.t-learnmore .s-imagelog {
+  width: 10%;
+}
+
+.t-learnmore  a:hover {
+  color: #F6F6F6;
+}
 
 /*
 ==================================================
