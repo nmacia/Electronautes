@@ -750,6 +750,10 @@ input[type=password] {
   color: #F6F6F6;
 }
 
+.t-linksright a {
+    float: right;
+}
+
 /*
 ==================================================
   04 - FOOTER
