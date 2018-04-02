@@ -29,7 +29,7 @@ angular.module('electronautes').directive('tWeather', ($rootScope) => {
         var color = "#ffffff";
         var img = ""; // what is the default image?
 
-        // weatherCode = "46"; // only to test
+        // weatherCode = "47"; // only to test
         switch (weatherCode) {
           //Rain showers 10, 11, 12, 40 color #3E6A74
           case "10": 
@@ -70,7 +70,8 @@ angular.module('electronautes').directive('tWeather', ($rootScope) => {
           case "47":
             color = "#445197";
             img = "thunderstorms.png";
-            addRainToBackground( color )
+            var b = new BoltManager( color );
+            b.run();
             break; 
           //Hail 17, 35, #6b6b6b
           case "17": 

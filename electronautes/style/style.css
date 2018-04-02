@@ -82,6 +82,11 @@ p.description {
 ==================================================
 */
 
+
+canvas {
+  position: absolute;
+  z-index: -1;
+}
 header {
   height: 120px;
   margin-bottom: 30px;

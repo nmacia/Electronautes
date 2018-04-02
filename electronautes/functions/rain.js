@@ -1,4 +1,4 @@
-function addRainToBackground( colorBackground ) {
+function addRainToBackground( colorBackground, isThunder ) {
     
     var rainyBackground = function ( r ) {
        
@@ -44,6 +44,8 @@ function addRainToBackground( colorBackground ) {
             for (var i = 0; i < r.windowWidth/2; i++) {
                 drops[i] = new r.Drop();
             }
+          
+            
         }
 
         r.draw = function () {
