@@ -69,11 +69,37 @@ h2 {
 p.description {
   font-family: "Open Sans";
   font-size: 12px;
-  text-transform: lowercase;
+/*  text-transform: lowercase;*/
+}
+
+.t-learnmore .s-imagelog {
+    height: 80px;
+    max-width: 100px;;
+}
+
+.t-learnmore  a:hover {
+  color: #F6F6F6;
 }
 
 .narrow {
-  width: 75%;
+  width: 80%;
+}
+
+p.t-linksright {
+    float: right;
+}
+
+a.t-linksright {
+    float: right;
+}
+
+.inline-sen p {
+    display: inline-flex;
+    font-size: 15px;
+}
+
+.title-sens-des {
+  margin-bottom: 0px;
 }
 
 /*
@@ -747,17 +773,7 @@ input[type=password] {
     min-height: 483px;
   }
 
-.t-learnmore .s-imagelog {
-  width: 10%;
-}
 
-.t-learnmore  a:hover {
-  color: #F6F6F6;
-}
-
-.t-linksright a {
-    float: right;
-}
 
 /*
 ==================================================
