@@ -26,7 +26,7 @@
           <img src="./img/sensors/presence.png" alt="" width="7%"/> 0 
           <img src="./img/sensors/presence-inv.png" alt="" class="s-imagelog"/> 1
           <p class="description narrow"> 
-          Infrared is a special “color” of light that is invisible to humans, but can be felt as warmth when it absorbed by the skin. Infrared can also be seen by a special “electronic eye” like the one on the TerMITes. Humans, as warm-blooded animals, convert much of the food we eat into energy to maintain a constant body temperature of around 98.6°F (37 °C). Because this is usually much warmer than the objects around us, sensors that can see infrared can be used to detect when a warm body has entered or left a space.
+          Infrared is a special “color” of light that is invisible to humans, but can be felt as warmth when it absorbed by the skin. Infrared can also be seen by a special “electronic eye” like the one on the TerMITes. Humans, as warm-blooded animals, convert much of the food we eat into energy to maintain a constant body temperature of around 37°C (98.6°F). Because this is usually much warmer than the objects around us, sensors that can see infrared can be used to detect when a warm body has entered or left a space.
           </p>
           
           <p class="description narrow"> 
@@ -40,7 +40,7 @@
         <div ng-show="content == 'motion'">
           <h2 class="title-sens-des">Motion</h2>
             <div class="narrow inline-sen">
-              <p class="">Object Motion</p>
+              <p class="">Spring Vibration Sensor</p>
               <p class="t-linksright">
               units: 0, 1 (Binary)
               </p>
@@ -54,7 +54,7 @@
         <div ng-show="content == 'proximity'">
           <h2 class="title-sens-des">Proximity</h2>
             <div class="narrow inline-sen">
-              <p class="">Range or Depth Sensor</p>
+              <p class="">Infrared Range Sensor</p>
               <p class="t-linksright">
               units: 0-200 mm
               </p>
@@ -68,28 +68,28 @@
         <div ng-show="content == 'window'">
           <h2 class="title-sens-des">Window</h2>
             <div class="narrow inline-sen">
-              <p class="">Lorem ipsum Sensor</p>
+              <p class="">Accelerometer Tilt Sensor</p>
               <p class="t-linksright">
-              units: ?
+              units: 0-180 degrees (of inclination)
               </p>
             </div>
           <img src="./img/sensors/window.png" alt="" class="s-imagelog"/>
           <p class="description narrow">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.  
+          The window tilt sensor is based on a technology called an accelerometer. An accelerometer is a small device that is sensitive to changes in motion as well as the direction of the earth's gravitational pull. When the sensor is tilted, its orientation to the earth's gravity changes, and the TerMITe calculates the difference as an angle that reflects the window's new position. Accelerometers are found in many other devices, such as physical activity monitors, where a bracelet is used to count steps by tracking the rhythmic swinging of the arms while walking. Accelerometers are also used in mobile phones to detect the orientation of the phone and rotate the content of the screen  so that the bottom is always oriented to the earth’s gravitational pull. 
           </p>
         </div>
         <!-- Door -->
         <div ng-show="content == 'door'">
           <h2 class="title-sens-des">Door</h2>
             <div class="narrow inline-sen">
-              <p class="">Lorem ipsum Sensor</p>
+              <p class="">Magnetic Reed Sensor</p>
               <p class="t-linksright">
               units: ?
               </p>
             </div>
-          <img src="./img/sensors/door-close.png" alt="" class="s-imagelog"/>
+          <img src="./img/sensors/door.gif" alt="" class="s-imagelog"/>
           <p class="description narrow">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.  
+         A magnetic reed sensor is made up of two thin pieces of metal encased in a small glass tube. The metal reeds are mounted so that they touch each other when exposed to the  attractive force of a magnet. Otherwise, they are normally not touching each other. When the reeds make contact, a small amount of electricity travels through the sensor, and . are pulled together to make contact when exposed to the field of a magnet. 
           </p>
         </div>
         <!-- Curtains -->
