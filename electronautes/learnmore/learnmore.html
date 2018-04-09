@@ -7,7 +7,10 @@
         <div ng-show="content == 'termitesen'">
           <h2>TerMITes</h2>
           <p class="description narrow">
-           Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.  
+           TerMITes are small wireless devices that record data from sensors that can help us better understand our environments and human behavior. TerMITes support many types of sensing, and can be attached to objects in buildings such as doors, windows, drawers, cabinets, tables, and chairs to register object usage. TerMITes directly log on to the Internet via low-power WiFi for ease of connection and automatically upload to the server.
+          </p> 
+          <p class="description narrow">
+          The data shown in the Electronautes application is recorded in the school approximately every 10 minutes, and is sent to MIT where scientists can use it to observe how the classrooms change over the course of days and months. 
           </p>  
           <h3>Sensors</h3>
           <img src="./img/sensors/atp-400x-t.png" alt=""  width="40%"/>
@@ -30,7 +33,7 @@
           </p>
           
           <p class="description narrow"> 
-            The electronic eye used on the TerMITes is called a “Passive InfraRed” sensor, or PIR. It is “passive” because it does not produce infrared to reflect off objects in the environment. Rather, it looks for objects producing their own infrared heat, such as people or even household pets. The TerMITes register a response of 0 if no body movement is detected or 1 when a body is found to be moving. 
+            The electronic eye used on the TerMITes is called a “Passive InfraRed” sensor, or PIR. It is “passive” because it does not produce infrared to reflect off objects in the environment. Rather, it looks for objects producing their own infrared heat, such as people or even household pets. The TerMITes register a response of 0 if no body movement is detected or 1 when a body is found to be moving.
  
           </p>  
          <!-- <h3>Values</h3>-->
@@ -47,7 +50,7 @@
             </div>
           <img src="./img/sensors/moveanimation.gif" alt="" class="s-imagelog mirror"/>
           <p class="description narrow">
-          The object motion sensors on the TerMITes use a very slender copper coil or spring that vibrates when the device is moved. This vibration causes the spring to wiggle back and forth and occasionally come into contact with a stiff copper pin. A small amount of electricity running through the spring travels through the copper pin upon contact, telling the TerMITe that the sensor has been moved. These object motion sensor were attached to doors, and register a value of 1 each time the door is moved.  
+          The object motion sensors on the TerMITes use a very slender copper coil or spring that vibrates when the device is moved. This vibration causes the spring to wiggle back and forth and occasionally come into contact with a stiff copper pin. A small amount of electricity running through the spring travels through the copper pin upon contact, telling the TerMITe that the sensor has been moved. These object motion sensor were attached to doors, and register a value of 1 each time the door is moved.
           </p>
         </div>
         <!-- Proximity -->
@@ -56,12 +59,12 @@
             <div class="narrow inline-sen">
               <p class="">Infrared Range Sensor</p>
               <p class="t-linksright">
-              units: 0-200 mm
+              units: 0-200 [mm]
               </p>
             </div>
           <img src="./img/sensors/proximity.png" alt="" class="s-imagelog"/>
           <p class="description narrow">
-          The Proximity sensor used on the TerMITes works by shining an invisible InfraRed (IR) light source on an object, and measuring the brightness of the reflection using a small “electronic eye” that is sensitive to infrared light. As objects move farther away, the reflection become dimmer. As they move closer, it becomes brighter. The range sensor on the TerMITes is calibrated to be detect to objects between 1 and 200 millimeters from the board. 
+          The Proximity sensor used on the TerMITes works by shining an invisible InfraRed (IR) light source on an object, and measuring the brightness of the reflection using a small “electronic eye” that is sensitive to infrared light. As objects move farther away, the reflection become dimmer. As they move closer, it becomes brighter. The range sensor on the TerMITes has been calibrated to detect to objects between 1 and 200 millimeters from the eye. The same range sensor that is used on the TerMITes is also used on many mobile phones in order to turn off the screen when it is placed next to your ear.
           </p>
         </div>
         <!-- Window -->
@@ -75,7 +78,7 @@
             </div>
           <img src="./img/sensors/window.png" alt="" class="s-imagelog"/>
           <p class="description narrow">
-          The window tilt sensor is based on a technology called an accelerometer. An accelerometer is a small device that is sensitive to changes in motion as well as the direction of the earth's gravitational pull. When the sensor is tilted, its orientation to the earth's gravity changes, and the TerMITe calculates the difference as an angle that reflects the window's new position. Accelerometers are found in many other devices, such as physical activity monitors, where a bracelet is used to count steps by tracking the rhythmic swinging of the arms while walking. Accelerometers are also used in mobile phones to detect the orientation of the phone and rotate the content of the screen  so that the bottom is always oriented to the earth’s gravitational pull. 
+          The window tilt sensor is based on a technology called an accelerometer. An accelerometer is a small device that is sensitive to changes in motion as well as the direction of the earth's gravitational pull. When the sensor is tilted, its orientation to the earth's gravity changes, and the TerMITe calculates the difference as an angle that reflects the window's new position. Accelerometers are found in many other devices, such as physical activity monitors, where a bracelet is used to count steps by tracking the rhythmic swinging of the arms while walking. Accelerometers are also used in mobile phones to detect the orientation of the phone and rotate the content of the screen so that the bottom is always oriented to the earth’s gravitational pull.
           </p>
         </div>
         <!-- Door -->
@@ -84,26 +87,29 @@
             <div class="narrow inline-sen">
               <p class="">Magnetic Reed Sensor</p>
               <p class="t-linksright">
-              units: ?
+              units: 0, 1 (Binary)
               </p>
             </div>
           <img src="./img/sensors/door.gif" alt="" class="s-imagelog"/>
           <p class="description narrow">
-         A magnetic reed sensor is made up of two thin pieces of metal encased in a small glass tube. The metal reeds are mounted so that they touch each other when exposed to the  attractive force of a magnet. Otherwise, they are normally not touching each other. When the reeds make contact, a small amount of electricity travels through the sensor, and . are pulled together to make contact when exposed to the field of a magnet. 
-          </p>
+         A magnetic reed sensor is made up of two thin pieces of metal encased in a small glass tube. The metal reeds are mounted so that they touch each other when exposed to the  attractive force of a magnet. Otherwise, they are normally not touching each other. When the reeds make contact, a small amount of electricity travels through the sensor, and tells the TerMITe that the door has been closed. When the door is opened and the magnet is no longer close to the sensor, the reeds separate causing the electrical current to stop flowing through the TerMITe. This change is recorded by the TerMITe indicating that the door is now open.
+        </p>
+        <p class="description narrow">
+        Magnetic reed sensors are also used in many laptop computers to detect whether the display is open or closed. When the magnet in the screen is close enough to the sensor in the keyboard, the computer knows it can shut down because the laptop has been closed. Many computers will also wake up as soon as the laptop is opened and the reeds separate.
+        </p>
+          
         </div>
         <!-- Curtains -->
         <div ng-show="content == 'curtains'">
           <h2 class="title-sens-des">Curtains</h2>
             <div class="narrow inline-sen">
-              <p class="">Lorem ipsum Sensor</p>
+              <p class="">Not available</p>
               <p class="t-linksright">
-              units: ?
+              units: Not available
               </p>
             </div>
           <img src="./img/sensors/curtains.png" alt="" class="s-imagelog"/>
           <p class="description narrow">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.  
           </p>
         </div>
         <!-- Temperature -->
@@ -112,12 +118,12 @@
             <div class="narrow inline-sen">
               <p class="">Lorem ipsum Sensor</p>
               <p class="t-linksright">
-              units: °C
+              units: Degrees Celsius [°C]
               </p>
             </div>
           <img src="./img/sensors/temperature.png" alt="" class="s-imagelog"/>
           <p class="description narrow">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.  
+          Temperature sensors are found in many electronic items where it is important to know if the device is operating normally or overheating. Temperature sensors are also used in digital thermometers and thermostats that help keep buildings at a comfortable temperature. The temperature sensor on the TerMITes measures temperatures ranging from -40 to +85°C. 
           </p>
         </div>
         <!-- Humidity -->
@@ -126,8 +132,7 @@
             <div class="narrow inline-sen">
               <p class="">Lorem ipsum Sensor</p>
               <p class="t-linksright">
-                units: Pascal <br>
-                100000 Pa = 1 Bar ≃ 1 atm (1,01325) 
+                units: [%]
               </p>
             </div>
           <img src="./img/sensors/humidity.png" alt="" class="s-imagelog"/>
@@ -141,7 +146,8 @@
             <div class="narrow inline-sen">
               <p class="">Lorem ipsum Sensor</p>
               <p class="t-linksright">
-                units: ? 
+                units: Pascal <br>
+                100000 Pa = 1 Bar ≃ 1 atm (1,01325) 
               </p>
             </div>
           <img src="./img/sensors/pressure.png" alt="" class="s-imagelog"/>
