@@ -7,10 +7,10 @@
         <div ng-show="content == 'termitesen'">
           <h2>TerMITes</h2>
           <p class="description narrow">
-           TerMITes are small wireless devices that record data from sensors that can help us better understand our environments and human behavior. TerMITes support many types of sensing, and can be attached to objects in buildings such as doors, windows, drawers, cabinets, tables, and chairs to register object usage. TerMITes directly log on to the Internet via low-power WiFi for ease of connection and automatically upload to the server.
+           TerMITes are small wireless devices that record data from sensors that can help us better understand our environments and human behavior. TerMITes support many types of sensing, and can be attached to objects in buildings such as doors, windows, drawers, cabinets, tables, and chairs to register object usage. TerMITes directly log on to the Internet via low-power WiFi for ease of connection and automatically upload to a server.
           </p> 
           <p class="description narrow">
-          The data shown in the Electronautes application is recorded in the school approximately every 10 minutes, and is sent to MIT where scientists can use it to observe how the classrooms change over the course of days and months. 
+          The data shown in the Electronautes application is recorded in the school approximately every 10 minutes, and is sent to MIT where scientists can use it to observe how the classrooms change over the course of days and months.
           </p>  
           <h3>Sensors</h3>
           <img src="./img/sensors/atp-400x-t.png" alt=""  width="40%"/>
@@ -21,7 +21,7 @@
         <div ng-show="content == 'presence'">
           <h2 class="title-sens-des">Presence</h2>
             <div class="narrow inline-sen">
-              <p class=""> PIR (Passive InfraRed sensor)</p>
+              <p class="">Passive InfraRed sensor (PIR)</p>
               <p class="t-linksright">
               units: 0, 1 (Binary)
               </p>
@@ -33,15 +33,14 @@
           </p>
           
           <p class="description narrow"> 
-            The electronic eye used on the TerMITes is called a “Passive InfraRed” sensor, or PIR. It is “passive” because it does not produce infrared to reflect off objects in the environment. Rather, it looks for objects producing their own infrared heat, such as people or even household pets. The TerMITes register a response of 0 if no body movement is detected or 1 when a body is found to be moving.
- 
+            The electronic eye used on the TerMITes is called a “Passive InfraRed” sensor, or PIR. It is “passive” because it does not produce infrared to reflect off objects in the environment. Rather, it looks for objects producing their own infrared heat, such as people or even household pets. The TerMITes register a response of 0 if no body movement is detected or 1 when a body is found to be moving. 
           </p>  
          <!-- <h3>Values</h3>-->
          
         </div>
         <!-- Motion -->
         <div ng-show="content == 'motion'">
-          <h2 class="title-sens-des">Motion</h2>
+          <h2 class="title-sens-des">Object Motion</h2>
             <div class="narrow inline-sen">
               <p class="">Spring Vibration Sensor</p>
               <p class="t-linksright">
@@ -57,9 +56,9 @@
         <div ng-show="content == 'proximity'">
           <h2 class="title-sens-des">Proximity</h2>
             <div class="narrow inline-sen">
-              <p class="">Infrared Range Sensor</p>
+              <p class="">Infrared Range Sensor (IR)</p>
               <p class="t-linksright">
-              units: 0-200 [mm]
+              units: 0-200 millimeters [mm]
               </p>
             </div>
           <img src="./img/sensors/proximity.png" alt="" class="s-imagelog"/>
@@ -73,7 +72,7 @@
             <div class="narrow inline-sen">
               <p class="">Accelerometer Tilt Sensor</p>
               <p class="t-linksright">
-              units: 0-180 degrees (of inclination)
+              units: 0-180 degrees of inclination (angle) [°] or [deg]
               </p>
             </div>
           <img src="./img/sensors/window.png" alt="" class="s-imagelog"/>
@@ -123,69 +122,89 @@
             </div>
           <img src="./img/sensors/temperature.png" alt="" class="s-imagelog"/>
           <p class="description narrow">
-          Temperature sensors are found in many electronic items where it is important to know if the device is operating normally or overheating. Temperature sensors are also used in digital thermometers and thermostats that help keep buildings at a comfortable temperature. The temperature sensor on the TerMITes measures temperatures ranging from -40 to +85°C. 
+            Temperature sensors are found in many electronic items where it is important to know if the device is operating normally or overheating. Temperature sensors are also used in digital thermometers and thermostats that help keep buildings at a comfortable temperature. The temperature sensor on the TerMITes measures temperatures ranging from -40 to +85°C. People tend to feel most comfortable when the temperature inside a building is between 18° and 21°C, but this varies from person-to-person and day-to-day.</p>
+          <p class="description narrow">
+          What’s your comfort point? 
           </p>
         </div>
         <!-- Humidity -->
         <div ng-show="content == 'humidity'">
           <h2 class="title-sens-des">Humidity</h2>
             <div class="narrow inline-sen">
-              <p class="">Lorem ipsum Sensor</p>
+              <p class="">Relative Humidity Sensor (RH)</p>
               <p class="t-linksright">
-                units: [%]
+                units: Relative Humidity (RH) [%]
               </p>
             </div>
           <img src="./img/sensors/humidity.png" alt="" class="s-imagelog"/>
           <p class="description narrow">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          All air contains invisible particles of water, called water vapor. Humidity is the term we use to describe the amount of water vapor in the air. Sometimes, when this amount is high, you can see the water vapor, as is the case with clouds. The higher the temperature, the more water vapor can be held in the air. Scientists use the term “relative humidity” to describe how much water vapor is in the air, relative to how much can be held. This is reported as a percentage from 0-100%. When the relative humidity reaches 100%, the air can no longer hold water, and what is left over “precipitates” into water droplets, like rain.</p>
+          <p class="description narrow">
+          Our bodies are very sensitive to the presence of water in the air, and a relative humidity range of 30-70% is important for human comfort. At lower values, our skin will feel rough and our eyes, nose, and throat may feel scratchy. At higher levels, it is more difficult to maintain a stable body temperature, as the air is unable to absorb the sweat produced when we exercise.
           </p>
         </div>
         <!-- Pressure -->
         <div ng-show="content == 'pressure'">
           <h2 class="title-sens-des">Pressure</h2>
             <div class="narrow inline-sen">
-              <p class="">Lorem ipsum Sensor</p>
+              <p class="">Barometric Pressure Sensor</p>
               <p class="t-linksright">
-                units: Pascal <br>
+                units: Pascal [Pa]<br>
                 100000 Pa = 1 Bar ≃ 1 atm (1,01325) 
               </p>
             </div>
           <img src="./img/sensors/pressure.png" alt="" class="s-imagelog"/>
           <p class="description narrow">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-          </p>
+            You may not be able to feel it, but the air all around us contains weight. How heavy is air? The weight of the air varies from day to day based on temperature and moisture content as well as winds high up in the atmosphere. Air is also lighter up in the mountains like Andorra than it is at sea level like Barcelona. For this reason, a balloon filled with air at sea level would eventually pop if it were brought high enough into the mountains where the lighter air outside would allows the higher pressure air inside to keep expanding against the surface of the balloon.</p> 
+          <p class="description narrow">
+            Scientists use a tool called a barometer to measure air pressure. How does a barometer work? The barometric pressure sensor used on the TerMITes actually works like a tiny balloon in the example above, except that it’s made out of a very thin material that changes how well it conducts electricity as it expands and contracts. The TerMITes measure these electrical changes to figure out the barometric pressure of the air.</p>
+          <p class="description narrow">
+            Pressure sensors like this one are used in many applications, including airplanes where the sensors are used to calculate and maintain a steady altitude during the flight.</p>
+
           <p class="narrow">
-          <a class="t-linksright" target="_blank" href="https://www.youtube.com/watch?v=EkDhlzA-lwI&t=">How does a barometer works?</a><br/>
+          <br>
+          <a class="t-linksright" target="_blank" href="https://www.youtube.com/watch?v=EkDhlzA-lwI&t=">The history of the barometer (and how it works)?</a><br/>
           <a class="t-linksright" target="_blank" href="https://www.youtube.com/watch?v=VDf00z8sMFw&t=">How heavy is air?</a>
           </p>
-          
         </div>
         <!-- CO2 -->
         <div ng-show="content == 'co2'">
-          <h2 class="title-sens-des">CO2</h2>
+          <h2 class="title-sens-des">CO<sub>2</sub></h2>
             <div class="narrow inline-sen">
-              <p class="">Lorem ipsum Sensor</p>
+              <p class="">Carbon Dioxide Sensor</p>
               <p class="t-linksright">
-              units: ?
+              units: parts per million of CO2 [ppm] 
               </p>
             </div>
           <img src="./img/sensors/co2.png" alt="" class="s-imagelog"/>
           <p class="description narrow">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.  
+            Carbon dioxide (CO<sub>2</sub>) is a colorless, odorless gas, that is all around us. Every time you breathe in air, your heart pumps blood into the walls of your lungs where it absorbs oxygen and releases carbon dioxide. As you breathe out, you release the carbon dioxide-rich air into the space around you. For this reason, CO<sub>2</sub> sensors are a great way to help figure out how many people are in a room.
+          </p>
+          <p class="description narrow">
+            The CO<sub>2</sub> sensors on the TerMITes take advantage of the fact that CO<sub>2</sub> absorbs a small portion of an invisible “color” of light called infrared. Although we can’t see infrared with our own eyes, a special electronic eye in the CO<sub>2</sub> sensor can, and it measures the difference between the amount of an infrared light produced by a small bulb, and the amount it received. The difference in this amount of infrared light can be used to calculate how much carbon dioxide was present in the air sample. 
+          </p>
+          <p class="description narrow">
+            The CO<sub>2</sub> measurement produced by the TerMITes is reported as “Parts Per Million” or PPM, which is usually around 400 ppm in fresh air. This means that for every 1,000,000 grams of air, about 400 of those would be made up of carbon dioxide. With a lot of people in one room, that number could grow to over 1000 ppm.
           </p>
         </div>
         <!-- Light -->
         <div ng-show="content == 'light'">
            <h2 class="title-sens-des">Light</h2>
             <div class="narrow inline-sen">
-              <p class="">Lorem ipsum Sensor</p>
+              <p class="">Light Sensor</p>
               <p class="t-linksright">
-              units: ?
+              units: lux [lx] 
               </p>
             </div>
           <img src="./img/sensors/light.png" alt="" class="s-imagelog"/>
           <p class="description narrow">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.  
+            The light sensor used by the TerMITes produces the value of “lux”, which is a measurement of the amount of light falling on a surface. 4 or 5 lux is about the amount of light on a city sidewalk at night when the streetlights are on. 50 or 60 lux is about how bright a typical home living room is at nighttime with the lights on. During the day, your desk at school might be 200 or 300 lux. Outside under direct sunlight, the lux value could be 50,000 or more.
+          </p>
+          <p class="description narrow">
+            The TerMITes calculate lux using a special material that converts the energy in light into electrical energy. The TerMITes measure this electricity and compute a lux measurement from it.
+          </p>
+          <p class="description narrow">
+            Because the material inside the light sensor can convert light into electricity, it is also used in solar energy panels. However, because the amount of energy produced by each sensor is so small, many of these must be combined together in a “solar array” in order for it to be useful in powering household appliances.
           </p>
         </div>
       </div>  
