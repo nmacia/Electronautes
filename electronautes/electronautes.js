@@ -50,6 +50,15 @@ angular.module('electronautes', [
               goToClass(classId);                  
             }          
           });
+          
+          classroomPath.addEventListener("touchstart", function(event) {
+            var parentGroup = event.path[1];
+            if (parentGroup) {    
+              var classId = parentGroup.id;
+              $rootScope.classroom = classId;
+              goToClass(classId);                  
+            }          
+          });
         }             
       });
     }
