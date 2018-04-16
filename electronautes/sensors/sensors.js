@@ -10,6 +10,16 @@ angular.module('electronautes')
 }])
 
 .controller('SensorsCtrl', function($scope, $rootScope, $location, $routeParams) {
+  
+  // Load correct Google font inside each svg file (for compatibility with mobile browsers)  
+  $rootScope.importGoogleFontToSVG("img-floorplan");
+  $rootScope.importGoogleFontToSVG("img-sensors-lasvegas");
+  $rootScope.importGoogleFontToSVG("img-sensors-pompeia");
+  $rootScope.importGoogleFontToSVG("img-sensors-oimiakon");
+  $rootScope.importGoogleFontToSVG("imgadd-sensors-honolulu");
+  $rootScope.importGoogleFontToSVG("img-sensors-hongkong");
+  $rootScope.importGoogleFontToSVG("img-sensors-monaco");
+
 
   // Make flooplan clickable.
   $rootScope.addClickableEventToClassroomsInSVG("img-floorplan");

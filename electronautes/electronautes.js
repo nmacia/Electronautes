@@ -55,6 +55,26 @@ angular.module('electronautes', [
     }
   };
   
+    // SVG STYLE
+  
+  $rootScope.importGoogleFontToSVG = function (svgObjectId) {
+    var svgObj = document.getElementById(svgObjectId);
+    if (svgObj) {
+      svgObj.addEventListener("load", function() { 
+        var svgDoc = svgObj.contentDocument;
+
+        // Create the style element within the svg and add the import for the right font.
+        var importStament = `
+            @import url(https://fonts.googleapis.com/css?family=Amatic+SC);
+        `;
+        var style = svgDoc.createElementNS("http://www.w3.org/2000/svg", "style");        
+        style.innerHTML = style.innerHTML + importStament;
+        svgDoc.documentElement.appendChild(style);
+      }, false);
+    }
+  };
+
+  
   var goToClass = function(classId) {  
     $scope.classroom = classId;
     $rootScope.$apply();
