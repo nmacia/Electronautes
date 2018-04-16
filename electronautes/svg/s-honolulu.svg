@@ -153,8 +153,8 @@
 				
 					<image style="display:none;overflow:visible;enable-background:new    ;" width="173" height="150" id="bob6-co2-warning" xlink:href="../img/sensors/warning-sign-inv.png"  transform="matrix(0.102 0 0 0.102 391.177 278.6715)">
 				</image>
-				<text id="bob6-value" transform="matrix(1 0 0 1 384.1105 313.2653)" class="st2 st3 st6">0.0</text>
-				<text id="bob6-lastimevalue" transform="matrix(1 0 0 1 378.8449 263.9357)" class="st5 st3 st4">yyyy/mm/dd 24:00</text>
+				<text id="AndorraBob6-value" transform="matrix(1 0 0 1 384.1105 313.2653)" class="st2 st3 st6">0.0</text>
+				<text id="AndorraBob6-lastimevalue" transform="matrix(1 0 0 1 378.8449 263.9357)" class="st5 st3 st4">yyyy/mm/dd 24:00</text>
 			</g>
 		</g>
 	</g>

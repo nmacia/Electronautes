@@ -7,7 +7,7 @@ $name = $_GET["name"];
 $dtstart = $_GET["start"];
 $dtend = $_GET["end"];
 
-$query="SELECT time FROM andorraschool WHERE (name LIKE '%$name%') AND time > TIMESTAMP 'today'";
+$query="SELECT inserttime FROM andorra2017 WHERE (sensorname LIKE '%$name%') AND inserttime > TIMESTAMP 'today'";
 
 $result = pg_query($query);
 $rows = pg_num_rows($result);

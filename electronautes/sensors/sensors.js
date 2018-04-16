@@ -109,6 +109,7 @@ angular.module('electronautes')
   var previousQuery = "";
   var phantom = true;
   var motion = true;
+  var timeOffset = 1;
 
   $scope.showSensorValue = function(typeOfSensor) {
 
@@ -138,17 +139,17 @@ angular.module('electronautes')
         }
       );
 
-      var status = sensor.getAttribute("class");    
-      if ( status === "st0" ) {      
+      var status = sensor.getAttribute("class");
+      if ( status === "st0" ) {
 
         switch ( typeOfSensor ) {
 
           case "sensor-presence":
             var numberOfSensors = sensorIDs[0].id.length;
             for (var i = 0; i < numberOfSensors; i++) {
-              var sensorId = sensorIDs[0].id[i];   
+              var sensorId = sensorIDs[0].id[i];
               $.ajax({
-                  url: 'http://replace.media.mit.edu/electronautes/php/getActivationCountTodayByName.php?name=' + sensorId,
+                  url: 'http://replace.media.mit.edu/andorra/electronautes/php/getActivationCountTodayByName.php?name=' + sensorId,
                   async: false,
                   dataType: 'json',
                   success: function(data) {
@@ -156,17 +157,17 @@ angular.module('electronautes')
                     if (count > 0) {
                       svgDoc.getElementById(sensorId+"-icon-0").setAttribute("class", "st0");
                       svgDoc.getElementById(sensorId+"-icon-1").setAttribute("class","sshow");
-                      $(svgDoc.getElementById(sensorId+"-value")).text(count.toString());
+                      $(svgDoc.getElementById(sensorId+"-sensor-presence-value")).text(count.toString());
                     }
                     else {
                       svgDoc.getElementById(sensorId+"-icon-0").setAttribute("class","sshow");
                       svgDoc.getElementById(sensorId+"-icon-1").setAttribute("class", "st0");
-                      $(svgDoc.getElementById(sensorId+"-value")).text("0");
+                      $(svgDoc.getElementById(sensorId+"-sensor-presence-value")).text("0");
                     }
                   }
               });
             }
-            break;               
+            break;
           case "sensor-motion":
             var numberOfSensors = sensorIDs[0].id.length;
             for (var i = 0; i < numberOfSensors; i++) {
@@ -191,7 +192,7 @@ angular.module('electronautes')
               });
             }
             break;
-          case "sensor-window":     
+          case "sensor-window":
             /*
             DOES NOT WORK :(
             */
@@ -242,14 +243,20 @@ angular.module('electronautes')
             // Change value for each sensor. ***This value needs to be inverted volt sign
             var numberOfSensors = sensorIDs[0].id.length;
             for (var i = 0; i < numberOfSensors; i++) {
-              var sensorId = sensorIDs[0].id[i];  
+              var sensorId = sensorIDs[0].id[i];
               $.ajax({
-                url: 'http://replace.media.mit.edu/andorra/electronautes/php/getLastValueArrayByName.php?name=' + sensorId,
+                url: 'http://replace.media.mit.edu/andorra/electronautes/php/getLastValueByName.php?name=' + sensorId,
                 async: false,
                 dataType: 'json',
                 success: function(data) {
-                  $(svgDoc.getElementById(sensorId + "-value")).text(data[0]['value']);	
-                }    
+                    $(svgDoc.getElementById(sensorId + "-value")).text(data[0]['value']);
+                    var lastDate = data[0]['time'].split('.')[0].replace(/-/g, '/');
+                    var lastDateArray = lastDate.split(' ')[0].split('/');
+                    var lastTimeArray = lastDate.split(' ')[1].split(':');
+                    var localDate = new Date(lastDateArray[0],lastDateArray[1] - 1,lastDateArray[2],lastTimeArray[0],lastTimeArray[1],lastTimeArray[2],0);
+                    localDate.setHours(localDate.getHours() + timeOffset);
+                    $(svgDoc.getElementById(sensorId + "-lastimevalue")).text(localDate.toISOString().replace('T', ' ').split('.')[0]);
+                }
               });
             }
             break;
@@ -265,9 +272,13 @@ angular.module('electronautes')
                   success: function(data) {
                       var values = data[0]['values'];
                       var valuejson = JSON.parse(values);
-                      $(svgDoc.getElementById("sensor-humidity-value")).text(valuejson['humidity'] + '%');
+                      $(svgDoc.getElementById(sensorId + "-sensor-humidity-value")).text(valuejson['humidity'] + '%');
                       var lastDate = data[0]['inserttime'].split('.')[0].replace(/-/g, '/');
-                      $(svgDoc.getElementById("sensor-humidity-lastimevalue")).text(lastDate.substring(0, lastDate.lastIndexOf(":")));
+                      var lastDateArray = lastDate.split(' ')[0].split('/');
+                      var lastTimeArray = lastDate.split(' ')[1].split(':');
+                      var localDate = new Date(lastDateArray[0],lastDateArray[1] - 1,lastDateArray[2],lastTimeArray[0],lastTimeArray[1],lastTimeArray[2],0);
+                      localDate.setHours(localDate.getHours() + timeOffset);
+                      $(svgDoc.getElementById(sensorId + "-sensor-humidity-lastimevalue")).text(localDate.toISOString().replace('T', ' ').split('.')[0]);
                   }
               });
             }
@@ -284,9 +295,15 @@ angular.module('electronautes')
                 success: function(data) {
                   var values = data[0]['values'];
                   var valuejson = JSON.parse(values);
-                  $(svgDoc.getElementById("sensor-temp-value")).text(valuejson['temperature'] + '° C');
+                  $(svgDoc.getElementById(sensorId + "-sensor-temp-value")).text(valuejson['temperature'] + '° C');
                   var lastDate = data[0]['inserttime'].split('.')[0].replace(/-/g, '/');
-                  $(svgDoc.getElementById("sensor-temp-lastimevalue")).text(lastDate.substring(0, lastDate.lastIndexOf(":")));
+                  var lastDateArray = lastDate.split(' ')[0].split('/');
+                  var lastTimeArray = lastDate.split(' ')[1].split(':');
+                  var localDate = new Date(lastDateArray[0],lastDateArray[1] - 1,lastDateArray[2],lastTimeArray[0],lastTimeArray[1],lastTimeArray[2],0);
+                  localDate.setHours(localDate.getHours() + timeOffset);
+                  $(svgDoc.getElementById(sensorId + "-sensor-temp-lastimevalue")).text(localDate.toISOString().replace('T', ' ').split('.')[0]);
+                  // Testing warning graphics.
+                  // svgDoc.getElementById(sensorId+"-temp-warning").setAttribute("class","sshow");
                 }
               });
             }
@@ -303,9 +320,13 @@ angular.module('electronautes')
                       success: function(data) {
                           var values = data[0]['values'];
                           var valuejson = JSON.parse(values);
-                          $(svgDoc.getElementById("sensor-proximity-value")).text((valuejson['proximity']).split(".")[0] + " mm");
+                          $(svgDoc.getElementById(sensorId + "-sensor-proximity-value")).text((valuejson['proximity']).split(".")[0] + " mm");
                           var lastDate = data[0]['inserttime'].split('.')[0].replace(/-/g, '/');
-                          $(svgDoc.getElementById("sensor-proximity-lastimevalue")).text(lastDate.substring(0, lastDate.lastIndexOf(":")));
+                          var lastDateArray = lastDate.split(' ')[0].split('/');
+                          var lastTimeArray = lastDate.split(' ')[1].split(':');
+                          var localDate = new Date(lastDateArray[0], lastDateArray[1] - 1, lastDateArray[2], lastTimeArray[0], lastTimeArray[1], lastTimeArray[2], 0);
+                          localDate.setHours(localDate.getHours() + timeOffset);
+                          $(svgDoc.getElementById(sensorId + "-sensor-proximity-lastimevalue")).text(localDate.toISOString().replace('T', ' ').split('.')[0]);
                       }
                   });
               }
@@ -322,9 +343,13 @@ angular.module('electronautes')
                       success: function(data) {
                           var values = data[0]['values'];
                           var valuejson = JSON.parse(values);
-                          $(svgDoc.getElementById("sensor-pressure-value")).text((valuejson['pressure']).split(".")[0] + " Pa");
+                          $(svgDoc.getElementById(sensorId + "-sensor-pressure-value")).text((valuejson['pressure']).split(".")[0] + " Pa");
                           var lastDate = data[0]['inserttime'].split('.')[0].replace(/-/g, '/');
-                          $(svgDoc.getElementById("sensor-pressure-lastimevalue")).text(lastDate.substring(0, lastDate.lastIndexOf(":")));
+                          var lastDateArray = lastDate.split(' ')[0].split('/');
+                          var lastTimeArray = lastDate.split(' ')[1].split(':');
+                          var localDate = new Date(lastDateArray[0],lastDateArray[1] - 1,lastDateArray[2],lastTimeArray[0],lastTimeArray[1],lastTimeArray[2],0);
+                          localDate.setHours(localDate.getHours() + timeOffset);
+                          $(svgDoc.getElementById(sensorId + "-sensor-pressure-lastimevalue")).text(localDate.toISOString().replace('T', ' ').split('.')[0]);
                       }
                   });
               }
@@ -341,9 +366,13 @@ angular.module('electronautes')
                   success: function(data) {
                       var values = data[0]['values'];
                       var valuejson = JSON.parse(values);
-                      $(svgDoc.getElementById("sensor-light-value")).text((valuejson['ambientLight']).split(".")[0]);
+                      $(svgDoc.getElementById(sensorId + "-sensor-light-value")).text((valuejson['ambientLight']).split(".")[0]);
                       var lastDate = data[0]['inserttime'].split('.')[0].replace(/-/g, '/');
-                      $(svgDoc.getElementById("sensor-light-lastimevalue")).text(lastDate.substring(0, lastDate.lastIndexOf(":")));
+                      var lastDateArray = lastDate.split(' ')[0].split('/');
+                      var lastTimeArray = lastDate.split(' ')[1].split(':');
+                      var localDate = new Date(lastDateArray[0],lastDateArray[1] - 1,lastDateArray[2],lastTimeArray[0],lastTimeArray[1],lastTimeArray[2],0);
+                      localDate.setHours(localDate.getHours() + timeOffset);
+                      $(svgDoc.getElementById(sensorId + "-sensor-light-lastimevalue")).text(localDate.toISOString().replace('T', ' ').split('.')[0]);
                   }
                 });
               }
@@ -353,7 +382,7 @@ angular.module('electronautes')
         // Display sensors on the SVG.
         sensor.setAttribute("class","sshow");
         previousQuery = typeOfSensor;
-      } 
+      }
     }
   }
   

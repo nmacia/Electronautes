@@ -1,11 +1,9 @@
 <?php 
 header("content-type: application/json"); 
 
-include('pg_connect.php');
+include('pg_connect_old.php');
 
 $name = $_GET["name"];
-$dtstart = $_GET["start"];
-$dtend = $_GET["end"];
 
 $query="SELECT time, value FROM andorraschool WHERE (name LIKE '%$name%') ORDER BY time DESC limit 1";
 

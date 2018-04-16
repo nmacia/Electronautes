@@ -151,10 +151,10 @@
 					<image style="overflow:visible;enable-background:new    ;" width="103" height="150" id="co21-icon" xlink:href="../img/sensors/co2-black.png"  transform="matrix(0.6235 0 0 0.6235 387.0898 233.2708)">
 				</image>
 				
-					<image style="display:none;overflow:visible;enable-background:new    ;" width="173" height="150" id="bob1-co2-warning" xlink:href="../img/sensors/warning-sign-inv.png"  transform="matrix(0.102 0 0 0.102 423.3737 245.6715)">
+					<image style="display:none;overflow:visible;enable-background:new    ;" width="173" height="150" id="AndorraBob1-co2-warning" xlink:href="../img/sensors/warning-sign-inv.png"  transform="matrix(0.102 0 0 0.102 423.3737 245.6715)">
 				</image>
-				<text id="bob1-value" transform="matrix(1 0 0 1 415.2003 280.0339)" class="st2 st3 st6">0.0</text>
-				<text id="bob1-lastimevalue" transform="matrix(1 0 0 1 409.9347 230.7043)" class="st5 st3 st4">yyyy/mm/dd 24:00</text>
+				<text id="AndorraBob1-value" transform="matrix(1 0 0 1 415.2003 280.0339)" class="st2 st3 st6">0.0</text>
+				<text id="AndorraBob1-lastimevalue" transform="matrix(1 0 0 1 409.9347 230.7043)" class="st5 st3 st4">yyyy/mm/dd 24:00</text>
 			</g>
 		</g>
 	</g>

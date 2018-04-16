@@ -660,7 +660,7 @@ input[type=password] {
 }
 
 .r-sensors-side .r-button-sensor {
-  max-height: auto;
+  max-height: 100%;
   max-width: 90%;
 }
 
