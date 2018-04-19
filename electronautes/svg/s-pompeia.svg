@@ -26,9 +26,9 @@
 						<image style="overflow:visible;enable-background:new    ;" width="73" height="151" xlink:href="../img/sensors/temperature-inv.png"  transform="matrix(0.2983 0 0 0.2983 458.9101 362.8972)">
 					   </image>
 				</g>
-				<text id="AT001-sensor-temp-value" transform="matrix(1 0 0 1 488.6826 391.4695)" class="st2 st3 st6">?</text>
-				<text id="AT001-sensor-temp-lastimevalue" transform="matrix(1 0 0 1 453 434.6053)" class="st5 st3 st4">yyyy/mm/dd 24:00</text>
-              <g id="AT001-temp-warning" class="st0">
+				<text id="AT001-sensor-temperature-value" transform="matrix(1 0 0 1 488.6826 391.4695)" class="st2 st3 st6">?</text>
+				<text id="AT001-sensor-temperature-lastimevalue" transform="matrix(1 0 0 1 453 434.6053)" class="st5 st3 st4">yyyy/mm/dd 24:00</text>
+              <g id="AT001-temperature-warning" class="st0">
 				
 					<image style="overflow:visible;enable-background:new    ;" width="173" height="150"  xlink:href="../img/sensors/warning-sign.png"  transform="matrix(0.18 0 0 0.18 550.1053 355.2014)">
 				    </image>
@@ -43,9 +43,9 @@
 				    <image style="overflow:visible;enable-background:new    ;" width="73" height="151" xlink:href="../img/sensors/temperature-inv.png"  transform="matrix(0.2983 0 0 0.2983 224.1205 518.1657)">
 					</image>
 				</g>
-				<text id="ATP074-sensor-temp-value" transform="matrix(1 0 0 1 253.8931 546.738)" class="st2 st3 st6">?</text>
-				<text id="ATP074-sensor-temp-lastimevalue" transform="matrix(1 0 0 1 218.2104 589.8738)" class="st5 st3 st4">yyyy/mm/dd 24:00</text>
-                <g id="ATP074-temp-warning" class="st0">
+				<text id="ATP074-sensor-temperature-value" transform="matrix(1 0 0 1 253.8931 546.738)" class="st2 st3 st6">?</text>
+				<text id="ATP074-sensor-temperature-lastimevalue" transform="matrix(1 0 0 1 218.2104 589.8738)" class="st5 st3 st4">yyyy/mm/dd 24:00</text>
+                <g id="ATP074-temperature-warning" class="st0">
                       <image style="overflow:visible;enable-background:new    ;" width="173" height="150"  xlink:href="../img/sensors/warning-sign.png"  transform="matrix(0.18 0 0 0.18 314.03 511.9205)">
                       </image>
                 </g>
@@ -93,7 +93,7 @@
 		</g>
 		<g id="sensor-humidity" class="st0">
 			<g id="sensor-humidity-AT001" class="st1">
-				    <g id="AT001-hum-icon">
+				    <g id="AT001-humidity-icon">
 					<image style="overflow:visible;enable-background:new    ;" width="121" height="150"  xlink:href="../img/sensors/humidity-inv.png"  transform="matrix(1 0 0 1 451.7578 347.1138)">
 				    </image>
                     </g>

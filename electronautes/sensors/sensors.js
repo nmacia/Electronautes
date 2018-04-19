@@ -305,15 +305,15 @@ angular.module('electronautes')
                 success: function(data) {
                   var values = data[0]['values'];
                   var valuejson = JSON.parse(values);
-                  $(svgDoc.getElementById(sensorId + "-sensor-temp-value")).text(valuejson['temperature'] + '° C');
+                  $(svgDoc.getElementById(sensorId + "-sensor-temperature-value")).text(valuejson['temperature'] + '° C');
                   var lastDate = data[0]['inserttime'].split('.')[0].replace(/-/g, '/');
                   var lastDateArray = lastDate.split(' ')[0].split('/');
                   var lastTimeArray = lastDate.split(' ')[1].split(':');
                   var localDate = new Date(lastDateArray[0],lastDateArray[1] - 1,lastDateArray[2],lastTimeArray[0],lastTimeArray[1],lastTimeArray[2],0);
                   localDate.setHours(localDate.getHours() + timeOffset);
-                  $(svgDoc.getElementById(sensorId + "-sensor-temp-lastimevalue")).text(localDate.toISOString().replace('T', ' ').split('.')[0]);
+                  $(svgDoc.getElementById(sensorId + "-sensor-temperature-lastimevalue")).text(localDate.toISOString().replace('T', ' ').split('.')[0]);
                   // Testing warning graphics.
-                  // svgDoc.getElementById(sensorId+"-temp-warning").setAttribute("class","sshow");
+                  // svgDoc.getElementById(sensorId+"-temperature-warning").setAttribute("class","sshow");
                 }
               });
             }
