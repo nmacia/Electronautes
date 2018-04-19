@@ -107,11 +107,11 @@
 		</g>
 		<g id="sensor-presence" class="st0">
 			<g id="sensor-presence-ATP080" class="st1">
-				<g id="ATP080-icon-1">
+				<g id="ATP080-presence-icon-1">
 					<image style="overflow:visible;enable-background:new    ;" width="131" height="150"  xlink:href="../img/sensors/presence-inv.png"  transform="matrix(0.4534 0 0 0.4534 584.9023 344.5342)">
 				    </image>
                 </g>
-				<g id="ATP080-icon-0" class="st0">
+				<g id="ATP080-presence-icon-0" class="st0">
 					<image style="overflow:visible;enable-background:new    ;" width="131" height="150" xlink:href="../img/sensors/presence.png"  transform="matrix(0.34 0 0 0.34 597.0289 361.5327)">
 				</image>
                 </g>

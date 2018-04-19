@@ -22,6 +22,7 @@ angular.module('electronautes')
 
 
   // Make flooplan clickable.
+  // TODO fix mobile devices
   $rootScope.addClickableEventToClassroomsInSVG("img-floorplan");
     
   $scope.activeSensors = {
@@ -165,13 +166,13 @@ angular.module('electronautes')
                   success: function(data) {
                     var count = data["count"];
                     if (count > 0) {
-                      svgDoc.getElementById(sensorId+"-icon-0").setAttribute("class", "st0");
-                      svgDoc.getElementById(sensorId+"-icon-1").setAttribute("class","sshow");
+                      svgDoc.getElementById(sensorId+"-presence-icon-0").setAttribute("class", "st0");
+                      svgDoc.getElementById(sensorId+"-presence-icon-1").setAttribute("class","sshow");
                       $(svgDoc.getElementById(sensorId+"-sensor-presence-value")).text(count.toString());
                     }
                     else {
-                      svgDoc.getElementById(sensorId+"-icon-0").setAttribute("class","sshow");
-                      svgDoc.getElementById(sensorId+"-icon-1").setAttribute("class", "st0");
+                      svgDoc.getElementById(sensorId+"-presence-icon-0").setAttribute("class","sshow");
+                      svgDoc.getElementById(sensorId+"-presence-icon-1").setAttribute("class", "st0");
                       $(svgDoc.getElementById(sensorId+"-sensor-presence-value")).text("0");
                     }
                   }
@@ -189,13 +190,13 @@ angular.module('electronautes')
                   success: function(data) {
                     var count = data['count'];
                     if (count > 0) {
-                      svgDoc.getElementById(sensorId+'-icon-0').setAttribute("class", "st0");
-                      svgDoc.getElementById(sensorId+'-icon-1').setAttribute("class","sshow");
+                      svgDoc.getElementById(sensorId+'-presence-icon-0').setAttribute("class", "st0");
+                      svgDoc.getElementById(sensorId+'-presence-icon-1').setAttribute("class","sshow");
                       $(svgDoc.getElementById(sensorId+'-value')).text(count.toString());
                     }
                     else {
-                      svgDoc.getElementById(sensorId+'-icon-0').setAttribute("class","sshow");
-                      svgDoc.getElementById(sensorId+'-icon-1').setAttribute("class", "st0");
+                      svgDoc.getElementById(sensorId+'-presence-icon-0').setAttribute("class","sshow");
+                      svgDoc.getElementById(sensorId+'-presence-icon-1').setAttribute("class", "st0");
                       $(svgDoc.getElementById(sensorId+'-value')).text("0");
                     }
                   }
@@ -208,17 +209,17 @@ angular.module('electronautes')
             */
 
             var numberOfSensors = sensorIDs[0].id.length;
-            // TODO: change the icon depending on the value of the sensor (0,1) if value=1 display-icon-1 else display-icon-0
+            // TODO: change the icon depending on the value of the sensor (0,1) if value=1 display-presence-icon-1 else display-presence-icon-0
             for (var i = 0; i < numberOfSensors; i++) {
               if ( phantom ) {
-                svgDoc.getElementById(sensorIDs[0].id[i]+'-icon-0').setAttribute("class", "st0");
-                svgDoc.getElementById(sensorIDs[0].id[i]+'-icon-1').setAttribute("class","sshow");
+                svgDoc.getElementById(sensorIDs[0].id[i]+'-presence-icon-0').setAttribute("class", "st0");
+                svgDoc.getElementById(sensorIDs[0].id[i]+'-presence-icon-1').setAttribute("class","sshow");
                 phantom = false;
                 $(svgDoc.getElementById(sensorIDs[0].id[i])).text("1");
               }
               else {
-                svgDoc.getElementById(sensorIDs[0].id[i]+'-icon-0').setAttribute("class","sshow");
-                svgDoc.getElementById(sensorIDs[0].id[i]+'-icon-1').setAttribute("class", "st0");
+                svgDoc.getElementById(sensorIDs[0].id[i]+'-presence-icon-0').setAttribute("class","sshow");
+                svgDoc.getElementById(sensorIDs[0].id[i]+'-presence-icon-1').setAttribute("class", "st0");
                 phantom = true;
                 $(svgDoc.getElementById(sensorIDs[0].id[i])).text("0");
               }
@@ -226,17 +227,17 @@ angular.module('electronautes')
             break;
           case "sensor-door":
              var numberOfSensors = sensorIDs[0].id.length;
-            // TODO: change the icon depending on the value of the sensor (0,1) if value=1 display-icon-1 else display-icon-0
+            // TODO: change the icon depending on the value of the sensor (0,1) if value=1 display-presence-icon-1 else display-presence-icon-0
             for (var i = 0; i < numberOfSensors; i++) {
               if ( phantom ) {
-                svgDoc.getElementById(sensorIDs[0].id[i]+'-icon-0').setAttribute("class", "st0");
-                svgDoc.getElementById(sensorIDs[0].id[i]+'-icon-1').setAttribute("class","sshow");
+                svgDoc.getElementById(sensorIDs[0].id[i]+'-presence-icon-0').setAttribute("class", "st0");
+                svgDoc.getElementById(sensorIDs[0].id[i]+'-presence-icon-1').setAttribute("class","sshow");
                 phantom = false;
                 $(svgDoc.getElementById(sensorIDs[0].id[i])).text("1");
               }
               else {
-                svgDoc.getElementById(sensorIDs[0].id[i]+'-icon-0').setAttribute("class","sshow");
-                svgDoc.getElementById(sensorIDs[0].id[i]+'-icon-1').setAttribute("class", "st0");
+                svgDoc.getElementById(sensorIDs[0].id[i]+'-presence-icon-0').setAttribute("class","sshow");
+                svgDoc.getElementById(sensorIDs[0].id[i]+'-presence-icon-1').setAttribute("class", "st0");
                 phantom = true;
                 $(svgDoc.getElementById(sensorIDs[0].id[i])).text("0");
               }

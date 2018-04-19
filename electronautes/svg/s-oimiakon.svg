@@ -134,11 +134,11 @@
 		</g>
 		<g id="sensor-presence" class="st0">
 			<g id="sensor-presence-ATP075" class="st1">
-				  <g id="ATP075-icon-1">
+				  <g id="ATP075-presence-icon-1">
 					<image style="overflow:visible;enable-background:new    ;" width="131" height="150" xlink:href="../img/sensors/presence-inv.png"  transform="matrix(0.4534 0 0 0.4534 515.4047 246.9683)">
 				    </image>
                   </g>
-				<g id="ATP075-icon-0" class="st0">
+				<g id="ATP075-presence-icon-0" class="st0">
 					<image style="overflow:visible;enable-background:new    ;" width="131" height="150" xlink:href="../img/sensors/presence.png"  transform="matrix(0.34 0 0 0.34 527.5312 263.9668)">
 				    </image>
                 </g>
@@ -150,12 +150,12 @@
 			</g>
 			<g id="sensor-presence-ATP076" class="st1">
               
-                  <g id="ATP076-icon-1">
+                  <g id="ATP076-presence-icon-1">
 				
 					<image style="overflow:visible;enable-background:new    ;" width="131" height="150" xlink:href="../img/sensors/presence-inv.png"  transform="matrix(0.4534 0 0 0.4534 201.7046 338.1)">
 				    </image>
                 </g>
-                 <g id="ATP076-icon-0" class="st0">
+                 <g id="ATP076-presence-icon-0" class="st0">
 
                         <image style="overflow:visible;enable-background:new    ;" width="131" height="150"  xlink:href="../img/sensors/presence.png"  transform="matrix(0.34 0 0 0.34 213.8312 355.0985)">
                         </image>
