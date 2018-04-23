@@ -40,12 +40,12 @@ angular.module('electronautes')
   };
 
   $scope.goToRelate = function () {
-    $location.path('/relate')
-  }
+      $location.path('/relate')
+  };
   
   $scope.goToLearnMore = function () {
     $location.path('/learnmore')
-  }
+  };
   
   // Catalog of sensors installed and their IDs in the SVG. 
   var sensorCatalog = [
@@ -114,13 +114,14 @@ angular.module('electronautes')
     { name: "sensor-pressure", group: "honolulu", id: ["AT006", "ATP079"] },
     { name: "sensor-pressure", group: "lasvegas", id: ["AT007", "ATP080"] },
     { name: "sensor-pressure", group: "hongkong", id: ["AT008", "ATP081"] },
-    { name: "sensor-pressure", group: "monaco", id: ["AT008","ATP082"] },
+    { name: "sensor-pressure", group: "monaco", id: ["AT008","ATP082"] }
   ]; 
 
   var previousQuery = "";
   var phantom = true;
   var motion = true;
-  var timeOffset = 1;
+  var timezoneOffsetUTC = 1;
+  var daysUntilOldDataWarning = 5;
 
   $scope.showSensorValue = function(typeOfSensor) {
 
@@ -265,8 +266,14 @@ angular.module('electronautes')
                     var lastDateArray = lastDate.split(' ')[0].split('/');
                     var lastTimeArray = lastDate.split(' ')[1].split(':');
                     var localDate = new Date(lastDateArray[0],lastDateArray[1] - 1,lastDateArray[2],lastTimeArray[0],lastTimeArray[1],lastTimeArray[2],0);
-                    localDate.setHours(localDate.getHours() + timeOffset);
+                    localDate.setHours(localDate.getHours() + timezoneOffsetUTC);
                     $(svgDoc.getElementById(sensorId + "-lastimevalue")).text(localDate.toISOString().replace('T', ' ').split('.')[0]);
+                    var timeDiff = daysUntilOldDataWarning;
+                    timeDiff = Math.abs(Date.now() - localDate.getTime());
+                    var diffDays = Math.ceil(timeDiff / (1000 * 3600 * 24));
+                    if (diffDays >= daysUntilOldDataWarning) {
+                        svgDoc.getElementById(sensorId+"-co2-warning").setAttribute("class","sshow");
+                    }
                 }
               });
             }
@@ -283,13 +290,19 @@ angular.module('electronautes')
                   success: function(data) {
                       var values = data[0]['values'];
                       var valuejson = JSON.parse(values);
-                      $(svgDoc.getElementById(sensorId + "-sensor-humidity-value")).text(valuejson['humidity'] + '%');
+                      if(valuejson.hasOwnProperty('humidity')) $(svgDoc.getElementById(sensorId + "-sensor-humidity-value")).text(valuejson['humidity'] + '%');
                       var lastDate = data[0]['inserttime'].split('.')[0].replace(/-/g, '/');
                       var lastDateArray = lastDate.split(' ')[0].split('/');
                       var lastTimeArray = lastDate.split(' ')[1].split(':');
                       var localDate = new Date(lastDateArray[0],lastDateArray[1] - 1,lastDateArray[2],lastTimeArray[0],lastTimeArray[1],lastTimeArray[2],0);
-                      localDate.setHours(localDate.getHours() + timeOffset);
+                      localDate.setHours(localDate.getHours() + timezoneOffsetUTC);
                       $(svgDoc.getElementById(sensorId + "-sensor-humidity-lastimevalue")).text(localDate.toISOString().replace('T', ' ').split('.')[0]);
+                      var timeDiff = daysUntilOldDataWarning;
+                      timeDiff = Math.abs(Date.now() - localDate.getTime());
+                      var diffDays = Math.ceil(timeDiff / (1000 * 3600 * 24));
+                      if (diffDays >= daysUntilOldDataWarning) {
+                          svgDoc.getElementById(sensorId+"-humidity-warning").setAttribute("class","sshow");
+                      }
                   }
               });
             }
@@ -311,10 +324,14 @@ angular.module('electronautes')
                   var lastDateArray = lastDate.split(' ')[0].split('/');
                   var lastTimeArray = lastDate.split(' ')[1].split(':');
                   var localDate = new Date(lastDateArray[0],lastDateArray[1] - 1,lastDateArray[2],lastTimeArray[0],lastTimeArray[1],lastTimeArray[2],0);
-                  localDate.setHours(localDate.getHours() + timeOffset);
+                  localDate.setHours(localDate.getHours() + timezoneOffsetUTC);
                   $(svgDoc.getElementById(sensorId + "-sensor-temperature-lastimevalue")).text(localDate.toISOString().replace('T', ' ').split('.')[0]);
-                  // Testing warning graphics.
-                  // svgDoc.getElementById(sensorId+"-temperature-warning").setAttribute("class","sshow");
+                  var timeDiff = daysUntilOldDataWarning;
+                  timeDiff = Math.abs(Date.now() - localDate.getTime());
+                  var diffDays = Math.ceil(timeDiff / (1000 * 3600 * 24));
+                  if (diffDays >= daysUntilOldDataWarning) {
+                      svgDoc.getElementById(sensorId+"-temperature-warning").setAttribute("class","sshow");
+                  }
                 }
               });
             }
@@ -331,13 +348,19 @@ angular.module('electronautes')
                       success: function(data) {
                           var values = data[0]['values'];
                           var valuejson = JSON.parse(values);
-                          $(svgDoc.getElementById(sensorId + "-sensor-proximity-value")).text((valuejson['proximity']).split(".")[0] + " mm");
+                          if(valuejson.hasOwnProperty('proximity')) $(svgDoc.getElementById(sensorId + "-sensor-proximity-value")).text((valuejson['proximity']).split(".")[0] + " mm");
                           var lastDate = data[0]['inserttime'].split('.')[0].replace(/-/g, '/');
                           var lastDateArray = lastDate.split(' ')[0].split('/');
                           var lastTimeArray = lastDate.split(' ')[1].split(':');
                           var localDate = new Date(lastDateArray[0], lastDateArray[1] - 1, lastDateArray[2], lastTimeArray[0], lastTimeArray[1], lastTimeArray[2], 0);
-                          localDate.setHours(localDate.getHours() + timeOffset);
+                          localDate.setHours(localDate.getHours() + timezoneOffsetUTC);
                           $(svgDoc.getElementById(sensorId + "-sensor-proximity-lastimevalue")).text(localDate.toISOString().replace('T', ' ').split('.')[0]);
+                          var timeDiff = daysUntilOldDataWarning;
+                          timeDiff = Math.abs(Date.now() - localDate.getTime());
+                          var diffDays = Math.ceil(timeDiff / (1000 * 3600 * 24));
+                          if (diffDays >= daysUntilOldDataWarning) {
+                              svgDoc.getElementById(sensorId+"-proximity-warning").setAttribute("class","sshow");
+                          }
                       }
                   });
               }
@@ -354,13 +377,19 @@ angular.module('electronautes')
                       success: function(data) {
                           var values = data[0]['values'];
                           var valuejson = JSON.parse(values);
-                          $(svgDoc.getElementById(sensorId + "-sensor-pressure-value")).text((valuejson['pressure']).split(".")[0] + " Pa");
+                          if(valuejson.hasOwnProperty('pressure')) $(svgDoc.getElementById(sensorId + "-sensor-pressure-value")).text((valuejson['pressure']).split(".")[0] + " Pa");
                           var lastDate = data[0]['inserttime'].split('.')[0].replace(/-/g, '/');
                           var lastDateArray = lastDate.split(' ')[0].split('/');
                           var lastTimeArray = lastDate.split(' ')[1].split(':');
                           var localDate = new Date(lastDateArray[0],lastDateArray[1] - 1,lastDateArray[2],lastTimeArray[0],lastTimeArray[1],lastTimeArray[2],0);
-                          localDate.setHours(localDate.getHours() + timeOffset);
+                          localDate.setHours(localDate.getHours() + timezoneOffsetUTC);
                           $(svgDoc.getElementById(sensorId + "-sensor-pressure-lastimevalue")).text(localDate.toISOString().replace('T', ' ').split('.')[0]);
+                          var timeDiff = daysUntilOldDataWarning;
+                          timeDiff = Math.abs(Date.now() - localDate.getTime());
+                          var diffDays = Math.ceil(timeDiff / (1000 * 3600 * 24));
+                          if (diffDays >= daysUntilOldDataWarning) {
+                              svgDoc.getElementById(sensorId+"-pressure-warning").setAttribute("class","sshow");
+                          }
                       }
                   });
               }
@@ -377,13 +406,19 @@ angular.module('electronautes')
                   success: function(data) {
                       var values = data[0]['values'];
                       var valuejson = JSON.parse(values);
-                      $(svgDoc.getElementById(sensorId + "-sensor-light-value")).text((valuejson['ambientLight']).split(".")[0]);
+                      if(valuejson.hasOwnProperty('ambientLight')) $(svgDoc.getElementById(sensorId + "-sensor-light-value")).text((valuejson['ambientLight']).split(".")[0]);
                       var lastDate = data[0]['inserttime'].split('.')[0].replace(/-/g, '/');
                       var lastDateArray = lastDate.split(' ')[0].split('/');
                       var lastTimeArray = lastDate.split(' ')[1].split(':');
                       var localDate = new Date(lastDateArray[0],lastDateArray[1] - 1,lastDateArray[2],lastTimeArray[0],lastTimeArray[1],lastTimeArray[2],0);
-                      localDate.setHours(localDate.getHours() + timeOffset);
+                      localDate.setHours(localDate.getHours() + timezoneOffsetUTC);
                       $(svgDoc.getElementById(sensorId + "-sensor-light-lastimevalue")).text(localDate.toISOString().replace('T', ' ').split('.')[0]);
+                      var timeDiff = daysUntilOldDataWarning;
+                      timeDiff = Math.abs(Date.now() - localDate.getTime());
+                      var diffDays = Math.ceil(timeDiff / (1000 * 3600 * 24));
+                      if (diffDays >= daysUntilOldDataWarning) {
+                          svgDoc.getElementById(sensorId+"-light-warning").setAttribute("class","sshow");
+                      }
                   }
                 });
               }

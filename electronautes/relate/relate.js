@@ -42,15 +42,35 @@ angular.module('electronautes')
         $scope.selectedSensors[s][$scope.selectedTab] = false;
     }
     $scope.$digest();
-  }
+  };
   
   $scope.submitRelation = function () { 
     // TODO: Store values in in Jason's database.
     // Results from the relation game are in $scope.selectedSensors
     // Classroom is in $rootScope.classroom
     // Reset surveyClassroom to remove "relate" button in sensors view.
+    writeUserData();
     $rootScope.surveyClassroom = null;
     $location.path('/sensors');
-  }
+  };
+
+    function writeUserData() {
+        // var id = $scope.classroom;
+        // var obj = {
+        //     MOOD: $scope.surveyResults.mood,
+        //     ENERGY: $scope.surveyResults.energy,
+        //     TEMPERATURE: $scope.surveyResults.temperature,
+        //     NOISE: $scope.surveyResults.noise,
+        //     CLASSROOM: $scope.surveyClassroom
+        // };
+        //
+        // $.ajax({
+        //     url: 'http://replace.media.mit.edu/andorra/electronautes/php/logSurveyResponses.php?username=' + id + '&response=' + JSON.stringify(obj),
+        //     async: false,
+        //     dataType: 'json',
+        //     success: function(data) { }
+        // });
+    }
+
    
 });

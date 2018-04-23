@@ -34,14 +34,14 @@ angular.module('electronautes')
     temperature: null,
     noise: null,
     password: null
-  }
+  };
   
   $scope.checkPassword = function () {
     var url="./password.json";  
     $.getJSON(url, function (data) {   // This method gets the json file and fetches the data inside it.
       return ( data[$scope.classroom] === $scope.surveyPassword );
     });              
-  }
+  };
    
   function validateForm() { 
     
@@ -62,21 +62,28 @@ angular.module('electronautes')
     return isCorrect;
   }
      
-  /*function writeUserData() {
-    var dt = new Date();
-    // MOOD: $scope.surveyResults.mood
-    // ENERGY: $scope.surveyResults.energy
-    // TEMPERATURE: $scope.surveyResults.temperature
-    // NOISE: $scope.surveyResults.noise
-    // CLASSROOM: $scope.surveyClassroom
+  function writeUserData() {
+    var id = $scope.classroom;
+    var obj = {
+        MOOD: $scope.surveyResults.mood,
+        ENERGY: $scope.surveyResults.energy,
+        TEMPERATURE: $scope.surveyResults.temperature,
+        NOISE: $scope.surveyResults.noise,
+        CLASSROOM: $scope.surveyClassroom
+    };
+
+    $.ajax({
+        url: 'http://replace.media.mit.edu/andorra/electronautes/php/logSurveyResponses.php?username=' + id + '&response=' + JSON.stringify(obj),
+        async: false,
+        dataType: 'json',
+        success: function(data) { }
     });
-  }*/
+  }
   
   $scope.submitSurvey = function () { 
     if ( validateForm() ) {
       $rootScope.surveyClassroom = $scope.classroom;
-      // TODO: Store values in Jason's database.
-      // writeUserData();
+      writeUserData();
       $location.path('/sensors');
     }
   }

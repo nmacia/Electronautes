@@ -38,7 +38,7 @@ angular.module('electronautes').directive('tWeather', ($rootScope) => {
           case "40": 
             color = "#3e6a74";
             img = "rain.png";
-            addRainToBackground( color )
+  //          addRainToBackground( color )
             break;
           //Sunny 32, 34 #FDCF07
           case "32": 
@@ -57,7 +57,7 @@ angular.module('electronautes').directive('tWeather', ($rootScope) => {
           case "46":
             color = "#ccceda";
             img = "snow.png";
-            addSnowToBackground( color );
+            // addSnowToBackground( color );
             break;     
           //Thunderstorms 1, 3, 4,37, 38, 39, 45, 47 color #445197
           case "1": 

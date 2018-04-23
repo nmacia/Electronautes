@@ -97,7 +97,7 @@
 					<image style="overflow:visible;enable-background:new    ;" width="121" height="150"  xlink:href="../img/sensors/humidity-inv.png"  transform="matrix(1 0 0 1 451.7578 347.1138)">
 				    </image>
                     </g>
-				    <text id="AT001-sensor-humidity-value" transform="matrix(1 0 0 1 474.4843 453.9907)" class="st2 st3 st9">0%</text>
+				    <text id="AT001-sensor-humidity-value" transform="matrix(1 0 0 1 474.4843 453.9907)" class="st2 st3 st9">?</text>
 				    <text id="AT001-sensor-humidity-lastimevalue" transform="matrix(1 0 0 1 454.7578 513.6859)" class="st5 st3 st4">yyyy/mm/dd 24:00</text>
               
 				    <g id="AT001-humidity-warning" class="st0">
@@ -130,7 +130,7 @@
                       <image style="overflow:visible;enable-background:new    ;" width="150" height="150"  xlink:href="../img/sensors/proximity.png"  transform="matrix(0.6259 0 0 0.6259 456.8575 365.0137)">
                       </image>
                     </g>
-				<text id="AT001-sensor-proximity-value" transform="matrix(1 0 0 1 463.1313 479.8307)" class="st5 st3 st6">0%</text>
+				<text id="AT001-sensor-proximity-value" transform="matrix(1 0 0 1 463.1313 479.8307)" class="st5 st3 st6">?</text>
 				<text id="AT001-sensor-proximity-lastimevalue" transform="matrix(1 0 0 1 463.1313 499.526)" class="st5 st3 st4">yyyy/mm/dd 24:00</text>
 				    <g id="AT001-proximity-warning"  class="st0">
                       <image style="overflow:visible;enable-background:new    ;" width="173" height="150" xlink:href="../img/sensors/warning-sign.png"  transform="matrix(0.15 0 0 0.15 462.0484 430.3141)">
@@ -142,7 +142,7 @@
                       <image style="overflow:visible;enable-background:new    ;" width="150" height="150" xlink:href="../img/sensors/proximity.png"  transform="matrix(0.6259 0 0 0.6259 205.865 470.0407)">
                       </image>
                     </g>
-				<text id="ATP074-sensor-proximity-value" transform="matrix(1 0 0 1 212.1388 584.8578)" class="st5 st3 st6">0%</text>
+				<text id="ATP074-sensor-proximity-value" transform="matrix(1 0 0 1 212.1388 584.8578)" class="st5 st3 st6">?</text>
 				<text id="ATP074-sensor-proximity-lastimevalue" transform="matrix(1 0 0 1 212.1388 604.553)" class="st5 st3 st4">yyyy/mm/dd 24:00</text>
 				    <g id="ATP074-proximity-warning" class="st0">
                         <image style="overflow:visible;enable-background:new    ;" width="173" height="150" xlink:href="../img/sensors/warning-sign.png"  transform="matrix(0.15 0 0 0.15 211.056 535.3411)">
@@ -156,7 +156,7 @@
                       <image style="overflow:visible;enable-background:new    ;" width="123" height="150" xlink:href="../img/sensors/pressure.png"  transform="matrix(0.6845 0 0 0.6845 468.7354 364.1943)">
                       </image>
                      </g>
-				<text id="AT001-sensor-pressure-value" transform="matrix(1 0 0 1 489.8876 502.4035)" class="st5 st3 st6">0%</text>
+				<text id="AT001-sensor-pressure-value" transform="matrix(1 0 0 1 489.8876 502.4035)" class="st5 st3 st6">?</text>
 				<text id="AT001-sensor-pressure-lastimevalue" transform="matrix(1 0 0 1 470.1611 522.0988)" class="st5 st3 st4">yyyy/mm/dd 24:00</text>
 				    <g id="AT001-pressure-warning" class="st0">
                       <image style="overflow:visible;enable-background:new    ;" width="173" height="150" xlink:href="../img/sensors/warning-sign.png"  transform="matrix(0.15 0 0 0.15 476.6568 370.0705)">
@@ -168,7 +168,7 @@
                       <image style="overflow:visible;enable-background:new    ;" width="123" height="150" xlink:href="../img/sensors/pressure.png"  transform="matrix(0.6845 0 0 0.6845 209.1751 442.9412)">
                       </image>
                     </g>
-				    <text id="ATP074-sensor-pressure-value_x3D_" transform="matrix(1 0 0 1 230.3273 581.1504)" class="st5 st3 st6">0%</text>
+				    <text id="ATP074-sensor-pressure-value_x3D_" transform="matrix(1 0 0 1 230.3273 581.1504)" class="st5 st3 st6">?</text>
 				    <text id="ATP074-sensor-pressure-lastimevalue" transform="matrix(1 0 0 1 210.6008 600.8457)" class="st5 st3 st4">yyyy/mm/dd 24:00</text>
 				    <g id="ATP074-pressure-warning" class="st0">
 					   <image style="overflow:visible;enable-background:new    ;" width="173" height="150" xlink:href="../img/sensors/warning-sign.png"  transform="matrix(0.15 0 0 0.15 217.0966 448.8174)">
